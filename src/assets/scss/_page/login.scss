@@ -1,0 +1,200 @@
+.login {
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+
+  video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  &__container {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+
+    &__content {
+      display: flex;
+      place-content: center;
+      place-items: center;
+      flex-direction: column;
+      max-width: 310px;
+      padding: 15px 0;
+      min-height: 100vh;
+      margin: auto;
+
+
+      &__top {
+        width: 100%;
+
+        &__logo {
+          width: 100%;
+          margin-bottom: 20px;
+
+          img {
+            // max-width: 265px;
+          }
+        }
+
+        &__logo1 {
+          display: flex;
+          place-content: center;
+          place-items: center;
+          gap: 60px;
+          margin-bottom: 65px;
+
+          img {
+            max-width: 105px;
+          }
+        }
+      }
+
+      &__form {
+        width: 100%;
+
+        .input-group {
+          background: rgba(255, 255, 255, 0.5);
+          border-radius: 20px;
+          margin-bottom: 20px;
+
+          .input-group-text {
+            background-color: transparent;
+            border: none;
+
+            img {
+              width: 25px;
+            }
+          }
+
+          .form-control {
+            background-color: transparent;
+            border: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            height: 40px;
+
+            &::placeholder {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 16px;
+              color: #FFFFFF;
+            }
+          }
+
+        }
+
+        .remember-password {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          display: flex;
+          align-items: center;
+          color: #FFFFFF;
+          display: flex;
+          place-content: space-between;
+          place-items: center;
+          margin-bottom: 30px;
+
+          .form-check {
+            display: flex;
+            place-content: flex-start;
+            place-items: center;
+            gap: 10px;
+            margin-bottom: 0;
+
+            .form-check-input {
+              border-radius: 50%;
+              width: 18px;
+              height: 18px;
+              margin-top: 0;
+            }
+          }
+
+          a {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+          }
+        }
+
+        .login-btn {
+          margin-bottom: 15px;
+
+          .btn {
+            border-color: rgba(89, 126, 247, 0.5);
+            background: rgba(89, 126, 247, 0.5);
+            border-radius: 20px;
+            height: 40px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #FFFFFF;
+            width: 100%;
+            text-transform: uppercase;
+            display: flex;
+            place-content: center;
+            place-items: center;
+
+            &:hover {
+              border-color: rgba(89, 126, 247, 1);
+              background: rgba(89, 126, 247, 1);
+            }
+          }
+        }
+
+        .dont-have-an-account {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #FFFFFF;
+          text-align: left;
+
+          display: flex;
+          place-content: space-between;
+          place-items: flex-start;
+
+          &>a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: right;
+            color: #FFFFFF;
+          }
+        }
+
+        .customer-service {
+          margin-top: 80px;
+          display: flex;
+          place-items: center;
+          place-content: center;
+          gap: 15px;
+
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          text-align: center;
+          color: #FFFFFF;
+
+          img {
+            width: 28px;
+          }
+        }
+      }
+
+    }
+  }
+
+}

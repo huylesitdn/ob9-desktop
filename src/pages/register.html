@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Register'})
+  <body>
+    <!-- Content -->
+    <section class="login">
+      <video autoplay muted loop playsinline>
+        <source src="/assets/images/universal-bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="login__container">
+        <div class="login__container__content">
+          <div class="login__container__content__top">
+            <div class="login__container__content__top__logo" data-i18n="login_logo_img"></div>
+            <div class="login__container__content__top__logo1">
+              <div data-i18n="login_logo1_img"></div>
+              <div data-i18n="login_logo2_img"></div>
+            </div>
+          </div>
+          <form class="login__container__content__form">
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="/assets/icons/username.png" />
+              </span>
+              <input type="text" class="form-control" data-i18n="username" data-i18n-attr="placeholder" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="/assets/icons/password.png" />
+              </span>
+              <input type="password" class="form-control" data-i18n="password" data-i18n-attr="placeholder"/>
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="/assets/icons/password.png" />
+              </span>
+              <input type="password" class="form-control" data-i18n="confirm_password" data-i18n-attr="placeholder"/>
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="/assets/icons/captcha.png" />
+              </span>
+              <input type="text" class="form-control" data-i18n="confirm_password" data-i18n-attr="placeholder"/>
+              <span class="input-group-text">
+                <img src="/assets/icons/captcha-code.png" style="width: 85px" />
+              </span>
+            </div>
+            <div class="login-btn mt-5">
+              <a href="/" class="btn btn-primary" data-i18n="register"></a>
+            </div>
+            <div class="dont-have-an-account">
+              <div>
+                <div class="mb-1" data-i18n="Already_have_an_account"></div>
+                <a href="/register.html" data-i18n="Login_here"></a>
+              </div>
+              <a href="/home-without-login.html" data-i18n="i_ll_do_this_later"></a>
+            </div>
+
+            <a href="#" class="customer-service">
+              <img src="/assets/icons/icon-online-service.png" />
+              <span data-i18n="Contact_Customer_Service"></span>
+            </a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>
