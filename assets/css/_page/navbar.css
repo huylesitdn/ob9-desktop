@@ -1,0 +1,87 @@
+.my-navbar__main {
+  top: 35px;
+  min-height: 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0; }
+  .my-navbar__main__container .navbar-brand {
+    padding: 0;
+    margin-right: 30px; }
+    .my-navbar__main__container .navbar-brand img {
+      max-height: 80px; }
+  .my-navbar__main__container .navbar-nav .nav-item .nav-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #515B7C; }
+  .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link {
+    padding-top: 15px; }
+    .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img {
+      height: 20px;
+      margin-bottom: 7px; }
+      .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img img {
+        max-width: 20px;
+        max-height: 20px; }
+  .my-navbar__main__container .navbar-nav.nav-left {
+    place-items: center;
+    place-content: flex-start;
+    gap: 25px; }
+    .my-navbar__main__container .navbar-nav.nav-left .nav-item .nav-link {
+      display: flex;
+      place-items: center;
+      padding: 0;
+      min-height: 80px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      color: #515B7C;
+      text-transform: uppercase;
+      position: relative; }
+      .my-navbar__main__container .navbar-nav.nav-left .nav-item .nav-link:hover {
+        color: #4080FF; }
+      .my-navbar__main__container .navbar-nav.nav-left .nav-item .nav-link.active::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: "";
+        height: 6px;
+        width: 100%;
+        background-image: url(/assets/icons/navbar-active-line.png);
+        background-repeat: no-repeat;
+        background-size: cover; }
+
+.my-navbar__top {
+  max-width: var(--max-with);
+  min-width: var(--min-with);
+  margin: auto;
+  background: #353F4B;
+  padding: 0;
+  min-height: 35px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF; }
+  .my-navbar__top__container .navbar-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF; }
+  .my-navbar__top__container .navbar-nav .nav-item .nav-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF; }
+    .my-navbar__top__container .navbar-nav .nav-item .nav-link img {
+      max-height: 12px; }
+  .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info .nav-link {
+    display: flex;
+    place-content: flex-start;
+    place-items: center;
+    gap: 8px; }
+    .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info .nav-link .currency {
+      color: #F4D48C; }

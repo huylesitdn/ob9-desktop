@@ -1,18 +1,132 @@
-<nav class="navbar fixed-top navbar-light">
-  <div class="container-fluid content">
-    <button class="btn" id="navMenu">
-      <img src="/icons/menu.png" alt="" />
-    </button>
-    <img class="content__logo" src="/images/logo.png" alt="" />
-    <a href="/customer-service.html" class="content__customer_service">
-      <img src="/icons/customer-service-blue.png" alt="" />
-      <span data-i18n="customer_service">Customer Service</span>
-    </a>
-  </div>
-</nav>
-@@if (!!context.without_login) {
-  @@include('./sidebar-without-login.html')
-}
-@@if (!context.without_login) {
-  @@include('./sidebar.html')
-}
+<div class="my-navbar">
+  <nav class="my-navbar__top navbar fixed-top navbar-expand-xl">
+    <div class="my-navbar__top__container container">
+      <span class="navbar-text pe-3">
+        GMT+8 2022-02-18 11:49:21
+      </span>
+      <ul class="navbar-nav me-auto nav-left">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-i18n="top_menu.Homepage"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">
+            <div class="vr"></div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-i18n="top_menu.Support_Live_Chat"></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto nav-right">
+        <li class="nav-item nav-info">
+          <a class="nav-link disabled" aria-current="page" href="#">
+            <span data-i18n="top_menu.Welcome_username8080"></span>
+            <img src="/assets/icons/vip-0.png" />
+            <div class="vr"></div>
+            <img src="/assets/icons/eye.png" />
+            <span data-i18n="top_menu.Total_Balance"></span>
+            <span class="currency">MYR 5888.20</span>
+            <img src="/assets/icons/refresh.png" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-i18n="top_menu.Deposit"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-i18n="top_menu.Withdraw"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-i18n="top_menu.Rebate"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">
+            <div class="vr"></div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <img src="/assets/icons/ring.png" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <img src="/assets/icons/logout.png" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="my-navbar__main navbar fixed-top navbar-expand-xl">
+    <div class="my-navbar__main__container container">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/images/navbar-logo.png" />
+      </a>
+      <ul class="navbar-nav nav-left">
+        <li class="nav-item">
+          <a class="nav-link active" href="/" data-i18n="navbar.Home"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/" data-i18n="navbar.SPORTS"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/" data-i18n="navbar.LIVE_CASINO"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/" data-i18n="navbar.SLOTS"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/" data-i18n="navbar.FISHING"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/" data-i18n="navbar.E_SPORTS"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/" data-i18n="navbar.LOTTERY"></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav nav-right ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <div class="nav-link-img">
+              <img src="/assets/icons/navbar/cutomer-service.png" />
+            </div>
+            <div data-i18n="navbar.Customer_Service"></div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <div class="nav-link-img">
+              <img src="/assets/icons/navbar/promotion.png" />
+            </div>
+            <div data-i18n="navbar.Promotion"></div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <div class="nav-link-img">
+              <img src="/assets/icons/navbar/sponsor.png" />
+            </div>
+            <div data-i18n="navbar.Sponsor"></div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <div class="nav-link-img">
+              <img src="/assets/icons/navbar/vip.png" />
+            </div>
+            <div data-i18n="navbar.VIP"></div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <div class="nav-link-img">
+              <img src="/assets/icons/navbar/language.png" />
+            </div>
+            <div data-i18n="navbar.Malaysia"></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

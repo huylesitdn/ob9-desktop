@@ -41,6 +41,10 @@ img {
   padding-right: var(--bs-gutter-x-mobile, 0.75rem);
   padding-left: var(--bs-gutter-x-mobile, 0.75rem); }
 
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1224px; } }
+
 .form-control {
   font-size: 14px;
   line-height: 16px; }
@@ -73,7 +77,7 @@ img {
   text-align: center; }
 
 .main {
-  padding-top: 65px;
+  padding-top: 120px;
   padding-bottom: 80px;
   min-height: 100vh; }
 
