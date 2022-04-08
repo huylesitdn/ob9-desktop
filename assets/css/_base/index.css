@@ -23,7 +23,8 @@ body {
   margin: auto;
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
-  position: relative; }
+  position: relative;
+  scroll-behavior: smooth; }
 
 * {
   outline: none; }

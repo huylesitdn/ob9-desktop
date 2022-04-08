@@ -9,48 +9,170 @@
     margin-right: 30px; }
     .my-navbar__main__container .navbar-brand img {
       max-height: 80px; }
-  .my-navbar__main__container .navbar-nav .nav-item .nav-link {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-    text-align: center;
-    color: #515B7C; }
-  .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link {
-    padding-top: 15px; }
-    .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img {
-      height: 20px;
-      margin-bottom: 7px; }
-      .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img img {
-        max-width: 20px;
-        max-height: 20px; }
-  .my-navbar__main__container .navbar-nav.nav-left {
-    place-items: center;
-    place-content: flex-start;
-    gap: 25px; }
-    .my-navbar__main__container .navbar-nav.nav-left .nav-item .nav-link {
-      display: flex;
+  .my-navbar__main__container .navbar-nav {
+    flex-direction: row !important; }
+    .my-navbar__main__container .navbar-nav .nav-item .nav-link {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+      text-align: center;
+      color: #515B7C; }
+    .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link {
+      padding-top: 15px; }
+      .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img {
+        height: 20px;
+        margin-bottom: 7px; }
+        .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img img {
+          max-width: 20px;
+          max-height: 20px; }
+    .my-navbar__main__container .navbar-nav.nav-left {
       place-items: center;
-      padding: 0;
-      min-height: 80px;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 16px;
-      color: #515B7C;
-      text-transform: uppercase;
-      position: relative; }
-      .my-navbar__main__container .navbar-nav.nav-left .nav-item .nav-link:hover {
-        color: #4080FF; }
-      .my-navbar__main__container .navbar-nav.nav-left .nav-item .nav-link.active::after {
-        position: absolute;
-        bottom: 0;
+      place-content: flex-start;
+      gap: 25px; }
+      .my-navbar__main__container .navbar-nav.nav-left .nav-item.dropdown {
+        position: initial; }
+        .my-navbar__main__container .navbar-nav.nav-left .nav-item.dropdown:hover .dropdown-menu {
+          display: block;
+          margin-top: 0; }
+      .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu {
         left: 0;
         right: 0;
-        content: "";
-        height: 6px;
-        width: 100%;
-        background-image: url(/assets/icons/navbar-active-line.png);
+        padding: 0;
+        border-radius: 0;
+        overflow: hidden;
+        background-image: url(/assets/images/navbar/bg.png);
         background-repeat: no-repeat;
         background-size: cover; }
+        .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container {
+          min-height: 430px;
+          padding: 0; }
+          .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item {
+            display: flex;
+            place-content: flex-end;
+            place-items: center;
+            position: relative;
+            padding: 0; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__img {
+              position: absolute;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              z-index: -1;
+              display: flex;
+              place-items: center; }
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__img img {
+                max-width: 400px;
+                max-height: 350px; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .hight-return {
+              max-width: 120px;
+              margin-bottom: 15px;
+              display: block;
+              margin-left: -20px; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .official {
+              max-width: 85px;
+              margin-bottom: 20px; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .title {
+              font-family: 'Aldo the Apache';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 25px;
+              line-height: 16px;
+              color: #252943;
+              margin-bottom: 7px; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .description {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+              color: #333333; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .play-now {
+              margin-top: 25px;
+              display: block; }
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .play-now img {
+                max-width: 110px; }
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .play-now:hover {
+                opacity: 0.7; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item.SPORTS_EVENT {
+              place-content: center;
+              flex-direction: column; }
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item.SPORTS_EVENT .title {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 16px;
+                color: #8A9097;
+                margin-bottom: 25px; }
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item.SPORTS_EVENT .description {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: #000000;
+                margin-bottom: 5px; }
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item.SPORTS_EVENT .percent {
+                font-family: 'Aldo the Apache';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 80px;
+                line-height: 80px;
+                background: linear-gradient(#8EA9FF, #678BFF, #557BF7);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                display: flex;
+                place-items: flex-end;
+                gap: 3px; }
+                .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item.SPORTS_EVENT .percent span:nth-child(2) {
+                  font-size: 20px;
+                  line-height: 45px; }
+          .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text {
+            padding-right: 20px; }
+          .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino {
+            min-height: 560px;
+            margin-top: -30px; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino .mymenu__container__item {
+              place-content: center; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino .second-col {
+              margin-top: -100px; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino img {
+              max-width: 330px;
+              max-height: 280px; }
+          .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports {
+            min-height: 431px; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports .mymenu__container__item {
+              place-content: center; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports img {
+              max-width: 400px;
+              max-height: 340px; }
+          .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.lottery {
+            min-height: 431px;
+            place-content: center;
+            margin: auto; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.lottery .mymenu__container__item__img img {
+              max-width: 490px;
+              min-width: 480px; }
+      .my-navbar__main__container .navbar-nav.nav-left .nav-item .nav-link {
+        display: flex;
+        place-items: center;
+        padding: 0;
+        min-height: 80px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #515B7C;
+        text-transform: uppercase;
+        position: relative; }
+        .my-navbar__main__container .navbar-nav.nav-left .nav-item .nav-link:hover, .my-navbar__main__container .navbar-nav.nav-left .nav-item .nav-link.active {
+          color: #4080FF; }
+          .my-navbar__main__container .navbar-nav.nav-left .nav-item .nav-link:hover::after, .my-navbar__main__container .navbar-nav.nav-left .nav-item .nav-link.active::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            content: "";
+            height: 6px;
+            width: 100%;
+            background-image: url(/assets/icons/navbar-active-line.png);
+            background-repeat: no-repeat;
+            background-size: cover; }
 
 .my-navbar__top {
   max-width: var(--max-with);
@@ -68,20 +190,22 @@
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF; }
-  .my-navbar__top__container .navbar-nav .nav-item .nav-link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF; }
-    .my-navbar__top__container .navbar-nav .nav-item .nav-link img {
-      max-height: 12px; }
-  .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link {
-    padding-left: 10px;
-    padding-right: 10px; }
-  .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info .nav-link {
-    display: flex;
-    place-content: flex-start;
-    place-items: center;
-    gap: 8px; }
-    .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info .nav-link .currency {
-      color: #F4D48C; }
+  .my-navbar__top__container .navbar-nav {
+    flex-direction: row !important; }
+    .my-navbar__top__container .navbar-nav .nav-item .nav-link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #FFFFFF; }
+      .my-navbar__top__container .navbar-nav .nav-item .nav-link img {
+        max-height: 12px; }
+    .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link {
+      padding-left: 10px;
+      padding-right: 10px; }
+    .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info .nav-link {
+      display: flex;
+      place-content: flex-start;
+      place-items: center;
+      gap: 8px; }
+      .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info .nav-link .currency {
+        color: #F4D48C; }

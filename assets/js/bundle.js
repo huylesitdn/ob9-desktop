@@ -250,3 +250,11 @@ $(".universal .btn-play-now").on("click", function () {
     window.location.href = "/access-denied.html";
   }
 });
+
+
+
+$('.back_to_top').on("click", function (e) {
+  e.preventDefault();
+  // $(window).scrollTop(0);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+})

@@ -17,6 +17,8 @@
       }
 
       .navbar-nav {
+        flex-direction: row !important;
+
         .nav-item {
           .nav-link {
             font-weight: 400;
@@ -53,6 +55,203 @@
           gap: 25px;
 
           .nav-item {
+            &.dropdown {
+              position: initial;
+
+              &:hover .dropdown-menu {
+                display: block;
+                margin-top: 0; // remove the gap so it doesn't close
+              }
+            }
+
+            .mymenu {
+              left: 0;
+              right: 0;
+              padding: 0;
+              border-radius: 0;
+              overflow: hidden;
+              background-image: url(/assets/images/navbar/bg.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+
+              &__container {
+                min-height: 430px;
+                // padding: 0 30px;
+                padding: 0;
+
+                &__item {
+                  display: flex;
+                  place-content: flex-end;
+                  place-items: center;
+                  position: relative;
+                  padding: 0;
+
+                  &__img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    display: flex;
+                    place-items: center;
+
+                    img {
+                      max-width: 400px;
+                      max-height: 350px;
+                    }
+                  }
+
+                  &__text {
+                    .hight-return {
+                      max-width: 120px;
+                      margin-bottom: 15px;
+                      display: block;
+                      margin-left: -20px;
+                    }
+
+                    .official {
+                      max-width: 85px;
+                      margin-bottom: 20px;
+                    }
+
+                    .title {
+                      font-family: 'Aldo the Apache';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 25px;
+                      line-height: 16px;
+                      color: #252943;
+                      margin-bottom: 7px;
+                    }
+
+                    .description {
+                      font-weight: 400;
+                      font-size: 12px;
+                      line-height: 16px;
+                      color: #333333;
+                    }
+
+                    .play-now {
+                      margin-top: 25px;
+                      display: block;
+
+                      img {
+                        max-width: 110px;
+                      }
+
+                      &:hover {
+                        opacity: 0.7;
+                      }
+                    }
+                  }
+
+                  &.SPORTS_EVENT {
+                    place-content: center;
+                    flex-direction: column;
+
+                    .title {
+                      font-weight: 500;
+                      font-size: 24px;
+                      line-height: 16px;
+                      color: #8A9097;
+                      margin-bottom: 25px;
+                    }
+
+                    .description {
+                      font-weight: 400;
+                      font-size: 12px;
+                      line-height: 16px;
+                      color: #000000;
+                      margin-bottom: 5px;
+                    }
+
+                    .percent {
+                      font-family: 'Aldo the Apache';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 80px;
+                      line-height: 80px;
+                      // background: linear-gradient(175.78deg, #8EA9FF -93.07%, #678BFF -9.41%, #557BF7 165.99%);
+                      background: linear-gradient(#8EA9FF, #678BFF, #557BF7);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                      text-fill-color: transparent;
+                      display: flex;
+                      place-items: flex-end;
+                      gap: 3px;
+
+                      span {
+
+                        &:nth-child(2) {
+                          font-size: 20px;
+                          line-height: 45px;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                &.sports {
+
+                  .mymenu__container__item__text {
+                    padding-right: 20px;
+                  }
+
+                  .mymenu__container__item__img {
+                    img {
+                      // max-width: 390px;
+                      // max-height: 320px;
+                    }
+                  }
+                }
+
+                &.live-casino {
+                  min-height: 560px;
+                  margin-top: -30px;
+
+                  .mymenu__container__item {
+                    place-content: center;
+                  }
+
+                  .second-col {
+                    margin-top: -100px;
+                  }
+
+                  img {
+                    max-width: 330px;
+                    max-height: 280px;
+                  }
+                }
+
+                &.e-sports {
+                  min-height: 431px;
+
+                  .mymenu__container__item {
+                    place-content: center;
+                  }
+
+                  img {
+                    max-width: 400px;
+                    max-height: 340px;
+                  }
+                }
+
+                &.lottery {
+                  min-height: 431px;
+                  place-content: center;
+                  margin: auto;
+
+                  .mymenu__container__item__img {
+                    img {
+                      max-width: 490px;
+                      min-width: 480px;
+                    }
+                  }
+                }
+              }
+            }
+
             .nav-link {
               display: flex;
               place-items: center;
@@ -66,11 +265,10 @@
               text-transform: uppercase;
               position: relative;
 
-              &:hover {
-                color: #4080FF;
-              }
-
+              &:hover,
               &.active {
+                color: #4080FF;
+
                 &::after {
                   position: absolute;
                   bottom: 0;
@@ -113,6 +311,8 @@
       }
 
       .navbar-nav {
+        flex-direction: row !important;
+
         .nav-item {
           .nav-link {
             font-weight: 400;
