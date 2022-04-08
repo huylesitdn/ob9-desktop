@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="">
-  @@include('../components/base/header.html', {title: ''})
+  @@include('../components/base/header.html', {title: 'Home'})
   <body>
+    
     <!-- Content -->
-    <section class="">
-      home-without-login.html
-    </section>
+    <section class="main home-page">
+      @@include('../components/base/navbar-without-login.html')
 
+      <!-- content -->
+      @@include('../components/home/content.html')
+      <!-- content -->
+
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
     @@include('../components/base/footer.html')
   </body>
 </html>

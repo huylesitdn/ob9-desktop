@@ -310,6 +310,87 @@
         color: #FFFFFF;
       }
 
+      .nav-login-form {
+        display: flex;
+        place-items: center;
+        gap: 15px;
+
+        .btn {
+          max-height: 24px;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          color: #FFFFFF !important;
+          display: flex;
+          place-items: center;
+          place-content: center;
+
+
+          &-success {
+            background: #44D7B6;
+            border-radius: 20px;
+          }
+
+          &-info {
+            background: #32C5FF;
+            border-radius: 20px;
+          }
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+        .input-group {
+          background: #8A9097;
+          border-radius: 20px;
+          border: none;
+          height: 24px;
+          max-width: 150px;
+          place-items: center;
+
+          .input-group-text {
+            background: transparent;
+            border: none;
+            padding: 0 7px;
+
+            a {
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 12px;
+              color: #FFFFFF;
+            }
+
+            img {
+              height: 13px;
+            }
+          }
+
+          .form-control {
+            background: transparent;
+            border: none;
+            padding: 0 10px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #FFFFFF;
+
+            &::placeholder {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 14px;
+              color: #FFFFFF;
+            }
+
+            &:focus {
+              box-shadow: none;
+            }
+          }
+
+        }
+      }
+
       .navbar-nav {
         flex-direction: row !important;
 

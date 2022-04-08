@@ -774,6 +774,61 @@ a {
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF; }
+  .my-navbar__top__container .nav-login-form {
+    display: flex;
+    place-items: center;
+    gap: 15px; }
+    .my-navbar__top__container .nav-login-form .btn {
+      max-height: 24px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: #FFFFFF !important;
+      display: flex;
+      place-items: center;
+      place-content: center; }
+      .my-navbar__top__container .nav-login-form .btn-success {
+        background: #44D7B6;
+        border-radius: 20px; }
+      .my-navbar__top__container .nav-login-form .btn-info {
+        background: #32C5FF;
+        border-radius: 20px; }
+      .my-navbar__top__container .nav-login-form .btn:hover {
+        opacity: 0.8; }
+    .my-navbar__top__container .nav-login-form .input-group {
+      background: #8A9097;
+      border-radius: 20px;
+      border: none;
+      height: 24px;
+      max-width: 150px;
+      place-items: center; }
+      .my-navbar__top__container .nav-login-form .input-group .input-group-text {
+        background: transparent;
+        border: none;
+        padding: 0 7px; }
+        .my-navbar__top__container .nav-login-form .input-group .input-group-text a {
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 12px;
+          color: #FFFFFF; }
+        .my-navbar__top__container .nav-login-form .input-group .input-group-text img {
+          height: 13px; }
+      .my-navbar__top__container .nav-login-form .input-group .form-control {
+        background: transparent;
+        border: none;
+        padding: 0 10px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF; }
+        .my-navbar__top__container .nav-login-form .input-group .form-control::placeholder {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #FFFFFF; }
+        .my-navbar__top__container .nav-login-form .input-group .form-control:focus {
+          box-shadow: none; }
   .my-navbar__top__container .navbar-nav {
     flex-direction: row !important; }
     .my-navbar__top__container .navbar-nav .nav-item .nav-link {
