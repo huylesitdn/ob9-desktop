@@ -1220,10 +1220,42 @@ a {
       .sports-page__container #carouselSports .carousel-indicators button.active {
         background-image: url(/assets/images/sports/tab-bg-active.png);
         color: #FFFFFF; }
+  .sports-page__container #carouselSports .carousel-indicators-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .sports-page__container #carouselSports .carousel-inner .carousel-item.saba .cup {
+    max-width: 124px;
+    position: absolute;
+    bottom: 50px;
+    left: 10%; }
+  .sports-page__container #carouselSports .carousel-inner .carousel-item.saba .ball {
+    max-width: 92px;
+    position: absolute;
+    bottom: 0px;
+    right: 10%; }
+  .sports-page__container #carouselSports .carousel-inner .carousel-item.cmd368 .multiple-cup {
+    max-width: 180px;
+    position: absolute;
+    bottom: 50px;
+    right: 10%; }
+  .sports-page__container #carouselSports .carousel-inner .carousel-item.m8bet .multiple-cup {
+    max-width: 180px;
+    position: absolute;
+    bottom: 0px;
+    left: 15%; }
+  .sports-page__container #carouselSports .carousel-inner .carousel-item.m8bet .ball {
+    max-width: 92px;
+    position: absolute;
+    bottom: 0px;
+    right: 10%; }
   .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item {
     place-items: center;
-    padding: 0 50px;
-    position: relative; }
+    padding: 0;
+    position: relative;
+    margin: 0 auto; }
     .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__title {
       font-family: 'Aldo the Apache';
       font-style: normal;
