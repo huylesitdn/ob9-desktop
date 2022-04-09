@@ -1,16 +1,16 @@
 .sports-page {
-  background-image: url(/assets/images/sports/bg.png);
+  background-image: url(../images/sports/bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  min-height: auto;
+  padding-bottom: 0;
+  padding-top: 0;
+  min-height: 800px;
   margin-top: 115px;
 
 
   &__container {
-    // background-image: url(/assets/images/sports/bg-center.png);
+    // background-image: url(../images/sports/bg-center.png);
     // background-repeat: no-repeat;
     // background-position: center;
     // background-size: cover;
@@ -38,7 +38,7 @@
           place-items: center;
           min-width: 185px;
           min-height: 110px;
-          background-image: url(/assets/images/sports/tab-bg.png);
+          background-image: url(../images/sports/tab-bg.png);
           background-repeat: no-repeat;
           background-size: contain;
           background-position: center;
@@ -62,7 +62,7 @@
           }
 
           &.active {
-            background-image: url(/assets/images/sports/tab-bg-active.png);
+            background-image: url(../images/sports/tab-bg-active.png);
             color: #FFFFFF;
           }
         }
@@ -146,7 +146,7 @@
                 margin-top: 50px;
 
                 a {
-                  background-image: url(/assets/images/sports/play-now-btn.png);
+                  background-image: url(../images/sports/play-now-btn.png);
                   background-repeat: no-repeat;
                   background-position: center;
                   background-size: cover;

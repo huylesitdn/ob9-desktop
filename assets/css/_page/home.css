@@ -10,7 +10,7 @@
     .home-page #carouselTop .carousel-indicators button.active {
       width: 25px;
       height: 25px;
-      background-image: url(/assets/images/home/home-slider-active-dot.png);
+      background-image: url(../images/home/home-slider-active-dot.png);
       background-repeat: no-repeat;
       background-size: cover; }
 
@@ -71,7 +71,7 @@
       color: #FFFFFF; }
 
 .home-page__content {
-  background-image: url(/assets/images/home/bg.png);
+  background-image: url(../images/home/bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -98,14 +98,14 @@
         height: 25px;
         left: -90%;
         content: "";
-        background-image: url(/assets/images/home/games_title1.png); }
+        background-image: url(../images/home/games_title1.png); }
       .home-page__content .title span::before {
         position: absolute;
         width: 150px;
         height: 25px;
         right: -90%;
         content: "";
-        background-image: url(/assets/images/home/games_title2.png); }
+        background-image: url(../images/home/games_title2.png); }
   .home-page__content .subtitle {
     font-weight: 400;
     font-size: 18px;
@@ -126,7 +126,7 @@
           padding-left: 8px;
           padding-right: 8px; }
           .home-page__content__why_choose_us__content .row > div .item {
-            background-image: url(/assets/images/home/why-choose-us/bg.png);
+            background-image: url(../images/home/why-choose-us/bg.png);
             background-repeat: no-repeat;
             background-size: contain;
             padding: 30px;
@@ -163,7 +163,7 @@
         place-items: flex-start; }
         .home-page__content__exciting_game__content #carouselExcitingGame .carousel-indicators {
           position: initial !important;
-          background-image: url(/assets/images/home/exciting-game/left-bg.png);
+          background-image: url(../images/home/exciting-game/left-bg.png);
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
@@ -182,7 +182,7 @@
             place-items: center;
             min-width: 200px;
             min-height: 70px;
-            background-image: url(/assets/images/home/exciting-game/bg.png);
+            background-image: url(../images/home/exciting-game/bg.png);
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
@@ -209,7 +209,7 @@
               .home-page__content__exciting_game__content #carouselExcitingGame .carousel-indicators button img.focus {
                 display: none; }
             .home-page__content__exciting_game__content #carouselExcitingGame .carousel-indicators button.active {
-              background-image: url(/assets/images/home/exciting-game/bg-active.png); }
+              background-image: url(../images/home/exciting-game/bg-active.png); }
               .home-page__content__exciting_game__content #carouselExcitingGame .carousel-indicators button.active span {
                 font-weight: 600;
                 font-size: 18px;
@@ -233,7 +233,7 @@
           .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .button-group .btn {
             min-width: 200px;
             min-height: 65px;
-            background-image: url(/assets/images/home/exciting-game/bg-active.png);
+            background-image: url(../images/home/exciting-game/bg-active.png);
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
