@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Fishing'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main fishing-page">
+      @@include('../components/base/navbar.html', {active: 5})
+
+      <div class="fishing-page__container">
+        <div id="carouselFishing" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-indicators-container container">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselFishing" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" >
+                <span data-i18n="fishing_page.title1"></span>
+              </button>
+              <button type="button" data-bs-target="#carouselFishing" data-bs-slide-to="1" aria-label="Slide 2">
+                <span data-i18n="fishing_page.title2"></span>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row sports-item container">
+                <div class="col-4 sports-item__content">
+                  <div class="sports-item__content__title" data-i18n="fishing_page.title1"></div>
+                  <div class="sports-item__content__description" data-i18n="fishing_page.description1"></div>
+                  <div class="sports-item__content__action">
+                    <a href="/product-under-maintenance.html" data-i18n="PLAY_NOW"></a>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <img class="sports-img" src="assets/images/fishing/1.png" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row sports-item container">
+                <div class="col-4 sports-item__content">
+                  <div class="sports-item__content__title" data-i18n="fishing_page.title2"></div>
+                  <div class="sports-item__content__description" data-i18n="fishing_page.description2"></div>
+                  <div class="sports-item__content__action">
+                    <a href="/product-under-maintenance.html" data-i18n="PLAY_NOW"></a>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <img class="sports-img" src="assets/images/fishing/2.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>
