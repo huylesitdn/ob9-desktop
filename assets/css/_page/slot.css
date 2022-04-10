@@ -85,7 +85,8 @@
             width: 30px;
             min-width: 30px;
             height: 30px;
-            padding: 0; }
+            padding: 0;
+            margin: 0 2px; }
             .slot-page__content__tab .tab-content .slots-paginations__item img {
               height: 15px; }
         .slot-page__content__tab .tab-content .slots-items {
