@@ -259,3 +259,20 @@ $('.back_to_top').on("click", function (e) {
   // $(window).scrollTop(0);
   window.scrollTo({ top: 0, behavior: 'smooth' });
 })
+
+
+$("#carouselSposorshipEventVideo").slick({
+  centerMode: true,
+  infinite: true,
+  slidesToShow: 1,
+  arrows: true,
+  dots: true,
+});
+
+$("#carouselSponsoredEventPhotos1").slick({
+  centerMode: true,
+  infinite: true,
+  slidesToShow: 1,
+  arrows: false,
+  dots: true,
+});
