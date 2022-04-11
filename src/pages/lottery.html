@@ -3,9 +3,88 @@
   @@include('../components/base/header.html', {title: 'Lottery'})
   <body>
     <!-- Content -->
-    <section class="main">
+    <section class="main lottery-page">
       @@include('../components/base/navbar.html', {active: 7})
-      lottery.html
+      
+      <div class="lottery-page__top-container">
+        <div class="lottery-page__top-container__content container">
+          <div class="lottery-page__top-container__content__title" data-i18n="lottery_page.title"></div>
+        </div>
+      </div>
+      <div class="lottery-page__content container">
+        <div class="lottery-page__content__tab">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="log-1-tab" data-bs-toggle="tab" data-bs-target="#log-1" type="button" role="tab" aria-controls="log-1" aria-selected="true">
+                <img src="assets/images/lottery/log-01.png" />
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="log-2-tab" data-bs-toggle="tab" data-bs-target="#log-2" type="button" role="tab" aria-controls="log-2" aria-selected="false">
+                <img src="assets/images/lottery/log-02.png" />
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="log-3-tab" data-bs-toggle="tab" data-bs-target="#log-3" type="button" role="tab" aria-controls="log-3" aria-selected="false">
+                <img src="assets/images/lottery/log-03.png" />
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="log-4-tab" data-bs-toggle="tab" data-bs-target="#log-4" type="button" role="tab" aria-controls="log-4" aria-selected="false">
+                <img src="assets/images/lottery/log-04.png" />
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="log-5-tab" data-bs-toggle="tab" data-bs-target="#log-5" type="button" role="tab" aria-controls="log-5" aria-selected="false">
+                <img src="assets/images/lottery/log-05.png" />
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="log-6-tab" data-bs-toggle="tab" data-bs-target="#log-6" type="button" role="tab" aria-controls="log-6" aria-selected="false">
+                <img src="assets/images/lottery/log-06.png" />
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="log-7-tab" data-bs-toggle="tab" data-bs-target="#log-7" type="button" role="tab" aria-controls="log-7" aria-selected="false">
+                <img src="assets/images/lottery/log-07.png" />
+              </button>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="log-1" role="tabpanel" aria-labelledby="log-1-tab">
+              @@include('../components/lottery/log-1.html')
+            </div>
+            <div class="tab-pane" id="log-2" role="tabpanel" aria-labelledby="log-2-tab">
+              log-2
+            </div>
+            <div class="tab-pane" id="log-3" role="tabpanel" aria-labelledby="log-3-tab">
+              log-3
+            </div>
+            <div class="tab-pane" id="log-4" role="tabpanel" aria-labelledby="log-4-tab">
+              log-4
+            </div>
+            <div class="tab-pane" id="log-5" role="tabpanel" aria-labelledby="log-5-tab">
+              log-5
+            </div>
+            <div class="tab-pane" id="log-6" role="tabpanel" aria-labelledby="log-6-tab">
+              log-6
+            </div>
+            <div class="tab-pane" id="log-7" role="tabpanel" aria-labelledby="log-7-tab">
+              log-7
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lottery-page__action container">
+        <button class="btn btn-primary"></button>
+        <button class="btn btn-outline-primary"></button>
+      </div>
+
+
     </section>
     @@include('../components/base/navbar-bottom.html', {active: 0})
 
