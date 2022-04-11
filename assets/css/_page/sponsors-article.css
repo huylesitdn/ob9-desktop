@@ -1,7 +1,57 @@
 .sponsors-article {
   --top-padding: 115px;
   --section-min-height: 900px;
-  padding-top: var(--top-padding); }
+  padding-top: var(--top-padding);
+  padding-bottom: 0; }
+  .sponsors-article .sponsor-mouse-hover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: flex-start;
+    place-content: center;
+    gap: 5px; }
+    .sponsors-article .sponsor-mouse-hover__container {
+      background: linear-gradient(180deg, #E2E2E2 0%, #FFFFFF 46.35%, #E2E2E2 100%);
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 0px 10px 10px 0px;
+      display: flex;
+      place-items: center;
+      place-content: flex-start;
+      height: 80px; }
+      .sponsors-article .sponsor-mouse-hover__container__img {
+        background: linear-gradient(180deg, #E2E2E2 0%, #FFFFFF 46.35%, #E2E2E2 100%);
+        min-width: 70px;
+        display: flex;
+        place-content: center;
+        z-index: 2;
+        height: 100%;
+        place-items: center;
+        border-radius: 0 10px 10px 0; }
+        .sponsors-article .sponsor-mouse-hover__container__img img {
+          max-height: 47px; }
+      .sponsors-article .sponsor-mouse-hover__container__content {
+        width: 160px;
+        margin-left: -160px;
+        opacity: 0;
+        z-index: 0;
+        transition: all 0.3s; }
+        .sponsors-article .sponsor-mouse-hover__container__content__title {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000; }
+        .sponsors-article .sponsor-mouse-hover__container__content__description {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #000000; }
+      .sponsors-article .sponsor-mouse-hover__container:hover .sponsor-mouse-hover__container__content {
+        margin-left: 0px;
+        opacity: 1;
+        z-index: 1; }
   .sponsors-article__content__top-carousel .carousel-indicators {
     margin-bottom: 20px; }
     .sponsors-article__content__top-carousel .carousel-indicators button {
@@ -62,6 +112,9 @@
         line-height: 30px;
         text-align: justify;
         color: #FFFFFF; }
+      .sponsors-article__content__items__container .cup__aston-villa {
+        width: 100%;
+        margin-top: 30px; }
       .sponsors-article__content__items__container .cup__item {
         text-align: center; }
         .sponsors-article__content__items__container .cup__item__img {
