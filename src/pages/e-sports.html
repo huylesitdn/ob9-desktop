@@ -3,10 +3,95 @@
   @@include('../components/base/header.html', {title: 'E-Sports'})
   <body>
     <!-- Content -->
-    <section class="main">
+    <section class="main e-sports">
       @@include('../components/base/navbar.html', {active: 6})
+      
 
-      e-sports.html
+      <div class="e-sports__container">
+        <div id="carouselESports" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-indicators-container">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselESports" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                <span data-i18n="e_sports_page.TF_GAMING"></span>
+              </button>
+              <button type="button" data-bs-target="#carouselESports" data-bs-slide-to="1" aria-label="Slide 2">
+                <span data-i18n="e_sports_page.INPLAY_MATRIX"></span>
+              </button>
+              <button type="button" data-bs-target="#carouselESports" data-bs-slide-to="2" aria-label="Slide 3">
+                <span data-i18n="e_sports_page.CMD368"></span>
+              </button>
+              <button type="button" data-bs-target="#carouselESports" data-bs-slide-to="3" aria-label="Slide 4">
+                <span data-i18n="e_sports_page.SABA_SPORTS"></span>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item e-sports-item active">
+              <img class="e-sports-item__bg" src="assets/images/e-sports/tf-gaming-bg.png" />
+              <div class="e-sports-item__container container">
+                <div class="e-sports-item__container__logo">
+                  <img src="assets/images/e-sports/tf-gaming-logo.png" />
+                </div>
+                <div class="e-sports-item__container__description" data-i18n="e_sports_page.TF_GAMING_description"></div>
+                <div class="e-sports-item__container__play-now">
+                  <button class="btn" data-i18n="PLAY_NOW"></button>
+                </div>
+                <div class="e-sports-item__container__bottom-logo">
+                  <img src="assets/images/e-sports/bottom-logo.png" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item e-sports-item">
+              <img class="e-sports-item__bg" src="assets/images/e-sports/inplay-bg.png" />
+              <div class="e-sports-item__container container">
+                <div class="e-sports-item__container__logo">
+                  <img src="assets/images/e-sports/inplay-logo.png" />
+                </div>
+                <div class="e-sports-item__container__description" data-i18n="e_sports_page.INPLAY_MATRIX_description"></div>
+                <div class="e-sports-item__container__play-now">
+                  <button class="btn" data-i18n="PLAY_NOW"></button>
+                </div>
+                <div class="e-sports-item__container__bottom-logo">
+                  <img src="assets/images/e-sports/bottom-logo.png" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item e-sports-item">
+              <img class="e-sports-item__bg" src="assets/images/e-sports/cmd-bg.png" />
+              <div class="e-sports-item__container container">
+                <div class="e-sports-item__container__logo">
+                  <img src="assets/images/e-sports/cmd-logo.png" />
+                </div>
+                <div class="e-sports-item__container__description" data-i18n="e_sports_page.CMD368_description"></div>
+                <div class="e-sports-item__container__play-now">
+                  <button class="btn" data-i18n="PLAY_NOW"></button>
+                </div>
+                <div class="e-sports-item__container__bottom-logo">
+                  <img src="assets/images/e-sports/bottom-logo.png" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item e-sports-item">
+              <img class="e-sports-item__bg" src="assets/images/e-sports/saba-bg.png" />
+              <div class="e-sports-item__container container">
+                <div class="e-sports-item__container__logo">
+                  <img src="assets/images/e-sports/saba-logo.png" />
+                </div>
+                <div class="e-sports-item__container__description" data-i18n="e_sports_page.SABA_SPORTS_description"></div>
+                <div class="e-sports-item__container__play-now">
+                  <button class="btn" data-i18n="PLAY_NOW"></button>
+                </div>
+                <div class="e-sports-item__container__bottom-logo">
+                  <img src="assets/images/e-sports/bottom-logo.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
     </section>
     @@include('../components/base/navbar-bottom.html', {active: 0})
 
