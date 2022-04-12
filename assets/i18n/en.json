@@ -542,10 +542,22 @@
       "des3": "Our website does not require additional plug-ins to browse. However, some interactive information and assistance, such as our casino and live dealers, may require a Flash player to display properly. Click here to install Flash Player Plug-in: A browser plug-in is a piece of software that adds a specific function or service to a browser. Some common plugins are Java, Flash Player, Adobe Acrobat, QuickTime and Microsoft Silverlight."
     },
     "Anti_Hijacking_Guide_page": {
-      "1": "1. Anti-hijacking tutorial on Android",
-      "des1": "<ul><li>Long press on the connected WiFi name</li><li>Modify the network configuration</li><li>Show advanced options</li><li>Change IP settings to static</li><li>DNS1 changed to 8.8.8.8</li><li>DNS2 changed to 8.8.4.4</li></ul>If you are using a handheld mobile device, we strongly recommend that you access it through your phone's own browser. If you are using a browser other than the above and are having trouble accessing OB, we recommend that you click the link above to install the latest version of the browser. If there is a problem with browser access, please contact our 7*24 <a href='#'>online customer service</a> for help.",
-      "2": "2. Apple anti-hijacking tutorial",
-      "des2": "<ul><li>Click ⓘ next to the connected wifi name</li><li>DNS Options</li><li>DNS1 changed to 8.8.8.8</li><li>DNS2 changed to 8.8.4.4</li></ul>"
+      "1": "1. Anti-hijacking tutorial on computer",
+      "des1": "(a) Connect to a WI-FI network to change the device's DNS settings",
+      "des2": "(b) Recommended on the computer<ul><li>Preferred DNS server 8.8.8.8</li><li>Alternate DNS server 114.114.114.114</li></ul>",
+      "des3": "(c) Open up control panel on your PC",
+      "des4": "d) View network status and tasks",
+      "des5": "(e) Click on local internet connection",
+      "des6": "(f) Select properties",
+      "des7": "(g) Select properties",
+      "des8": "(h) Input the DNS address and click OK",
+      "img1": "<img src=\"assets/images/help/Anti_Hijacking_Guide-1.png\" />",
+      "img2": "<img src=\"assets/images/help/Anti_Hijacking_Guide-2.png\" />",
+      "img3": "<img src=\"assets/images/help/Anti_Hijacking_Guide-3.png\" />",
+      "img4": "<img src=\"assets/images/help/Anti_Hijacking_Guide-4.png\" />",
+      "img5": "<img src=\"assets/images/help/Anti_Hijacking_Guide-5.png\" />",
+      "img6": "<img src=\"assets/images/help/Anti_Hijacking_Guide-6.png\" />",
+      "": ""
     },
     "Withdrawal_page": {
       "1": "1. How to withdraw money",
@@ -574,6 +586,8 @@
       "des22": "c) [Over/Under]<span>A sports betting OVER/UNDER is a bet where you have to correctly predict the combined score of both teams. You have to pick if the total score will be lower or higher than the number set by oddsmakers</span>"
     },
     "Lottery_Guide_page": {
+      "img2": "<img src=\"assets/images/help/lottery-guide-2.png\" />",
+      "img3": "<img src=\"assets/images/help/lottery-guide-3.png\" />",
       "1": "1. How to Play Lottery Game",
       "des1": "<ul><li>To play lottery game, choose your favourite or lucky four-digit numbers from 0000 to 9999.</li><li>Then decide on your bet type i.e. \"ABC\" (Big) or \"A\" (Small); or you can play both.</li><li>ABC (Big) increases your chance of winning as there are 23 winning numbers to match with i.e. 1st Prize, 2nd Prize, 3rd Prize, 10 Starter Prizes and 10 Consolation Prizes.</li><li>A (Small) pays higher winning prizes but there are only three winning numbers to match with i.e. 1st Prize, 2nd Prize and 3rd Prize.</li><li>Finally, decide on your bet amount for each chosen number. The minimum bet amount for a 1+3D number is RM1.</li><li>There are 7 counter available to place your lottery betting may increase your chances of winning! ( Magnum, Da Ma Cai, Toto, Singapore, Sandakan, Sabah, Sarawak)</li></ul>",
       "2": "2. Box Bet",
@@ -770,9 +784,9 @@
     "title": "1. OB Information",
     "description": "Facebook<br/>Youtube<br/>Twitter<br/>Instagram",
     "title1": "2. Customer Service Contact",
-    "description1": "Marketing department: ob9cshelp@gmail.com<br/>Help Department: OBhelp@gmail.com",
+    "description1": "Marketing department: <a href=\"#\">ob9cshelp@gmail.com</a><br/>Help Department: <a href=\"#\">OBhelp@gmail.com</a>",
     "title2": "3. Online Customer Service",
-    "description2": "Our customer service staff upholding conscientious service attitude, 24 hours online customer service to provide you inquiries and help services"
+    "description2": "Our customer service staff upholding conscientious service attitude, 24 hours <a href=\"#\">Online customer service</a> to provide you inquiries and help services"
   },
   "CUSTOMER_SERVICE": "CUSTOMER SERVICE",
   "customer_service_page": {
@@ -1337,6 +1351,21 @@
     "cup6": "UEFA Super Cup<br/>Champion",
     "": "",
     "<br/>": ""
+  },
+  "forget_password_page": {
+    "FORGET_PASSWORD": "FORGET PASSWORD",
+    "email_address": "Email Address",
+    "title": "Please enter your registered email address to reset your password ",
+    "email_address_label": "Please enter your registered email address",
+    "next": "NEXT",
+    "description": "Forget your email address? Contact <a href=\"#\">Customer Service</a> to retrieve password.",
+    "EMAIL_ADDRESS_NOT_FOUND": "EMAIL ADDRESS NOT FOUND",
+    "Please_contact_customer": "Please contact customer service if you forgot your email address.",
+    "success": "Successful",
+    "success_description": "Password reset succeeded. Please check your email for a new password to log in.",
+    "ok": "OK",
+    "": "",
+    "": ""
   },
   "": "",
   "": "",

@@ -541,10 +541,22 @@
       "des3": "我们网站是不需要通过额外插件进行浏览。不过，一些互动的信息和帮助，例如我们的娱乐场和真人荷官可能需要Flash 播放器才能正常显示。点击这里安装Flash播放器 插件：浏览器插件是一个添加在浏览器中具有特定功能或服务的软件。一些常见的插件有Java、Flash播放器、Adobe Acrobat、QuickTime和Microsoft Silverlight。"
     },
     "Anti_Hijacking_Guide_page": {
-      "1": "1. 安卓端防劫持教程",
-      "des1": "<ul><li>连接的WiFi名称长按</li><li>修改网络配置</li><li>显示高级选项</li><li>IP设定改为静止</li><li>DNS1改为8.8.8.8</li><li>DNS2改为8.8.4.4</li></ul>",
-      "2": "2. 苹果端防劫持教程",
-      "des2": "<ul><li>连接的wifi名称旁点击ⓘ</li><li>连接的wifi名称旁点击ⓘ</li><li>DNS1改为8.8.8.8</li><li>DNS2改为8.8.4.4</li></ul>"
+      "1": "1. Anti-hijacking tutorial on computer",
+      "des1": "(a) Connect to a WI-FI network to change the device's DNS settings",
+      "des2": "(b) Recommended on the computer<ul><li>Preferred DNS server 8.8.8.8</li><li>Alternate DNS server 114.114.114.114</li></ul>",
+      "des3": "(c) Open up control panel on your PC",
+      "des4": "d) View network status and tasks",
+      "des5": "(e) Click on local internet connection",
+      "des6": "(f) Select properties",
+      "des7": "(g) Select properties",
+      "des8": "(h) Input the DNS address and click OK",
+      "img1": "<img src=\"assets/images/help/Anti_Hijacking_Guide-1.png\" />",
+      "img2": "<img src=\"assets/images/help/Anti_Hijacking_Guide-2.png\" />",
+      "img3": "<img src=\"assets/images/help/Anti_Hijacking_Guide-3.png\" />",
+      "img4": "<img src=\"assets/images/help/Anti_Hijacking_Guide-4.png\" />",
+      "img5": "<img src=\"assets/images/help/Anti_Hijacking_Guide-5.png\" />",
+      "img6": "<img src=\"assets/images/help/Anti_Hijacking_Guide-6.png\" />",
+      "": ""
     },
     "Withdrawal_page": {
       "1": "1. 如何提款",
@@ -573,6 +585,8 @@
       "des22": "c) 【大小球】<span>投注两队总进球数的大小，总进球数比盘口大即大球，比盘口小即小球，刚好等于盘口退本金。如图：</span>"
     },
     "Lottery_Guide_page": {
+      "img2": "<img src=\"assets/images/help/lottery-guide-2.png\" />",
+      "img3": "<img src=\"assets/images/help/lottery-guide-3.png\" />",
       "1": "1. 如何参与4D 彩票游戏",
       "des1": "<ul><li>4D彩票游戏的玩法简单，只需要在 0000 到 9999 数字中，选择四位数的喜爱或幸运数字。</li><li>然后，决定投注种类，例如 \"ABC\" （大）或 \"A\"（小）；或同时下注大小两种。</li><li>\"ABC\"（大）增加您中奖的机会，共有23组中奖号码，也就是首奖、二奖、三奖，10个入围奖和10个安慰奖。</li><li>\"A\"（小）让您赢取更多奖金，但只适用于3组中奖号码，也就是首奖，二奖和三奖。</li><li>最后，决定每组号码的下注金额。1+3D游戏的最低下注金额是 1令吉。</li><li>高达7投注公司任君选择投注，以增加您中奖的机会！(万能，大马彩，多多，新加坡，山大跟，沙巴，砂劳越）</li></ul>",
       "2": "2. 包字投注",

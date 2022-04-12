@@ -276,3 +276,17 @@ $("#carouselSponsoredEventPhotos1").slick({
   arrows: false,
   dots: true,
 });
+
+
+const incorrectEmailModalElm = $("#incorrectEmailModal");
+if (incorrectEmailModalElm.length > 0) {
+  var incorrectEmailModal = new bootstrap.Modal(incorrectEmailModalElm, {});
+}
+$('.forget-password-page .btn-next').on('click', function (e) {
+  const forget_password_input = $('.forget-password-page #forget_password_input')
+  if (!forget_password_input.val()) {
+    incorrectEmailModal.show();
+  } else {
+    window.location.href = '/forget-password-success.html';
+  }
+});
