@@ -117,6 +117,7 @@
           text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
           margin-bottom: 15px;
         }
+
         .thank-you-bg {
           max-width: 400px;
           margin-left: -45px;
@@ -144,12 +145,25 @@
             line-height: 16px;
             color: #FFFFFF;
             height: 40px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
 
             &::placeholder {
               font-weight: 400;
               font-size: 14px;
               line-height: 16px;
               color: #FFFFFF;
+            }
+
+            &:focus {
+              box-shadow: none;
+            }
+
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover, 
+            &:-webkit-autofill:focus, 
+            &:-webkit-autofill:active{
+                -webkit-box-shadow: 0 0 0 30px white inset !important;
             }
           }
 
@@ -214,6 +228,7 @@
             &:hover {
               background: rgba(89, 126, 247, 1);
             }
+
             &.deposit_now {
               background-color: #597EF7;
             }

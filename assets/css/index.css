@@ -53,6 +53,12 @@ img {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1224px; } }
 
+@media only screen and (max-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: 100%;
+    padding-left: 15px !important;
+    padding-right: 15px !important; } }
+
 .form-control {
   font-size: 14px;
   line-height: 16px; }
@@ -497,12 +503,18 @@ a {
             font-size: 14px;
             line-height: 16px;
             color: #FFFFFF;
-            height: 40px; }
+            height: 40px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px; }
             .login__container__content__form .input-group .form-control::placeholder {
               font-weight: 400;
               font-size: 14px;
               line-height: 16px;
               color: #FFFFFF; }
+            .login__container__content__form .input-group .form-control:focus {
+              box-shadow: none; }
+            .login__container__content__form .input-group .form-control:-webkit-autofill, .login__container__content__form .input-group .form-control:-webkit-autofill:hover, .login__container__content__form .input-group .form-control:-webkit-autofill:focus, .login__container__content__form .input-group .form-control:-webkit-autofill:active {
+              -webkit-box-shadow: 0 0 0 30px white inset !important; }
         .login__container__content__form .remember-password {
           font-weight: 400;
           font-size: 12px;
