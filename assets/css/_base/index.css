@@ -210,3 +210,22 @@ a {
         line-height: 16px;
         text-align: center;
         color: #FFFFFF; }
+
+.paginations {
+  text-align: center; }
+  .paginations__item {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #878EA6;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0 2px; }
+    .paginations__item img {
+      height: 15px; }

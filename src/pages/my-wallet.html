@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'My Wallet'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout my-wallet-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 4})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content my-wallet-page__content">
+              <h2 class="my-wallet-page__content__title" data-i18n="MY_WALLET"></h2>
+
+              <div class="my-wallet-page__content__card">
+                <div class="my-wallet-page__content__card__title">
+                  <span data-i18n="Main_Wallet"></span>
+                </div>
+                <div class="row my-wallet-page__content__card__balance">
+                  <div class="col-7">
+                    <div class="my-wallet-page__content__card__balance__item left">
+                      <img src="assets/images/my-wallet/balance.png" />
+                      <span data-i18n="Total_Balance"></span>
+                      <div class="vr"></div>
+                      <span class="currency">MYR 5888.20</span>
+                      <img src="assets/images/my-wallet/refresh.png" />
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="my-wallet-page__content__card__balance__item right">
+                      <a href="#">
+                        <img src="assets/images/my-wallet/deposit.png" />
+                        <span data-i18n="Deposit"></span>
+                      </a>
+                      <a href="#">
+                        <img src="assets/images/my-wallet/withdraw.png" />
+                        <span data-i18n="Withdrawal"></span>
+                      </a>
+                      <a href="#">
+                        <img src="assets/images/my-wallet/rebate.png" />
+                        <span data-i18n="Rebate"></span>
+                      </a>
+                      <a href="#">
+                        <img src="assets/images/my-wallet/bank-account.png" />
+                        <span data-i18n="Bank_Acc"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="my-wallet-page__content__card">
+                <div class="my-wallet-page__content__card__title">
+                  <span data-i18n="Recent_Transaction"></span>
+                </div>
+                <div class="my-wallet-page__content__card__Recent_Transaction">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" data-i18n="my_wallet_page.no"></th>
+                        <th scope="col" data-i18n="my_wallet_page.Date"></th>
+                        <th scope="col" data-i18n="my_wallet_page.Transaction_ID"></th>
+                        <th scope="col" data-i18n="my_wallet_page.Transaction_Type"></th>
+                        <th scope="col" data-i18n="my_wallet_page.Amount_MYR"></th>
+                        <th scope="col" data-i18n="my_wallet_page.Remarks"></th>
+                        <th scope="col" data-i18n="my_wallet_page.Status"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>2022 - 03 - 24 13:57:09</td>
+                        <td>1234567890</td>
+                        <td class="text-start">
+                          <img src="assets/images/wallet/home/items/1.png" /> <span data-i18n="Deposit"></span> 
+                        </td>
+                        <td>100.00</td>
+                        <td data-i18n="my_wallet_page.Maybank_Deposit"></td>
+                        <td class="success" data-i18n="my_wallet_page.Successful"></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>2022 - 03 - 24 13:57:09</td>
+                        <td>1234567890</td>
+                        <td class="text-start">
+                          <img src="assets/images/wallet/home/items/2.png" /> <span data-i18n="Withdrawal"></span> 
+                        </td>
+                        <td>500.00</td>
+                        <td data-i18n="my_wallet_page.Fail_to_meet_turnover"></td>
+                        <td class="failed" data-i18n="my_wallet_page.Failed"></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>2022 - 03 - 24 13:57:09</td>
+                        <td>1234567890</td>
+                        <td class="text-start">
+                          <img src="assets/images/wallet/home/items/3.png" /> <span data-i18n="promotion"></span> 
+                        </td>
+                        <td>30.00</td>
+                        <td data-i18n="my_wallet_page.30_Free_30"></td>
+                        <td class="success" data-i18n="my_wallet_page.Successful"></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>2022 - 03 - 24 13:57:09</td>
+                        <td>1234567890</td>
+                        <td class="text-start">
+                          <img src="assets/images/wallet/home/items/4.png" /> <span data-i18n="Rebate"></span> 
+                        </td>
+                        <td>5.17</td>
+                        <td data-i18n="my_wallet_page.Cash_Rebate"></td>
+                        <td class="success" data-i18n="my_wallet_page.Successful"></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>2022 - 03 - 24 13:57:09</td>
+                        <td>1234567890</td>
+                        <td class="text-start">
+                          <img src="assets/images/wallet/home/items/1.png" /> <span data-i18n="Deposit"></span> 
+                        </td>
+                        <td>100.00</td>
+                        <td data-i18n="my_wallet_page.Maybank_Deposit"></td>
+                        <td class="success" data-i18n="my_wallet_page.Successful"></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>2022 - 03 - 24 13:57:09</td>
+                        <td>1234567890</td>
+                        <td class="text-start">
+                          <img src="assets/images/wallet/home/items/2.png" /> <span data-i18n="Withdrawal"></span> 
+                        </td>
+                        <td>500.00</td>
+                        <td data-i18n="my_wallet_page.Fail_to_meet_turnover"></td>
+                        <td class="failed" data-i18n="my_wallet_page.Failed"></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>2022 - 03 - 24 13:57:09</td>
+                        <td>1234567890</td>
+                        <td class="text-start">
+                          <img src="assets/images/wallet/home/items/3.png" /> <span data-i18n="promotion"></span> 
+                        </td>
+                        <td>30.00</td>
+                        <td data-i18n="my_wallet_page.30_Free_30"></td>
+                        <td class="success" data-i18n="my_wallet_page.Successful"></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>2022 - 03 - 24 13:57:09</td>
+                        <td>1234567890</td>
+                        <td class="text-start">
+                          <img src="assets/images/wallet/home/items/4.png" /> <span data-i18n="Rebate"></span> 
+                        </td>
+                        <td>5.17</td>
+                        <td data-i18n="my_wallet_page.Cash_Rebate"></td>
+                        <td class="success" data-i18n="my_wallet_page.Successful"></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>2022 - 03 - 24 13:57:09</td>
+                        <td>1234567890</td>
+                        <td class="text-start">
+                          <img src="assets/images/wallet/home/items/1.png" /> <span data-i18n="Deposit"></span> 
+                        </td>
+                        <td>100.00</td>
+                        <td data-i18n="my_wallet_page.Maybank_Deposit"></td>
+                        <td class="success" data-i18n="my_wallet_page.Successful"></td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>2022 - 03 - 24 13:57:09</td>
+                        <td>1234567890</td>
+                        <td class="text-start">
+                          <img src="assets/images/wallet/home/items/2.png" /> <span data-i18n="Withdrawal"></span> 
+                        </td>
+                        <td>500.00</td>
+                        <td data-i18n="my_wallet_page.Fail_to_meet_turnover"></td>
+                        <td class="failed" data-i18n="my_wallet_page.Failed"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="paginations mt-4 mb-3">
+                    <button class="paginations__item btn">
+                      <img src="assets/images/slots/pre.png" />
+                    </button>
+                    <button class="paginations__item btn">1</button>
+                    <button class="paginations__item btn">2</button>
+                    <button class="paginations__item btn">3</button>
+                    <button class="paginations__item btn">
+                      <img src="assets/images/slots/next.png" />
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>
