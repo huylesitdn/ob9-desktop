@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Referral Program'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout referral-program-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 11})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content referral-program-page__content">
+              <div class="referral-program-page__content__top row">
+                <div class="col-6 referral-program-page__content__top__left">
+                  <div class="title" data-i18n="referral_program_page.OB_Special_Reward"></div>
+                  <div class="subtitle" data-i18n="referral_program_page.Open_to_All_OB_members"></div>
+                  <div class="subtitle" data-i18n="referral_program_page.Event_period_Long_Term"></div>
+                  <img src="assets/images/referral-program/pic-1.png" />
+                </div>
+                <div class="col-6 ps-0">
+                  <div class="referral-program-page__content__top__right">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" data-i18n="referral_program.Referee_First_Deposit"></th>
+                          <th scope="col" data-i18n="referral_program.Referral_Bonus"></th>
+                          <th scope="col" data-i18n="Turnover"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>>MYR100</td>
+                          <td>MYR6</td>
+                          <td rowspan="9">x 3</td>
+                        </tr>
+                        <tr>
+                          <td>>MYR300</td>
+                          <td>MYR16</td>
+                        </tr>
+                        <tr>
+                          <td>>MYR500</td>
+                          <td>MYR26</td>
+                        </tr>
+                        <tr>
+                          <td>>MYR1,000</td>
+                          <td>MYR56</td>
+                        </tr>
+                        <tr>
+                          <td>>MYR5,000</td>
+                          <td>MYR266</td>
+                        </tr>
+                        <tr>
+                          <td>>MYR10,000</td>
+                          <td>MYR566</td>
+                        </tr>
+                        <tr>
+                          <td>>MYR20,000</td>
+                          <td>MYR1166</td>
+                        </tr>
+                        <tr>
+                          <td>>MYR50,000</td>
+                          <td>MYR2666</td>
+                        </tr>
+                        <tr>
+                          <td>>MYR200,000</td>
+                          <td>MYR9666</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="referral-program-page__content__bottom row">
+                <div class="col-5 referral-program-page__content__bottom__left">
+                  <img src="assets/images/referral-program/pic-3.png" />
+                </div>
+                <div class="col-7 referral-program-page__content__bottom__right">
+                  <div class="referral-program-page__content__bottom__right__title" data-i18n="referral_program.term"></div>
+
+                  <ul class="term-items">
+                    <li data-i18n="referral_program.term1"></li>
+                    <li data-i18n="referral_program.term2"></li>
+                    <li data-i18n="referral_program.term3"></li>
+                    <li data-i18n="referral_program.term4"></li>
+                    <li data-i18n="referral_program.term5"></li>
+                    <li data-i18n="referral_program.term6"></li>
+                    <li data-i18n="referral_program.term7"></li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>
