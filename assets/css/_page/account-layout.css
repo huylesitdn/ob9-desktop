@@ -1,10 +1,15 @@
 .account-layout {
   background: #E9EDF8;
-  background-image: url(../icons/profile/bg.png); }
+  background-image: url(../icons/profile/bg.png);
+  background-repeat: no-repeat; }
   .account-layout__container {
     padding-top: 30px; }
     .account-layout__container__content__left .profile-navbar {
-      padding-right: 15px; }
+      padding-right: 15px;
+      height: 100%;
+      display: flex;
+      place-content: flex-start;
+      flex-direction: column; }
       .account-layout__container__content__left .profile-navbar__info {
         background: conic-gradient(from 185.36deg at 50% 48%, #899FF3 0deg, #7F97F8 136.88deg, #799AFF 286.87deg, #889EF8 360deg);
         border-radius: 20px;
@@ -50,7 +55,8 @@
         background: #FFFFFF;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 20px;
-        padding: 20px 15px; }
+        padding: 20px 15px;
+        height: 100%; }
         .account-layout__container__content__left .profile-navbar__navbar__Total_Balance {
           font-weight: 400;
           font-size: 14px;
