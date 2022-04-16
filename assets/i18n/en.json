@@ -1460,8 +1460,17 @@
     "": "",
     "": ""
   },
-  "": "",
-  "": "",
+  "deposit_page": {
+    "Deposit_will_credit_into_main_wallet": "Deposit will credit into main wallet",
+    "Deposit_Tutorial": "Deposit Tutorial",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": ""
+  },
+  "Turnover_requirement": "Turnover requirement",
   "": "",
   "": "",
   "": "",

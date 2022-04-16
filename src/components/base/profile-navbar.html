@@ -21,17 +21,17 @@
       <img src="assets/icons/profile/refresh.png" />
     </div>
     <div class="profile-navbar__navbar__top-icon">
-      <a href="#" class="profile-navbar__navbar__top-icon__items @@if (context.active == 1) {active}">
+      <a href="/deposit.html" class="profile-navbar__navbar__top-icon__items @@if (context.activeBalance == 1) {active}">
         <img class="profile-navbar__navbar__top-icon__items__img" src="assets/icons/profile/deposit.png" />
         <img class="profile-navbar__navbar__top-icon__items__img-active" src="assets/icons/profile/deposit-active.png" />
         <div data-i18n="account_layout.Deposit"></div>
       </a>
-      <a href="#" class="profile-navbar__navbar__top-icon__items @@if (context.active == 2) {active}">
+      <a href="#" class="profile-navbar__navbar__top-icon__items @@if (context.activeBalance == 2) {active}">
         <img class="profile-navbar__navbar__top-icon__items__img" src="assets/icons/profile/withdrawal.png" />
         <img class="profile-navbar__navbar__top-icon__items__img-active" src="assets/icons/profile/withdrawal-active.png" />
         <div data-i18n="account_layout.Withdrawal"></div>
       </a>
-      <a href="#" class="profile-navbar__navbar__top-icon__items @@if (context.active == 3) {active}">
+      <a href="#" class="profile-navbar__navbar__top-icon__items @@if (context.activeBalance == 3) {active}">
         <img class="profile-navbar__navbar__top-icon__items__img" src="assets/icons/profile/transfer.png" />
         <img class="profile-navbar__navbar__top-icon__items__img-active" src="assets/icons/profile/transfer-active.png" />
         <div data-i18n="account_layout.Rebate"></div>

@@ -100,6 +100,29 @@ a {
   color: #597EF7;
   text-decoration: none; }
 
+.modal.modal-custom .modal-content {
+  border-radius: 20px;
+  border: none; }
+  .modal.modal-custom .modal-content .modal-header {
+    text-align: center;
+    padding: 30px;
+    border-bottom: none; }
+    .modal.modal-custom .modal-content .modal-header h5 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 14px;
+      color: #333333; }
+  .modal.modal-custom .modal-content .modal-body {
+    padding: 35px 40px; }
+    .modal.modal-custom .modal-content .modal-body ul {
+      list-style: decimal; }
+      .modal.modal-custom .modal-content .modal-body ul li {
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000; }
+
 .modal.slide-up {
   top: auto;
   bottom: 0;

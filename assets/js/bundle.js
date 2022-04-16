@@ -290,3 +290,219 @@ $('.forget-password-page .btn-next').on('click', function (e) {
     window.location.href = '/forget-password-success.html';
   }
 });
+
+const selectPromotionModalElm = $("#selectPromotionModal");
+if (selectPromotionModalElm.length > 0) {
+  var selectPromotionModal = new bootstrap.Modal(selectPromotionModalElm, {});
+}
+// $(".select-promotion__items").on("click", function (e) {
+//   setTimeout(() => {
+//     selectPromotionModal.hide();
+//     $(".deposit-amount__summary").removeClass("d-none");
+//     $(".deposit-amount__action .btn-submit").attr("disabled", false);
+//     $("#select-promotion-placeholder").addClass("fw-bold");
+//     $("#select-promotion-placeholder").css("color", "#000");
+//     $("#select-promotion-placeholder").text("Welcome Bonus up to 180%");
+//   }, 500);
+// });
+
+$(".select-promotion__items input[name='select-promotion-radio']").change(
+  function () {
+
+    const current_value = $(
+      ".select-promotion__items input[name='select-promotion-radio']:checked"
+    ).val();
+    setTimeout(() => {
+      if(current_value === '1') {
+        const Welcome_Bonus_up_to = translator.translateForKey('Welcome_Bonus_up_to', _get_language);
+        $('.Deposit_Summary_Promotion').text(Welcome_Bonus_up_to);
+        $('.Deposit_Summary_Bonus').text('MYR 500');
+        $('.Deposit_Summary_Turnover').text('x25');
+        $('.Deposit_Summary_Turnover_Requirement').text('MYR 10,000');
+        $(".select-promotion-placeholder").text(Welcome_Bonus_up_to);
+      } else {
+        const Don_want_to_claim_any_promotion = translator.translateForKey('Don_want_to_claim_any_promotion', _get_language);
+        $('.Deposit_Summary_Promotion').text(Don_want_to_claim_any_promotion);
+        $('.Deposit_Summary_Bonus').text('MYR 0');
+        $('.Deposit_Summary_Turnover').text('x1');
+        $('.Deposit_Summary_Turnover_Requirement').text('MYR 500');
+        $(".select-promotion-placeholder").text(Don_want_to_claim_any_promotion);
+      }
+      selectPromotionModal.hide();
+      $(".deposit-amount__summary").removeClass("d-none");
+      $(".deposit-amount__action .btn-submit").attr("disabled", false);
+      $(".select-promotion-placeholder").addClass("fw-bold");
+      $(".select-promotion-placeholder").css("color", "#000");
+    }, 500);
+  }
+);
+
+const selectBankModalElm = $("#selectBankModal");
+if (selectBankModalElm.length > 0) {
+  var selectBankModal = new bootstrap.Modal(selectBankModalElm, {});
+}
+$(".select-bank-modal__items input[name='select-bank-modal-radio']").change(
+  function () {
+
+    const current_value = $(
+      ".select-bank-modal__items input[name='select-bank-modal-radio']:checked"
+    ).val();
+    setTimeout(() => {
+      selectBankModal.hide();
+      $(".select-bank-placeholder").text(current_value);
+      $(".select-bank-placeholder").addClass("fw-bold");
+      $(".select-bank-placeholder").css("color", "#000");
+    }, 500);
+  }
+);
+
+$(".add-bank-account .select-bank-modal__items").on("click", function (e) {
+  setTimeout(() => {
+    selectBankModal.hide();
+    const bank_input = $(
+      ".add-bank-account .add-bank-account__content__input__select-bank__input__placeholder"
+    );
+    bank_input.html("MAYBANK");
+    bank_input.addClass("fw-bold");
+    const submit_btn = $(
+      ".add-bank-account .add-bank-account__content__submit .btn"
+    );
+    submit_btn.removeClass("disabled");
+    // submit_btn.prop("disabled", false);
+  }, 500);
+});
+
+$(".deposit-page .deposit-amount__item input[name='depositAmount']").change(
+  function () {
+    const amount = $(this).data("amount");
+    $(".deposit-amount-input").val(amount);
+    $(".deposit-amount-input-label").hide();
+  }
+);
+
+$(".deposit-page .deposit-items__content input[name='crypto_option']").change(
+  function () {
+
+    const current_value = $(
+      ".deposit-page .deposit-items__content input[name='crypto_option']:checked"
+    ).val();
+    if(current_value === 'USDT') {
+      $('#TRC_20').show();
+    } else {
+      $('#TRC_20').hide();
+    }
+  }
+);
+
+
+$('#Memo_copy').hide();
+$(".deposit-page .deposit-items__content input[name='network_option']").change(
+  function () {
+
+    const current_value = $(
+      ".deposit-page .deposit-items__content input[name='network_option']:checked"
+    ).val();
+    if(current_value === 'BEP 20') {
+      $('#Memo_copy').show();
+    } else {
+      $('#Memo_copy').hide();
+    }
+  }
+);
+
+$(".deposit-amount-input").on("input", function (e) {
+  const value = $(this).val();
+  if (value > 50 && value < 50000) {
+    $(".deposit-page .btn-submit").prop("disabled", false);
+    $(".deposit-amount-input-label").hide();
+  } else {
+    $(".deposit-page .btn-submit").prop("disabled", true);
+    $(".deposit-amount-input-label").show();
+  }
+});
+
+$(".withdrawal #withdrawal-input").on("input", function (e) {
+  const value = $(this).val();
+  if (value > 50 && value < 50000) {
+    $(".withdrawal .withdrawal-submit").prop("disabled", false);
+    $("#withdrawal-amount-input-label").hide();
+  } else {
+    $(".withdrawal .withdrawal-submit").prop("disabled", true);
+    $("#withdrawal-amount-input-label").show();
+  }
+});
+
+$(".withdrawal .withdrawal-max-value").on("click", function (e) {
+  $(".withdrawal #withdrawal-input").val(5800);
+  $("#withdrawal-amount-input-label").hide();
+  $(".withdrawal .withdrawal-submit").prop("disabled", false);
+});
+
+const successModalElm = $("#depositSuccessModal");
+if (successModalElm.length > 0) {
+  var successModal = new bootstrap.Modal(successModalElm, {});
+}
+$("#online-banking .btn-submit").on("click", function (e) {
+  successModal.show();
+});
+
+const paymentGatewaySuccessModalElm = $("#paymentGatewaySuccessModal");
+if (paymentGatewaySuccessModalElm.length > 0) {
+  var paymentGatewaySuccessModal = new bootstrap.Modal(
+    paymentGatewaySuccessModalElm,
+    {}
+  );
+}
+$("#payment-gateway .btn-submit").on("click", function (e) {
+  paymentGatewaySuccessModal.show();
+});
+
+const transferConfirmModalElm = $("#transferConfirmModal");
+if (transferConfirmModalElm.length > 0) {
+  var transferConfirmModal = new bootstrap.Modal(transferConfirmModalElm, {});
+}
+$("#autoTransferCheck").on("click", function (e) {
+  const isCheck = $(this).is(":checked");
+  if (!isCheck) {
+    e.preventDefault();
+    transferConfirmModal.show();
+  } else {
+    $(".transfer .transfer__content__auto-switch-off").addClass("d-none");
+    $(".transfer .transfer__content__action").addClass("d-none");
+  }
+});
+$("#transferConfirmModal .btn-confirm").on("click", function (e) {
+  const isCheck = $("#autoTransferCheck").is(":checked");
+  $("#autoTransferCheck").prop("checked", !isCheck);
+  transferConfirmModal.hide();
+  $(".transfer .transfer__content__auto-switch-off").removeClass("d-none");
+  $(".transfer .transfer__content__action").removeClass("d-none");
+});
+
+const chooseWalletModalElm = $("#chooseWalletModal");
+if (chooseWalletModalElm.length > 0) {
+  var chooseWalletModal = new bootstrap.Modal(chooseWalletModalElm, {});
+}
+$("#chooseWalletModal .choose-modal__items input[name=choose-modal-radio]").on(
+  "change",
+  function (e) {
+    const current_value = $(
+      "#chooseWalletModal .choose-modal__items input[name=choose-modal-radio]:checked"
+    ).val();
+    setTimeout(() => {
+      const attach_new_elem = current_value.split("_");
+      $("#auto-switch-off--left").html(attach_new_elem[0]);
+      $("#auto-switch-off--right").html(attach_new_elem[1]);
+      chooseWalletModal.hide();
+    }, 500);
+  }
+);
+
+$(
+  "#selectProfilePictureModal .select-profile-picture-modal__items__item input[name=select-profile-picture-modal-radio]"
+).on("change", function (e) {
+  const current_value = $(
+    "#selectProfilePictureModal .select-profile-picture-modal__items__item input[name=select-profile-picture-modal-radio]:checked"
+  ).data("src");
+  $(".profile .avatar > div > img").attr("src", current_value);
+});
