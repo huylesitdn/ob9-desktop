@@ -1,6 +1,6 @@
 <div class="row deposit-amount">
   <!-- SELECT -->
-  <div class="col-3 deposit-amount__item">
+  <div class="col-2 deposit-amount__item">
     <label class="deposit-amount__item__label">
       <div class="deposit-amount__item__label__title fw-bold">ERC 20</div>
       <input class="deposit-amount__item__label__checkbox" type="radio" name="network_option" value="ERC 20" checked="checked" />
@@ -8,7 +8,7 @@
     </label>
   </div>
   
-  <div class="col-3 deposit-amount__item">
+  <div class="col-2 deposit-amount__item">
     <label class="deposit-amount__item__label">
       <div class="deposit-amount__item__label__title fw-bold">BEP 2</div>
       <input class="deposit-amount__item__label__checkbox" type="radio" name="network_option" value="BEP 20" />
@@ -16,12 +16,21 @@
     </label>
   </div>
 
-  <div class="col-3 deposit-amount__item" id="TRC_20">
+  <div class="col-2 deposit-amount__item" id="TRC_20">
     <label class="deposit-amount__item__label">
       <div class="deposit-amount__item__label__title fw-bold">TRC 20</div>
       <input class="deposit-amount__item__label__checkbox" type="radio" name="network_option" value="TRC 20" />
       <span class="checkmark"></span>
     </label>
   </div>
+
+  <div class="col deposit-amount__item">
+    <a href="#" class="info-link">
+      <img class="icon" src="assets/icons/info.png" />
+      <span data-i18n="Compare_network"></span>
+    </a>
+  </div>
   <!-- END SELECT -->
+
+  <div class="deposit-minimun-crypto" data-i18n="deposit_minimun_crypto"></div>
 </div>

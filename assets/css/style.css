@@ -28,6 +28,8 @@
         bottom: 0;
         border: 1px solid transparent;
         border-radius: 10px; }
+        .select-bank__item__label .checkmark:hover {
+          border-color: #597EF7; }
       .select-bank__item__label__checkbox {
         display: none; }
         .select-bank__item__label__checkbox:checked ~ .checkmark {
@@ -47,8 +49,8 @@
         max-height: 30px;
         max-width: 30px; }
       .select-bank__item__label__title {
-        font-size: 12px;
-        line-height: 12px;
+        font-size: 14px;
+        line-height: 14px;
         text-align: center;
         color: #000000; }
 
@@ -164,10 +166,33 @@
       line-height: 14px;
       color: #000000;
       padding-left: 0; }
+  .deposit-amount .deposit-minimun-crypto {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #8590AD; }
+    .deposit-amount .deposit-minimun-crypto span {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      color: #FF0000; }
   .deposit-amount__item {
     margin-bottom: 15px;
     padding-left: 8px;
     padding-right: 8px; }
+    .deposit-amount__item .info-link {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: right;
+      color: #4080FF;
+      display: flex;
+      place-content: flex-start;
+      place-items: center;
+      gap: 5px;
+      height: 100%; }
+      .deposit-amount__item .info-link .icon {
+        max-width: 18px; }
     .deposit-amount__item__label {
       background: #FFFFFF;
       border: 1px solid #EEEEEE;
@@ -252,21 +277,35 @@
         color: #000000;
         padding-bottom: 25px; }
 
-#selectBankModal .select-bank-modal__items {
-  display: flex;
-  place-content: flex-start;
-  place-items: center;
-  gap: 15px;
-  border-bottom: 1px solid #f2f2f2;
-  padding: 15px; }
-  #selectBankModal .select-bank-modal__items__img {
-    min-width: 50px;
-    text-align: center; }
-  #selectBankModal .select-bank-modal__items__content {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 14px;
-    color: #000000; }
+#selectBankModal .select-bank-modal {
+  padding: 15px 50px; }
+  #selectBankModal .select-bank-modal__items {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 100px;
+    padding: 15px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    cursor: pointer; }
+    #selectBankModal .select-bank-modal__items:hover {
+      border-color: #597EF7; }
+    #selectBankModal .select-bank-modal__items__img {
+      height: 36px;
+      text-align: center; }
+      #selectBankModal .select-bank-modal__items__img img {
+        max-width: 36px;
+        max-height: 36px; }
+    #selectBankModal .select-bank-modal__items__content {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 14px;
+      color: #000000; }
 
 #chooseWalletModal .choose-modal__items {
   display: flex;
