@@ -1,0 +1,175 @@
+.promotion-page {
+  background: #F8F8F8;
+
+
+  &__top-bg {
+    margin-bottom: 15px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    &__content {
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      padding: 25px;
+
+      .nav {
+        border-bottom: none;
+        gap: 12px;
+        margin-bottom: 25px;
+
+        .nav-item {
+          .nav-link {
+            width: 120px;
+            min-height: 42px;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            gap: 7px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+
+            background: #FFFFFF;
+            border: 1px solid #597EF7;
+            box-sizing: border-box;
+            border-radius: 20px;
+
+            img {
+              max-width: 22px;
+              max-height: 22px;
+
+              &.img-default {}
+
+              &.img-active {
+                display: none;
+              }
+            }
+
+            span {
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 14px;
+              color: #878EA6;
+              text-transform: uppercase;
+            }
+
+            &:hover,
+            &.active {
+              background-image: url(../images/promotion/menu/btn-selected.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 110%;
+              border-color: transparent;
+
+              img {
+
+                &.img-default {
+                  display: none;
+                }
+
+                &.img-active {
+                  display: initial;
+                }
+              }
+
+              span {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .tab-content {
+        .promotion-items {
+          &__content {
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+
+            &__icon {
+              position: absolute;
+              top: -10px;
+              left: 5px;
+              background-repeat: no-repeat;
+              background-size: contain;
+              width: 80px;
+              height: 55px;
+              content: "";
+
+              &.new {
+                background-image: url(../images/promotion/new.png)
+              }
+
+              &.limited {
+                background-image: url(../images/promotion/limited.png)
+              }
+
+              &.vip {
+                background-image: url(../images/promotion/vip.png)
+              }
+
+              &.daily {
+                background-image: url(../images/promotion/daily.png)
+              }
+            }
+
+            &__img {
+              max-width: 100%;
+            }
+
+            &__text {
+              padding: 8px;
+              display: flex;
+              place-content: space-between;
+              place-items: center;
+              border: 1px solid #1890FF;
+              border-top: none;
+              border-bottom-left-radius: 10px;
+              border-bottom-right-radius: 10px;
+
+
+              &__title {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 20px;
+                color: #343434;
+                margin-bottom: 3px;
+              }
+
+              &__description {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #343434;
+              }
+
+              &__btn {
+                min-height: 40px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+
+                display: flex;
+                place-content: center;
+                place-items: center;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+
+}

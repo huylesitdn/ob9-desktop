@@ -354,5 +354,9 @@ a {
     img {
       height: 15px;
     }
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }

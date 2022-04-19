@@ -1,0 +1,107 @@
+.promotion-page {
+  background: #F8F8F8; }
+  .promotion-page__top-bg {
+    margin-bottom: 15px; }
+    .promotion-page__top-bg img {
+      width: 100%; }
+  .promotion-page__container__content {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 25px; }
+    .promotion-page__container__content .nav {
+      border-bottom: none;
+      gap: 12px;
+      margin-bottom: 25px; }
+      .promotion-page__container__content .nav .nav-item .nav-link {
+        width: 120px;
+        min-height: 42px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        gap: 7px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background: #FFFFFF;
+        border: 1px solid #597EF7;
+        box-sizing: border-box;
+        border-radius: 20px; }
+        .promotion-page__container__content .nav .nav-item .nav-link img {
+          max-width: 22px;
+          max-height: 22px; }
+          .promotion-page__container__content .nav .nav-item .nav-link img.img-active {
+            display: none; }
+        .promotion-page__container__content .nav .nav-item .nav-link span {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 14px;
+          color: #878EA6;
+          text-transform: uppercase; }
+        .promotion-page__container__content .nav .nav-item .nav-link:hover, .promotion-page__container__content .nav .nav-item .nav-link.active {
+          background-image: url(../images/promotion/menu/btn-selected.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 110%;
+          border-color: transparent; }
+          .promotion-page__container__content .nav .nav-item .nav-link:hover img.img-default, .promotion-page__container__content .nav .nav-item .nav-link.active img.img-default {
+            display: none; }
+          .promotion-page__container__content .nav .nav-item .nav-link:hover img.img-active, .promotion-page__container__content .nav .nav-item .nav-link.active img.img-active {
+            display: initial; }
+          .promotion-page__container__content .nav .nav-item .nav-link:hover span, .promotion-page__container__content .nav .nav-item .nav-link.active span {
+            color: #fff; }
+    .promotion-page__container__content .tab-content .promotion-items__content {
+      box-sizing: border-box;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      position: relative;
+      overflow: hidden; }
+      .promotion-page__container__content .tab-content .promotion-items__content__icon {
+        position: absolute;
+        top: -10px;
+        left: 5px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80px;
+        height: 55px;
+        content: ""; }
+        .promotion-page__container__content .tab-content .promotion-items__content__icon.new {
+          background-image: url(../images/promotion/new.png); }
+        .promotion-page__container__content .tab-content .promotion-items__content__icon.limited {
+          background-image: url(../images/promotion/limited.png); }
+        .promotion-page__container__content .tab-content .promotion-items__content__icon.vip {
+          background-image: url(../images/promotion/vip.png); }
+        .promotion-page__container__content .tab-content .promotion-items__content__icon.daily {
+          background-image: url(../images/promotion/daily.png); }
+      .promotion-page__container__content .tab-content .promotion-items__content__img {
+        max-width: 100%; }
+      .promotion-page__container__content .tab-content .promotion-items__content__text {
+        padding: 8px;
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+        border: 1px solid #1890FF;
+        border-top: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px; }
+        .promotion-page__container__content .tab-content .promotion-items__content__text__title {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 20px;
+          color: #343434;
+          margin-bottom: 3px; }
+        .promotion-page__container__content .tab-content .promotion-items__content__text__description {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #343434; }
+        .promotion-page__container__content .tab-content .promotion-items__content__text__btn {
+          min-height: 40px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 14px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          display: flex;
+          place-content: center;
+          place-items: center; }
