@@ -421,21 +421,21 @@ $(".deposit-amount-input").on("input", function (e) {
   }
 });
 
-$(".withdrawal #withdrawal-input").on("input", function (e) {
+$(".withdrawal-page #withdrawal-input").on("input", function (e) {
   const value = $(this).val();
   if (value > 50 && value < 50000) {
-    $(".withdrawal .withdrawal-submit").prop("disabled", false);
+    $(".withdrawal-page .withdrawal-submit").prop("disabled", false);
     $("#withdrawal-amount-input-label").hide();
   } else {
-    $(".withdrawal .withdrawal-submit").prop("disabled", true);
+    $(".withdrawal-page .withdrawal-submit").prop("disabled", true);
     $("#withdrawal-amount-input-label").show();
   }
 });
 
-$(".withdrawal .withdrawal-max-value").on("click", function (e) {
-  $(".withdrawal #withdrawal-input").val(5800);
+$(".withdrawal-page .withdrawal-max-value").on("click", function (e) {
+  $(".withdrawal-page #withdrawal-input").val(5800);
   $("#withdrawal-amount-input-label").hide();
-  $(".withdrawal .withdrawal-submit").prop("disabled", false);
+  $(".withdrawal-page .withdrawal-submit").prop("disabled", false);
 });
 
 const successModalElm = $("#depositSuccessModal");

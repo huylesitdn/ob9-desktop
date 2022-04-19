@@ -1473,6 +1473,17 @@
     "": ""
   },
   "Turnover_requirement": "Turnover requirement",
+  "withdrawal_page": {
+    "WITHDRAWAL": "WITHDRAWAL",
+    "title": "Kindly check with our 24/7 Livechat if your withdrawal is pending for more than 30 minutes.",
+    "Add_Bank_Account": "Add Bank Account",
+    "description": "Today available withdrawal times: 10 Times, Today available withdrawal amount: MYR50,000, Max Per Transaction Amount: MYR50,000",
+    "": "",
+    "": "",
+    "": ""
+  },
+  "": "",
+  "": "",
   "": "",
   "": "",
   "": "",

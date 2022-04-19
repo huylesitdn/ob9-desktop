@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Withdrawal'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout withdrawal-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 4, activeBalance: 2})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content withdrawal-page__content">
+              
+              <div class="withdrawal-page__content__title">
+                <div>
+                  <span class="title" data-i18n="withdrawal_page.WITHDRAWAL"></span>
+                  <span class="subtitle" data-i18n="withdrawal_page.title"></span>
+                </div>
+              </div>
+
+
+              <div class="withdrawal-page__content__main-wallet row">
+                <div class="col-6">
+                  <div class="withdrawal-page__content__main-wallet__item">
+                    <div class="withdrawal-page__content__main-wallet__item__img">
+                      <img src="assets/icons/main-wallet.png" />
+                    </div>
+                    <div>
+                      <div class="withdrawal-page__content__main-wallet__item__title" data-i18n="Main_Wallet"></div>
+                      <div class="withdrawal-page__content__main-wallet__item__currency">
+                        <span>MYR 5888.20</span>
+                        <img src="assets/images/my-wallet/refresh.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="withdrawal-page__content__bank-account">
+                <div class="withdrawal-page__content__bank-account__label" data-i18n="Bank_Account"></div>
+                <div class="withdrawal-page__content__bank-account__container row">
+                  <div class="col-2">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#addBankModal" class="withdrawal-page__content__bank-account__container__item">
+                      <div class="withdrawal-page__content__bank-account__container__item__img add">
+                        <img src="assets/icons/plus.png" />
+                      </div>
+                      <div class="withdrawal-page__content__bank-account__container__item__text" data-i18n="withdrawal_page.Add_Bank_Account"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="withdrawal-page__content__description" data-i18n="withdrawal_page.description"></div>
+
+              <div class="withdrawal-page__content__input row">
+                <div class="col-8">
+                  <div class="input-group">
+                    <span class="input-group-text left">MYR</span>
+                    <input type="number" class="form-control" id="withdrawal-input" data-i18n="wallet_page.withdrawal.Please_enter_withdrawal_amount" data-i18n-attr="placeholder"  />
+                    <span class="input-group-text right withdrawal-max-value"><img src="assets/images/wallet/max.png" /> <span data-i18n="wallet_page.withdrawal.Max">Max</span></span>
+                  </div>
+                  <div id="withdrawal-amount-input-label" class="text-danger mt-1" style="font-size: 11px; margin-left: 60px;"  data-i18n="Min_Max_Limit"></div>
+                </div>
+              </div>
+
+              <div class="withdrawal-page__content__submit">
+                <button class="btn btn-primary withdrawal-submit" disabled data-bs-toggle="modal" data-bs-target="#withdrawalSuccessModal" data-i18n="SUBMIT"></button>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL -->
+      @@include('../components/wallet/withdrawal/add-bank-modal.html')
+      @@include('../components/wallet/withdrawal-success-modal.html')
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>
