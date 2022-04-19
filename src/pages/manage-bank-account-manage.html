@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Manage bank account (add bank)'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout manage-bank-account-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 8})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content manage-bank-account-page__content">
+
+              <div class=" manage-bank-account-page__content__title">
+                <div>
+                  <span class="title" data-i18n="manage_bank_account_page.MANAGE_BANK_ACCOUNT"></span>
+                  <span class="subtitle" data-i18n="manage_bank_account_page.title"></span>
+                </div>
+              </div>
+
+
+              <div class="withdrawal-page__content__bank-account">
+                <div class="withdrawal-page__content__bank-account__label" data-i18n="Bank_Account"></div>
+                <div class="withdrawal-page__content__bank-account__container row select-bank select-bank-manage">
+                  <div class="col-2 select-bank__item">
+                    <label class="select-bank__item__label">
+                      <div class="select-bank__item__label__img">
+                        <img src="assets/images/wallet/bank/maybank.png" />
+                      </div>
+                      <div class="select-bank__item__label__title">
+                        Maybank
+                        <div class="mt-1">****4638</div>
+                      </div>
+                      <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount" checked="checked"/>
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-2 select-bank__item">
+                    <label class="select-bank__item__label">
+                      <div class="select-bank__item__label__img">
+                        <img src="assets/images/wallet/bank/CIMB-bank.png" />
+                      </div>
+                      <div class="select-bank__item__label__title">
+                        CIMB Bank
+                        <div class="mt-1">****6890</div>
+                      </div>
+                      <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-2 select-bank__item">
+                    <label class="select-bank__item__label">
+                      <div class="select-bank__item__label__img">
+                        <img src="assets/images/wallet/bank/RHB-bank.png" />
+                      </div>
+                      <div class="select-bank__item__label__title">
+                        RHB Bank
+                        <div class="mt-2">****5677</div>
+                      </div>
+                      <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-2 select-bank__item">
+                    <label class="select-bank__item__label">
+                      <div class="select-bank__item__label__img">
+                        <img src="assets/images/wallet/bank/UOB-bank.png" />
+                      </div>
+                      <div class="select-bank__item__label__title">
+                        UOB Bank
+                        <div class="mt-1">****1588</div>
+                      </div>
+                      <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+
+                  <div class="col-8 action">
+                    <a href="/manage-bank-account-after-add.html" class="btn btn-outline-primary" data-i18n="CANCEL"></a>
+                    <a href="/manage-bank-account-after-add.html" class="btn btn-primary" data-i18n="REMOVE"></a>
+                  </div>
+                </div>
+
+
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/wallet/manage-bank-account-modal.html')
+      <!-- MODAL -->
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

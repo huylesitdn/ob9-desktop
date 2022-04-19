@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Manage bank account (add bank)'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout manage-bank-account-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 8})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content manage-bank-account-page__content">
+
+              <div class=" manage-bank-account-page__content__title">
+                <div>
+                  <span class="title" data-i18n="manage_bank_account_page.MANAGE_BANK_ACCOUNT"></span>
+                  <span class="subtitle" data-i18n="manage_bank_account_page.title"></span>
+                </div>
+              </div>
+
+
+              <div class="row manage-bank-account-page__content__empty">
+                <div class="col-5">
+                  <div class="manage-bank-account-page__content__empty__img">
+                    <img src="assets/icons/no-bank.png" />
+                  </div>
+                  <div class="manage-bank-account-page__content__empty__btn">
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#manageBankAccountModal" data-i18n="manage_bank_account_page.Add_Bank_Account"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/wallet/manage-bank-account-modal.html')
+      <!-- MODAL -->
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>
