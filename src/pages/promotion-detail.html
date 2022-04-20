@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Promotion inside'})
+  <body>
+    <!-- Content -->
+    <section class="main promotion-inside-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="promotion-inside-page__top-bg">
+        <img src="assets/images/promotion/inside/bg.png" />
+      </div>
+
+      <div class="promotion-inside-page__container container">
+        <div class="promotion-inside-page__container__content">
+          
+          <ul class="nav nav-tabs nav-pills nav-justified" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="ALL_STAR_SUPER_TEAM-tab" data-bs-toggle="tab" data-bs-target="#ALL_STAR_SUPER_TEAM" type="button" role="tab" aria-controls="ALL_STAR_SUPER_TEAM" aria-selected="true">
+                <span data-i18n="promotion_home_page.ALL_STAR_SUPER_TEAM"></span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="KING_KILLER_ARENA-tab" data-bs-toggle="tab" data-bs-target="#KING_KILLER_ARENA" type="button" role="tab" aria-controls="KING_KILLER_ARENA" aria-selected="false">
+                <span data-i18n="promotion_home_page.KING_KILLER_ARENA"></span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="UNLIMITED_POSSIBILITIES-tab" data-bs-toggle="tab" data-bs-target="#UNLIMITED_POSSIBILITIES" type="button" role="tab" aria-controls="UNLIMITED_POSSIBILITIES" aria-selected="false">
+                <span data-i18n="promotion_home_page.UNLIMITED_POSSIBILITIES"></span>
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="ALL_STAR_SUPER_TEAM" role="tabpanel" aria-labelledby="ALL_STAR_SUPER_TEAM-tab">
+              @@include('../components/promotion/promotion-inside-all.html')
+            </div>
+            <div class="tab-pane fade" id="KING_KILLER_ARENA" role="tabpanel" aria-labelledby="KING_KILLER_ARENA-tab">
+              KING_KILLER_ARENA
+            </div>
+            <div class="tab-pane fade" id="UNLIMITED_POSSIBILITIES" role="tabpanel" aria-labelledby="UNLIMITED_POSSIBILITIES-tab">
+              UNLIMITED_POSSIBILITIES
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>

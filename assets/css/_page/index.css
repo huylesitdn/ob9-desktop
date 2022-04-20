@@ -3958,3 +3958,63 @@
           display: flex;
           place-content: center;
           place-items: center; }
+
+.promotion-inside-page {
+  background: #F8F8F8; }
+  .promotion-inside-page__top-bg {
+    margin-bottom: 50px; }
+    .promotion-inside-page__top-bg img {
+      width: 100%; }
+  .promotion-inside-page__container__content .nav {
+    border-bottom: none;
+    gap: 0px;
+    margin-bottom: 25px; }
+    .promotion-inside-page__container__content .nav .nav-item .nav-link {
+      display: flex;
+      place-content: center;
+      place-items: center;
+      gap: 0;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      background: linear-gradient(180deg, #FFFFFF 0%, #D2DDFF 100%);
+      border: 1px solid #597EF7;
+      box-sizing: border-box;
+      min-height: 60px;
+      border-radius: 0; }
+      .promotion-inside-page__container__content .nav .nav-item .nav-link img {
+        max-width: 22px;
+        max-height: 22px; }
+        .promotion-inside-page__container__content .nav .nav-item .nav-link img.img-active {
+          display: none; }
+      .promotion-inside-page__container__content .nav .nav-item .nav-link span {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #5D627D;
+        text-transform: uppercase; }
+      .promotion-inside-page__container__content .nav .nav-item .nav-link:hover, .promotion-inside-page__container__content .nav .nav-item .nav-link.active {
+        background: linear-gradient(90deg, #8EA9FF 0%, #678BFF 32.29%, #557BF7 100%); }
+        .promotion-inside-page__container__content .nav .nav-item .nav-link:hover span, .promotion-inside-page__container__content .nav .nav-item .nav-link.active span {
+          color: #fff; }
+    .promotion-inside-page__container__content .nav .nav-item:first-child .nav-link {
+      border-radius: 20px 0px 0px 20px; }
+    .promotion-inside-page__container__content .nav .nav-item:last-child .nav-link {
+      border-radius: 0px 20px 20px 0px; }
+  .promotion-inside-page__container__content .tab-content {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 30px 50px; }
+    .promotion-inside-page__container__content .tab-content .promotion-inside-content__img {
+      margin-bottom: 40px; }
+      .promotion-inside-page__container__content .tab-content .promotion-inside-content__img img {
+        width: 100%; }
+    .promotion-inside-page__container__content .tab-content .promotion-inside-content__text {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      text-align: justify;
+      color: #7E8796; }
+      .promotion-inside-page__container__content .tab-content .promotion-inside-content__text p {
+        margin-bottom: 30px; }
