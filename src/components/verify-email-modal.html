@@ -1,0 +1,40 @@
+
+<!-- Modal -->
+<div class="modal fade modal-custom" id="verifyEmailModal" tabindex="-1" aria-labelledby="verifyEmailModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="selectPromotionModalLabel" data-i18n="EMAIL_ADDRESS"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body add-bank-modal">
+        
+        <div class="row">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="account_setting_page.Email_Address"></label>
+          <div class="col-9">
+            <input type="text" class="form-control" id="staticEmail" data-i18n="profile.Email_address_Placeholder1" data-i18n-attr="placeholder" />
+          </div>
+        </div>
+        <div class="row">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="Verify_Email_Address"></label>
+          <div class="col-9">
+            <div class="input-group">
+              <input type="text" class="form-control" id="staticEmail" data-i18n="profile.Verify_Email_address_Placeholder" />
+              <button class="btn btn-primary" type="button" data-i18n="wallet_page.add-bank-account.Request_Code" disabled></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="__submit">
+          <button class="btn btn-primary" data-bs-dismiss="modal" data-i18n="SUBMIT"></button>
+          <!-- <div class="__submit">
+            <a href="/withdrawal-existing-user.html" class="btn btn-primary" role="button" data-i18n="SUBMIT"></a>
+          </div> -->
+        </div>
+
+        <div class="__help" data-i18n="Need_assistance"></div>
+
+      </div>
+    </div>
+  </div>
+</div>

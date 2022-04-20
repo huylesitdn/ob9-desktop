@@ -139,19 +139,27 @@
       text-align: center;
       color: #FFFFFF; }
 
+#changePasswordModal .modal-content,
+#verifyEmailModal .modal-content,
 #manageBankAccountModal .modal-content,
 #addBankModal .modal-content,
 #addBankExistingUserModal .modal-content {
   max-width: 700px;
   margin: auto; }
+  #changePasswordModal .modal-content .add-bank-modal,
+  #verifyEmailModal .modal-content .add-bank-modal,
   #manageBankAccountModal .modal-content .add-bank-modal,
   #addBankModal .modal-content .add-bank-modal,
   #addBankExistingUserModal .modal-content .add-bank-modal {
     padding-top: 0; }
+    #changePasswordModal .modal-content .add-bank-modal .row,
+    #verifyEmailModal .modal-content .add-bank-modal .row,
     #manageBankAccountModal .modal-content .add-bank-modal .row,
     #addBankModal .modal-content .add-bank-modal .row,
     #addBankExistingUserModal .modal-content .add-bank-modal .row {
       margin-bottom: 40px; }
+      #changePasswordModal .modal-content .add-bank-modal .row .form-label,
+      #verifyEmailModal .modal-content .add-bank-modal .row .form-label,
       #manageBankAccountModal .modal-content .add-bank-modal .row .form-label,
       #addBankModal .modal-content .add-bank-modal .row .form-label,
       #addBankExistingUserModal .modal-content .add-bank-modal .row .form-label {
@@ -160,6 +168,10 @@
         line-height: 20px;
         color: #000000;
         margin-top: 15px; }
+      #changePasswordModal .modal-content .add-bank-modal .row .form-select,
+      #changePasswordModal .modal-content .add-bank-modal .row .form-control,
+      #verifyEmailModal .modal-content .add-bank-modal .row .form-select,
+      #verifyEmailModal .modal-content .add-bank-modal .row .form-control,
       #manageBankAccountModal .modal-content .add-bank-modal .row .form-select,
       #manageBankAccountModal .modal-content .add-bank-modal .row .form-control,
       #addBankModal .modal-content .add-bank-modal .row .form-select,
@@ -174,6 +186,10 @@
         border: 1px solid #A5A9B3;
         box-sizing: border-box;
         border-radius: 10px; }
+        #changePasswordModal .modal-content .add-bank-modal .row .form-select::placeholder,
+        #changePasswordModal .modal-content .add-bank-modal .row .form-control::placeholder,
+        #verifyEmailModal .modal-content .add-bank-modal .row .form-select::placeholder,
+        #verifyEmailModal .modal-content .add-bank-modal .row .form-control::placeholder,
         #manageBankAccountModal .modal-content .add-bank-modal .row .form-select::placeholder,
         #manageBankAccountModal .modal-content .add-bank-modal .row .form-control::placeholder,
         #addBankModal .modal-content .add-bank-modal .row .form-select::placeholder,
@@ -184,6 +200,8 @@
           font-size: 16px;
           line-height: 14px;
           color: #A5A9B3; }
+      #changePasswordModal .modal-content .add-bank-modal .row .form-text,
+      #verifyEmailModal .modal-content .add-bank-modal .row .form-text,
       #manageBankAccountModal .modal-content .add-bank-modal .row .form-text,
       #addBankModal .modal-content .add-bank-modal .row .form-text,
       #addBankExistingUserModal .modal-content .add-bank-modal .row .form-text {
@@ -191,6 +209,8 @@
         font-size: 14px;
         line-height: 14px;
         color: #A5A9B3; }
+      #changePasswordModal .modal-content .add-bank-modal .row .form-select,
+      #verifyEmailModal .modal-content .add-bank-modal .row .form-select,
       #manageBankAccountModal .modal-content .add-bank-modal .row .form-select,
       #addBankModal .modal-content .add-bank-modal .row .form-select,
       #addBankExistingUserModal .modal-content .add-bank-modal .row .form-select {
@@ -198,6 +218,8 @@
         font-size: 16px;
         line-height: 14px;
         color: #A5A9B3; }
+      #changePasswordModal .modal-content .add-bank-modal .row .input-group,
+      #verifyEmailModal .modal-content .add-bank-modal .row .input-group,
       #manageBankAccountModal .modal-content .add-bank-modal .row .input-group,
       #addBankModal .modal-content .add-bank-modal .row .input-group,
       #addBankExistingUserModal .modal-content .add-bank-modal .row .input-group {
@@ -205,10 +227,14 @@
         border: 1px solid #A5A9B3;
         box-sizing: border-box;
         border-radius: 10px; }
+        #changePasswordModal .modal-content .add-bank-modal .row .input-group .form-control,
+        #verifyEmailModal .modal-content .add-bank-modal .row .input-group .form-control,
         #manageBankAccountModal .modal-content .add-bank-modal .row .input-group .form-control,
         #addBankModal .modal-content .add-bank-modal .row .input-group .form-control,
         #addBankExistingUserModal .modal-content .add-bank-modal .row .input-group .form-control {
           border: none; }
+        #changePasswordModal .modal-content .add-bank-modal .row .input-group .btn,
+        #verifyEmailModal .modal-content .add-bank-modal .row .input-group .btn,
         #manageBankAccountModal .modal-content .add-bank-modal .row .input-group .btn,
         #addBankModal .modal-content .add-bank-modal .row .input-group .btn,
         #addBankExistingUserModal .modal-content .add-bank-modal .row .input-group .btn {
@@ -221,10 +247,14 @@
           display: flex;
           place-content: center;
           place-items: center; }
+    #changePasswordModal .modal-content .add-bank-modal .__submit,
+    #verifyEmailModal .modal-content .add-bank-modal .__submit,
     #manageBankAccountModal .modal-content .add-bank-modal .__submit,
     #addBankModal .modal-content .add-bank-modal .__submit,
     #addBankExistingUserModal .modal-content .add-bank-modal .__submit {
       margin-top: 20px; }
+      #changePasswordModal .modal-content .add-bank-modal .__submit .btn,
+      #verifyEmailModal .modal-content .add-bank-modal .__submit .btn,
       #manageBankAccountModal .modal-content .add-bank-modal .__submit .btn,
       #addBankModal .modal-content .add-bank-modal .__submit .btn,
       #addBankExistingUserModal .modal-content .add-bank-modal .__submit .btn {
@@ -240,6 +270,8 @@
         display: flex;
         place-content: center;
         place-items: center; }
+    #changePasswordModal .modal-content .add-bank-modal .__help,
+    #verifyEmailModal .modal-content .add-bank-modal .__help,
     #manageBankAccountModal .modal-content .add-bank-modal .__help,
     #addBankModal .modal-content .add-bank-modal .__help,
     #addBankExistingUserModal .modal-content .add-bank-modal .__help {

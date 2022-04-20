@@ -1,0 +1,65 @@
+
+<!-- Modal -->
+<div class="modal fade modal-custom" id="addBankModal" tabindex="-1" aria-labelledby="addBankModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="selectPromotionModalLabel" data-i18n="ADD_BANK_ACCOUNT"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body add-bank-modal">
+        
+        <div class="row">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="Full_Name"></label>
+          <div class="col-9">
+            <input type="text" class="form-control" id="staticEmail" value="TAN MING ZHI" disabled />
+            <div id="emailHelp" class="form-text" data-i18n="wallet_page.add-bank-account.description"></div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="inputPassword" class="col-3 form-label" data-i18n="Bank"></label>
+          <div class="col-9">
+            <select class="form-select" aria-label="Default select example">
+              <option>Please select your bank</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="Bank_Account_Number"></label>
+          <div class="col-9">
+            <input type="text" class="form-control" id="staticEmail" data-i18n="wallet_page.add-bank-account.Please_enter_bank_account_number" data-i18n-attr="placeholder" />
+          </div>
+        </div>
+        <div class="row">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="Phone_Number"></label>
+          <div class="col-9">
+            <input type="text" class="form-control" id="staticEmail" data-i18n="wallet_page.add-bank-account.Please_enter_bank_Phone_Number" data-i18n-attr="placeholder" value="0123338888" disabled />
+          </div>
+        </div>
+        <div class="row">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="Authentication_Number"></label>
+          <div class="col-9">
+            <div class="input-group">
+              <input type="text" class="form-control" id="staticEmail" data-i18n="wallet_page.add-bank-account.Please_enter_authentication_code" />
+              <button class="btn btn-primary" type="button" data-i18n="wallet_page.add-bank-account.Request_Code"></button>
+            </div>
+            <div id="emailHelp" class="form-text" data-i18n="wallet_page.add-bank-account.description2"></div>
+          </div>
+        </div>
+
+        <div class="__submit">
+          <button class="btn btn-primary" data-bs-dismiss="modal" data-i18n="SUBMIT"></button>
+          <!-- <div class="__submit">
+            <a href="/withdrawal-existing-user.html" class="btn btn-primary" role="button" data-i18n="SUBMIT"></a>
+          </div> -->
+        </div>
+
+        <div class="__help" data-i18n="Need_assistance"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
