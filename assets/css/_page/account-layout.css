@@ -4,6 +4,37 @@
   background-repeat: no-repeat; }
   .account-layout__container {
     padding-top: 30px; }
+    .account-layout__container__content .__title {
+      margin-bottom: 15px;
+      display: flex;
+      place-content: space-between;
+      place-items: flex-end;
+      border-bottom: 1px solid #EBEBEB;
+      padding-bottom: 20px;
+      margin-bottom: 50px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #383B43; }
+      .account-layout__container__content .__title a {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: #383B43; }
+        .account-layout__container__content .__title a img {
+          max-width: 14px; }
+      .account-layout__container__content .__title .title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        color: #383B43;
+        text-transform: uppercase;
+        margin-right: 5px; }
+      .account-layout__container__content .__title .subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #94A6B7; }
     .account-layout__container__content__left .profile-navbar {
       padding-right: 15px;
       height: 100%;

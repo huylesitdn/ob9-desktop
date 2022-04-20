@@ -667,6 +667,7 @@
   "bonus_history_page": {
     "No_record_found": "暂无记录",
     "Unclaim": "待领取",
+    "Claimed": "已领取",
     "Claim": "已领取",
     "Total_Claim": "总领取",
     "Cash_Rebate": "现金返水",

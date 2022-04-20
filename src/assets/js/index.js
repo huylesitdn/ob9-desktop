@@ -579,6 +579,14 @@ $('.inbox_delete').on("click", function() {
   // }
 })
 
+$('.bonus-center-page .bonus-center-page__content__status__item .form-select').on('change', function() {
+  const _val = $(this).val();
+  if(_val === 'Claimed') {
+    window.location.href = '/bonus-center-claimed.html'
+  }
+});
+
+
 function toggleInboxAction (show = false) {
   $(".inbox-page .inbox_read-all").prop("disabled", !show);
   $(".inbox-page .inbox_delete").prop("disabled", !show);
