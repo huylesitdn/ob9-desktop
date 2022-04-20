@@ -252,5 +252,6 @@ a {
     margin: 0 2px; }
     .paginations__item img {
       height: 15px; }
-    .paginations__item:hover {
-      opacity: 0.7; }
+    .paginations__item.active, .paginations__item:hover {
+      opacity: 0.7;
+      border: 1px solid #597EF7; }

@@ -355,8 +355,10 @@ a {
       height: 15px;
     }
 
+    &.active,
     &:hover {
       opacity: 0.7;
+      border: 1px solid #597EF7;
     }
   }
 }

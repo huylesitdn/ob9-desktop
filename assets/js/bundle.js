@@ -506,3 +506,93 @@ $(
   ).data("src");
   $(".profile .avatar > div > img").attr("src", current_value);
 });
+
+
+
+
+
+// inbox follow
+$('.inbox-page .inbox_edit, .inbox-page .inbox_close').on('click', function () {
+  toggleInboxDisplayNone();
+  toggleInboxAction();
+});
+
+let inbox_select_all = false;
+$(".inbox-page .inbox_select_all").click(function(e){
+  e.preventDefault();
+
+  inbox_select_all = !inbox_select_all;
+  
+  $('.inbox-page input[name="inbox_select"]').prop('checked', inbox_select_all);
+  $('.inbox-page input[name="inbox_select_all"]').prop('checked', inbox_select_all);
+
+  if (inbox_select_all) {
+    toggleInboxAction(true);
+  } else {
+    toggleInboxAction();
+  }
+});
+
+
+$('.inbox-page input[name="inbox_select"]').on("input", function() {
+  let _is_check = false;
+  $('.inbox-page input[name="inbox_select"]').each(function() {
+    const checked = $(this).is(':checked');
+    if(checked) {
+      _is_check = true;
+    }
+  })
+  toggleInboxAction(_is_check)
+});
+
+$('.inbox__action__mark_all_read').on("click", function() {
+  const checked_value = $('.inbox-page input[name="inbox_select"]:checked');
+  checked_value.each(function() {
+    const parent = $(this).parent();
+    parent.find('.badge').remove();
+    $(this).prop('checked', false);
+  });
+  toggleInboxAction(false);
+  toggleInboxDisplayNone();
+  inbox_select_all = false;
+  const select_all_label = translator.translateForKey('inbox_page.select_all', _get_language);
+  $('.inbox-page .inbox_select_all').text(select_all_label);
+})
+
+
+$('.inbox_delete').on("click", function() {
+  window.location.href = '/inbox-no-message.html'
+  // const checked_value = $('.inbox-page input[name="inbox_select"]:checked');
+  // checked_value.each(function() {
+  //   $(this).parent().remove();
+  //   $(this).prop('checked', false);
+  // });
+  // toggleInboxAction(false);
+  // toggleInboxDisplayNone();
+  // inbox_select_all = false;
+  // const select_all_label = translator.translateForKey('inbox_page.select_all', _get_language);
+  // $('.inbox-page .inbox_select_all').text(select_all_label);
+
+  // const inbox__items = $('.inbox__items');
+  // if (inbox__items.length === 0) {
+  //   $('.inbox__empty').toggleClass('d-none')
+  // }
+})
+
+function toggleInboxAction (show = false) {
+  $(".inbox-page .inbox_read-all").prop("disabled", !show);
+  $(".inbox-page .inbox_delete").prop("disabled", !show);
+}
+
+function toggleInboxDisplayNone () {
+  $(`
+    .inbox-page .inbox_select_all, 
+    .inbox-page .inbox_back, 
+    .inbox-page .inbox_close, 
+    .inbox-page .inbox_edit,
+    .inbox-page input[name="inbox_select"],
+    .inbox-page .inbox__action
+  `).toggleClass('d-none');
+}
+
+// end inbox follow

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Inbox'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout inbox-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 12})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content inbox-page__content">
+              
+              <div class="inbox-page__content__title">
+                <span class="title" data-i18n="inbox"></span>
+              </div>
+
+              <div class="row justify-content-center mt-5 pt-5">
+                <div class="col-5">
+                  <img src="assets/images/inbox/empty.png" />
+                  <div class="text-center" data-i18n="inbox_page.Your_inbox_is_empty"></div>
+                </div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

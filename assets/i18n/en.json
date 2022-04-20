@@ -934,7 +934,7 @@
     "mark_all_read": "Mark All As Read",
     "delete": "Delete",
     "Your_inbox_is_empty": "Your inbox is empty",
-    "": "",
+    "Read_All": "Read All",
     "": "",
     "": ""
   },
@@ -1520,7 +1520,8 @@
     "": "",
     "": ""
   },
-  "": "",
+  "cancel": "Cancel",
+  "Mark_as_Read": "Mark as Read",
   "": "",
   "": "",
   "": "",
