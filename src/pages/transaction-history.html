@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Transaction History'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout transaction-history-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 6})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content transaction-history-page__content">
+
+              <div class="__title">
+                <div>
+                  <span class="title" data-i18n="transaction_history_page.TRANSACTION_HISTORY"></span>
+                  <span class="subtitle" data-i18n="transaction_history_page.TRANSACTION_HISTORY_description"></span>
+                </div>
+              </div>
+
+              
+              <div class="transaction-history-page__content__status row">
+                <div class="col-6 transaction-history-page__content__status__item">
+                  <label><span data-i18n="transaction_history_page.Select_Transaction"></span></label>
+                  <select class="form-select">
+                    <option value="Deposit" selected data-i18n="Deposit"></option>
+                    <option value="Withdrawal" data-i18n="Withdrawal"></option>
+                    <option value="Transfer" data-i18n="Transfer"></option>
+                    <option value="Promotion" data-i18n="Promotion"></option>
+                    <option value="Rebate" data-i18n="Rebate"></option>
+                  </select>
+                </div>
+                <div class="col-6 transaction-history-page__content__status__item">
+                  <label><span data-i18n="Custom_Period"></span></label>
+                  <div class="transaction-history-page__content__status__item__date-range input-group">
+                    <input type="date" class="form-control" placeholder="" value="2022-03-03" />
+                    <span class="input-group-text" data-i18n="To"></span>
+                    <input type="date" class="form-control" placeholder="" value="2022-03-03" />
+                    <span class="input-group-text"><img src="assets/icons/date.png" /></span>
+                  </div>
+                  <button class="btn btn-outline-primary" data-i18n="SEARCH"></button>
+                </div>
+              </div>
+
+              <div class="transaction-history-page__content__filter">
+                <label><span data-i18n="transaction_history_page.Transaction_Period"></span></label>
+                <div class="btn-group">
+                  <a href="/transaction-history-no-deposit.html" class="btn btn-outline-secondary" data-i18n="Today"></a>
+                  <!-- <button class="btn btn-outline-secondary" data-i18n="Yesterday"></button> -->
+                  <button class="btn btn-outline-secondary active" data-i18n="Last_7_Days"></button>
+                  <button class="btn btn-outline-secondary" data-i18n="Last_30_Days"></button>
+                  <button class="btn btn-outline-secondary" data-i18n="All"></button>
+                </div>
+              </div>
+
+
+              <div class="transaction-history-page__content__table">
+                <div class="title" data-i18n="transaction_history_page.Deposit"></div>
+                <div class="content">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" data-i18n="my_wallet_page.no"></th>
+                        <th scope="col" data-i18n="my_wallet_page.Date"></th>
+                        <th scope="col" data-i18n="my_wallet_page.Transaction_ID"></th>
+                        <th scope="col" data-i18n="my_wallet_page.Transaction_Type"></th>
+                        <th scope="col" data-i18n="my_wallet_page.Amount_MYR"></th>
+                        <th scope="col" data-i18n="my_wallet_page.Remarks"></th>
+                        <th scope="col" data-i18n="my_wallet_page.Status"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>2022 - 03 - 24 <br/> 13:57:09</td>
+                        <td>1234567890</td>
+                        <td>
+                          <img class="icon" src="assets/images/wallet/home/items/1.png">
+                          <span data-i18n="Deposit"></span>
+                        </td>
+                        <td>100.00</td>
+                        <td data-i18n="my_wallet_page.Maybank_Deposit"></td>
+                        <td class="text-success" data-i18n="my_wallet_page.Successful"></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>2022 - 03 - 24 <br/> 13:57:09</td>
+                        <td>1234567890</td>
+                        <td>
+                          <img class="icon" src="assets/images/wallet/home/items/1.png">
+                          <span data-i18n="Deposit"></span>
+                        </td>
+                        <td>500.00</td>
+                        <td data-i18n="my_wallet_page.Maybank_Deposit"></td>
+                        <td class="text-success" data-i18n="my_wallet_page.Successful"></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>2022 - 03 - 24 <br/> 13:57:09</td>
+                        <td>1234567890</td>
+                        <td>
+                          <img class="icon" src="assets/images/wallet/home/items/1.png">
+                          <span data-i18n="Deposit"></span>
+                        </td>
+                        <td>500.00</td>
+                        <td data-i18n="transaction_history_page.Transaction_Failure"></td>
+                        <td class="text-danger" data-i18n="my_wallet_page.Failed"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL -->
+      @@include('../components/claim-success-modal.html')
+      <!-- MODAL -->
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

@@ -1576,7 +1576,18 @@
     "": "",
     "": ""
   },
-  "": "",
+  "transaction_history_page": {
+    "TRANSACTION_HISTORY": "TRANSACTION HISTORY",
+    "TRANSACTION_HISTORY_description": "The data only shows the transaction record for the past one month",
+    "Select_Transaction": "Select<br/>Transaction",
+    "Transaction_Period": "Transaction<br/>Period",
+    "Deposit": "Deposit",
+    "Transaction_Failure": "Transaction Failure",
+    "PP_Slot_Main_Wallet": "PP Slot ><br/>Main Wallet",
+    "IGKBet_Main_Wallet": "IGKBet ><br/>Main Wallet",
+    "": "",
+    "": ""
+  },
   "": "",
   "": "",
   "": "",

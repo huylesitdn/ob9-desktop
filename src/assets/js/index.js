@@ -586,6 +586,25 @@ $('.bonus-center-page .bonus-center-page__content__status__item .form-select').o
   }
 });
 
+$('.transaction-history-page .transaction-history-page__content__status__item .form-select').on('change', function() {
+  const _val = $(this).val();
+  switch (_val) {
+    case 'Rebate':
+      window.location.href = '/transaction-history-rebate.html'
+      break;
+    // case 'Deposit':
+    //   window.location.href = '/transaction-history.html'
+    //   break;
+    case 'Transfer':
+      window.location.href = '/transaction-history-transfer.html'
+      break;
+  
+    default:
+      window.location.href = '/transaction-history.html'
+      break;
+  }
+});
+
 
 function toggleInboxAction (show = false) {
   $(".inbox-page .inbox_read-all").prop("disabled", !show);
