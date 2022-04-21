@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Betting Record'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout betting-record-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 7})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content betting-record-page__content">
+
+              <div class="__title">
+                <div>
+                  <span class="title" data-i18n="BETTING_RECORD"></span>
+                  <span class="subtitle" data-i18n="BETTING_RECORD_description"></span>
+                </div>
+              </div>
+
+              
+              <div class="betting-record-page__content__status row">
+                <div class="col-6 betting-record-page__content__status__item">
+                  <label><span data-i18n="Game_Selection"></span></label>
+                  <select class="form-select">
+                    <option value="All" selected data-i18n="Betting_Record_Page.All"></option>
+                    <option value="Sports" data-i18n="Betting_Record_Page.Sports"></option>
+                    <option value="Live_Casino" data-i18n="Betting_Record_Page.Live_Casino"></option>
+                    <option value="Slots" data-i18n="Betting_Record_Page.Slots"></option>
+                    <option value="Fishing" data-i18n="Betting_Record_Page.Fishing"></option>
+                    <option value="E-Sports" data-i18n="Betting_Record_Page.E-Sports"></option>
+                    <option value="Lottery" data-i18n="Betting_Record_Page.Lottery"></option>
+                  </select>
+                </div>
+                <div class="col-6 betting-record-page__content__status__item">
+                  <label><span data-i18n="Bet_Status"></span></label>
+                  <select class="form-select">
+                    <option value="Settled" selected data-i18n="Settled"></option>
+                    <option value="Unsettlement" data-i18n="Unsettlement"></option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="betting-record-page__content__status row">
+                <div class="col betting-record-page__content__status__item">
+                  <div class="betting-record-page__content__filter">
+                    <label><span data-i18n="Bet_Period"></span></label>
+                    <div class="btn-group">
+                      <button class="btn btn-outline-secondary" data-i18n="Today"></button>
+                      <button class="btn btn-outline-secondary" data-i18n="Yesterday"></button>
+                      <button class="btn btn-outline-secondary" data-i18n="Last_7_Days"></button>
+                      <button class="btn btn-outline-secondary" data-i18n="Last_30_Days"></button>
+                      <button class="btn btn-outline-secondary active" data-i18n="All"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col betting-record-page__content__status__item">
+                  <label><span data-i18n="Custom_Period"></span></label>
+                  <div class="betting-record-page__content__status__item__date-range input-group">
+                    <input type="date" class="form-control" placeholder="" value="2022-03-03" />
+                    <span class="input-group-text" data-i18n="To"></span>
+                    <input type="date" class="form-control" placeholder="" value="2022-03-03" />
+                    <span class="input-group-text"><img src="assets/icons/date.png" /></span>
+                  </div>
+                  <button class="btn btn-outline-primary" data-i18n="SEARCH"></button>
+                </div>
+              </div>
+
+
+              <div class="betting-record-page__content__table">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" data-i18n="my_wallet_page.Date"></th>
+                      <th scope="col" data-i18n="Betting_Record_page.Betslip_ID"></th>
+                      <th scope="col" data-i18n="Betting_Record_Page.Game"></th>
+                      <th scope="col" data-i18n="Betting_Record_Page.Bet_Details"></th>
+                      <th scope="col" data-i18n="Betting_Record_Page.Bet_status"></th>
+                      <th scope="col" data-i18n="Betting_Record_Page.Turnover"></th>
+                      <th scope="col" data-i18n="Betting_Record_Page.Win_Lose"></th>
+                      <th scope="col" data-i18n="Betting_Record_Page.Real_Bet"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2022 - 03 - 24 <br/> 13:57:09</td>
+                      <td>1234567890</td>
+                      <td data-i18n="Betting_Record_Page.Live_Casino_DG_CLUB"></td>
+                      <td data-i18n="Betting_Record_Page.Ligthing_Roulette"></td>
+                      <td data-i18n="Betting_Record_Page.Settled"></td>
+                      <td>100.00</td>
+                      <td class="text-danger">-100.00</td>
+                      <td>100.00</td>
+                    </tr>
+                    <tr>
+                      <td>2022 - 03 - 24 <br/> 13:57:09</td>
+                      <td>1234567890</td>
+                      <td data-i18n="Betting_Record_Page.Sport_IGKBET"></td>
+                      <td data-i18n="Betting_Record_Page.Handicap"></td>
+                      <td data-i18n="Betting_Record_Page.Unsettlement"></td>
+                      <td>100.00</td>
+                      <td>0.00</td>
+                      <td>100.00</td>
+                    </tr>
+                    <tr>
+                      <td>2022 - 03 - 24 <br/> 13:57:09</td>
+                      <td>1234567890</td>
+                      <td data-i18n="Betting_Record_Page.Live_Casino_EVO_CLUB"></td>
+                      <td data-i18n="Betting_Record_Page.CS_Plus"></td>
+                      <td data-i18n="Betting_Record_Page.Settled"></td>
+                      <td>200.00</td>
+                      <td class="text-success">200.00</td>
+                      <td>200.00</td>
+                    </tr>
+                    <tr>
+                      <td>2022 - 03 - 24 <br/> 13:57:09</td>
+                      <td>1234567890</td>
+                      <td data-i18n="Betting_Record_Page.Live_Casino_EVO_CLUB"></td>
+                      <td data-i18n="Betting_Record_Page.CS_Plus"></td>
+                      <td data-i18n="Betting_Record_Page.Settled"></td>
+                      <td>200.00</td>
+                      <td>0.00</td>
+                      <td>0.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="total">
+                  <div>
+                    <span data-i18n="Betting_Record_Page.Total_Bet"></span>: 4
+                  </div>
+                  <div>
+                    <span data-i18n="Betting_Record_Page.Turnover"></span>: 300.00
+                  </div>
+                  <div>
+                    <span data-i18n="Betting_Record_Page.Real_Bet"></span>: 300.00
+                  </div>
+                  <div>
+                    <span data-i18n="Betting_Record_Page.Win_Lose"></span>: <span class="text-success">100.00</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL -->
+      @@include('../components/claim-success-modal.html')
+      <!-- MODAL -->
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>
