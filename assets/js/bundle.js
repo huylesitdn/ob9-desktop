@@ -583,6 +583,8 @@ $('.bonus-center-page .bonus-center-page__content__status__item .form-select').o
   const _val = $(this).val();
   if(_val === 'Claimed') {
     window.location.href = '/bonus-center-claimed.html'
+  } else {
+    window.location.href = '/bonus-center.html'
   }
 });
 
