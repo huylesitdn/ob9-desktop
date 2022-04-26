@@ -399,10 +399,14 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 16px;
-            color: #FFFFFF;
+            color: #999;
 
             img {
               max-height: 12px;
+            }
+
+            &:hover {
+              color: #fff;
             }
           }
         }
@@ -421,9 +425,35 @@
                 place-content: flex-start;
                 place-items: center;
                 gap: 8px;
+                color: #999;
 
                 .currency {
                   color: #F4D48C;
+                }
+
+                &:hover {
+                  color: #fff;
+                }
+              }
+
+              .spin {
+                animation-name: spin;
+                animation-duration: 5000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear; 
+              }
+
+              &.welcome {
+                .nav-link {
+                  span {
+                    color: #999 !important;
+
+                    &:hover {
+                      span {
+                        color: #fff !important;
+                      }
+                    }
+                  }
                 }
               }
             }

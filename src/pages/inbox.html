@@ -27,7 +27,9 @@
                   <div class="inbox-page__content__items__left__img unread">
                     <img src="assets/images/inbox/2.png" />
                   </div>
-                  <span data-i18n="inbox_page.title1"></span>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#inboxDetailModal">
+                    <span data-i18n="inbox_page.title1"></span>
+                  </a>
                 </div>
                 <div class="col-5 inbox-page__content__items__center text-truncate" data-i18n="inbox_page.subtitle1"></div>
                 <div class="col-3 inbox-page__content__items__right">2022-03-14 10:30:35</div>
@@ -77,6 +79,9 @@
         </div>
       </div>
 
+      <!-- MODAL -->
+      @@include('../components/inbox-detail-modal.html')
+      <!-- MODAL -->
       
     </section>
     @@include('../components/base/navbar-bottom.html', {active: 0})

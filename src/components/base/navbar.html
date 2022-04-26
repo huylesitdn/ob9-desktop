@@ -1,3 +1,5 @@
+<div id="liveAlertPlaceholder"></div>
+
 <div class="my-navbar">
   <nav class="my-navbar__top navbar fixed-top navbar-expand-lg">
     <div class="my-navbar__top__container container">
@@ -18,8 +20,8 @@
         </li>
       </ul>
       <ul class="navbar-nav ms-auto nav-right">
-        <li class="nav-item nav-info">
-          <a class="nav-link pe-0" aria-current="page" href="#">
+        <li class="nav-item nav-info welcome">
+          <a class="nav-link pe-0" aria-current="page" href="/vip-detail.html">
             <span data-i18n="top_menu.Welcome_username8080"></span>
             <img src="assets/icons/vip-0.png" />
           </a>
@@ -30,11 +32,11 @@
           </a>
         </li>
         <li class="nav-item nav-info">
-          <a class="nav-link ps-0" aria-current="page" href="#">
-            <img src="assets/icons/eye.png" />
+          <a class="nav-link ps-0" aria-current="page" href="/my-wallet.html">
+            <img class="toggleBalance" src="assets/icons/eye.png" />
             <span data-i18n="top_menu.Total_Balance"></span>
-            <span class="currency">MYR 5888.20</span>
-            <img src="assets/icons/refresh.png" />
+            <span id="balanceCurrency" class="currency">MYR 5888.20</span>
+            <img id="refresh-balance" src="assets/icons/refresh.png" />
           </a>
         </li>
         <li class="nav-item">

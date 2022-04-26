@@ -42,6 +42,7 @@ translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
   // -> Translations are ready...
   translator.translatePageTo(_get_language);
   changeLanguageColor();
+  startPopover();
 });
 
 /**
@@ -623,5 +624,115 @@ function toggleInboxDisplayNone () {
     .inbox-page .inbox__action
   `).toggleClass('d-none');
 }
+
+const is_register_thank_you_route = location.pathname === "/register-thank-you.html";
+if (is_register_thank_you_route) {
+  setTimeout(() => {
+    window.location.href = '/deposit.html';
+  }, 5000)
+}
+
+function startPopover () {
+  var phonePopoverEl = $('#phonePopover');
+  if(phonePopoverEl.length > 0 && translator) {
+    phonePopoverEl.attr( "data-bs-content", translator.translateForKey('phone_tip', _get_language));
+  }
+  var emailPopoverEl = $('#emailPopover');
+  if(emailPopoverEl.length > 0 && translator) {
+    emailPopoverEl.attr( "data-bs-content", translator.translateForKey('email_tip', _get_language));
+  }
+  var infoPopoverEl = $('#infoPopover');
+  if(infoPopoverEl.length > 0 && translator) {
+    infoPopoverEl.attr( "data-bs-content", translator.translateForKey('user_tip', _get_language));
+  }
+  var bankPopoverEl = $('#bankPopover');
+  if(bankPopoverEl.length > 0 && translator) {
+    bankPopoverEl.attr( "data-bs-content", translator.translateForKey('bank_tip', _get_language));
+  }
+
+
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl, {html: true})
+  })
+}
+
+let toggleBalance = false;
+$('.toggleBalance').on("click", function (e) {
+  e.preventDefault();
+
+  if (!!toggleBalance) {
+    $('#balanceCurrency').html('MYR 5888.20')
+  } else {
+    $('#balanceCurrency').html('MYR ********')
+  }
+  toggleBalance = !toggleBalance;
+});
+
+let timer_refresh_balance;
+$('#refresh-balance').on("click", function (e) {
+  e.preventDefault();
+  const self = this;
+  if (translator) {
+    window.clearTimeout(timer_refresh_balance);
+    $(self).addClass('spin');
+    timer_refresh_balance = window.setTimeout(function(){
+      $(self).removeClass('spin');
+      addAlert(translator.translateForKey('SUCCESSFUL', _get_language), 'secondary');
+    }, 3000); 
+  }
+
+});
+
+
+
+var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+function addAlert(message, type) {
+  var wrapper = document.createElement('div')
+  wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+  alertPlaceholder.append(wrapper);
+  closeAlert(); // close after 5s
+}
+
+let timer_close_alert;
+function closeAlert() {
+  window.clearTimeout(timer_close_alert);
+  timer_refresh_balance = window.setTimeout(function(){
+    const _alertElm = $('.alert');
+    if(_alertElm.length > 0) {
+      var alert = bootstrap.Alert.getOrCreateInstance(_alertElm[0]);
+      alert.close();
+    }
+  }, 5000); 
+}
+
+
+// datepicker
+if (translator) {
+  $(function() {
+  
+    $('input[name="datefilter"], .datefilter').daterangepicker({
+        autoUpdateInput: false,
+        startDate: moment(),
+        endDate: moment(),
+        locale: {
+            cancelLabel: 'Clear'
+        }
+    });
+  
+    $('input[name="datefilter"], .datefilter').on('apply.daterangepicker', function(ev, picker) {
+        $('input[name="datefilter"]').val(picker.startDate.format('MM/DD/YYYY') + ' ' + translator.translateForKey('To_Label', _get_language) + ' ' + picker.endDate.format('MM/DD/YYYY'));
+    });
+  
+    $('input[name="datefilter"], .datefilter').on('cancel.daterangepicker', function(ev, picker) {
+        $('input[name="datefilter"]').val('');
+    });
+  
+  });
+}
+// datepicker
+
 
 // end inbox follow

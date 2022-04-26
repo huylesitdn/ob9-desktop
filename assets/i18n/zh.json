@@ -1116,7 +1116,7 @@
   "top_menu": {
     "Homepage": "网站首页",
     "Support_Live_Chat": "在线客服",
-    "Welcome_username8080": "欢迎您, username8080",
+    "Welcome_username8080": "欢迎您, <span>username8080</span>",
     "Total_Balance": "总资产:",
     "Deposit": "存款",
     "Withdraw": "提款",

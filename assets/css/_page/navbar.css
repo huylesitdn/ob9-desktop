@@ -251,9 +251,11 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 16px;
-      color: #FFFFFF; }
+      color: #999; }
       .my-navbar__top__container .navbar-nav .nav-item .nav-link img {
         max-height: 12px; }
+      .my-navbar__top__container .navbar-nav .nav-item .nav-link:hover {
+        color: #fff; }
     .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link {
       padding-left: 10px;
       padding-right: 10px; }
@@ -261,6 +263,18 @@
       display: flex;
       place-content: flex-start;
       place-items: center;
-      gap: 8px; }
+      gap: 8px;
+      color: #999; }
       .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info .nav-link .currency {
         color: #F4D48C; }
+      .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info .nav-link:hover {
+        color: #fff; }
+    .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info .spin {
+      animation-name: spin;
+      animation-duration: 5000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+    .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info.welcome .nav-link span {
+      color: #999 !important; }
+      .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info.welcome .nav-link span:hover span {
+        color: #fff !important; }

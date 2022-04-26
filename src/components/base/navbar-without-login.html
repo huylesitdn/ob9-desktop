@@ -30,11 +30,11 @@
           </span>
           <input type="password" class="form-control" data-i18n="password" data-i18n-attr="placeholder">
           <span class="input-group-text">
-            <a href="#" data-i18n="top_menu.Forgot"></a>
+            <a href="/forget-password.html" data-i18n="top_menu.Forgot"></a>
           </span>
         </div>
-        <button class="btn btn-success" data-i18n="login"></button>
-        <button class="btn btn-info" data-i18n="register"></button>
+        <a href="/" class="btn btn-success" data-i18n="login"></a>
+        <a href="/register.html" class="btn btn-info" data-i18n="register"></a>
       </form>
       <!-- <ul class="navbar-nav ms-auto nav-right">
         <li class="nav-item nav-info">
@@ -84,5 +84,9 @@
     </div>
   </nav>
 
-  @@include('./navbar-content.html', {active: '@@active'})
+    <!-- SELECT LANGUAGE MODAL -->
+    @@include('./select-language-modal.html')
+    <!-- SELECT LANGUAGE MODAL -->
+
+  @@include('./navbar-content-without-login.html', {active: '@@active'})
 </div>

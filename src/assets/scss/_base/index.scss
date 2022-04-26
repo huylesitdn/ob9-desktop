@@ -362,3 +362,22 @@ a {
     }
   }
 }
+
+#liveAlertPlaceholder {
+  .alert {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9999;
+  }
+}
+
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}

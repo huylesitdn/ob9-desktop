@@ -64,6 +64,26 @@
             position: absolute;
             top: 15px;
             right: -15px; }
+          .account-layout__container__content__left .profile-navbar__info__avatar > span {
+            opacity: 0;
+            transition: 0.2s;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 50%;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            cursor: pointer; }
+          .account-layout__container__content__left .profile-navbar__info__avatar:hover > span {
+            opacity: 1; }
         .account-layout__container__content__left .profile-navbar__info__username {
           font-weight: 700;
           font-size: 14px;
@@ -162,3 +182,66 @@
         border-radius: 20px;
         padding: 20px;
         height: 100%; }
+
+#selectProfilePictureModal .modal-content .modal-header {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: #94A6B7; }
+
+#selectProfilePictureModal .modal-content .modal-body {
+  padding: 0 30px 30px; }
+  #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .preview-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 50px; }
+  #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-inner .carousel-item {
+    text-align: center;
+    margin-bottom: 15px; }
+    #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-inner .carousel-item img {
+      max-width: 145px; }
+  #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators {
+    position: initial;
+    margin: 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    place-content: flex-start; }
+    #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators label,
+    #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators button {
+      width: 65px;
+      height: 65px;
+      text-indent: initial;
+      margin: 0;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      opacity: 1;
+      padding: 0;
+      display: initial;
+      box-sizing: initial;
+      cursor: pointer; }
+      #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators label img,
+      #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators button img {
+        padding: 2px;
+        width: 65px; }
+      #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators label.active,
+      #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators button.active {
+        border-color: #597EF7; }
+  #selectProfilePictureModal .modal-content .modal-body .action {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 25px;
+    margin-top: 25px; }
+    #selectProfilePictureModal .modal-content .modal-body .action .btn {
+      border-radius: 10px;
+      min-width: 200px;
+      height: 50px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase; }

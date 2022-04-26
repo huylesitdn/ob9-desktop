@@ -2,16 +2,25 @@
   <div class="profile-navbar__info">
     <div class="profile-navbar__info__avatar">
       <img class="profile-navbar__info__avatar__img" src="assets/images/profile/5.png" />
+      <span data-i18n="Edit" data-bs-toggle="modal" data-bs-target="#selectProfilePictureModal"></span>
       <img class="profile-navbar__info__avatar__vip" src="assets/images/my-account/vip-0.png" />
     </div>
     <div class="profile-navbar__info__username">Username8080</div>
     <div class="profile-navbar__info__join" data-i18n="account_layout.join_since"></div>
     <div class="profile-navbar__info__Security_Level" data-i18n="account_layout.Security_Level"></div>
     <div class="profile-navbar__info__icons">
-      <img src="assets/icons/profile/phone.png" />
-      <img src="assets/icons/profile/email.png" />
-      <img src="assets/icons/profile/info.png" />
-      <img src="assets/icons/profile/bank.png" />
+      <a href="/my-profile.html" id="phonePopover" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom">
+        <img src="assets/icons/profile/phone.png"/>
+      </a>
+      <a href="/my-profile.html" id="emailPopover" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom">
+        <img src="assets/icons/profile/email.png" />
+      </a>
+      <a href="/my-profile.html" id="infoPopover" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom">
+        <img src="assets/icons/profile/info.png" />
+      </a>
+      <a href="/manage-bank-account.html" id="bankPopover" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom">
+        <img src="assets/icons/profile/bank.png" />
+      </a>
     </div>
   </div>
   <div class="profile-navbar__navbar">
@@ -31,7 +40,7 @@
         <img class="profile-navbar__navbar__top-icon__items__img-active" src="assets/icons/profile/withdrawal-active.png" />
         <div data-i18n="account_layout.Withdrawal"></div>
       </a>
-      <a href="#" class="profile-navbar__navbar__top-icon__items @@if (context.activeBalance == 3) {active}">
+      <a href="/transaction-history-rebate.html" class="profile-navbar__navbar__top-icon__items @@if (context.activeBalance == 3) {active}">
         <img class="profile-navbar__navbar__top-icon__items__img" src="assets/icons/profile/transfer.png" />
         <img class="profile-navbar__navbar__top-icon__items__img-active" src="assets/icons/profile/transfer-active.png" />
         <div data-i18n="account_layout.Rebate"></div>
@@ -105,3 +114,6 @@
     </ul>
   </div>
 </div>
+
+
+@@include('../select-profile-picture-modal.html')
