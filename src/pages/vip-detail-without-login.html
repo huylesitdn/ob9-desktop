@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Vip Details'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout vip-detail-page">
+      @@include('../components/base/navbar-without-login.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <!-- <div class="col-3 account-layout__container__content__left"> -->
+            <!-- @@include('../components/base/profile-navbar.html', {active: 10}) -->
+          <!-- </div> -->
+          <div class="col-12 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content vip-detail-page__content">
+              <img class="vip-detail-page__content__vip0" src="assets/images/vip/vip-0.png" />
+              <a href="/vip-privilege-details-without-login.html" class="vip-detail-page__content__check-vip-detail" data-i18n="vip_detail_page.Check_VIP_Details"></a>
+              
+              <div class="vip-detail-page__content__accumulated row">
+                <div class="col-4 ps-0">
+                  <div class="vip-detail-page__content__accumulated__item">
+                    <div class="vip-detail-page__content__accumulated__item__img">
+                      <img src="assets/images/vip/Accumulated-1.png" />
+                    </div>
+                    <div class="vip-detail-page__content__accumulated__item__text">
+                      <div class="vip-detail-page__content__accumulated__item__text__currency">MYR 0.00</div>
+                      <div class="vip-detail-page__content__accumulated__item__text__description" data-i18n="vip_detail_page.Accumulated_Deposit"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 pe-0">
+                  <div class="vip-detail-page__content__accumulated__item">
+                    <div class="vip-detail-page__content__accumulated__item__img">
+                      <img src="assets/images/vip/Accumulated-2.png" />
+                    </div>
+                    <div class="vip-detail-page__content__accumulated__item__text">
+                      <div class="vip-detail-page__content__accumulated__item__text__currency">MYR 0.00</div>
+                      <div class="vip-detail-page__content__accumulated__item__text__description" data-i18n="vip_detail_page.Accumulated_Turnover_Realbet"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="vip-detail-page__content__vip-timeline">
+                <span class="active" data-i18n="vip_detail_page.vip0"></span>
+                <span data-i18n="vip_detail_page.vip1"></span>
+                <span data-i18n="vip_detail_page.vip2"></span>
+                <span data-i18n="vip_detail_page.vip3"></span>
+                <span data-i18n="vip_detail_page.vip4"></span>
+                <span data-i18n="vip_detail_page.vip5"></span>
+                <span data-i18n="vip_detail_page.vip6"></span>
+                <span data-i18n="vip_detail_page.vip7"></span>
+                <span data-i18n="vip_detail_page.vip8"></span>
+                <span data-i18n="vip_detail_page.vip9"></span>
+                <span data-i18n="vip_detail_page.vip10"></span>
+              </div>
+
+              <div class="vip-detail-page__content__next-level">
+                <div class="title" data-i18n="vip_detail_page.Next_Level_Requirement"></div>
+                <div class="row currency">
+                  <div class="col-4">
+                    <span data-i18n="vip_detail_page.Deposit_Amount"></span>: <b>RM 500</b>
+                  </div>
+                  <div class="col-4">
+                    <span data-i18n="vip_detail_page.Turnover_Realbet_amount"></span>: <b>RM 3,000</b>
+                  </div>
+                </div>
+                <div class="description" data-i18n="vip_detail_page.Notice"></div>
+              </div>
+
+              <div class="vip-detail-page__content__vip-0-privilege">
+                <div class="title" data-i18n="vip_detail_page.VIP_0_Privilege"></div>
+                <div class="row content">
+                  <div class="col-2">
+                    <img src="assets/images/vip/Privilege-1.png" />
+                    <div data-i18n="vip_detail_page.Daily_Withdrawal_Limit"></div>
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/images/vip/Privilege-2.png" />
+                    <div data-i18n="vip_detail_page.Daily_withdrawal_Amount"></div>
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/images/vip/Privilege-3.png" />
+                    <div data-i18n="vip_detail_page.Tier_Upgrade_Bonus"></div>
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/images/vip/Privilege-4.png" />
+                    <div data-i18n="vip_detail_page.Birthday_Bonus"></div>
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/images/vip/Privilege-5.png" />
+                    <!-- <div data-i18n="vip_detail_page.Weekly_Angpow"></div> -->
+                    <div>
+                      <span data-i18n="vip_detail_page.Weekly_Angpow"></span>
+                      <img id="vipWeeklyAngpowHelpTooltip" class="icon" src="assets/icons/info-gray.png" data-bs-toggle="tooltip" data-bs-html="true" data-bs-custom-class="tootip_Weekly_Angpow" />
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/images/vip/Privilege-6.png" />
+                    <div data-i18n="vip_detail_page.Highest_Rebate"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="vip-detail-page__content__VIP-Cash-Rebate">
+                <div class="title" data-i18n="vip_detail_page.VIP_Cash_Rebate"></div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" data-i18n="vip_detail_page.VIP_Level"></th>
+                      <th scope="col" data-i18n="vip_detail_page.vip0"></th>
+                      <th scope="col" data-i18n="vip_detail_page.vip1"></th>
+                      <th scope="col" data-i18n="vip_detail_page.vip2"></th>
+                      <th scope="col" data-i18n="vip_detail_page.vip3"></th>
+                      <th scope="col" data-i18n="vip_detail_page.vip4"></th>
+                      <th scope="col" data-i18n="vip_detail_page.vip5"></th>
+                      <th scope="col" data-i18n="vip_detail_page.vip6"></th>
+                      <th scope="col" data-i18n="vip_detail_page.vip7"></th>
+                      <th scope="col" data-i18n="vip_detail_page.vip8"></th>
+                      <th scope="col" data-i18n="vip_detail_page.vip9"></th>
+                      <th scope="col" data-i18n="vip_detail_page.vip10"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" data-i18n="vip_page.Sports_Events"></th>
+                      <td>0.00%</td>
+                      <td>0.20%</td>
+                      <td>0.25%</td>
+                      <td>0.30%</td>
+                      <td>0.35%</td>
+                      <td>0.40%</td>
+                      <td>0.45%</td>
+                      <td>0.55%</td>
+                      <td>0.60%</td>
+                      <td>0.70%</td>
+                      <td>0.80%</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" data-i18n="vip_page.Live_Casino"></th>
+                      <td>0.00%</td>
+                      <td>0.30%</td>
+                      <td>0.35%</td>
+                      <td>0.40%</td>
+                      <td>0.45%</td>
+                      <td>0.50%</td>
+                      <td>0.60%</td>
+                      <td>0.70%</td>
+                      <td>0.80%</td>
+                      <td>0.90%</td>
+                      <td>1.00%</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" data-i18n="vip_page.Slot_Machines"></th>
+                      <td>0.00%</td>
+                      <td>0.40%</td>
+                      <td>0.40%</td>
+                      <td>0.50%</td>
+                      <td>0.50%</td>
+                      <td>0.60%</td>
+                      <td>0.70%</td>
+                      <td>0.75%</td>
+                      <td>0.80%</td>
+                      <td>0.85%</td>
+                      <td>0.90%</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" data-i18n="vip_page.Fishing_Game"></th>
+                      <td>0.00%</td>
+                      <td>0.40%</td>
+                      <td>0.40%</td>
+                      <td>0.50%</td>
+                      <td>0.50%</td>
+                      <td>0.60%</td>
+                      <td>0.70%</td>
+                      <td>0.75%</td>
+                      <td>0.80%</td>
+                      <td>0.85%</td>
+                      <td>0.90%</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" data-i18n="vip_page.E_Sports"></th>
+                      <td>0.00%</td>
+                      <td>0.20%</td>
+                      <td>0.25%</td>
+                      <td>0.30%</td>
+                      <td>0.35%</td>
+                      <td>0.40%</td>
+                      <td>0.45%</td>
+                      <td>0.55%</td>
+                      <td>0.60%</td>
+                      <td>0.70%</td>
+                      <td>0.80%</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" data-i18n="vip_page.Lottery_Game"></th>
+                      <td>0.00%</td>
+                      <td>25.00%</td>
+                      <td>25.00%</td>
+                      <td>25.00%</td>
+                      <td>26.00%</td>
+                      <td>26.00%</td>
+                      <td>27.00%</td>
+                      <td>27.00%</td>
+                      <td>28.00%</td>
+                      <td>29.00%</td>
+                      <td>30.00%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="description" data-i18n="vip_detail_page.Above_is_the_cash_rebate_for_each_game"></div>
+                <div class="text-center">
+                  <a href="/vip-privilege-details.html" class="btn btn-primary" data-i18n="vip_detail_page.Check_VIP_Privilege_Details"></a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

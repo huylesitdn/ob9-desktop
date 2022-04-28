@@ -26,7 +26,7 @@
     .home-page__notification .container .text-animated {
       font-weight: 400;
       font-size: 18px;
-      line-height: 14px;
+      line-height: 18px;
       color: #FFFFFF;
       width: 100%;
       white-space: nowrap;
@@ -91,7 +91,8 @@
       position: relative;
       display: flex;
       place-content: center;
-      place-items: center; }
+      place-items: center;
+      min-width: 185px; }
       .home-page__content .title span::after {
         position: absolute;
         width: 150px;
@@ -244,6 +245,8 @@
             line-height: 24px;
             text-align: center;
             color: #FFFFFF; }
+            .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .button-group .btn[data-i18n="home-page.EXCITING_GAMES_slider.HABANERO"] {
+              font-size: 20px; }
             .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .button-group .btn:hover {
               opacity: 0.8; }
   .home-page__content__fc {

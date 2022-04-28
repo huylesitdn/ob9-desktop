@@ -269,11 +269,6 @@
         color: #F4D48C; }
       .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info .nav-link:hover {
         color: #fff; }
-    .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info .spin {
-      animation-name: spin;
-      animation-duration: 5000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear; }
     .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info.welcome .nav-link span {
       color: #999 !important; }
       .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info.welcome .nav-link span:hover span {

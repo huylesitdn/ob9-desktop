@@ -241,6 +241,12 @@
               }
             }
 
+            [data-i18n="juventus_mobile_image"] {
+              img {
+                max-height: 450px;
+              }
+            }
+
             .industry-img {
               text-align: center;
               margin-top: -15px;
@@ -267,6 +273,8 @@
               }
 
               &__content {
+                width: 100%;
+
                 &__title {
                   font-weight: 600;
                   font-size: 20px;

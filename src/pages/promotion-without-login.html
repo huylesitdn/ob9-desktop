@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Promotion'})
+  <body>
+    <!-- Content -->
+    <section class="main promotion-page">
+      @@include('../components/base/navbar-without-login.html', {active: 1})
+
+      <div class="promotion-page__top-bg">
+        <img src="assets/images/promotion/top-bg.png" />
+      </div>
+
+      <div class="promotion-page__container container">
+        <div class="promotion-page__container__content">
+          
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="promotion-all-tab" data-bs-toggle="tab" data-bs-target="#promotion-all" type="button" role="tab" aria-controls="promotion-all" aria-selected="true">
+                <img class="img-default" src="assets/images/promotion/menu/1.png" />
+                <img class="img-active" src="assets/images/promotion/menu/1-active.png" />
+                <span data-i18n="promotion-all"></span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="promotion-sports-tab" data-bs-toggle="tab" data-bs-target="#promotion-sports" type="button" role="tab" aria-controls="promotion-sports" aria-selected="false">
+                <img class="img-default" src="assets/images/promotion/menu/2.png" />
+                <img class="img-active" src="assets/images/promotion/menu/2-active.png" />
+                <span data-i18n="promotion-sports"></span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="promotion-live-casino-tab" data-bs-toggle="tab" data-bs-target="#promotion-live-casino" type="button" role="tab" aria-controls="promotion-live-casino" aria-selected="false">
+                <img class="img-default" src="assets/images/promotion/menu/3.png" />
+                <img class="img-active" src="assets/images/promotion/menu/3-active.png" />
+                <span data-i18n="promotion-live-casino"></span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="promotion-e-sports-tab" data-bs-toggle="tab" data-bs-target="#promotion-e-sports" type="button" role="tab" aria-controls="promotion-e-sports" aria-selected="false">
+                <img class="img-default" src="assets/images/promotion/menu/4.png" />
+                <img class="img-active" src="assets/images/promotion/menu/4-active.png" />
+                <span data-i18n="promotion-e-sports"></span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="promotion-lottery-tab" data-bs-toggle="tab" data-bs-target="#promotion-lottery" type="button" role="tab" aria-controls="promotion-lottery" aria-selected="false">
+                <img class="img-default" src="assets/images/promotion/menu/5.png" />
+                <img class="img-active" src="assets/images/promotion/menu/5-active.png" />
+                <span data-i18n="promotion-lottery"></span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="promotion-slot-tab" data-bs-toggle="tab" data-bs-target="#promotion-slot" type="button" role="tab" aria-controls="promotion-slot" aria-selected="false">
+                <img class="img-default" src="assets/images/promotion/menu/6.png" />
+                <img class="img-active" src="assets/images/promotion/menu/6-active.png" />
+                <span data-i18n="promotion-slot"></span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="promotion-fishing-tab" data-bs-toggle="tab" data-bs-target="#promotion-fishing" type="button" role="tab" aria-controls="promotion-fishing" aria-selected="false">
+                <img class="img-default" src="assets/images/promotion/menu/7.png" />
+                <img class="img-active" src="assets/images/promotion/menu/7-active.png" />
+                <span data-i18n="promotion-fishing"></span>
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="promotion-all" role="tabpanel" aria-labelledby="promotion-all-tab">
+              @@include('../components/promotion/promotion-all.html')
+            </div>
+            <div class="tab-pane fade" id="promotion-live-casino" role="tabpanel" aria-labelledby="promotion-live-casino-tab">
+              promotion-live-casino
+            </div>
+            <div class="tab-pane fade" id="promotion-sports" role="tabpanel" aria-labelledby="promotion-sports-tab">
+              promotion-sports
+            </div>
+            <div class="tab-pane fade" id="promotion-e-sports" role="tabpanel" aria-labelledby="promotion-e-sports-tab">
+              promotion-e-sports
+            </div>
+            <div class="tab-pane fade" id="promotion-lottery" role="tabpanel" aria-labelledby="promotion-lottery-tab">
+              promotion-lottery
+            </div>
+            <div class="tab-pane fade" id="promotion-slot" role="tabpanel" aria-labelledby="promotion-slot-tab">
+              promotion-slot
+            </div>
+            <div class="tab-pane fade" id="promotion-fishing" role="tabpanel" aria-labelledby="promotion-fishing-tab">
+              promotion-fishing
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>

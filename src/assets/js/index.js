@@ -42,7 +42,7 @@ translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
   // -> Translations are ready...
   translator.translatePageTo(_get_language);
   changeLanguageColor();
-  startPopover();
+  renderAfterHaveTranslator();
 });
 
 /**
@@ -632,7 +632,7 @@ if (is_register_thank_you_route) {
   }, 5000)
 }
 
-function startPopover () {
+function renderAfterHaveTranslator () {
   var phonePopoverEl = $('#phonePopover');
   if(phonePopoverEl.length > 0 && translator) {
     phonePopoverEl.attr( "data-bs-content", translator.translateForKey('phone_tip', _get_language));
@@ -655,6 +655,23 @@ function startPopover () {
   var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
     return new bootstrap.Popover(popoverTriggerEl, {html: true})
   })
+
+
+
+  var vipWeeklyAngpowHelpTooltipEl = $('#vipWeeklyAngpowHelpTooltip');
+  if(vipWeeklyAngpowHelpTooltipEl.length > 0 && translator) {
+    vipWeeklyAngpowHelpTooltipEl.attr("title", translator.translateForKey('vip_weekly_angpow_help_tooltip', _get_language));
+  }
+  var vipWeeklyAngpowHelpTooltipElTooltip = new bootstrap.Tooltip(vipWeeklyAngpowHelpTooltipEl, {
+    popperConfig: function (defaultBsPopperConfig) {
+      // var newPopperConfig = {...}
+      // use defaultBsPopperConfig if needed...
+      // return newPopperConfig
+    }
+  })
+
+
+
 }
 
 let toggleBalance = false;
@@ -670,7 +687,7 @@ $('.toggleBalance').on("click", function (e) {
 });
 
 let timer_refresh_balance;
-$('#refresh-balance').on("click", function (e) {
+$('.refresh-balance').on("click", function (e) {
   e.preventDefault();
   const self = this;
   if (translator) {
@@ -713,7 +730,7 @@ function closeAlert() {
 if (translator) {
   $(function() {
   
-    $('input[name="datefilter"], .datefilter').daterangepicker({
+    $('.datefilterFrom, .datefilterTo, .datefilterIcon').daterangepicker({
         autoUpdateInput: false,
         startDate: moment(),
         endDate: moment(),
@@ -722,12 +739,13 @@ if (translator) {
         }
     });
   
-    $('input[name="datefilter"], .datefilter').on('apply.daterangepicker', function(ev, picker) {
-        $('input[name="datefilter"]').val(picker.startDate.format('MM/DD/YYYY') + ' ' + translator.translateForKey('To_Label', _get_language) + ' ' + picker.endDate.format('MM/DD/YYYY'));
+    $('.datefilterFrom, .datefilterTo, .datefilterIcon').on('apply.daterangepicker', function(ev, picker) {
+        $('.datefilterFrom').val(picker.startDate.format('DD/MM/YYYY'));
+        $('.datefilterTo').val(picker.endDate.format('DD/MM/YYYY'));
     });
   
-    $('input[name="datefilter"], .datefilter').on('cancel.daterangepicker', function(ev, picker) {
-        $('input[name="datefilter"]').val('');
+    $('.datefilterFrom, .datefilterTo, .datefilterIcon').on('cancel.daterangepicker', function(ev, picker) {
+        $('.datefilterFrom, .datefilterTo').val('');
     });
   
   });

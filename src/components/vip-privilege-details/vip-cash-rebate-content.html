@@ -5,107 +5,107 @@
       <tr>
         <th scope="col" data-i18n="vip_detail_page.VIP_Level"></th>
         <th scope="col" data-i18n="vip_detail_page.vip0"></th>
-        <th scope="col" data-i18n="vip_detail_page.vip1" class="active"></th>
-        <th scope="col" data-i18n="vip_detail_page.vip2"></th>
-        <th scope="col" data-i18n="vip_detail_page.vip3"></th>
-        <th scope="col" data-i18n="vip_detail_page.vip4"></th>
-        <th scope="col" data-i18n="vip_detail_page.vip5"></th>
-        <th scope="col" data-i18n="vip_detail_page.vip6"></th>
-        <th scope="col" data-i18n="vip_detail_page.vip7"></th>
-        <th scope="col" data-i18n="vip_detail_page.vip8"></th>
-        <th scope="col" data-i18n="vip_detail_page.vip9"></th>
-        <th scope="col" data-i18n="vip_detail_page.vip10"></th>
+        <th scope="col" data-i18n="vip_detail_page.vip1" class="@@if(context.vip_num == 1){active}"></th>
+        <th scope="col" data-i18n="vip_detail_page.vip2" class="@@if(context.vip_num == 2){active}"></th>
+        <th scope="col" data-i18n="vip_detail_page.vip3" class="@@if(context.vip_num == 3){active}"></th>
+        <th scope="col" data-i18n="vip_detail_page.vip4" class="@@if(context.vip_num == 4){active}"></th>
+        <th scope="col" data-i18n="vip_detail_page.vip5" class="@@if(context.vip_num == 5){active}"></th>
+        <th scope="col" data-i18n="vip_detail_page.vip6" class="@@if(context.vip_num == 6){active}"></th>
+        <th scope="col" data-i18n="vip_detail_page.vip7" class="@@if(context.vip_num == 7){active}"></th>
+        <th scope="col" data-i18n="vip_detail_page.vip8" class="@@if(context.vip_num == 8){active}"></th>
+        <th scope="col" data-i18n="vip_detail_page.vip9" class="@@if(context.vip_num == 9){active}"></th>
+        <th scope="col" data-i18n="vip_detail_page.vip10" class="@@if(context.vip_num == 10){active}"></th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th scope="row" data-i18n="vip_page.Sports_Events"></th>
-        <td>0.00%</td>
-        <td class="active">0.20%</td>
-        <td>0.25%</td>
-        <td>0.30%</td>
-        <td>0.35%</td>
-        <td>0.40%</td>
-        <td>0.45%</td>
-        <td>0.55%</td>
-        <td>0.60%</td>
-        <td>0.70%</td>
-        <td>0.80%</td>
+        <td>0.00% @@vip_num</td>
+        <td class="@@if(context.vip_num == 1){active}">0.20%</td>
+        <td class="@@if(context.vip_num == 2){active}">0.25%</td>
+        <td class="@@if(context.vip_num == 3){active}">0.30%</td>
+        <td class="@@if(context.vip_num == 4){active}">0.35%</td>
+        <td class="@@if(context.vip_num == 5){active}">0.40%</td>
+        <td class="@@if(context.vip_num == 6){active}">0.45%</td>
+        <td class="@@if(context.vip_num == 7){active}">0.55%</td>
+        <td class="@@if(context.vip_num == 8){active}">0.60%</td>
+        <td class="@@if(context.vip_num == 9){active}">0.70%</td>
+        <td class="@@if(context.vip_num == 10){active}">0.80%</td>
       </tr>
       <tr>
         <th scope="row" data-i18n="vip_page.Live_Casino"></th>
         <td>0.00%</td>
-        <td class="active">0.30%</td>
-        <td>0.35%</td>
-        <td>0.40%</td>
-        <td>0.45%</td>
-        <td>0.50%</td>
-        <td>0.60%</td>
-        <td>0.70%</td>
-        <td>0.80%</td>
-        <td>0.90%</td>
-        <td>1.00%</td>
+        <td class="@@if(context.vip_num == 1){active}">0.30%</td>
+        <td class="@@if(context.vip_num == 2){active}">0.35%</td>
+        <td class="@@if(context.vip_num == 3){active}">0.40%</td>
+        <td class="@@if(context.vip_num == 4){active}">0.45%</td>
+        <td class="@@if(context.vip_num == 5){active}">0.50%</td>
+        <td class="@@if(context.vip_num == 6){active}">0.60%</td>
+        <td class="@@if(context.vip_num == 7){active}">0.70%</td>
+        <td class="@@if(context.vip_num == 8){active}">0.80%</td>
+        <td class="@@if(context.vip_num == 9){active}">0.90%</td>
+        <td class="@@if(context.vip_num == 10){active}">1.00%</td>
       </tr>
       <tr>
         <th scope="row" data-i18n="vip_page.Slot_Machines"></th>
         <td>0.00%</td>
-        <td class="active">0.40%</td>
-        <td>0.40%</td>
-        <td>0.50%</td>
-        <td>0.50%</td>
-        <td>0.60%</td>
-        <td>0.70%</td>
-        <td>0.75%</td>
-        <td>0.80%</td>
-        <td>0.85%</td>
-        <td>0.90%</td>
+        <td class="@@if(context.vip_num == 1){active}">0.40%</td>
+        <td class="@@if(context.vip_num == 2){active}">0.40%</td>
+        <td class="@@if(context.vip_num == 3){active}">0.50%</td>
+        <td class="@@if(context.vip_num == 4){active}">0.50%</td>
+        <td class="@@if(context.vip_num == 5){active}">0.60%</td>
+        <td class="@@if(context.vip_num == 6){active}">0.70%</td>
+        <td class="@@if(context.vip_num == 7){active}">0.75%</td>
+        <td class="@@if(context.vip_num == 8){active}">0.80%</td>
+        <td class="@@if(context.vip_num == 9){active}">0.85%</td>
+        <td class="@@if(context.vip_num == 10){active}">0.90%</td>
       </tr>
       <tr>
         <th scope="row" data-i18n="vip_page.Fishing_Game"></th>
         <td>0.00%</td>
-        <td class="active">0.40%</td>
-        <td>0.40%</td>
-        <td>0.50%</td>
-        <td>0.50%</td>
-        <td>0.60%</td>
-        <td>0.70%</td>
-        <td>0.75%</td>
-        <td>0.80%</td>
-        <td>0.85%</td>
-        <td>0.90%</td>
+        <td class="@@if(context.vip_num == 1){active}">0.40%</td>
+        <td class="@@if(context.vip_num == 2){active}">0.40%</td>
+        <td class="@@if(context.vip_num == 3){active}">0.50%</td>
+        <td class="@@if(context.vip_num == 4){active}">0.50%</td>
+        <td class="@@if(context.vip_num == 5){active}">0.60%</td>
+        <td class="@@if(context.vip_num == 6){active}">0.70%</td>
+        <td class="@@if(context.vip_num == 7){active}">0.75%</td>
+        <td class="@@if(context.vip_num == 8){active}">0.80%</td>
+        <td class="@@if(context.vip_num == 9){active}">0.85%</td>
+        <td class="@@if(context.vip_num == 10){active}">0.90%</td>
       </tr>
       <tr>
         <th scope="row" data-i18n="vip_page.E_Sports"></th>
         <td>0.00%</td>
-        <td class="active">0.20%</td>
-        <td>0.25%</td>
-        <td>0.30%</td>
-        <td>0.35%</td>
-        <td>0.40%</td>
-        <td>0.45%</td>
-        <td>0.55%</td>
-        <td>0.60%</td>
-        <td>0.70%</td>
-        <td>0.80%</td>
+        <td class="@@if(context.vip_num == 1){active}">0.20%</td>
+        <td class="@@if(context.vip_num == 2){active}">0.25%</td>
+        <td class="@@if(context.vip_num == 3){active}">0.30%</td>
+        <td class="@@if(context.vip_num == 4){active}">0.35%</td>
+        <td class="@@if(context.vip_num == 5){active}">0.40%</td>
+        <td class="@@if(context.vip_num == 6){active}">0.45%</td>
+        <td class="@@if(context.vip_num == 7){active}">0.55%</td>
+        <td class="@@if(context.vip_num == 8){active}">0.60%</td>
+        <td class="@@if(context.vip_num == 9){active}">0.70%</td>
+        <td class="@@if(context.vip_num == 10){active}">0.80%</td>
       </tr>
       <tr>
         <th scope="row" data-i18n="vip_page.Lottery_Game"></th>
         <td>0.00%</td>
-        <td class="active">25.00%</td>
-        <td>25.00%</td>
-        <td>25.00%</td>
-        <td>26.00%</td>
-        <td>26.00%</td>
-        <td>27.00%</td>
-        <td>27.00%</td>
-        <td>28.00%</td>
-        <td>29.00%</td>
-        <td>30.00%</td>
+        <td class="@@if(context.vip_num == 1){active}">25.00%</td>
+        <td class="@@if(context.vip_num == 2){active}">25.00%</td>
+        <td class="@@if(context.vip_num == 3){active}">25.00%</td>
+        <td class="@@if(context.vip_num == 4){active}">26.00%</td>
+        <td class="@@if(context.vip_num == 5){active}">26.00%</td>
+        <td class="@@if(context.vip_num == 6){active}">27.00%</td>
+        <td class="@@if(context.vip_num == 7){active}">27.00%</td>
+        <td class="@@if(context.vip_num == 8){active}">28.00%</td>
+        <td class="@@if(context.vip_num == 9){active}">29.00%</td>
+        <td class="@@if(context.vip_num == 10){active}">30.00%</td>
       </tr>
     </tbody>
   </table>
 </div>
 
 <div class="View_Cash_Rebate_rules">
-  <a href="#" data-bs-toggle="modal" data-bs-target="#cashRebateRulesModal" data-i18n="vip_page.View_Cash_Rebate_rules"></a>
+  <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#cashRebateRulesModal" data-i18n="vip_page.View_Cash_Rebate_rules"></a>
 </div>

@@ -1,0 +1,30 @@
+<div class="vip-privilege-details-page__content__vip-crash">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="VIP_Cash_Rebate1_@@vip_num-tab" data-bs-toggle="tab" data-bs-target="#VIP_Cash_Rebate1_@@vip_num" type="button" role="tab" aria-controls="VIP_Cash_Rebate1_@@vip_num" aria-selected="true">
+        <span data-i18n="vip_page.VIP_Cash_Rebate1"></span>
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="VIP_Withdrawal_Limit1_@@vip_num-tab" data-bs-toggle="tab" data-bs-target="#VIP_Withdrawal_Limit1_@@vip_num" type="button" role="tab" aria-controls="VIP_Withdrawal_Limit1_@@vip_num" aria-selected="false">
+        <span data-i18n="vip_page.VIP_Withdrawal_Limit1"></span>
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="VIP_Weekly_Angpow1_@@vip_num-tab" data-bs-toggle="tab" data-bs-target="#VIP_Weekly_Angpow1_@@vip_num" type="button" role="tab" aria-controls="VIP_Weekly_Angpow1_@@vip_num" aria-selected="false">
+        <span data-i18n="vip_page.VIP_Weekly_Angpow1"></span>
+      </button>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="VIP_Cash_Rebate1_@@vip_num" role="tabpanel" aria-labelledby="VIP_Cash_Rebate1_@@vip_num-tab">
+      @@include('./vip-cash-rebate-content.html', {vip_num: '@@vip_num'})
+    </div>
+    <div class="tab-pane fade" id="VIP_Withdrawal_Limit1_@@vip_num" role="tabpanel" aria-labelledby="VIP_Withdrawal_Limit1_@@vip_num-tab">
+      @@include('./vip-withdrawal-limit-content.html', {vip_num: '@@vip_num'})
+    </div>
+    <div class="tab-pane fade" id="VIP_Weekly_Angpow1_@@vip_num" role="tabpanel" aria-labelledby="VIP_Weekly_Angpow1_@@vip_num-tab">
+      @@include('./vip-weekly-angpow-content.html', {vip_num: '@@vip_num'})
+    </div>
+  </div>
+</div>

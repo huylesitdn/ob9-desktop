@@ -157,6 +157,8 @@
         .vip-detail-page .vip-detail-page__content__vip-0-privilege .content > div img {
           max-width: 40px;
           margin-bottom: 5px; }
+        .vip-detail-page .vip-detail-page__content__vip-0-privilege .content > div .icon {
+          max-width: 16px; }
         .vip-detail-page .vip-detail-page__content__vip-0-privilege .content > div:first-child {
           border-radius: 10px 0px 0px 10px; }
         .vip-detail-page .vip-detail-page__content__vip-0-privilege .content > div:last-child {
@@ -233,3 +235,8 @@
       height: 40px;
       vertical-align: middle;
       text-align: center; }
+
+.tootip_Weekly_Angpow {
+  text-align: left !important;
+  display: flex;
+  place-content: flex-start; }

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Vip Details'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout vip-privilege-details-page">
+      @@include('../components/base/navbar-without-login.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <!-- <div class="col-3 account-layout__container__content__left"> -->
+            <!-- @@include('../components/base/profile-navbar.html', {active: 10}) -->
+          <!-- </div> -->
+          <div class="col-12 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content vip-privilege-details-page__content">
+              
+              <div class="vip-privilege-details-page__content__banner">
+                <img src="assets/images/vip-privilege-details/vipBanner.png" />
+              </div>
+              
+              <div class="col-9 offset-3">
+
+                <div class="vip-privilege-details-page__content__vip-info-tab">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="vip1-tab" data-bs-toggle="tab" data-bs-target="#vip1" type="button" role="tab" aria-controls="vip1" aria-selected="true">
+                        <img src="assets/images/vip-privilege-details/vip1_big.png" />
+                        <span data-i18n="vip_detail_page.vip1"></span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="vip2-tab" data-bs-toggle="tab" data-bs-target="#vip2" type="button" role="tab" aria-controls="vip2" aria-selected="false">
+                        <img src="assets/images/vip-privilege-details/vip2_big.png" />
+                        <span data-i18n="vip_detail_page.vip2"></span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="vip3-tab" data-bs-toggle="tab" data-bs-target="#vip3" type="button" role="tab" aria-controls="vip3" aria-selected="false">
+                        <img src="assets/images/vip-privilege-details/vip3_big.png" />
+                        <span data-i18n="vip_detail_page.vip3"></span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="vip4-tab" data-bs-toggle="tab" data-bs-target="#vip4" type="button" role="tab" aria-controls="vip4" aria-selected="false">
+                        <img src="assets/images/vip-privilege-details/vip4_big.png" />
+                        <span data-i18n="vip_detail_page.vip4"></span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="vip5-tab" data-bs-toggle="tab" data-bs-target="#vip5" type="button" role="tab" aria-controls="vip5" aria-selected="false">
+                        <img src="assets/images/vip-privilege-details/vip5_big.png" />
+                        <span data-i18n="vip_detail_page.vip5"></span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="vip6-tab" data-bs-toggle="tab" data-bs-target="#vip6" type="button" role="tab" aria-controls="vip6" aria-selected="false">
+                        <img src="assets/images/vip-privilege-details/vip6_big.png" />
+                        <span data-i18n="vip_detail_page.vip6"></span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="vip7-tab" data-bs-toggle="tab" data-bs-target="#vip7" type="button" role="tab" aria-controls="vip7" aria-selected="false">
+                        <img src="assets/images/vip-privilege-details/vip7_big.png" />
+                        <span data-i18n="vip_detail_page.vip7"></span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="vip8-tab" data-bs-toggle="tab" data-bs-target="#vip8" type="button" role="tab" aria-controls="vip8" aria-selected="false">
+                        <img src="assets/images/vip-privilege-details/vip8_big.png" />
+                        <span data-i18n="vip_detail_page.vip8"></span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="vip9-tab" data-bs-toggle="tab" data-bs-target="#vip9" type="button" role="tab" aria-controls="vip9" aria-selected="false">
+                        <img src="assets/images/vip-privilege-details/vip9_big.png" />
+                        <span data-i18n="vip_detail_page.vip9"></span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="vip10-tab" data-bs-toggle="tab" data-bs-target="#vip10" type="button" role="tab" aria-controls="vip10" aria-selected="false">
+                        <img src="assets/images/vip-privilege-details/vip10_big.png" />
+                        <span data-i18n="vip_detail_page.vip10"></span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="vip1" role="tabpanel" aria-labelledby="vip1-tab">
+                      @@include('../components/vip-privilege-details/vip1-content.html', {
+                        vip_num: '1',
+                        vip_bg_name: 'vip1_big_active.png',
+                        Tier_Upgrade_Bonus: '8',
+                        Weekly_Angpow: '8',
+                        Birthday_Bonus: '0',
+                        Accumulated_Deposit: '500',
+                        Turnover_Requirement: '3,000',
+                        Maintenance_Turnover_Requirement: '2,000',
+                      })
+                    </div>
+                    <div class="tab-pane fade" id="vip2" role="tabpanel" aria-labelledby="vip2-tab">
+                      @@include('../components/vip-privilege-details/vip1-content.html', {
+                        vip_num: '2',
+                        vip_bg_name: 'vip1_big_active.png',
+                        Tier_Upgrade_Bonus: '18',
+                        Weekly_Angpow: '18',
+                        Birthday_Bonus: '18',
+                        Accumulated_Deposit: '2,000',
+                        Turnover_Requirement: '12,000',
+                        Maintenance_Turnover_Requirement: '5,000',
+                      })
+                    </div>
+                    <div class="tab-pane fade" id="vip3" role="tabpanel" aria-labelledby="vip3-tab">
+                      @@include('../components/vip-privilege-details/vip1-content.html', {
+                        vip_num: '3',
+                        vip_bg_name: 'vip1_big_active.png',
+                        Tier_Upgrade_Bonus: '38',
+                        Weekly_Angpow: '38',
+                        Birthday_Bonus: '38',
+                        Accumulated_Deposit: '10,000',
+                        Turnover_Requirement: '60,000',
+                        Maintenance_Turnover_Requirement: '18,000',
+                      })
+                    </div>
+                    <div class="tab-pane fade" id="vip4" role="tabpanel" aria-labelledby="vip4-tab">
+                      @@include('../components/vip-privilege-details/vip1-content.html', {
+                        vip_num: '4',
+                        vip_bg_name: 'vip1_big_active.png',
+                        Tier_Upgrade_Bonus: '88',
+                        Weekly_Angpow: '88',
+                        Birthday_Bonus: '88',
+                        Accumulated_Deposit: '50,000',
+                        Turnover_Requirement: '300,000',
+                        Maintenance_Turnover_Requirement: '60,000',
+                      })
+                    </div>
+                    <div class="tab-pane fade" id="vip5" role="tabpanel" aria-labelledby="vip5-tab">
+                      @@include('../components/vip-privilege-details/vip1-content.html', {
+                        vip_num: '5',
+                        vip_bg_name: 'vip1_big_active.png',
+                        Tier_Upgrade_Bonus: '388',
+                        Weekly_Angpow: '188',
+                        Birthday_Bonus: '388',
+                        Accumulated_Deposit: '200,000',
+                        Turnover_Requirement: '1,200,000',
+                        Maintenance_Turnover_Requirement: '250,000',
+                      })
+                    </div>
+                    <div class="tab-pane fade" id="vip6" role="tabpanel" aria-labelledby="vip6-tab">
+                      @@include('../components/vip-privilege-details/vip1-content.html', {
+                        vip_num: '6',
+                        vip_bg_name: 'vip1_big_active.png',
+                        Tier_Upgrade_Bonus: '688',
+                        Weekly_Angpow: '388',
+                        Birthday_Bonus: '688',
+                        Accumulated_Deposit: '3,000,000',
+                        Turnover_Requirement: '3,000,000',
+                        Maintenance_Turnover_Requirement: '600,000',
+                      })
+                    </div>
+                    <div class="tab-pane fade" id="vip7" role="tabpanel" aria-labelledby="vip7-tab">
+                      @@include('../components/vip-privilege-details/vip1-content.html', {
+                        vip_num: '7',
+                        vip_bg_name: 'vip1_big_active.png',
+                        Tier_Upgrade_Bonus: '1088',
+                        Weekly_Angpow: '688',
+                        Birthday_Bonus: '1088',
+                        Accumulated_Deposit: '1,200,000',
+                        Turnover_Requirement: '7,200,000',
+                        Maintenance_Turnover_Requirement: '1,800,000',
+                      })
+                    </div>
+                    <div class="tab-pane fade" id="vip8" role="tabpanel" aria-labelledby="vip8-tab">
+                      @@include('../components/vip-privilege-details/vip1-content.html', {
+                        vip_num: '8',
+                        vip_bg_name: 'vip1_big_active.png',
+                        Tier_Upgrade_Bonus: '3888',
+                        Weekly_Angpow: '1088',
+                        Birthday_Bonus: '3888',
+                        Accumulated_Deposit: '3,000,000',
+                        Turnover_Requirement: '18,000,000',
+                        Maintenance_Turnover_Requirement: '6,000,000',
+                      })
+                    </div>
+                    <div class="tab-pane fade" id="vip9" role="tabpanel" aria-labelledby="vip9-tab">
+                      @@include('../components/vip-privilege-details/vip1-content.html', {
+                        vip_num: '9',
+                        vip_bg_name: 'vip1_big_active.png',
+                        Tier_Upgrade_Bonus: '5888',
+                        Weekly_Angpow: '1888',
+                        Birthday_Bonus: '5888',
+                        Accumulated_Deposit: '10,000,000',
+                        Turnover_Requirement: '60,000,000',
+                        Maintenance_Turnover_Requirement: '25,000,000',
+                      })
+                    </div>
+                    <div class="tab-pane fade" id="vip10" role="tabpanel" aria-labelledby="vip10-tab">
+                      @@include('../components/vip-privilege-details/vip1-content.html', {
+                        vip_num: '10',
+                        vip_bg_name: 'vip1_big_active.png',
+                        Tier_Upgrade_Bonus: '13888',
+                        Weekly_Angpow: '5888',
+                        Birthday_Bonus: '13888',
+                        Accumulated_Deposit: '30,000,000',
+                        Turnover_Requirement: '180,000,000',
+                        Maintenance_Turnover_Requirement: '50,000,000',
+                      })
+                    </div>
+                  </div>
+                </div>
+  
+  
+                <!-- <div class="vip-privilege-details-page__content__vip-crash">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="VIP_Cash_Rebate1-tab" data-bs-toggle="tab" data-bs-target="#VIP_Cash_Rebate1" type="button" role="tab" aria-controls="VIP_Cash_Rebate1" aria-selected="true">
+                        <span data-i18n="vip_page.VIP_Cash_Rebate1"></span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="VIP_Withdrawal_Limit1-tab" data-bs-toggle="tab" data-bs-target="#VIP_Withdrawal_Limit1" type="button" role="tab" aria-controls="VIP_Withdrawal_Limit1" aria-selected="false">
+                        <span data-i18n="vip_page.VIP_Withdrawal_Limit1"></span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="VIP_Weekly_Angpow1-tab" data-bs-toggle="tab" data-bs-target="#VIP_Weekly_Angpow1" type="button" role="tab" aria-controls="VIP_Weekly_Angpow1" aria-selected="false">
+                        <span data-i18n="vip_page.VIP_Weekly_Angpow1"></span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="VIP_Cash_Rebate1" role="tabpanel" aria-labelledby="VIP_Cash_Rebate1-tab">
+                      @@include('../components/vip-privilege-details/vip-cash-rebate-content.html')
+                    </div>
+                    <div class="tab-pane fade" id="VIP_Withdrawal_Limit1" role="tabpanel" aria-labelledby="VIP_Withdrawal_Limit1-tab">
+                      @@include('../components/vip-privilege-details/vip-withdrawal-limit-content.html')
+                    </div>
+                    <div class="tab-pane fade" id="VIP_Weekly_Angpow1" role="tabpanel" aria-labelledby="VIP_Weekly_Angpow1-tab">
+                      @@include('../components/vip-privilege-details/vip-weekly-angpow-content.html')
+                    </div>
+                  </div>
+                </div> -->
+  
+                <div class="vip-privilege-details-page__content__vip-terms">
+                  <div class="vip-privilege-details-page__content__vip-terms__title" data-i18n="vip_page.VIP_Terms"></div>
+                  <div class="vip-terms__items">
+                    <div class="vip-terms__items__content">
+                      <div class="vip-terms__items__content__title" data-i18n="vip_page.terms.title1"></div>
+                      <div class="vip-terms__items__content__description" data-i18n="vip_page.terms.description1"></div>
+                    </div>
+                    <div class="vip-terms__items__content">
+                      <div class="vip-terms__items__content__title" data-i18n="vip_page.terms.title2"></div>
+                      <div class="vip-terms__items__content__description" data-i18n="vip_page.terms.description2"></div>
+                    </div>
+                    <div class="vip-terms__items__content">
+                      <div class="vip-terms__items__content__title" data-i18n="vip_page.terms.title3"></div>
+                      <div class="vip-terms__items__content__description" data-i18n="vip_page.terms.description3"></div>
+                    </div>
+                    <div class="vip-terms__items__content">
+                      <div class="vip-terms__items__content__title" data-i18n="vip_page.terms.title4"></div>
+                      <div class="vip-terms__items__content__description" data-i18n="vip_page.terms.description4"></div>
+                    </div>
+                    <div class="vip-terms__items__content">
+                      <div class="vip-terms__items__content__title" data-i18n="vip_page.terms.title5"></div>
+                      <div class="vip-terms__items__content__description" data-i18n="vip_page.terms.description5"></div>
+                    </div>
+                    <div class="vip-terms__items__content">
+                      <div class="vip-terms__items__content__title" data-i18n="vip_page.terms.title6"></div>
+                      <div class="vip-terms__items__content__description" data-i18n="vip_page.terms.description6"></div>
+                    </div>
+                    <div class="vip-terms__items__content">
+                      <div class="vip-terms__items__content__title" data-i18n="vip_page.terms.title7"></div>
+                      <div class="vip-terms__items__content__description" data-i18n="vip_page.terms.description7"></div>
+                    </div>
+                    <div class="vip-terms__items__content">
+                      <div class="vip-terms__items__content__title" data-i18n="vip_page.terms.title8"></div>
+                      <div class="vip-terms__items__content__description" data-i18n="vip_page.terms.description8"></div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/cash-rebate-rules-modal.html')
+      <!-- MODAL -->
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

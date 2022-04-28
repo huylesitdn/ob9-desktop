@@ -228,6 +228,10 @@
             margin-bottom: 5px;
           }
 
+          .icon {
+            max-width: 16px;
+          }
+
           &:first-child {
             border-radius: 10px 0px 0px 10px;
           }
@@ -349,4 +353,11 @@
     }
 
   }
+}
+
+
+.tootip_Weekly_Angpow {
+  text-align: left !important;
+  display: flex;
+  place-content: flex-start;
 }

@@ -163,6 +163,8 @@
             line-height: 45px;
             text-align: center;
             color: #000000; }
+        .sponsors-article__content__items__container .Best_in_the_Industry__top [data-i18n="juventus_mobile_image"] img {
+          max-height: 450px; }
         .sponsors-article__content__items__container .Best_in_the_Industry__top .industry-img {
           text-align: center;
           margin-top: -15px; }
@@ -179,16 +181,18 @@
             width: 80px; }
             .sponsors-article__content__items__container .Best_in_the_Industry__top .items__img img {
               max-width: 80px; }
-          .sponsors-article__content__items__container .Best_in_the_Industry__top .items__content__title {
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 23px;
-            color: #4E7FFF; }
-          .sponsors-article__content__items__container .Best_in_the_Industry__top .items__content__description {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            color: #7E8796; }
+          .sponsors-article__content__items__container .Best_in_the_Industry__top .items__content {
+            width: 100%; }
+            .sponsors-article__content__items__container .Best_in_the_Industry__top .items__content__title {
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 23px;
+              color: #4E7FFF; }
+            .sponsors-article__content__items__container .Best_in_the_Industry__top .items__content__description {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 18px;
+              color: #7E8796; }
       .sponsors-article__content__items__container .slider-flip {
         overflow: hidden;
         position: relative;

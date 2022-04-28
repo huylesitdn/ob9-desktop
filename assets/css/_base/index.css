@@ -262,6 +262,16 @@ a {
   top: 15px;
   z-index: 9999; }
 
+span.input-group-text[data-i18n="To"] {
+  padding-left: 2px;
+  padding-right: 2px; }
+
+.spin {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
 @keyframes spin {
   from {
     transform: rotate(0deg); }
