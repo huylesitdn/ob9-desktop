@@ -1602,7 +1602,8 @@
   "time_picker_default_value": "01/01/2022 To 01/15/2022",
   "CONTACT_CUSTOMER_SERVICE": "CONTACT<br/> CUSTOMER SERVICE",
   "vip_weekly_angpow_help_tooltip": "<h5>Weekly Angpow Redemption Rules</h5><div>Weekly Angpow Redemption Rules</div><div>1. You need to meet the turnover requirements of the previous week to redeem the weekly Angpow.</div><div>2. Please refer to the VIP privilege details page for the betting requirements of each level.</div>",
-  "": "",
+  "home_fc_img_1": "<img src=\"assets/images/home/fc/1.png\" />",
+  "home_fc_img_2": "<img src=\"assets/images/home/fc/2.png\" />",
   "": "",
   "": "",
   "": ""
