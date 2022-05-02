@@ -403,8 +403,11 @@ $(".deposit-page .deposit-items__content input[name='network_option']").change(
     const current_value = $(
       ".deposit-page .deposit-items__content input[name='network_option']:checked"
     ).val();
+
+    console.log(current_value)
     if(current_value === 'BEP 20') {
       $('#Memo_copy').show();
+      $('#Memo_copy').css('margin-top', -30);
     } else {
       $('#Memo_copy').hide();
     }
@@ -732,6 +735,7 @@ if (translator) {
   
     $('.datefilterFrom, .datefilterTo, .datefilterIcon').daterangepicker({
         autoUpdateInput: false,
+        opens: 'left',
         startDate: moment(),
         endDate: moment(),
         locale: {

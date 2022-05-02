@@ -360,4 +360,13 @@
   text-align: left !important;
   display: flex;
   place-content: flex-start;
+
+  .tooltip-inner {
+    min-width: 300px !important;
+    text-align: left !important;
+
+    h5 {
+      text-align: center !important;
+    }
+  }
 }

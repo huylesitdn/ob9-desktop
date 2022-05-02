@@ -240,3 +240,8 @@
   text-align: left !important;
   display: flex;
   place-content: flex-start; }
+  .tootip_Weekly_Angpow .tooltip-inner {
+    min-width: 300px !important;
+    text-align: left !important; }
+    .tootip_Weekly_Angpow .tooltip-inner h5 {
+      text-align: center !important; }

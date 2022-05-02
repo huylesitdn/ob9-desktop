@@ -114,3 +114,8 @@
       margin-left: 10%; }
       .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img.PRAGMATIC_PLAY {
         margin-left: 20%; }
+
+html[lang="zh"] .live-casino-page .sports-item__content__title {
+  word-break: keep-all !important; }
+  html[lang="zh"] .live-casino-page .sports-item__content__title[data-i18n="live_casino_page.title6"], html[lang="zh"] .live-casino-page .sports-item__content__title[data-i18n="live_casino_page.title2"], html[lang="zh"] .live-casino-page .sports-item__content__title[data-i18n="live_casino_page.title3"] {
+    font-size: 90px !important; }

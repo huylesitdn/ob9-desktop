@@ -90,7 +90,10 @@
       font-size: 120px;
       line-height: 110px;
       color: #597EF7;
-      margin-top: 30px; }
+      margin-top: 30px;
+      word-break: keep-all; }
+      .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__title[data-i18n="sports_page.title2"] {
+        font-size: 90px; }
     .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__description {
       font-weight: 400;
       font-size: 18px;

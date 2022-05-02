@@ -117,3 +117,8 @@
           opacity: 0.8; }
   .fishing-page__container #carouselFishing .carousel-inner .carousel-item .sports-img {
     margin-left: -10%; }
+
+html[lang="zh"] .fishing-page .sports-item__content__title {
+  word-break: keep-all !important; }
+  html[lang="zh"] .fishing-page .sports-item__content__title[data-i18n="fishing_page.title1"], html[lang="zh"] .fishing-page .sports-item__content__title[data-i18n="fishing_page.title2"] {
+    font-size: 100px !important; }

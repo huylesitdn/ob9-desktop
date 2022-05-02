@@ -180,7 +180,6 @@
       #addBankExistingUserModal .modal-content .add-bank-modal .row .form-control {
         font-weight: 700;
         font-size: 16px;
-        line-height: 14px;
         color: #A5A9B3;
         min-height: 50px;
         border: 1px solid #A5A9B3;
@@ -216,7 +215,6 @@
       #addBankExistingUserModal .modal-content .add-bank-modal .row .form-select {
         font-weight: 400;
         font-size: 16px;
-        line-height: 14px;
         color: #A5A9B3; }
       #changePasswordModal .modal-content .add-bank-modal .row .input-group,
       #verifyEmailModal .modal-content .add-bank-modal .row .input-group,

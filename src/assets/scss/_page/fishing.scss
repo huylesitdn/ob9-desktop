@@ -178,3 +178,17 @@
     }
   }
 }
+
+
+html[lang="zh"] {
+  .fishing-page {
+    .sports-item__content__title {
+      word-break: keep-all !important;
+
+      &[data-i18n="fishing_page.title1"],
+      &[data-i18n="fishing_page.title2"] {
+        font-size: 100px !important;
+      }
+    }
+  }
+}

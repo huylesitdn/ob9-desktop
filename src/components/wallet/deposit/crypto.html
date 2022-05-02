@@ -34,6 +34,21 @@
       </div>
     </div>
 
+    <div id="Memo_copy" class="deposit-items">
+      <div class="deposit-items__title" data-i18n="Memo"></div>
+      <div class="deposit-items__content">
+        <div class="row pb-4 align-items-center">
+          <div class="col-8">
+            D63d657bbbd5fb8c
+            <div class="mt-2" style="font-size: 80%" data-i18n="Memo_note"></div>
+          </div>
+          <div class="col">
+            <button class="btn btn-primary" data-i18n="copy" data-bs-toggle="modal" data-bs-target="#copySuccessModal">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="deposit-qr">
       <div class="deposit-qr__title" data-i18n="Do_not_need_to_enter_deposit_amount"></div>
       <div><img src="assets/images/wallet/deposit/qr.png" /></div>
@@ -78,7 +93,7 @@
     <div class="crypto-bottom__item">
       <div class="subtitle">
         <span data-i18n="the_best_stable_coin"></span>
-        <span data-i18n="Find_out_more"></span>
+        <span data-bs-toggle="modal" data-bs-target="#findOutMoreModal" role="button" data-i18n="Find_out_more"></span>
       </div>
       <div class="description" data-i18n="deposit_page.Not_regulated_by_institutions"></div>
       <div class="step">
@@ -112,3 +127,9 @@
     </div>
   </div>
 </div>
+
+
+<!-- MODAL -->
+@@include('./compare-network-modal.html')
+@@include('./find-out-more-modal.html')
+<!-- MODAL -->

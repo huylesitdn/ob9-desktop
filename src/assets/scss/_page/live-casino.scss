@@ -157,12 +157,27 @@
             img {
               max-width: 750px;
               margin-left: 10%;
+
               &.PRAGMATIC_PLAY {
                 margin-left: 20%;
               }
             }
           }
         }
+      }
+    }
+  }
+}
+
+html[lang="zh"] {
+  .live-casino-page {
+    .sports-item__content__title {
+      word-break: keep-all !important;
+
+      &[data-i18n="live_casino_page.title6"],
+      &[data-i18n="live_casino_page.title2"],
+      &[data-i18n="live_casino_page.title3"] {
+        font-size: 90px !important;
       }
     }
   }
