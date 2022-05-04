@@ -32,6 +32,8 @@
         }
 
         &.nav-right {
+          gap: 12px;
+
           .nav-item {
             .nav-link {
               padding-top: 15px;
@@ -119,14 +121,14 @@
                       font-style: normal;
                       font-weight: 400;
                       font-size: 25px;
-                      line-height: 16px;
+                      line-height: 25px;
                       color: #252943;
-                      margin-bottom: 7px;
+                      margin-bottom: 10px;
                     }
 
                     .description {
                       font-weight: 400;
-                      font-size: 12px;
+                      font-size: 14px;
                       line-height: 16px;
                       color: #333333;
                     }

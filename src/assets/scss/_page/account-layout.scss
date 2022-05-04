@@ -52,6 +52,8 @@
       }
 
       &__left {
+        width: 22% !important;
+
         .profile-navbar {
           padding-right: 15px;
           height: 100%;
@@ -62,7 +64,7 @@
           &__info {
             background: conic-gradient(from 185.36deg at 50% 48%, #899FF3 0deg, #7F97F8 136.88deg, #799AFF 286.87deg, #889EF8 360deg);
             border-radius: 20px;
-            padding: 20px 30px;
+            padding: 20px 25px;
             font-weight: 400;
             font-size: 12px;
             line-height: 14px;
@@ -216,7 +218,7 @@
 
             &__bottom-nav {
               list-style: none;
-              padding: 30px 15px;
+              padding: 30px 10px;
 
               &__item {
                 &.divider {
@@ -267,6 +269,7 @@
 
       &__right {
         padding-left: 0;
+        width: 78% !important;
 
         &__content {
           background: #FFFFFF;

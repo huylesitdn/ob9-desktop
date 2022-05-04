@@ -64,7 +64,7 @@
       font-size: 18px;
       line-height: 16px;
       text-align: justify;
-      color: #000000;
+      color: #666;
       margin-bottom: 5px; }
     .cryptocurrency-introduction__content__items__subtitle1 {
       font-weight: 400;
@@ -141,11 +141,11 @@
           text-align: center; }
           .cryptocurrency-introduction__content__items__item1__content > div .title {
             font-weight: 500;
-            font-size: 14px;
+            font-size: 18px;
             line-height: 16px;
             text-align: center;
-            color: #000000;
-            margin: 10px 0;
+            color: #000;
+            margin: 10px 0 15px;
             display: flex;
             place-items: center;
             place-content: flex-start; }
@@ -154,7 +154,10 @@
             font-size: 12px;
             line-height: 14px;
             text-align: justify;
-            color: #000000; }
+            color: #666; }
+    .cryptocurrency-introduction__content__items__item2 > div[class*="col-"] {
+      padding-left: 8px;
+      padding-right: 8px; }
     .cryptocurrency-introduction__content__items__item2__content {
       border: 1px solid #EEEEEE;
       box-sizing: border-box;
@@ -173,25 +176,34 @@
         height: 100%; }
         .cryptocurrency-introduction__content__items__item2__content > div:last-child .title {
           font-weight: 500;
-          font-size: 14px;
+          font-size: 18px;
           line-height: 16px;
-          color: #000000;
-          margin-bottom: 10px; }
+          color: #000;
+          margin-bottom: 15px; }
         .cryptocurrency-introduction__content__items__item2__content > div:last-child .description {
           font-weight: 400;
           font-size: 12px;
           line-height: 16px;
           text-align: justify;
-          color: #000000; }
+          color: #666; }
           .cryptocurrency-introduction__content__items__item2__content > div:last-child .description ul {
             padding-left: 15px; }
             .cryptocurrency-introduction__content__items__item2__content > div:last-child .description ul li {
-              padding-bottom: 5px; }
+              padding-bottom: 5px;
+              margin-bottom: 15px;
+              font-weight: 400;
+              font-size: 14px !important;
+              line-height: 16px !important; }
               .cryptocurrency-introduction__content__items__item2__content > div:last-child .description ul li:last-child {
                 padding-bottom: 0; }
     .cryptocurrency-introduction__content__items ul {
       margin-bottom: 0; }
       .cryptocurrency-introduction__content__items ul li {
-        padding-bottom: 15px; }
+        padding-bottom: 15px;
+        font-weight: 400;
+        font-size: 14px !important;
+        line-height: 16px !important;
+        color: #666 !important;
+        margin-bottom: 5px !important; }
         .cryptocurrency-introduction__content__items ul li:last-child {
           padding-bottom: 0; }

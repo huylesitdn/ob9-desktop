@@ -109,21 +109,23 @@
                   font-family: 'Aldo the Apache';
                   font-style: normal;
                   font-weight: 400;
-                  font-size: 120px;
-                  line-height: 110px;
+                  font-size: 110px;
+                  line-height: 125px;
                   color: #597EF7;
+                  word-break: keep-all;
                   margin-top: 30px;
+                  margin-bottom: 10px;
                 }
 
                 &__description {
                   font-weight: 400;
                   font-size: 18px;
-                  line-height: 22px;
+                  line-height: 30px;
                   color: #3651A8;
                 }
 
                 &__action {
-                  margin-top: 50px;
+                  margin-top: 70px;
 
                   a {
                     background-image: url(../images/sports/play-now-btn.png);
@@ -171,13 +173,24 @@
 
 html[lang="zh"] {
   .live-casino-page {
+
+    .carousel-inner {
+      .carousel-item {
+        &:nth-child(3) {
+          .sports-img {
+            img {
+              margin-left: 20% !important;
+            }
+          }
+        }
+      }
+    }
+
     .sports-item__content__title {
       word-break: keep-all !important;
 
-      &[data-i18n="live_casino_page.title6"],
-      &[data-i18n="live_casino_page.title2"],
       &[data-i18n="live_casino_page.title3"] {
-        font-size: 90px !important;
+        // font-size: 90px !important;
       }
     }
   }

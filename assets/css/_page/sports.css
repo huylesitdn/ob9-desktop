@@ -88,19 +88,20 @@
       font-style: normal;
       font-weight: 400;
       font-size: 120px;
-      line-height: 110px;
+      line-height: 125px;
       color: #597EF7;
       margin-top: 30px;
-      word-break: keep-all; }
+      word-break: keep-all;
+      margin-bottom: 5px; }
       .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__title[data-i18n="sports_page.title2"] {
-        font-size: 90px; }
+        font-size: 100px; }
     .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__description {
       font-weight: 400;
       font-size: 18px;
-      line-height: 22px;
+      line-height: 30px;
       color: #3651A8; }
     .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__action {
-      margin-top: 50px; }
+      margin-top: 70px; }
       .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__action a {
         background-image: url(../images/sports/play-now-btn.png);
         background-repeat: no-repeat;

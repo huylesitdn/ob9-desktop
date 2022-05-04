@@ -88,16 +88,17 @@
       font-style: normal;
       font-weight: 400;
       font-size: 120px;
-      line-height: 110px;
+      line-height: 125px;
       color: #597EF7;
-      margin-top: 30px; }
+      margin-top: 30px;
+      margin-bottom: 10px; }
     .fishing-page__container #carouselFishing .carousel-inner .carousel-item .sports-item__content__description {
       font-weight: 400;
       font-size: 18px;
-      line-height: 22px;
+      line-height: 30px;
       color: #3651A8; }
     .fishing-page__container #carouselFishing .carousel-inner .carousel-item .sports-item__content__action {
-      margin-top: 50px; }
+      margin-top: 70px; }
       .fishing-page__container #carouselFishing .carousel-inner .carousel-item .sports-item__content__action a {
         background-image: url(../images/sports/play-now-btn.png);
         background-repeat: no-repeat;

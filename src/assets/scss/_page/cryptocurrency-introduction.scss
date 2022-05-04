@@ -79,7 +79,7 @@
             &::after {
               left: -110px;
             }
-  
+
             &::before {
               right: -110px;
             }
@@ -116,7 +116,7 @@
         font-size: 18px;
         line-height: 16px;
         text-align: justify;
-        color: #000000;
+        color: #666;
         margin-bottom: 5px;
       }
 
@@ -227,11 +227,11 @@
 
             .title {
               font-weight: 500;
-              font-size: 14px;
+              font-size: 18px;
               line-height: 16px;
               text-align: center;
-              color: #000000;
-              margin: 10px 0;
+              color: #000;
+              margin: 10px 0 15px;
               // min-height: 50px;
               display: flex;
               place-items: center;
@@ -243,7 +243,7 @@
               font-size: 12px;
               line-height: 14px;
               text-align: justify;
-              color: #000000;
+              color: #666;
             }
           }
         }
@@ -251,6 +251,11 @@
 
       &__item2 {
         // margin: 15px -8px 0 -8px;
+
+        & > div[class*="col-"] {
+          padding-left: 8px;
+          padding-right: 8px;
+        }
 
         &__content {
           border: 1px solid #EEEEEE;
@@ -284,10 +289,10 @@
 
               .title {
                 font-weight: 500;
-                font-size: 14px;
+                font-size: 18px;
                 line-height: 16px;
-                color: #000000;
-                margin-bottom: 10px;
+                color: #000;
+                margin-bottom: 15px;
               }
 
               .description {
@@ -295,13 +300,17 @@
                 font-size: 12px;
                 line-height: 16px;
                 text-align: justify;
-                color: #000000;
+                color: #666;
 
                 ul {
                   padding-left: 15px;
 
                   li {
                     padding-bottom: 5px;
+                    margin-bottom: 15px;
+                    font-weight: 400;
+                    font-size: 14px !important;
+                    line-height: 16px !important;
 
                     &:last-child {
                       padding-bottom: 0;
@@ -319,6 +328,11 @@
 
         li {
           padding-bottom: 15px;
+          font-weight: 400;
+          font-size: 14px !important;
+          line-height: 16px !important;
+          color: #666 !important;
+          margin-bottom: 5px !important;
 
           &:last-child {
             padding-bottom: 0;

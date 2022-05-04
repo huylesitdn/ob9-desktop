@@ -9,7 +9,7 @@
       place-items: center;
       gap: 12px; }
       .transaction-history-page__content__status__item label {
-        min-width: 60px;
+        min-width: 80px;
         font-weight: 600;
         font-size: 16px;
         line-height: 16px;
@@ -51,7 +51,7 @@
     place-items: center;
     gap: 12px; }
     .transaction-history-page__content__filter label {
-      min-width: 60px;
+      min-width: 80px;
       font-weight: 600;
       font-size: 16px;
       line-height: 16px;
