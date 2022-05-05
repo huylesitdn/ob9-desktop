@@ -65,34 +65,36 @@
               .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__img img {
                 max-width: 400px;
                 max-height: 350px; }
-            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .hight-return {
-              max-width: 120px;
-              margin-bottom: 15px;
-              display: block;
-              margin-left: -20px; }
-            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .official {
-              max-width: 85px;
-              margin-bottom: 20px; }
-            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .title {
-              font-family: 'Aldo the Apache';
-              font-style: normal;
-              font-weight: 400;
-              font-size: 25px;
-              line-height: 25px;
-              color: #252943;
-              margin-bottom: 10px; }
-            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .description {
-              font-weight: 400;
-              font-size: 14px;
-              line-height: 16px;
-              color: #333333; }
-            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .play-now {
-              margin-top: 25px;
-              display: block; }
-              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .play-now img {
-                max-width: 110px; }
-              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .play-now:hover {
-                opacity: 0.7; }
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text {
+              min-width: 245px; }
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .hight-return {
+                max-width: 120px;
+                margin-bottom: 15px;
+                display: block;
+                margin-left: -20px; }
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .official {
+                max-width: 85px;
+                margin-bottom: 20px; }
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .title {
+                font-family: 'Aldo the Apache';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 25px;
+                color: #252943;
+                margin-bottom: 10px; }
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .description {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: #333333; }
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .play-now {
+                margin-top: 25px;
+                display: block; }
+                .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .play-now img {
+                  max-width: 110px; }
+                .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text .play-now:hover {
+                  opacity: 0.7; }
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item.SPORTS_EVENT {
               place-content: center;
               flex-direction: column; }
@@ -126,7 +128,12 @@
                   font-size: 20px;
                   line-height: 45px; }
           .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text {
-            padding-right: 20px; }
+            padding-right: 0;
+            min-width: 200px; }
+          @media only screen and (max-width: 1700px) {
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__img img {
+              max-width: 330px;
+              max-height: 300px; } }
           .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino {
             min-height: 560px;
             margin-top: -30px; }

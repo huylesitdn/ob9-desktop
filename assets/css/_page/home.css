@@ -131,21 +131,22 @@
             background-repeat: no-repeat;
             background-size: contain;
             padding: 30px;
-            min-height: 330px; }
+            min-height: 340px;
+            height: 100%; }
             .home-page__content__why_choose_us__content .row > div .item .title {
-              margin: 15px 0 10px;
+              margin: 30px 0 15px;
               font-family: 'Aldo the Apache';
               font-style: normal;
               font-weight: 400;
-              font-size: 32px;
-              line-height: 28px;
+              font-size: 30px;
+              line-height: 32px;
               text-align: center;
               text-transform: uppercase;
               color: #424B6A; }
             .home-page__content__why_choose_us__content .row > div .item .description {
               font-weight: 400;
-              font-size: 18px;
-              line-height: 21px;
+              font-size: 16px;
+              line-height: 20px;
               text-align: center;
               color: #424B6E; }
             .home-page__content__why_choose_us__content .row > div .item .img {

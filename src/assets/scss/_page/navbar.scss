@@ -104,6 +104,8 @@
                   }
 
                   &__text {
+                    min-width: 245px;
+
                     .hight-return {
                       max-width: 120px;
                       margin-bottom: 15px;
@@ -197,13 +199,21 @@
                 &.sports {
 
                   .mymenu__container__item__text {
-                    padding-right: 20px;
+                    // padding-right: 20px;
+                    padding-right: 0;
+                    min-width: 200px;
                   }
 
                   .mymenu__container__item__img {
                     img {
                       // max-width: 390px;
                       // max-height: 320px;
+                    }
+                    @media only screen and (max-width: 1700px) {
+                      img {
+                        max-width: 330px;
+                        max-height: 300px;
+                      }
                     }
                   }
                 }
