@@ -47,7 +47,7 @@ img {
   padding-left: var(--bs-gutter-x-mobile, .75rem);
 }
 
-@media (min-width: 1400px) {
+@media only screen and (max-width: 1400px) {
 
   .container,
   .container-lg,
@@ -55,7 +55,9 @@ img {
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1224px;
+    max-width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -65,9 +67,9 @@ img {
   .container-lg,
   .container-md,
   .container-sm {
-    max-width: 100%;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    max-width: 100% !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
   }
 }
 

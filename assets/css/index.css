@@ -49,23 +49,25 @@ img {
   padding-right: var(--bs-gutter-x-mobile, 0.75rem);
   padding-left: var(--bs-gutter-x-mobile, 0.75rem); }
 
-@media (min-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .container,
   .container-lg,
   .container-md,
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1224px; } }
+    max-width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important; } }
 
 @media only screen and (max-width: 1200px) {
   .container,
   .container-lg,
   .container-md,
   .container-sm {
-    max-width: 100%;
-    padding-left: 15px !important;
-    padding-right: 15px !important; } }
+    max-width: 100% !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important; } }
 
 .form-control {
   font-size: 14px;
@@ -717,6 +719,9 @@ span.input-group-text[data-i18n="To"] {
       color: #515B7C; }
     .my-navbar__main__container .navbar-nav.nav-right {
       gap: 12px; }
+      @media only screen and (max-width: 1120px) {
+        .my-navbar__main__container .navbar-nav.nav-right {
+          gap: 2px; } }
       .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link {
         padding-top: 15px; }
         .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img {
@@ -729,6 +734,9 @@ span.input-group-text[data-i18n="To"] {
       place-items: center;
       place-content: flex-start;
       gap: 25px; }
+      @media only screen and (max-width: 1120px) {
+        .my-navbar__main__container .navbar-nav.nav-left {
+          gap: 15px; } }
       .my-navbar__main__container .navbar-nav.nav-left .nav-item.dropdown {
         position: initial; }
         .my-navbar__main__container .navbar-nav.nav-left .nav-item.dropdown:hover .dropdown-menu {
@@ -828,20 +836,37 @@ span.input-group-text[data-i18n="To"] {
           .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text {
             padding-right: 0;
             min-width: 200px; }
+            @media only screen and (max-width: 1300px) {
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text {
+                min-width: 180px !important;
+                max-width: 180px; } }
+            @media only screen and (max-width: 1200px) {
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text {
+                min-width: 150px !important;
+                max-width: 150px; } }
           @media only screen and (max-width: 1700px) {
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__img img {
               max-width: 330px;
               max-height: 300px; } }
+          @media only screen and (max-width: 1600px) {
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__img img {
+              margin-left: -20px; } }
+          @media only screen and (max-width: 1500px) {
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__img img {
+              margin-left: -50px; } }
           .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino {
             min-height: 560px;
             margin-top: -30px; }
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino .mymenu__container__item {
               place-content: center; }
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino .second-col {
-              margin-top: -100px; }
+              margin-top: -50px; }
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino img {
               max-width: 330px;
               max-height: 280px; }
+              @media only screen and (max-width: 1500px) {
+                .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino img {
+                  max-width: 100%; } }
           .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports {
             min-height: 431px; }
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports .mymenu__container__item {
@@ -849,6 +874,9 @@ span.input-group-text[data-i18n="To"] {
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports img {
               max-width: 400px;
               max-height: 340px; }
+              @media only screen and (max-width: 1500px) {
+                .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports img {
+                  max-width: 100%; } }
           .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.lottery {
             min-height: 431px;
             place-content: center;
@@ -897,6 +925,10 @@ span.input-group-text[data-i18n="To"] {
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF; }
+    @media only screen and (max-width: 1200px) {
+      .my-navbar__top__container .navbar-text {
+        font-size: 12px;
+        padding-right: 3px !important; } }
   .my-navbar__top__container .nav-login-form {
     display: flex;
     place-items: center;
@@ -963,9 +995,20 @@ span.input-group-text[data-i18n="To"] {
         max-height: 12px; }
       .my-navbar__top__container .navbar-nav .nav-item .nav-link:hover {
         color: #fff; }
+      @media only screen and (max-width: 1200px) {
+        .my-navbar__top__container .navbar-nav .nav-item .nav-link {
+          padding-left: 8px;
+          padding-right: 8px; } }
+      @media only screen and (max-width: 1120px) {
+        .my-navbar__top__container .navbar-nav .nav-item .nav-link {
+          font-size: 12px; } }
     .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link {
       padding-left: 10px;
       padding-right: 10px; }
+      @media only screen and (max-width: 1200px) {
+        .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link {
+          padding-left: 8px;
+          padding-right: 8px; } }
     .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info .nav-link {
       display: flex;
       place-content: flex-start;
@@ -1458,6 +1501,9 @@ span.input-group-text[data-i18n="To"] {
       flex-wrap: wrap;
       max-height: 500px;
       position: initial; }
+      @media only screen and (max-width: 1500px) {
+        .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
+          flex-wrap: wrap-reverse; } }
       .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button {
         width: auto;
         height: auto;

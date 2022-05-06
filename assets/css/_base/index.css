@@ -42,23 +42,25 @@ img {
   padding-right: var(--bs-gutter-x-mobile, 0.75rem);
   padding-left: var(--bs-gutter-x-mobile, 0.75rem); }
 
-@media (min-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .container,
   .container-lg,
   .container-md,
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1224px; } }
+    max-width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important; } }
 
 @media only screen and (max-width: 1200px) {
   .container,
   .container-lg,
   .container-md,
   .container-sm {
-    max-width: 100%;
-    padding-left: 15px !important;
-    padding-right: 15px !important; } }
+    max-width: 100% !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important; } }
 
 .form-control {
   font-size: 14px;

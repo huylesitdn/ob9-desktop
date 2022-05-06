@@ -41,6 +41,10 @@
           max-height: 500px;
           position: initial;
 
+          @media only screen and (max-width: 1500px) {
+            flex-wrap: wrap-reverse;
+          }
+
           button {
             width: auto;
             height: auto;
