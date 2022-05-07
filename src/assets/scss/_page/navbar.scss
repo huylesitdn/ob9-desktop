@@ -85,9 +85,15 @@
               background-size: cover;
 
               &__container {
+                max-width: var(--max-with);
                 min-height: 430px;
+                margin: auto;
                 // padding: 0 30px;
                 padding: 0;
+
+                @media only screen and (max-width: 1200px) {
+                  min-height: 365px;
+                }
 
                 &__item {
                   display: flex;
@@ -211,14 +217,24 @@
                     padding-right: 0;
                     min-width: 200px;
 
+                    @media only screen and (max-width: 1450px) {
+                      min-width: 170px !important;
+                      max-width: 170px;
+                    }
+
                     @media only screen and (max-width: 1300px) {
-                      min-width: 180px !important;
-                      max-width: 180px;
+                      min-width: 150px !important;
+                      max-width: 150px;
+                    }
+
+                    @media only screen and (max-width: 1250px) {
+                      min-width: 150px !important;
+                      max-width: 150px;
                     }
 
                     @media only screen and (max-width: 1200px) {
-                      min-width: 150px !important;
-                      max-width: 150px;
+                      min-width: 130px !important;
+                      max-width: 130px;
                     }
                   }
 
@@ -239,6 +255,15 @@
                       @media only screen and (max-width: 1500px) {
                         margin-left: -50px;
                       }
+                      @media only screen and (max-width: 1300px) {
+                        max-width: 300px;
+                      }
+                      @media only screen and (max-width: 1200px) {
+                        max-width: 290px;
+                      }
+                      @media only screen and (max-width: 1100px) {
+                        max-width: 275px;
+                      }
                     }
                   }
                 }
@@ -246,6 +271,10 @@
                 &.live-casino {
                   min-height: 560px;
                   margin-top: -30px;
+
+                  @media only screen and (max-width: 1200px) {
+                    min-height: 430px;
+                  }
 
                   .mymenu__container__item {
                     place-content: center;
@@ -265,8 +294,22 @@
                   }
                 }
 
+                &.fishing {
+                  .mymenu__container__item__text {
+
+                    @media only screen and (max-width: 1200px) {
+                      min-width: 190px !important;
+                      max-width: 190px;
+                    }
+                  }
+                }
+
                 &.e-sports {
                   min-height: 431px;
+
+                  @media only screen and (max-width: 1200px) {
+                    min-height: 365px;
+                  }
 
                   .mymenu__container__item {
                     place-content: center;
@@ -286,6 +329,10 @@
                   min-height: 431px;
                   place-content: center;
                   margin: auto;
+
+                  @media only screen and (max-width: 1200px) {
+                    min-height: 365px;
+                  }
 
                   .mymenu__container__item__img {
                     img {
@@ -335,7 +382,7 @@
   }
 
   &__top {
-    max-width: var(--max-with);
+    // max-width: var(--max-with);
     min-width: var(--min-with);
     margin: auto;
     background: #353F4B;

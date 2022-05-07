@@ -52,8 +52,13 @@
         background-repeat: no-repeat;
         background-size: cover; }
         .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container {
+          max-width: var(--max-with);
           min-height: 430px;
+          margin: auto;
           padding: 0; }
+          @media only screen and (max-width: 1200px) {
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container {
+              min-height: 365px; } }
           .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item {
             display: flex;
             place-content: flex-end;
@@ -136,14 +141,22 @@
           .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text {
             padding-right: 0;
             min-width: 200px; }
-            @media only screen and (max-width: 1300px) {
+            @media only screen and (max-width: 1450px) {
               .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text {
-                min-width: 180px !important;
-                max-width: 180px; } }
-            @media only screen and (max-width: 1200px) {
+                min-width: 170px !important;
+                max-width: 170px; } }
+            @media only screen and (max-width: 1300px) {
               .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text {
                 min-width: 150px !important;
                 max-width: 150px; } }
+            @media only screen and (max-width: 1250px) {
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text {
+                min-width: 150px !important;
+                max-width: 150px; } }
+            @media only screen and (max-width: 1200px) {
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text {
+                min-width: 130px !important;
+                max-width: 130px; } }
           @media only screen and (max-width: 1700px) {
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__img img {
               max-width: 330px;
@@ -154,9 +167,21 @@
           @media only screen and (max-width: 1500px) {
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__img img {
               margin-left: -50px; } }
+          @media only screen and (max-width: 1300px) {
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__img img {
+              max-width: 300px; } }
+          @media only screen and (max-width: 1200px) {
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__img img {
+              max-width: 290px; } }
+          @media only screen and (max-width: 1100px) {
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__img img {
+              max-width: 275px; } }
           .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino {
             min-height: 560px;
             margin-top: -30px; }
+            @media only screen and (max-width: 1200px) {
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino {
+                min-height: 430px; } }
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino .mymenu__container__item {
               place-content: center; }
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino .second-col {
@@ -167,8 +192,15 @@
               @media only screen and (max-width: 1500px) {
                 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino img {
                   max-width: 100%; } }
+          @media only screen and (max-width: 1200px) {
+            .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.fishing .mymenu__container__item__text {
+              min-width: 190px !important;
+              max-width: 190px; } }
           .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports {
             min-height: 431px; }
+            @media only screen and (max-width: 1200px) {
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports {
+                min-height: 365px; } }
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports .mymenu__container__item {
               place-content: center; }
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports img {
@@ -181,6 +213,9 @@
             min-height: 431px;
             place-content: center;
             margin: auto; }
+            @media only screen and (max-width: 1200px) {
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.lottery {
+                min-height: 365px; } }
             .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.lottery .mymenu__container__item__img img {
               max-width: 490px;
               min-width: 480px; }
@@ -210,7 +245,6 @@
             background-size: cover; }
 
 .my-navbar__top {
-  max-width: var(--max-with);
   min-width: var(--min-with);
   margin: auto;
   background: #353F4B;

@@ -4,39 +4,43 @@
   background-repeat: no-repeat; }
   .account-layout__container {
     padding-top: 30px; }
-    .account-layout__container__content .__title {
-      margin-bottom: 15px;
-      display: flex;
-      place-content: space-between;
-      place-items: flex-end;
-      border-bottom: 1px solid #EBEBEB;
-      padding-bottom: 20px;
-      margin-bottom: 50px;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 16px;
-      color: #383B43; }
-      .account-layout__container__content .__title a {
+    .account-layout__container__content {
+      margin-left: 0;
+      margin-right: 0; }
+      .account-layout__container__content .__title {
+        margin-bottom: 15px;
+        display: flex;
+        place-content: space-between;
+        place-items: flex-end;
+        border-bottom: 1px solid #EBEBEB;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
         font-weight: 600;
         font-size: 14px;
         line-height: 16px;
         color: #383B43; }
-        .account-layout__container__content .__title a img {
-          max-width: 14px; }
-      .account-layout__container__content .__title .title {
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 26px;
-        color: #383B43;
-        text-transform: uppercase;
-        margin-right: 5px; }
-      .account-layout__container__content .__title .subtitle {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;
-        color: #94A6B7; }
-    .account-layout__container__content__left {
-      width: 22% !important; }
+        .account-layout__container__content .__title a {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 16px;
+          color: #383B43; }
+          .account-layout__container__content .__title a img {
+            max-width: 14px; }
+        .account-layout__container__content .__title .title {
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 26px;
+          color: #383B43;
+          text-transform: uppercase;
+          margin-right: 5px; }
+        .account-layout__container__content .__title .subtitle {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #94A6B7; }
+      @media only screen and (max-width: 1920px) {
+        .account-layout__container__content__left {
+          width: 22% !important; } }
       .account-layout__container__content__left .profile-navbar {
         padding-right: 15px;
         height: 100%;
@@ -135,6 +139,9 @@
               line-height: 16px;
               text-align: center;
               color: #8590A6; }
+              @media only screen and (max-width: 1200px) {
+                .account-layout__container__content__left .profile-navbar__navbar__top-icon__items {
+                  font-size: 12px; } }
               .account-layout__container__content__left .profile-navbar__navbar__top-icon__items div {
                 margin-top: 5px; }
               .account-layout__container__content__left .profile-navbar__navbar__top-icon__items__img {
@@ -165,6 +172,9 @@
               place-items: center;
               gap: 15px;
               padding: 10px 0; }
+              @media only screen and (max-width: 1200px) {
+                .account-layout__container__content__left .profile-navbar__navbar__bottom-nav__item__link {
+                  font-size: 12px; } }
               .account-layout__container__content__left .profile-navbar__navbar__bottom-nav__item__link__img {
                 width: 20px; }
                 .account-layout__container__content__left .profile-navbar__navbar__bottom-nav__item__link__img-active {
@@ -176,15 +186,17 @@
                   display: none; }
                   .account-layout__container__content__left .profile-navbar__navbar__bottom-nav__item__link:hover .profile-navbar__navbar__bottom-nav__item__link__img-active, .account-layout__container__content__left .profile-navbar__navbar__bottom-nav__item__link.active .profile-navbar__navbar__bottom-nav__item__link__img-active {
                     display: initial; }
-    .account-layout__container__content__right {
-      padding-left: 0;
-      width: 78% !important; }
-      .account-layout__container__content__right__content {
-        background: #FFFFFF;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 20px;
-        padding: 20px;
-        height: 100%; }
+      .account-layout__container__content__right {
+        padding-left: 0; }
+        @media only screen and (max-width: 1920px) {
+          .account-layout__container__content__right {
+            width: 78% !important; } }
+        .account-layout__container__content__right__content {
+          background: #FFFFFF;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 20px;
+          padding: 20px;
+          height: 100%; }
 
 #selectProfilePictureModal .modal-content .modal-header {
   font-weight: 400;

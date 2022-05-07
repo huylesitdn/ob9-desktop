@@ -8,6 +8,9 @@
 
     &__content {
 
+      margin-left: 0;
+      margin-right: 0;
+
       .__title {
         margin-bottom: 15px;
         display: flex;
@@ -52,7 +55,10 @@
       }
 
       &__left {
-        width: 22% !important;
+        
+        @media only screen and (max-width: 1920px) {
+          width: 22% !important;
+        }
 
         .profile-navbar {
           padding-right: 15px;
@@ -188,6 +194,10 @@
                 text-align: center;
                 color: #8590A6;
 
+                @media only screen and (max-width: 1200px) {
+                  font-size: 12px;
+                }
+
                 div {
                   margin-top: 5px;
                 }
@@ -239,6 +249,10 @@
                   gap: 15px;
                   padding: 10px 0;
 
+                  @media only screen and (max-width: 1200px) {
+                    font-size: 12px;
+                  }
+
                   &__img {
                     width: 20px;
 
@@ -269,7 +283,9 @@
 
       &__right {
         padding-left: 0;
-        width: 78% !important;
+        @media only screen and (max-width: 1920px) {
+          width: 78% !important;
+        }
 
         &__content {
           background: #FFFFFF;
