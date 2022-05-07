@@ -310,7 +310,7 @@
       max-height: 80px; }
       @media only screen and (max-width: 1200px) {
         .my-navbar__main__container .navbar-brand img {
-          max-height: 78px; } }
+          max-height: 70px; } }
   .my-navbar__main__container .navbar-nav {
     flex-direction: row !important; }
     .my-navbar__main__container .navbar-nav .nav-item .nav-link {
@@ -467,6 +467,13 @@
               .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text {
                 min-width: 130px !important;
                 max-width: 130px; } }
+            @media only screen and (max-width: 1100px) {
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text .title {
+                font-size: 22px;
+                line-height: 22px; }
+              .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__text .description {
+                font-size: 12px;
+                line-height: 16px; } }
           .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__img img {
             margin-left: -20px; }
             @media only screen and (max-width: 1800px) {
@@ -494,10 +501,12 @@
                 max-width: 290px; } }
             @media only screen and (max-width: 1100px) {
               .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__img img {
-                max-width: 270px; } }
+                max-width: 260px;
+                margin-left: -40px; } }
             @media only screen and (max-width: 1060px) {
               .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.sports .mymenu__container__item__img img {
-                max-width: 250px; } }
+                max-width: 250px;
+                margin-left: -45px; } }
           .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino {
             min-height: 560px;
             margin-top: -30px; }

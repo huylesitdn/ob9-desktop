@@ -15,7 +15,7 @@
           max-height: 80px;
 
           @media only screen and (max-width: 1200px) {
-            max-height: 78px;
+            max-height: 70px;
           }
         }
       }
@@ -250,6 +250,17 @@
                       min-width: 130px !important;
                       max-width: 130px;
                     }
+                    @media only screen and (max-width: 1100px) {
+                      .title {
+                        font-size: 22px;
+                        line-height: 22px;
+                      }
+  
+                      .description {
+                        font-size: 12px;
+                        line-height: 16px;
+                      }
+                    }
                   }
 
                   .mymenu__container__item__img {
@@ -290,11 +301,13 @@
                       }
 
                       @media only screen and (max-width: 1100px) {
-                        max-width: 270px;
+                        max-width: 260px;
+                        margin-left: -40px;
                       }
 
                       @media only screen and (max-width: 1060px) {
                         max-width: 250px;
+                        margin-left: -45px;
                       }
                     }
                   }
