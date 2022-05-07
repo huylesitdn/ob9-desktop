@@ -153,6 +153,19 @@
               height: 130px; }
               .home-page__content__why_choose_us__content .row > div .item .img img {
                 max-width: 130px; }
+            @media only screen and (max-width: 1150px) {
+              .home-page__content__why_choose_us__content .row > div .item {
+                padding: 20px 20px; }
+                .home-page__content__why_choose_us__content .row > div .item .title {
+                  font-size: 28px;
+                  line-height: 32px; }
+                .home-page__content__why_choose_us__content .row > div .item .description {
+                  font-size: 14px;
+                  line-height: 20px; }
+                .home-page__content__why_choose_us__content .row > div .item .img {
+                  height: 100px; }
+                  .home-page__content__why_choose_us__content .row > div .item .img img {
+                    max-width: 100px; } }
   .home-page__content__exciting_game {
     position: relative;
     text-align: center;

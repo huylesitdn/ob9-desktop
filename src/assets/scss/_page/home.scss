@@ -65,7 +65,7 @@
     place-items: flex-end;
     flex-direction: column;
     width: 90px;
-    
+
     a {
       transition: 0.5s;
       width: 70px;
@@ -204,6 +204,28 @@
 
                 img {
                   max-width: 130px;
+                }
+              }
+
+              @media only screen and (max-width: 1150px) {
+                padding: 20px 20px;
+
+                .title {
+                  font-size: 28px;
+                  line-height: 32px;
+                }
+
+                .description {
+                  font-size: 14px;
+                  line-height: 20px;
+                }
+
+                .img {
+                  height: 100px;
+
+                  img {
+                    max-width: 100px;
+                  }
                 }
               }
             }
