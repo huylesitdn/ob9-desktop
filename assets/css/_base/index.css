@@ -236,6 +236,38 @@ a {
         text-align: center;
         color: #FFFFFF; }
 
+.modal.copymodal .modal-dialog {
+  max-width: 400px;
+  margin: auto; }
+  .modal.copymodal .modal-dialog .modal-content {
+    border-radius: 20px;
+    padding: 30px 30px; }
+    .modal.copymodal .modal-dialog .modal-content .modal-body {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+      color: #000000; }
+      .modal.copymodal .modal-dialog .modal-content .modal-body h5 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 14px;
+        text-align: center;
+        color: #000000; }
+      .modal.copymodal .modal-dialog .modal-content .modal-body .btn {
+        height: 50px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        min-width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF; }
+
 .paginations {
   text-align: center; }
   .paginations__item {

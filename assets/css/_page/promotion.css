@@ -282,6 +282,18 @@
           line-height: 30px;
           color: #000000;
           margin: 15px 0; }
+    .campaign-bonanza-detail__content__sport-btn {
+      display: flex;
+      place-content: center;
+      place-items: center;
+      gap: 30px; }
+      .campaign-bonanza-detail__content__sport-btn .btn {
+        min-width: 150px;
+        min-height: 50px;
+        font-size: 18px;
+        line-height: 25px; }
+        .campaign-bonanza-detail__content__sport-btn .btn-outline-primary:hover {
+          color: #4E7FFF; }
     .campaign-bonanza-detail__content__items {
       margin: 15px -8px; }
       .campaign-bonanza-detail__content__items__item {

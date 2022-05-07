@@ -55,10 +55,10 @@
       }
 
       &__left {
-        
-        @media only screen and (max-width: 1920px) {
-          width: 22% !important;
-        }
+        width: 285px !important;
+        // @media only screen and (max-width: 1920px) {
+        //   width: 22% !important;
+        // }
 
         .profile-navbar {
           padding-right: 15px;
@@ -283,9 +283,11 @@
 
       &__right {
         padding-left: 0;
-        @media only screen and (max-width: 1920px) {
-          width: 78% !important;
-        }
+        width: 100% !important;
+        flex: 1;
+        // @media only screen and (max-width: 1920px) {
+        //   width: 78% !important;
+        // }
 
         &__content {
           background: #FFFFFF;

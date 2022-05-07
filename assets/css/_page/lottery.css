@@ -4,7 +4,7 @@
   background-position: top;
   padding-top: 0;
   margin-top: 115px;
-  background-size: contain; }
+  background-size: auto 620px; }
   .lottery-page__top-container__content {
     min-height: 620px;
     display: flex;

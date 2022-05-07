@@ -455,6 +455,26 @@
 
     }
 
+    &__sport-btn {
+      display: flex;
+      place-content: center;
+      place-items: center;
+      gap: 30px;
+
+      .btn {
+        min-width: 150px;
+        min-height: 50px;
+        font-size: 18px;
+        line-height: 25px;
+
+        &-outline-primary {
+          &:hover {
+            color: #4E7FFF;
+          }
+        }
+      }
+    }
+
     &__items {
       margin: 15px -8px;
 
