@@ -69,7 +69,7 @@ img {
     padding-left: 8px !important;
     padding-right: 8px !important; } }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1050px) {
   html,
   body {
     overflow-x: hidden !important; }
