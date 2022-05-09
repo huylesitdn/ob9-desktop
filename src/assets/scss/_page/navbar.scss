@@ -1,10 +1,12 @@
 .my-navbar {
+
   &__main {
     top: 35px;
     min-height: 80px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 0;
+    min-width: var(--min-with);
 
     &__container {
       .navbar-brand {
@@ -30,8 +32,6 @@
             line-height: 12px;
             text-align: center;
             color: #515B7C;
-
-
           }
         }
 
@@ -39,7 +39,7 @@
           gap: 12px;
 
           @media only screen and (max-width: 1120px) {
-            gap: 2px;
+            gap: 5px;
           }
 
           .nav-item {
@@ -250,12 +250,13 @@
                       min-width: 130px !important;
                       max-width: 130px;
                     }
+
                     @media only screen and (max-width: 1100px) {
                       .title {
                         font-size: 22px;
                         line-height: 22px;
                       }
-  
+
                       .description {
                         font-size: 12px;
                         line-height: 16px;
@@ -506,7 +507,7 @@
         line-height: 16px;
         color: #999;
 
-        @media only screen and (max-width: 1200px) {
+        @media only screen and (max-width: 1280px) {
           font-size: 12px;
           padding-right: 3px !important;
         }
@@ -611,19 +612,20 @@
               color: #fff;
             }
 
-            @media only screen and (max-width: 1200px) {
-              padding-left: 8px;
-              padding-right: 8px;
-            }
-
-            @media only screen and (max-width: 1120px) {
-              font-size: 12px;
+            @media only screen and (max-width: 1280px) {
+              font-size: 12px !important;
 
               &.disabled {
-                padding-left: 5px;
-                padding-right: 5px;
+                padding-left: 5px !important;
+                padding-right: 5px !important;
               }
             }
+
+            @media only screen and (max-width: 1200px) {
+              padding-left: 8px !important;
+              padding-right: 8px !important;
+            }
+
           }
         }
 
@@ -633,6 +635,15 @@
             .nav-link {
               padding-left: 10px;
               padding-right: 10px;
+
+              @media only screen and (max-width: 1280px) {
+                font-size: 12px !important;
+  
+                &.disabled {
+                  padding-left: 5px !important;
+                  padding-right: 5px !important;
+                }
+              }
 
               @media only screen and (max-width: 1200px) {
                 padding-left: 8px;
@@ -667,6 +678,10 @@
                         color: #fff !important;
                       }
                     }
+                  }
+
+                  @media only screen and (max-width: 1280px) {
+                    font-size: 12px !important;
                   }
                 }
               }

@@ -3,7 +3,8 @@
   min-height: 80px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 0; }
+  padding: 0;
+  min-width: var(--min-with); }
   .my-navbar__main__container .navbar-brand {
     padding: 0;
     margin-right: 30px; }
@@ -24,7 +25,7 @@
       gap: 12px; }
       @media only screen and (max-width: 1120px) {
         .my-navbar__main__container .navbar-nav.nav-right {
-          gap: 2px; } }
+          gap: 5px; } }
       .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link {
         padding-top: 15px; }
         .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img {
@@ -332,7 +333,7 @@
     font-size: 14px;
     line-height: 16px;
     color: #999; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1280px) {
       .my-navbar__top__container .navbar-text {
         font-size: 12px;
         padding-right: 3px !important; } }
@@ -402,19 +403,25 @@
         max-height: 12px; }
       .my-navbar__top__container .navbar-nav .nav-item .nav-link:hover {
         color: #fff; }
+      @media only screen and (max-width: 1280px) {
+        .my-navbar__top__container .navbar-nav .nav-item .nav-link {
+          font-size: 12px !important; }
+          .my-navbar__top__container .navbar-nav .nav-item .nav-link.disabled {
+            padding-left: 5px !important;
+            padding-right: 5px !important; } }
       @media only screen and (max-width: 1200px) {
         .my-navbar__top__container .navbar-nav .nav-item .nav-link {
-          padding-left: 8px;
-          padding-right: 8px; } }
-      @media only screen and (max-width: 1120px) {
-        .my-navbar__top__container .navbar-nav .nav-item .nav-link {
-          font-size: 12px; }
-          .my-navbar__top__container .navbar-nav .nav-item .nav-link.disabled {
-            padding-left: 5px;
-            padding-right: 5px; } }
+          padding-left: 8px !important;
+          padding-right: 8px !important; } }
     .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link {
       padding-left: 10px;
       padding-right: 10px; }
+      @media only screen and (max-width: 1280px) {
+        .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link {
+          font-size: 12px !important; }
+          .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link.disabled {
+            padding-left: 5px !important;
+            padding-right: 5px !important; } }
       @media only screen and (max-width: 1200px) {
         .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link {
           padding-left: 8px;
@@ -433,3 +440,6 @@
       color: #999 !important; }
       .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info.welcome .nav-link span:hover span {
         color: #fff !important; }
+    @media only screen and (max-width: 1280px) {
+      .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info.welcome .nav-link {
+        font-size: 12px !important; } }

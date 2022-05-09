@@ -69,6 +69,13 @@ img {
     padding-left: 8px !important;
     padding-right: 8px !important; } }
 
+@media only screen and (max-width: 1124px) {
+  html,
+  body {
+    overflow-x: hidden !important; }
+  .navbar-nav .dropdown-menu {
+    position: absolute !important; } }
+
 .form-control {
   font-size: 14px;
   line-height: 16px; }
@@ -735,7 +742,8 @@ span.input-group-text[data-i18n="To"] {
   min-height: 80px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 0; }
+  padding: 0;
+  min-width: var(--min-with); }
   .my-navbar__main__container .navbar-brand {
     padding: 0;
     margin-right: 30px; }
@@ -756,7 +764,7 @@ span.input-group-text[data-i18n="To"] {
       gap: 12px; }
       @media only screen and (max-width: 1120px) {
         .my-navbar__main__container .navbar-nav.nav-right {
-          gap: 2px; } }
+          gap: 5px; } }
       .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link {
         padding-top: 15px; }
         .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img {
@@ -1064,7 +1072,7 @@ span.input-group-text[data-i18n="To"] {
     font-size: 14px;
     line-height: 16px;
     color: #999; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1280px) {
       .my-navbar__top__container .navbar-text {
         font-size: 12px;
         padding-right: 3px !important; } }
@@ -1134,19 +1142,25 @@ span.input-group-text[data-i18n="To"] {
         max-height: 12px; }
       .my-navbar__top__container .navbar-nav .nav-item .nav-link:hover {
         color: #fff; }
+      @media only screen and (max-width: 1280px) {
+        .my-navbar__top__container .navbar-nav .nav-item .nav-link {
+          font-size: 12px !important; }
+          .my-navbar__top__container .navbar-nav .nav-item .nav-link.disabled {
+            padding-left: 5px !important;
+            padding-right: 5px !important; } }
       @media only screen and (max-width: 1200px) {
         .my-navbar__top__container .navbar-nav .nav-item .nav-link {
-          padding-left: 8px;
-          padding-right: 8px; } }
-      @media only screen and (max-width: 1120px) {
-        .my-navbar__top__container .navbar-nav .nav-item .nav-link {
-          font-size: 12px; }
-          .my-navbar__top__container .navbar-nav .nav-item .nav-link.disabled {
-            padding-left: 5px;
-            padding-right: 5px; } }
+          padding-left: 8px !important;
+          padding-right: 8px !important; } }
     .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link {
       padding-left: 10px;
       padding-right: 10px; }
+      @media only screen and (max-width: 1280px) {
+        .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link {
+          font-size: 12px !important; }
+          .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link.disabled {
+            padding-left: 5px !important;
+            padding-right: 5px !important; } }
       @media only screen and (max-width: 1200px) {
         .my-navbar__top__container .navbar-nav.nav-right .nav-item .nav-link {
           padding-left: 8px;
@@ -1165,10 +1179,14 @@ span.input-group-text[data-i18n="To"] {
       color: #999 !important; }
       .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info.welcome .nav-link span:hover span {
         color: #fff !important; }
+    @media only screen and (max-width: 1280px) {
+      .my-navbar__top__container .navbar-nav.nav-right .nav-item.nav-info.welcome .nav-link {
+        font-size: 12px !important; } }
 
 .footer {
   background: #353F4B;
-  padding: 30px 0; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
   .footer__container__copyright {
     font-weight: 400;
     font-size: 12px;
@@ -4153,7 +4171,7 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
           line-height: 14px;
           color: #000000; }
     .deposit-page__content__tab .tab-content .deposit-items {
-      margin-bottom: 40px; }
+      margin-bottom: 50px; }
       .deposit-page__content__tab .tab-content .deposit-items__title {
         font-weight: 600;
         font-size: 14px;

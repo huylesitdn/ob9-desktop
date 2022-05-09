@@ -73,6 +73,18 @@ img {
   }
 }
 
+
+@media only screen and (max-width: 1124px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: absolute !important;
+  }
+}
+
 .form-control {
   font-size: 14px;
   line-height: 16px;
@@ -332,6 +344,7 @@ a {
       }
     }
   }
+
   &.copymodal {
     .modal-dialog {
       max-width: 400px;
@@ -419,7 +432,7 @@ a {
   }
 }
 
-span{
+span {
   &.input-group-text {
     &[data-i18n="To"] {
       padding-left: 2px;
@@ -433,14 +446,15 @@ span{
   animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 
 @keyframes spin {
   from {
-      transform:rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
-      transform:rotate(360deg);
+    transform: rotate(360deg);
   }
 }

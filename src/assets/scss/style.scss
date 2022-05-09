@@ -96,7 +96,7 @@
 
     &__input {
       &__label {
-        font-weight: 400;
+        font-weight: 600;
         font-size: 14px;
         line-height: 14px;
         color: #000000;
@@ -284,6 +284,7 @@
       text-align: center;
       position: relative;
       padding: 8px 0;
+      cursor: pointer;
 
       .checkmark {
         position: absolute;
@@ -293,6 +294,12 @@
         bottom: 0;
         border: 1px solid transparent;
         border-radius: 10px;
+      }
+
+      &:hover {
+        .checkmark {
+          border-color: #597EF7;
+        }
       }
 
       &__checkbox {
@@ -319,8 +326,9 @@
       }
 
       &__title {
-        font-size: 12px;
-        line-height: 12px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
         text-align: center;
         color: #000000;
       }

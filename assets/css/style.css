@@ -66,7 +66,7 @@
     margin-bottom: 40px;
     cursor: pointer; }
     .deposit-amount__select-bank__input__label, .deposit-amount__select-promotion__input__label {
-      font-weight: 400;
+      font-weight: 600;
       font-size: 14px;
       line-height: 14px;
       color: #000000;
@@ -206,7 +206,8 @@
       flex-direction: column;
       text-align: center;
       position: relative;
-      padding: 8px 0; }
+      padding: 8px 0;
+      cursor: pointer; }
       .deposit-amount__item__label .checkmark {
         position: absolute;
         left: 0;
@@ -215,6 +216,8 @@
         bottom: 0;
         border: 1px solid transparent;
         border-radius: 10px; }
+      .deposit-amount__item__label:hover .checkmark {
+        border-color: #597EF7; }
       .deposit-amount__item__label__checkbox {
         display: none; }
         .deposit-amount__item__label__checkbox:checked ~ .checkmark {
@@ -231,8 +234,9 @@
             right: 0;
             z-index: 9; }
       .deposit-amount__item__label__title {
-        font-size: 12px;
-        line-height: 12px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
         text-align: center;
         color: #000000; }
 

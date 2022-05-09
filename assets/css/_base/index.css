@@ -62,6 +62,13 @@ img {
     padding-left: 8px !important;
     padding-right: 8px !important; } }
 
+@media only screen and (max-width: 1124px) {
+  html,
+  body {
+    overflow-x: hidden !important; }
+  .navbar-nav .dropdown-menu {
+    position: absolute !important; } }
+
 .form-control {
   font-size: 14px;
   line-height: 16px; }
