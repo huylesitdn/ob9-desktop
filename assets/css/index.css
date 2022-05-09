@@ -773,6 +773,12 @@ span.input-group-text[data-i18n="To"] {
           .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img img {
             max-width: 20px;
             max-height: 20px; }
+          .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img #flagLanguage {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            object-fit: cover; }
     .my-navbar__main__container .navbar-nav.nav-left {
       place-items: center;
       place-content: flex-start;
@@ -1673,10 +1679,20 @@ span.input-group-text[data-i18n="To"] {
       bottom: 0;
       flex-wrap: wrap;
       max-height: 500px;
-      position: initial; }
+      position: initial;
+      margin-right: 5%; }
+      @media only screen and (max-width: 1700px) {
+        .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
+          margin-right: 8%; } }
       @media only screen and (max-width: 1500px) {
         .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
-          flex-wrap: wrap-reverse; } }
+          margin-right: 14%; } }
+      @media only screen and (max-width: 1350px) {
+        .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
+          margin-right: 16%; } }
+      @media only screen and (max-width: 1100px) {
+        .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
+          margin-right: 18%; } }
       .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button {
         width: auto;
         height: auto;
@@ -1700,7 +1716,7 @@ span.input-group-text[data-i18n="To"] {
         font-style: normal;
         font-weight: 400;
         font-size: 30px;
-        line-height: 26px;
+        line-height: 30px;
         text-align: center;
         color: #597EF7; }
         .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button span {
@@ -1710,6 +1726,16 @@ span.input-group-text[data-i18n="To"] {
         .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button.active {
           background-image: url(../images/sports/tab-bg-active.png);
           color: #FFFFFF; }
+        @media only screen and (max-width: 1350px) {
+          .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button {
+            min-width: 170px;
+            font-size: 28px; } }
+        @media only screen and (max-width: 1250px) {
+          .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button {
+            min-width: 165px;
+            font-size: 23px;
+            margin-bottom: -15px;
+            margin-right: -5px; } }
   .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container {
     position: absolute;
     top: 0;
@@ -1735,6 +1761,10 @@ span.input-group-text[data-i18n="To"] {
         word-break: keep-all;
         margin-top: 30px;
         margin-bottom: 10px; }
+        @media only screen and (max-width: 1300px) {
+          .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__title {
+            font-size: 95px;
+            line-height: 100px; } }
       .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__description {
         font-weight: 400;
         font-size: 18px;
@@ -1766,6 +1796,9 @@ span.input-group-text[data-i18n="To"] {
       margin-left: 10%; }
       .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img.PRAGMATIC_PLAY {
         margin-left: 20%; }
+      @media only screen and (max-width: 1250px) {
+        .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
+          margin-left: 6%; } }
 
 html[lang="zh"] .live-casino-page .carousel-inner .carousel-item:nth-child(3) .sports-img img {
   margin-left: 20% !important; }
@@ -2940,6 +2973,7 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
   .account-layout__container {
     padding-top: 30px; }
     .account-layout__container__content {
+      flex-wrap: nowrap;
       margin-left: 0;
       margin-right: 0; }
       .account-layout__container__content .__title {
@@ -2975,12 +3009,18 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
           color: #94A6B7; }
       .account-layout__container__content__left {
         width: 285px !important; }
+        @media only screen and (max-width: 1100px) {
+          .account-layout__container__content__left {
+            padding-left: 0; } }
         .account-layout__container__content__left .profile-navbar {
-          padding-right: 15px;
+          padding-right: 10px;
           height: 100%;
           display: flex;
           place-content: flex-start;
           flex-direction: column; }
+          @media only screen and (max-width: 1100px) {
+            .account-layout__container__content__left .profile-navbar {
+              padding-right: 10px; } }
           .account-layout__container__content__left .profile-navbar__info {
             background: conic-gradient(from 185.36deg at 50% 48%, #899FF3 0deg, #7F97F8 136.88deg, #799AFF 286.87deg, #889EF8 360deg);
             border-radius: 20px;
@@ -3123,13 +3163,18 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
       .account-layout__container__content__right {
         padding-left: 0;
         width: 100% !important;
-        flex: 1; }
+        flex: 1;
+        overflow: hidden;
+        padding: 3px; }
         .account-layout__container__content__right__content {
           background: #FFFFFF;
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
           border-radius: 20px;
           padding: 20px;
           height: 100%; }
+          @media only screen and (max-width: 1100px) {
+            .account-layout__container__content__right__content {
+              padding: 10px !important; } }
 
 #selectProfilePictureModal .modal-content .modal-header {
   font-weight: 400;
@@ -3565,6 +3610,12 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
           border-color: transparent;
           background: #9EB5FF;
           color: #FFFFFF; }
+        @media only screen and (max-width: 1250px) {
+          .vip-privilege-details-page .vip-privilege-details-page__content__vip-info-tab .nav .nav-item .nav-link {
+            min-width: 140px; } }
+        @media only screen and (max-width: 1100px) {
+          .vip-privilege-details-page .vip-privilege-details-page__content__vip-info-tab .nav .nav-item .nav-link {
+            min-width: 120px; } }
   .vip-privilege-details-page .vip-privilege-details-page__content__vip-info-tab .tab-content .tab-pane .upgrade-bonus__title {
     font-weight: 600;
     font-size: 18px;
@@ -4695,7 +4746,7 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
     padding: 25px; }
     .promotion-page__container__content .nav {
       border-bottom: none;
-      gap: 12px;
+      gap: 0;
       margin-bottom: 25px;
       place-content: space-between; }
       .promotion-page__container__content .nav .nav-item .nav-link {

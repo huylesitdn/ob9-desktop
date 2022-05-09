@@ -11,7 +11,7 @@
     padding: 25px; }
     .promotion-page__container__content .nav {
       border-bottom: none;
-      gap: 12px;
+      gap: 0;
       margin-bottom: 25px;
       place-content: space-between; }
       .promotion-page__container__content .nav .nav-item .nav-link {

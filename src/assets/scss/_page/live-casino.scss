@@ -40,9 +40,23 @@
           flex-wrap: wrap;
           max-height: 500px;
           position: initial;
+          margin-right: 5%;
+
+          @media only screen and (max-width: 1700px) {
+            // flex-wrap: wrap-reverse;
+            margin-right: 8%;
+          }
 
           @media only screen and (max-width: 1500px) {
-            flex-wrap: wrap-reverse;
+            margin-right: 14%;
+          }
+
+          @media only screen and (max-width: 1350px) {
+            margin-right: 16%;
+          }
+
+          @media only screen and (max-width: 1100px) {
+            margin-right: 18%;
           }
 
           button {
@@ -69,7 +83,7 @@
             font-style: normal;
             font-weight: 400;
             font-size: 30px;
-            line-height: 26px;
+            line-height: 30px;
             text-align: center;
             color: #597EF7;
 
@@ -84,6 +98,18 @@
             &.active {
               background-image: url(../images/sports/tab-bg-active.png);
               color: #FFFFFF;
+            }
+
+            @media only screen and (max-width: 1350px) {
+              min-width: 170px;
+              font-size: 28px;
+            }
+
+            @media only screen and (max-width: 1250px) {
+              min-width: 165px;
+              font-size: 23px;
+              margin-bottom: -15px;
+              margin-right: -5px;
             }
           }
         }
@@ -119,6 +145,11 @@
                   word-break: keep-all;
                   margin-top: 30px;
                   margin-bottom: 10px;
+
+                  @media only screen and (max-width: 1300px) {
+                    font-size: 95px;
+                    line-height: 100px;
+                  }
                 }
 
                 &__description {
@@ -166,6 +197,10 @@
 
               &.PRAGMATIC_PLAY {
                 margin-left: 20%;
+              }
+
+              @media only screen and (max-width: 1250px) {
+                margin-left: 6%;
               }
             }
           }

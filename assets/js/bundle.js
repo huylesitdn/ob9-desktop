@@ -36,7 +36,7 @@ const _get_translator_config =
   translator.config.persistKey || "preferred_language";
 const _get_language =
   localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
-const _get_region = localStorage.getItem(PREFERED_REGION);
+const _get_region = localStorage.getItem(PREFERED_REGION) || 'Malaysia';
 
 translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
   // -> Translations are ready...
@@ -664,17 +664,47 @@ function renderAfterHaveTranslator () {
   var vipWeeklyAngpowHelpTooltipEl = $('#vipWeeklyAngpowHelpTooltip');
   if(vipWeeklyAngpowHelpTooltipEl.length > 0 && translator) {
     vipWeeklyAngpowHelpTooltipEl.attr("title", translator.translateForKey('vip_weekly_angpow_help_tooltip', _get_language));
+    var vipWeeklyAngpowHelpTooltipElTooltip = new bootstrap.Tooltip(vipWeeklyAngpowHelpTooltipEl, {
+      popperConfig: function (defaultBsPopperConfig) {
+        // var newPopperConfig = {...}
+        // use defaultBsPopperConfig if needed...
+        // return newPopperConfig
+      }
+    });
   }
-  var vipWeeklyAngpowHelpTooltipElTooltip = new bootstrap.Tooltip(vipWeeklyAngpowHelpTooltipEl, {
-    popperConfig: function (defaultBsPopperConfig) {
-      // var newPopperConfig = {...}
-      // use defaultBsPopperConfig if needed...
-      // return newPopperConfig
+
+  changeFlagAndCountryName();
+}
+
+function changeFlagAndCountryName() {
+  if(translator) {
+    console.log(_get_region)
+
+    var flagName = '1'
+    switch (_get_region) {
+      case 'Malaysia':
+        flagName = '1'
+        break;
+      case 'Singapore':
+        flagName = '2'
+        break;
+      case 'Thailand':
+        flagName = '3'
+        break;
+      case 'Vietnam':
+        flagName = '4'
+        break;
+      case 'Indonesia':
+        flagName = '5'
+        break;
+      default:
+        break;
     }
-  })
+    $('#flagLanguage').attr("src","assets/images/language/"+flagName+".png");
 
-
-
+    const countryNameLanguage = translator.translateForKey('universal_page.' + _get_region, _get_language)
+    $('#countryNameLanguage').html(countryNameLanguage)
+  }
 }
 
 let toggleBalance = false;
