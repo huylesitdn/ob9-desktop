@@ -1240,19 +1240,18 @@
       flex-wrap: wrap;
       max-height: 500px;
       position: initial;
-      margin-right: 5%; }
+      display: flex;
+      min-width: 260px; }
       @media only screen and (max-width: 1700px) {
         .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
-          margin-right: 8%; } }
+          min-width: 350px; } }
       @media only screen and (max-width: 1500px) {
         .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
-          margin-right: 14%; } }
-      @media only screen and (max-width: 1350px) {
-        .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
-          margin-right: 16%; } }
+          min-width: 430px; } }
       @media only screen and (max-width: 1100px) {
         .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
-          margin-right: 18%; } }
+          margin-right: 5%;
+          min-width: 350px; } }
       .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button {
         width: auto;
         height: auto;
@@ -1286,6 +1285,9 @@
         .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button.active {
           background-image: url(../images/sports/tab-bg-active.png);
           color: #FFFFFF; }
+        @media only screen and (max-width: 1500px) {
+          .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button {
+            min-width: 175px; } }
         @media only screen and (max-width: 1350px) {
           .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button {
             min-width: 170px;
@@ -1296,6 +1298,14 @@
             font-size: 23px;
             margin-bottom: -15px;
             margin-right: -5px; } }
+        @media only screen and (max-width: 1100px) {
+          .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button {
+            min-width: 150px;
+            width: 150px;
+            font-size: 22px;
+            margin-bottom: -20px;
+            margin-right: 0px;
+            margin-left: 0px; } }
   .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container {
     position: absolute;
     top: 0;
@@ -1323,20 +1333,24 @@
         margin-bottom: 10px; }
         @media only screen and (max-width: 1300px) {
           .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__title {
-            font-size: 95px;
-            line-height: 100px; } }
+            font-size: 80px;
+            line-height: 90px; } }
       .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__description {
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
         color: #3651A8; }
+        @media only screen and (max-width: 1300px) {
+          .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__description {
+            font-size: 16px;
+            line-height: 25px; } }
       .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__action {
         margin-top: 70px; }
         .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__action a {
           background-image: url(../images/sports/play-now-btn.png);
           background-repeat: no-repeat;
           background-position: center;
-          background-size: cover;
+          background-size: contain;
           width: 210px;
           height: 70px;
           display: flex;
@@ -1349,6 +1363,10 @@
           color: #FFFFFF; }
           .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__action a:hover {
             opacity: 0.8; }
+          @media only screen and (max-width: 1300px) {
+            .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__action a {
+              width: 170px;
+              height: 60px; } }
   .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img {
     text-align: center; }
     .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
@@ -1356,9 +1374,18 @@
       margin-left: 10%; }
       .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img.PRAGMATIC_PLAY {
         margin-left: 20%; }
+      @media only screen and (max-width: 1500px) {
+        .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
+          margin-left: 0;
+          max-width: 650px; } }
       @media only screen and (max-width: 1250px) {
         .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
-          margin-left: 6%; } }
+          max-width: 550px;
+          margin-left: -5%; } }
+      @media only screen and (max-width: 1100px) {
+        .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
+          max-width: 450px;
+          margin-left: -5%; } }
 
 html[lang="zh"] .live-casino-page .carousel-inner .carousel-item:nth-child(3) .sports-img img {
   margin-left: 20% !important; }
@@ -1922,7 +1949,7 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
     background-image: url(../images/sponsors/section-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - var(--top-padding));
+    height: 100vh;
     min-height: var(--section-min-height);
     padding: 20px;
     display: flex;
@@ -1934,7 +1961,7 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
       background-size: contain;
       background-position: center;
       min-height: var(--section-min-height);
-      padding: 0 100px; }
+      padding: 0 100px !important; }
       .sponsors-article__content__items__container__title {
         font-weight: 600;
         font-size: 24px;
@@ -1943,7 +1970,43 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
         text-transform: capitalize;
         color: #FFFFFF;
         margin-bottom: 0;
-        padding-top: 60px; }
+        padding: 30px 0;
+        height: 85px;
+        display: flex;
+        place-content: center;
+        place-items: center; }
+        @media only screen and (max-width: 1340px) {
+          .sponsors-article__content__items__container__title {
+            height: 115px;
+            padding-top: 2%; } }
+        @media only screen and (max-width: 1300px) {
+          .sponsors-article__content__items__container__title {
+            padding-top: 4%; } }
+        @media only screen and (max-width: 1250px) {
+          .sponsors-article__content__items__container__title {
+            padding-top: 7%; } }
+        @media only screen and (max-width: 1200px) {
+          .sponsors-article__content__items__container__title {
+            padding-top: 10%;
+            padding-bottom: 0; } }
+        @media only screen and (max-width: 1150px) {
+          .sponsors-article__content__items__container__title {
+            padding-top: 12%; } }
+        @media only screen and (max-width: 1100px) {
+          .sponsors-article__content__items__container__title {
+            padding-top: 15%; } }
+        @media only screen and (max-width: 1070px) {
+          .sponsors-article__content__items__container__title {
+            padding-top: 16%; } }
+        @media only screen and (max-width: 1050px) {
+          .sponsors-article__content__items__container__title {
+            padding-top: 17%; } }
+        @media only screen and (max-width: 1030px) {
+          .sponsors-article__content__items__container__title {
+            padding-top: 18%; } }
+        @media only screen and (max-width: 1030px) {
+          .sponsors-article__content__items__container__title {
+            padding-top: 18%; } }
       .sponsors-article__content__items__container__description {
         font-weight: 400;
         font-size: 20px;
@@ -1971,6 +2034,18 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
         .sponsors-article__content__items__container .cup__item__img {
           max-width: 150px;
           max-height: 180px; }
+          @media only screen and (max-width: 1300px) {
+            .sponsors-article__content__items__container .cup__item__img {
+              max-width: 120px;
+              max-height: 160px; } }
+          @media only screen and (max-width: 1250px) {
+            .sponsors-article__content__items__container .cup__item__img {
+              max-width: 90px;
+              max-height: 130px; } }
+          @media only screen and (max-width: 1110px) {
+            .sponsors-article__content__items__container .cup__item__img {
+              max-width: 80px;
+              max-height: 90px; } }
         .sponsors-article__content__items__container .cup__item__title {
           font-weight: 700;
           font-size: 36px;
@@ -1991,6 +2066,11 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
         .sponsors-article__content__items__container__Sponsor_Information__img img {
           height: 310px;
           object-fit: cover; }
+        @media only screen and (max-width: 1250px) {
+          .sponsors-article__content__items__container__Sponsor_Information__text {
+            height: 230px; }
+          .sponsors-article__content__items__container__Sponsor_Information__img img {
+            height: 230px; } }
       .sponsors-article__content__items__container .industry-bottom {
         font-weight: 600;
         font-size: 16px;
@@ -2021,6 +2101,9 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
           margin-top: -15px; }
           .sponsors-article__content__items__container .Best_in_the_Industry__top .industry-img img {
             max-width: 550px; }
+            @media only screen and (max-width: 1250px) {
+              .sponsors-article__content__items__container .Best_in_the_Industry__top .industry-img img {
+                max-width: 400px; } }
         .sponsors-article__content__items__container .Best_in_the_Industry__top .items {
           display: flex;
           place-content: center;
@@ -2262,6 +2345,9 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
             overflow: auto;
             flex-wrap: nowrap;
             place-content: flex-start; }
+            @media only screen and (max-width: 1250px) {
+              .sponsors-article__content__items__container #carouselSportsHighlights .carousel-indicators-container .carousel-indicators {
+                height: 245px; } }
             .sponsors-article__content__items__container #carouselSportsHighlights .carousel-indicators-container .carousel-indicators button {
               padding: 0;
               border: none;
@@ -2284,6 +2370,9 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
                   border: 3px solid #727272; }
         .sponsors-article__content__items__container #carouselSportsHighlights .carousel-inner {
           height: 425px; }
+          @media only screen and (max-width: 1250px) {
+            .sponsors-article__content__items__container #carouselSportsHighlights .carousel-inner {
+              height: 300px; } }
           .sponsors-article__content__items__container #carouselSportsHighlights .carousel-inner .carousel-item-video {
             width: 100%; }
             .sponsors-article__content__items__container #carouselSportsHighlights .carousel-inner .carousel-item-video video {
@@ -2569,6 +2658,9 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
           color: #94A6B7; }
       .account-layout__container__content__left {
         width: 285px !important; }
+        @media only screen and (max-width: 1200px) {
+          .account-layout__container__content__left {
+            width: 270px !important; } }
         @media only screen and (max-width: 1100px) {
           .account-layout__container__content__left {
             padding-left: 0; } }
@@ -5040,6 +5132,10 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
         border-color: #597EF7;
         color: #597EF7;
         background-color: #fff; }
+      @media only screen and (max-width: 1200px) {
+        .betting-record-page__content__filter .btn-group .btn {
+          min-width: 50px;
+          font-size: 12px; } }
   .betting-record-page__content__table {
     margin-top: 30px; }
     .betting-record-page__content__table .total {

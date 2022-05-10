@@ -40,23 +40,26 @@
           flex-wrap: wrap;
           max-height: 500px;
           position: initial;
-          margin-right: 5%;
+          // margin-right: 5%;
+          display: flex;
+          min-width: 260px;
+          // place-content: flex-end;
 
           @media only screen and (max-width: 1700px) {
-            // flex-wrap: wrap-reverse;
-            margin-right: 8%;
+            min-width: 350px;
           }
 
           @media only screen and (max-width: 1500px) {
-            margin-right: 14%;
+            min-width: 430px;
           }
 
-          @media only screen and (max-width: 1350px) {
-            margin-right: 16%;
-          }
+          // @media only screen and (max-width: 1400px) {
+          //   margin-right: 14%;
+          // }
 
           @media only screen and (max-width: 1100px) {
-            margin-right: 18%;
+            margin-right: 5%;
+            min-width: 350px;
           }
 
           button {
@@ -100,6 +103,10 @@
               color: #FFFFFF;
             }
 
+            @media only screen and (max-width: 1500px) {
+              min-width: 175px;
+            }
+
             @media only screen and (max-width: 1350px) {
               min-width: 170px;
               font-size: 28px;
@@ -110,6 +117,15 @@
               font-size: 23px;
               margin-bottom: -15px;
               margin-right: -5px;
+            }
+
+            @media only screen and (max-width: 1100px) {
+              min-width: 150px;
+              width: 150px;
+              font-size: 22px;
+              margin-bottom: -20px;
+              margin-right: 0px;
+              margin-left: 0px;
             }
           }
         }
@@ -147,8 +163,8 @@
                   margin-bottom: 10px;
 
                   @media only screen and (max-width: 1300px) {
-                    font-size: 95px;
-                    line-height: 100px;
+                    font-size: 80px;
+                    line-height: 90px;
                   }
                 }
 
@@ -157,6 +173,11 @@
                   font-size: 18px;
                   line-height: 30px;
                   color: #3651A8;
+
+                  @media only screen and (max-width: 1300px) {
+                    font-size: 16px;
+                    line-height: 25px;
+                  }
                 }
 
                 &__action {
@@ -166,7 +187,7 @@
                     background-image: url(../images/sports/play-now-btn.png);
                     background-repeat: no-repeat;
                     background-position: center;
-                    background-size: cover;
+                    background-size: contain;
                     width: 210px;
                     height: 70px;
                     display: flex;
@@ -181,6 +202,11 @@
 
                     &:hover {
                       opacity: 0.8;
+                    }
+
+                    @media only screen and (max-width: 1300px) {
+                      width: 170px;
+                      height: 60px;
                     }
                   }
                 }
@@ -199,8 +225,19 @@
                 margin-left: 20%;
               }
 
+              @media only screen and (max-width: 1500px) {
+                margin-left: 0;
+                max-width: 650px;
+              }
+
               @media only screen and (max-width: 1250px) {
-                margin-left: 6%;
+                max-width: 550px;
+                margin-left: -5%;
+              }
+
+              @media only screen and (max-width: 1100px) {
+                max-width: 450px;
+                margin-left: -5%;
               }
             }
           }

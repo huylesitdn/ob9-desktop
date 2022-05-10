@@ -110,7 +110,8 @@
       background-image: url(../images/sponsors/section-bg.png);
       background-repeat: no-repeat;
       background-size: cover;
-      height: calc(100vh - var(--top-padding));
+      // height: calc(100vh - var(--top-padding));
+      height: 100vh;
       min-height: var(--section-min-height);
       padding: 20px;
       display: flex;
@@ -123,7 +124,7 @@
         background-size: contain;
         background-position: center;
         min-height: var(--section-min-height);
-        padding: 0 100px;
+        padding: 0 100px !important;
 
         &__title {
           font-weight: 600;
@@ -133,7 +134,53 @@
           text-transform: capitalize;
           color: #FFFFFF;
           margin-bottom: 0;
-          padding-top: 60px;
+          padding: 30px 0;
+          height: 85px;
+          display: flex;
+          place-content: center;
+          place-items: center;
+
+          @media only screen and (max-width: 1340px) {
+            height: 115px;
+            padding-top: 2%;
+          }
+
+          @media only screen and (max-width: 1300px) {
+            padding-top: 4%;
+          }
+
+          @media only screen and (max-width: 1250px) {
+            padding-top: 7%;
+          }
+
+          @media only screen and (max-width: 1200px) {
+            padding-top: 10%;
+            padding-bottom: 0;
+          }
+
+          @media only screen and (max-width: 1150px) {
+            padding-top: 12%;
+          }
+
+          @media only screen and (max-width: 1100px) {
+            padding-top: 15%;
+          }
+
+          @media only screen and (max-width: 1070px) {
+            padding-top: 16%;
+          }
+
+          @media only screen and (max-width: 1050px) {
+            padding-top: 17%;
+          }
+
+          @media only screen and (max-width: 1030px) {
+            padding-top: 18%;
+          }
+
+          @media only screen and (max-width: 1030px) {
+            padding-top: 18%;
+          }
         }
 
         &__description {
@@ -172,6 +219,21 @@
             &__img {
               max-width: 150px;
               max-height: 180px;
+
+              @media only screen and (max-width: 1300px) {
+                max-width: 120px;
+                max-height: 160px;
+              }
+
+              @media only screen and (max-width: 1250px) {
+                max-width: 90px;
+                max-height: 130px;
+              }
+
+              @media only screen and (max-width: 1110px) {
+                max-width: 80px;
+                max-height: 90px;
+              }
             }
 
             &__title {
@@ -204,6 +266,18 @@
             img {
               height: 310px;
               object-fit: cover;
+            }
+          }
+
+          @media only screen and (max-width: 1250px) {
+            &__text {
+              height: 230px;
+            }
+
+            &__img {
+              img {
+                height: 230px;
+              }
             }
           }
         }
@@ -253,6 +327,10 @@
 
               img {
                 max-width: 550px;
+
+                @media only screen and (max-width: 1250px) {
+                  max-width: 400px;
+                }
               }
             }
 
@@ -643,6 +721,10 @@
               flex-wrap: nowrap;
               place-content: flex-start;
 
+              @media only screen and (max-width: 1250px) {
+                height: 245px;
+              }
+
               button {
                 padding: 0;
                 border: none;
@@ -676,6 +758,10 @@
 
           .carousel-inner {
             height: 425px;
+
+            @media only screen and (max-width: 1250px) {
+              height: 300px;
+            }
 
             .carousel-item {
               &-video {

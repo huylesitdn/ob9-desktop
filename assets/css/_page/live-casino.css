@@ -27,19 +27,18 @@
       flex-wrap: wrap;
       max-height: 500px;
       position: initial;
-      margin-right: 5%; }
+      display: flex;
+      min-width: 260px; }
       @media only screen and (max-width: 1700px) {
         .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
-          margin-right: 8%; } }
+          min-width: 350px; } }
       @media only screen and (max-width: 1500px) {
         .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
-          margin-right: 14%; } }
-      @media only screen and (max-width: 1350px) {
-        .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
-          margin-right: 16%; } }
+          min-width: 430px; } }
       @media only screen and (max-width: 1100px) {
         .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators {
-          margin-right: 18%; } }
+          margin-right: 5%;
+          min-width: 350px; } }
       .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button {
         width: auto;
         height: auto;
@@ -73,6 +72,9 @@
         .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button.active {
           background-image: url(../images/sports/tab-bg-active.png);
           color: #FFFFFF; }
+        @media only screen and (max-width: 1500px) {
+          .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button {
+            min-width: 175px; } }
         @media only screen and (max-width: 1350px) {
           .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button {
             min-width: 170px;
@@ -83,6 +85,14 @@
             font-size: 23px;
             margin-bottom: -15px;
             margin-right: -5px; } }
+        @media only screen and (max-width: 1100px) {
+          .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators button {
+            min-width: 150px;
+            width: 150px;
+            font-size: 22px;
+            margin-bottom: -20px;
+            margin-right: 0px;
+            margin-left: 0px; } }
   .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container {
     position: absolute;
     top: 0;
@@ -110,20 +120,24 @@
         margin-bottom: 10px; }
         @media only screen and (max-width: 1300px) {
           .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__title {
-            font-size: 95px;
-            line-height: 100px; } }
+            font-size: 80px;
+            line-height: 90px; } }
       .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__description {
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
         color: #3651A8; }
+        @media only screen and (max-width: 1300px) {
+          .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__description {
+            font-size: 16px;
+            line-height: 25px; } }
       .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__action {
         margin-top: 70px; }
         .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__action a {
           background-image: url(../images/sports/play-now-btn.png);
           background-repeat: no-repeat;
           background-position: center;
-          background-size: cover;
+          background-size: contain;
           width: 210px;
           height: 70px;
           display: flex;
@@ -136,6 +150,10 @@
           color: #FFFFFF; }
           .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__action a:hover {
             opacity: 0.8; }
+          @media only screen and (max-width: 1300px) {
+            .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__action a {
+              width: 170px;
+              height: 60px; } }
   .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img {
     text-align: center; }
     .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
@@ -143,9 +161,18 @@
       margin-left: 10%; }
       .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img.PRAGMATIC_PLAY {
         margin-left: 20%; }
+      @media only screen and (max-width: 1500px) {
+        .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
+          margin-left: 0;
+          max-width: 650px; } }
       @media only screen and (max-width: 1250px) {
         .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
-          margin-left: 6%; } }
+          max-width: 550px;
+          margin-left: -5%; } }
+      @media only screen and (max-width: 1100px) {
+        .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
+          max-width: 450px;
+          margin-left: -5%; } }
 
 html[lang="zh"] .live-casino-page .carousel-inner .carousel-item:nth-child(3) .sports-img img {
   margin-left: 20% !important; }

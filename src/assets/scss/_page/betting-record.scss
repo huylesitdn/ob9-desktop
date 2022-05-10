@@ -110,6 +110,11 @@
             color: #597EF7;
             background-color: #fff;
           }
+
+          @media only screen and (max-width: 1200px) {
+            min-width: 50px;
+            font-size: 12px;
+          }
         }
       }
     }
