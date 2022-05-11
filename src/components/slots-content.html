@@ -1,0 +1,61 @@
+<div class="slot-page__top-container">
+  <div class="slot-page__top-container__content container">
+    <div class="slot-page__top-container__content__title" data-i18n="slots_page.title"></div>
+    <div class="slot-page__top-container__content__count">
+      <img src="assets/images/slots/count.png" />
+    </div>
+  </div>
+</div>
+<div class="slot-page__content container">
+  <div class="slot-page__content__tags">
+    <button class="slot-page__content__tags__item btn active" data-i18n="slots_page.PLAYTECH"></button>
+    <button class="slot-page__content__tags__item btn" data-i18n="slots_page.PRAGMATIC_PLAY"></button>
+    <button class="slot-page__content__tags__item btn" data-i18n="slots_page.SPADEGAMING"></button>
+    <button class="slot-page__content__tags__item btn" data-i18n="slots_page.HABANERO"></button>
+    <button class="slot-page__content__tags__item btn" data-i18n="slots_page.ONEGAME"></button>
+    <button class="slot-page__content__tags__item btn" data-i18n="slots_page.CQ9"></button>
+    <button class="slot-page__content__tags__item btn" data-i18n="slots_page.RED_TIGER"></button>
+    <button class="slot-page__content__tags__item btn" data-i18n="slots_page.MEGA888"></button>
+  </div>
+  <div class="slot-page__content__search">
+    <div class="input-group">
+      <input type="text" class="form-control" data-i18n="Enter_game_name_to_search" data-i18n-attr="placeholder" />
+      <span class="input-group-text" id="basic-addon2">
+        <img src="assets/icons/search.png" />
+      </span>
+    </div>
+  </div>
+  <div class="slot-page__content__tab">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true" data-i18n="slot_page.ALL"></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="hot-tab" data-bs-toggle="tab" data-bs-target="#hot" type="button" role="tab" aria-controls="hot" aria-selected="false" data-i18n="slot_page.HOT"></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="latest-tab" data-bs-toggle="tab" data-bs-target="#latest" type="button" role="tab" aria-controls="latest" aria-selected="false" data-i18n="slot_page.LATEST"></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="classic-tab" data-bs-toggle="tab" data-bs-target="#classic" type="button" role="tab" aria-controls="classic" aria-selected="false" data-i18n="slot_page.CLASSIC"></button>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="all" role="tabpanel" aria-labelledby="all-tab">
+        @@include('./home/slots/all.html')
+      </div>
+      <div class="tab-pane" id="hot" role="tabpanel" aria-labelledby="hot-tab">
+        HOT
+      </div>
+      <div class="tab-pane" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+        LATEST
+      </div>
+      <div class="tab-pane" id="classic" role="tabpanel" aria-labelledby="classic-tab">
+        CLASSIC
+      </div>
+    </div>
+  </div>
+</div>

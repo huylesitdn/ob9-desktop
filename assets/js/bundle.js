@@ -247,6 +247,7 @@ $(".universal .btn-play-now").on("click", function () {
   ).val();
   const allow_region = ["Malaysia", "Singapore"];
   if (allow_region.includes(language_value)) {
+    localStorage.setItem(PREFERED_REGION, language_value);
     window.location.href = "/login.html";
   } else {
     window.location.href = "/access-denied.html";
