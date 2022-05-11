@@ -1273,7 +1273,7 @@ span.input-group-text[data-i18n="To"] {
     .home-page #carouselTop .carousel-indicators button.active {
       width: 25px;
       height: 25px;
-      background-image: url(../images/home/home-slider-active-dot.png);
+      background-image: url(../images/home/home-slider-active-dot.svg);
       background-repeat: no-repeat;
       background-size: cover; }
 
@@ -3371,7 +3371,7 @@ html[lang="zh"] .account-layout__container__content__left .profile-navbar__navba
       gap: 15px;
       min-height: 88px; }
       .vip-detail-page .vip-detail-page__content__accumulated__item__img img {
-        max-width: 40px; }
+        max-width: 45px; }
       .vip-detail-page .vip-detail-page__content__accumulated__item__text__currency {
         font-weight: 400;
         font-size: 24px;
@@ -3700,7 +3700,7 @@ html[lang="zh"] .account-layout__container__content__left .profile-navbar__navba
         gap: 8px;
         text-transform: uppercase; }
         .vip-privilege-details-page .vip-privilege-details-page__content__vip-info-tab .nav .nav-item .nav-link img {
-          max-height: 40px; }
+          max-height: 42px; }
         .vip-privilege-details-page .vip-privilege-details-page__content__vip-info-tab .nav .nav-item .nav-link:hover, .vip-privilege-details-page .vip-privilege-details-page__content__vip-info-tab .nav .nav-item .nav-link.active {
           border-color: transparent;
           background: #9EB5FF;

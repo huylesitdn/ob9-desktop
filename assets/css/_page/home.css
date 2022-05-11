@@ -10,7 +10,7 @@
     .home-page #carouselTop .carousel-indicators button.active {
       width: 25px;
       height: 25px;
-      background-image: url(../images/home/home-slider-active-dot.png);
+      background-image: url(../images/home/home-slider-active-dot.svg);
       background-repeat: no-repeat;
       background-size: cover; }
 
