@@ -104,7 +104,7 @@
         font-size: 16px;
         line-height: 19px;
         color: #000000;
-        min-width: 160px;
+        min-width: 180px;
         height: 50px;
         background: #FFFFFF;
         border-radius: 50px;
@@ -121,6 +121,9 @@
           border-color: transparent;
           background: #9EB5FF;
           color: #FFFFFF; }
+        @media only screen and (max-width: 1500px) {
+          .vip-privilege-details-page .vip-privilege-details-page__content__vip-info-tab .nav .nav-item .nav-link {
+            min-width: 160px; } }
         @media only screen and (max-width: 1250px) {
           .vip-privilege-details-page .vip-privilege-details-page__content__vip-info-tab .nav .nav-item .nav-link {
             min-width: 140px; } }
