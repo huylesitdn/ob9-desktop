@@ -586,8 +586,8 @@
       "des22": "c) [Over/Under]<span>A sports betting OVER/UNDER is a bet where you have to correctly predict the combined score of both teams. You have to pick if the total score will be lower or higher than the number set by oddsmakers</span>"
     },
     "Lottery_Guide_page": {
-      "img2": "<img src=\"assets/images/help/lottery-guide-2.png\" />",
-      "img3": "<img src=\"assets/images/help/lottery-guide-3.png\" />",
+      "img2": "<img src=\"assets/images/help/lottery-guide-2.svg\" />",
+      "img3": "<img src=\"assets/images/help/lottery-guide-3.svg\" />",
       "1": "1. How to Play Lottery Game",
       "des1": "<ul><li>To play lottery game, choose your favourite or lucky four-digit numbers from 0000 to 9999.</li><li>Then decide on your bet type i.e. \"ABC\" (Big) or \"A\" (Small); or you can play both.</li><li>ABC (Big) increases your chance of winning as there are 23 winning numbers to match with i.e. 1st Prize, 2nd Prize, 3rd Prize, 10 Starter Prizes and 10 Consolation Prizes.</li><li>A (Small) pays higher winning prizes but there are only three winning numbers to match with i.e. 1st Prize, 2nd Prize and 3rd Prize.</li><li>Finally, decide on your bet amount for each chosen number. The minimum bet amount for a 1+3D number is RM1.</li><li>There are 7 counter available to place your lottery betting may increase your chances of winning! ( Magnum, Da Ma Cai, Toto, Singapore, Sandakan, Sabah, Sarawak)</li></ul>",
       "2": "2. Box Bet",
@@ -1007,7 +1007,7 @@
   "Manage": "Manage",
   "Official_Regional_Partner_of_Juventus": "Official Regional Partner of Juventus",
   "Aston_Villa_Official_Principal_Partner": "Aston Villa Official Principal Partner",
-  "juventus_mobile_image": "<img src=\"assets/images/sponsors/article/juventus/mobile.png\" />",
+  "juventus_mobile_image": "<img src=\"assets/images/sponsors/article/juventus/mobile.svg\" />",
   "Fund_not_received": "Fund not received",
   "Deposited_from_Maybank": "Deposited from Maybank",
   "PROFILE": "PROFILE",

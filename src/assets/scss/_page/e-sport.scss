@@ -38,7 +38,7 @@
             place-items: center;
             min-width: 250px;
             min-height: 90px;
-            background-image: url(../images/e-sports/tab-imdj-def.png);
+            background-image: url(../images/e-sports/tab-imdj-def.svg);
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
@@ -58,7 +58,7 @@
             }
 
             &.active {
-              background-image: url(../images/e-sports/tab-obdj-active.png);
+              background-image: url(../images/e-sports/tab-obdj-active.svg);
               color: #FFFFFF;
             }
           }

@@ -208,8 +208,10 @@
         }
 
         .cup {
+          text-align: center;
+
           &__aston-villa {
-            width: 100%;
+            max-width: 100%;
             margin-top: 30px;
           }
 
@@ -217,8 +219,8 @@
             text-align: center;
 
             &__img {
-              max-width: 150px;
-              max-height: 180px;
+              max-width: 158px;
+              max-height: 184px;
 
               @media only screen and (max-width: 1300px) {
                 max-width: 120px;
@@ -317,7 +319,8 @@
 
             [data-i18n="juventus_mobile_image"] {
               img {
-                max-height: 450px;
+                // max-height: 450px;
+                max-height: 490px;
               }
             }
 

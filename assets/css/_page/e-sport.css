@@ -31,7 +31,7 @@
         place-items: center;
         min-width: 250px;
         min-height: 90px;
-        background-image: url(../images/e-sports/tab-imdj-def.png);
+        background-image: url(../images/e-sports/tab-imdj-def.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -47,7 +47,7 @@
         .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators button:hover {
           opacity: 0.8; }
         .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators button.active {
-          background-image: url(../images/e-sports/tab-obdj-active.png);
+          background-image: url(../images/e-sports/tab-obdj-active.svg);
           color: #FFFFFF; }
   .e-sports-page__container #carouselESports .carousel-inner .e-sports-item {
     position: relative; }

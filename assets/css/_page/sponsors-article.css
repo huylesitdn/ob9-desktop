@@ -148,38 +148,40 @@
         line-height: 30px;
         text-align: justify;
         color: #FFFFFF; }
-      .sponsors-article__content__items__container .cup__aston-villa {
-        width: 100%;
-        margin-top: 30px; }
-      .sponsors-article__content__items__container .cup__item {
+      .sponsors-article__content__items__container .cup {
         text-align: center; }
-        .sponsors-article__content__items__container .cup__item__img {
-          max-width: 150px;
-          max-height: 180px; }
-          @media only screen and (max-width: 1300px) {
-            .sponsors-article__content__items__container .cup__item__img {
-              max-width: 120px;
-              max-height: 160px; } }
-          @media only screen and (max-width: 1250px) {
-            .sponsors-article__content__items__container .cup__item__img {
-              max-width: 90px;
-              max-height: 130px; } }
-          @media only screen and (max-width: 1110px) {
-            .sponsors-article__content__items__container .cup__item__img {
-              max-width: 80px;
-              max-height: 90px; } }
-        .sponsors-article__content__items__container .cup__item__title {
-          font-weight: 700;
-          font-size: 36px;
-          line-height: 45px;
-          text-align: center;
-          color: #597EF7; }
-        .sponsors-article__content__items__container .cup__item__description {
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 16px;
-          text-align: center;
-          color: #000000; }
+        .sponsors-article__content__items__container .cup__aston-villa {
+          max-width: 100%;
+          margin-top: 30px; }
+        .sponsors-article__content__items__container .cup__item {
+          text-align: center; }
+          .sponsors-article__content__items__container .cup__item__img {
+            max-width: 158px;
+            max-height: 184px; }
+            @media only screen and (max-width: 1300px) {
+              .sponsors-article__content__items__container .cup__item__img {
+                max-width: 120px;
+                max-height: 160px; } }
+            @media only screen and (max-width: 1250px) {
+              .sponsors-article__content__items__container .cup__item__img {
+                max-width: 90px;
+                max-height: 130px; } }
+            @media only screen and (max-width: 1110px) {
+              .sponsors-article__content__items__container .cup__item__img {
+                max-width: 80px;
+                max-height: 90px; } }
+          .sponsors-article__content__items__container .cup__item__title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 45px;
+            text-align: center;
+            color: #597EF7; }
+          .sponsors-article__content__items__container .cup__item__description {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            color: #000000; }
       .sponsors-article__content__items__container__Sponsor_Information {
         padding-top: 60px; }
         .sponsors-article__content__items__container__Sponsor_Information__text {
@@ -217,7 +219,7 @@
             text-align: center;
             color: #000000; }
         .sponsors-article__content__items__container .Best_in_the_Industry__top [data-i18n="juventus_mobile_image"] img {
-          max-height: 450px; }
+          max-height: 490px; }
         .sponsors-article__content__items__container .Best_in_the_Industry__top .industry-img {
           text-align: center;
           margin-top: -15px; }

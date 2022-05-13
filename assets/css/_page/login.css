@@ -38,8 +38,6 @@
           place-items: center;
           gap: 60px;
           margin-bottom: 40px; }
-          .login__container__content__top__logo1 img {
-            max-width: 105px; }
       .login__container__content__form {
         width: 100%; }
         .login__container__content__form h1 {

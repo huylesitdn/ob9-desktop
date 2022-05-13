@@ -354,14 +354,14 @@
         .carousel-indicators {
           position: initial;
           margin: 0;
-          gap: 20px;
+          gap: 15px;
           flex-wrap: wrap;
           place-content: flex-start;
 
           label,
           button {
-            width: 65px;
-            height: 65px;
+            width: 67px;
+            height: 67px;
             text-indent: initial;
             margin: 0;
             border: 2px solid transparent;
@@ -371,9 +371,10 @@
             display: initial;
             box-sizing: initial;
             cursor: pointer;
+            padding: 1px;
 
             img {
-              padding: 2px;
+              // padding: 2px;
               width: 65px;
             }
 

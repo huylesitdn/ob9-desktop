@@ -7,12 +7,13 @@
   min-width: var(--min-with); }
   .my-navbar__main__container .navbar-brand {
     padding: 0;
+    padding-left: 10px;
     margin-right: 30px; }
     .my-navbar__main__container .navbar-brand img {
-      max-height: 80px; }
+      max-height: 55px; }
       @media only screen and (max-width: 1200px) {
         .my-navbar__main__container .navbar-brand img {
-          max-height: 70px; } }
+          max-height: 45px; } }
   .my-navbar__main__container .navbar-nav {
     flex-direction: row !important; }
     .my-navbar__main__container .navbar-nav .nav-item .nav-link {

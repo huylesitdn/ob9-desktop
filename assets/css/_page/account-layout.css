@@ -232,13 +232,13 @@
   #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators {
     position: initial;
     margin: 0;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
     place-content: flex-start; }
     #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators label,
     #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators button {
-      width: 65px;
-      height: 65px;
+      width: 67px;
+      height: 67px;
       text-indent: initial;
       margin: 0;
       border: 2px solid transparent;
@@ -247,10 +247,10 @@
       padding: 0;
       display: initial;
       box-sizing: initial;
-      cursor: pointer; }
+      cursor: pointer;
+      padding: 1px; }
       #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators label img,
       #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators button img {
-        padding: 2px;
         width: 65px; }
       #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators label.active,
       #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators button.active {

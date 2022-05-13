@@ -599,15 +599,15 @@ $('.transaction-history-page .transaction-history-page__content__status__item .f
     case 'Rebate':
       window.location.href = '/transaction-history-rebate.html'
       break;
-    // case 'Deposit':
-    //   window.location.href = '/transaction-history.html'
-    //   break;
+    case 'Deposit':
+      window.location.href = '/transaction-history.html'
+      break;
     case 'Transfer':
       window.location.href = '/transaction-history-transfer.html'
       break;
   
     default:
-      window.location.href = '/transaction-history.html'
+      // window.location.href = '/transaction-history.html'
       break;
   }
 });

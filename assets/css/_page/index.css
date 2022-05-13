@@ -144,8 +144,6 @@
           place-items: center;
           gap: 60px;
           margin-bottom: 40px; }
-          .login__container__content__top__logo1 img {
-            max-width: 105px; }
       .login__container__content__form {
         width: 100%; }
         .login__container__content__form h1 {
@@ -310,12 +308,13 @@
   min-width: var(--min-with); }
   .my-navbar__main__container .navbar-brand {
     padding: 0;
+    padding-left: 10px;
     margin-right: 30px; }
     .my-navbar__main__container .navbar-brand img {
-      max-height: 80px; }
+      max-height: 55px; }
       @media only screen and (max-width: 1200px) {
         .my-navbar__main__container .navbar-brand img {
-          max-height: 70px; } }
+          max-height: 45px; } }
   .my-navbar__main__container .navbar-nav {
     flex-direction: row !important; }
     .my-navbar__main__container .navbar-nav .nav-item .nav-link {
@@ -1809,7 +1808,7 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
         place-items: center;
         min-width: 250px;
         min-height: 90px;
-        background-image: url(../images/e-sports/tab-imdj-def.png);
+        background-image: url(../images/e-sports/tab-imdj-def.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -1825,7 +1824,7 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
         .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators button:hover {
           opacity: 0.8; }
         .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators button.active {
-          background-image: url(../images/e-sports/tab-obdj-active.png);
+          background-image: url(../images/e-sports/tab-obdj-active.svg);
           color: #FFFFFF; }
   .e-sports-page__container #carouselESports .carousel-inner .e-sports-item {
     position: relative; }
@@ -2030,38 +2029,40 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
         line-height: 30px;
         text-align: justify;
         color: #FFFFFF; }
-      .sponsors-article__content__items__container .cup__aston-villa {
-        width: 100%;
-        margin-top: 30px; }
-      .sponsors-article__content__items__container .cup__item {
+      .sponsors-article__content__items__container .cup {
         text-align: center; }
-        .sponsors-article__content__items__container .cup__item__img {
-          max-width: 150px;
-          max-height: 180px; }
-          @media only screen and (max-width: 1300px) {
-            .sponsors-article__content__items__container .cup__item__img {
-              max-width: 120px;
-              max-height: 160px; } }
-          @media only screen and (max-width: 1250px) {
-            .sponsors-article__content__items__container .cup__item__img {
-              max-width: 90px;
-              max-height: 130px; } }
-          @media only screen and (max-width: 1110px) {
-            .sponsors-article__content__items__container .cup__item__img {
-              max-width: 80px;
-              max-height: 90px; } }
-        .sponsors-article__content__items__container .cup__item__title {
-          font-weight: 700;
-          font-size: 36px;
-          line-height: 45px;
-          text-align: center;
-          color: #597EF7; }
-        .sponsors-article__content__items__container .cup__item__description {
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 16px;
-          text-align: center;
-          color: #000000; }
+        .sponsors-article__content__items__container .cup__aston-villa {
+          max-width: 100%;
+          margin-top: 30px; }
+        .sponsors-article__content__items__container .cup__item {
+          text-align: center; }
+          .sponsors-article__content__items__container .cup__item__img {
+            max-width: 158px;
+            max-height: 184px; }
+            @media only screen and (max-width: 1300px) {
+              .sponsors-article__content__items__container .cup__item__img {
+                max-width: 120px;
+                max-height: 160px; } }
+            @media only screen and (max-width: 1250px) {
+              .sponsors-article__content__items__container .cup__item__img {
+                max-width: 90px;
+                max-height: 130px; } }
+            @media only screen and (max-width: 1110px) {
+              .sponsors-article__content__items__container .cup__item__img {
+                max-width: 80px;
+                max-height: 90px; } }
+          .sponsors-article__content__items__container .cup__item__title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 45px;
+            text-align: center;
+            color: #597EF7; }
+          .sponsors-article__content__items__container .cup__item__description {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            color: #000000; }
       .sponsors-article__content__items__container__Sponsor_Information {
         padding-top: 60px; }
         .sponsors-article__content__items__container__Sponsor_Information__text {
@@ -2099,7 +2100,7 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
             text-align: center;
             color: #000000; }
         .sponsors-article__content__items__container .Best_in_the_Industry__top [data-i18n="juventus_mobile_image"] img {
-          max-height: 450px; }
+          max-height: 490px; }
         .sponsors-article__content__items__container .Best_in_the_Industry__top .industry-img {
           text-align: center;
           margin-top: -15px; }
@@ -2853,13 +2854,13 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
   #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators {
     position: initial;
     margin: 0;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
     place-content: flex-start; }
     #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators label,
     #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators button {
-      width: 65px;
-      height: 65px;
+      width: 67px;
+      height: 67px;
       text-indent: initial;
       margin: 0;
       border: 2px solid transparent;
@@ -2868,10 +2869,10 @@ html[lang="zh"] .fishing-page .sports-item__content__title {
       padding: 0;
       display: initial;
       box-sizing: initial;
-      cursor: pointer; }
+      cursor: pointer;
+      padding: 1px; }
       #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators label img,
       #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators button img {
-        padding: 2px;
         width: 65px; }
       #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators label.active,
       #selectProfilePictureModal .modal-content .modal-body #profileSelectCarousel .carousel-indicators button.active {
@@ -2903,7 +2904,7 @@ html[lang="zh"] .account-layout__container__content__left .profile-navbar__navba
     position: absolute;
     left: 20px;
     top: 0;
-    max-width: 120px; }
+    max-width: 113px; }
   .vip-detail-page .vip-detail-page__content__check-vip-detail {
     position: absolute;
     right: 0;

@@ -585,8 +585,8 @@
       "des22": "c) 【大小球】<span>投注两队总进球数的大小，总进球数比盘口大即大球，比盘口小即小球，刚好等于盘口退本金。如图：</span>"
     },
     "Lottery_Guide_page": {
-      "img2": "<img src=\"assets/images/help/lottery-guide-2.png\" />",
-      "img3": "<img src=\"assets/images/help/lottery-guide-3.png\" />",
+      "img2": "<img src=\"assets/images/help/lottery-guide-2-zh.png\" />",
+      "img3": "<img src=\"assets/images/help/lottery-guide-3-zh.png\" />",
       "1": "1. 如何参与4D 彩票游戏",
       "des1": "<ul><li>4D彩票游戏的玩法简单，只需要在 0000 到 9999 数字中，选择四位数的喜爱或幸运数字。</li><li>然后，决定投注种类，例如 \"ABC\" （大）或 \"A\"（小）；或同时下注大小两种。</li><li>\"ABC\"（大）增加您中奖的机会，共有23组中奖号码，也就是首奖、二奖、三奖，10个入围奖和10个安慰奖。</li><li>\"A\"（小）让您赢取更多奖金，但只适用于3组中奖号码，也就是首奖，二奖和三奖。</li><li>最后，决定每组号码的下注金额。1+3D游戏的最低下注金额是 1令吉。</li><li>高达7投注公司任君选择投注，以增加您中奖的机会！(万能，大马彩，多多，新加坡，山大跟，沙巴，砂劳越）</li></ul>",
       "2": "2. 包字投注",
@@ -1007,7 +1007,7 @@
   "Manage": "管理",
   "Official_Regional_Partner_of_Juventus": "尤文图斯官方区域合作伙伴",
   "Aston_Villa_Official_Principal_Partner": "阿斯顿维拉官方顶级合作伙伴",
-  "juventus_mobile_image": "<img src=\"assets/images/sponsors/article/juventus/mobile.png\" />",
+  "juventus_mobile_image": "<img src=\"assets/images/sponsors/article/juventus/mobile.svg\" />",
   "Fund_not_received": "未收到存款",
   "Deposited_from_Maybank": "Maybank 存款",
   "PROFILE": "我的资料",
