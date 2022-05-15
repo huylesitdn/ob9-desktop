@@ -156,7 +156,6 @@
         .sponsors-article__content__items__container .cup__item {
           text-align: center; }
           .sponsors-article__content__items__container .cup__item__img {
-            max-width: 158px;
             max-height: 184px; }
             @media only screen and (max-width: 1300px) {
               .sponsors-article__content__items__container .cup__item__img {
