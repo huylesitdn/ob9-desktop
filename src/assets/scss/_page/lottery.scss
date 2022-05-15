@@ -84,6 +84,7 @@
         background: #E9E9E9;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        place-items: center;
 
         .nav-item {
           .nav-link {
@@ -92,9 +93,10 @@
             border-bottom: 4px solid transparent;
             padding: 0;
             padding-bottom: 10px;
+            min-height: 70px;
 
             img {
-              max-height: 40px;
+              max-height: 41px;
               max-width: 105px;
             }
 
@@ -103,7 +105,20 @@
               border-bottom-color: #4E7FFF;
               background: transparent;
             }
+
+            &#log-3-tab {
+              img {
+                max-height: 45px;
+              }
+            }
+
+            &#log-4-tab {
+              img {
+                max-height: 51px;
+              }
+            }
           }
+
         }
       }
 

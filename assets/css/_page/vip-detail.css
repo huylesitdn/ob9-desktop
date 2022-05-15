@@ -167,6 +167,16 @@
           background: #FFFFFF; }
         .vip-detail-page .vip-detail-page__content__vip-0-privilege .content > div:nth-child(even) {
           background: linear-gradient(193.77deg, #E8F2FD 9.84%, #F6FAFF 97.9%); }
+        .vip-detail-page .vip-detail-page__content__vip-0-privilege .content > div .currency {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 21px;
+          color: #333333;
+          margin-top: 10px; }
+          .vip-detail-page .vip-detail-page__content__vip-0-privilege .content > div .currency span {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px; }
   .vip-detail-page .vip-detail-page__content__VIP-Cash-Rebate .title {
     font-weight: 600;
     font-size: 18px;

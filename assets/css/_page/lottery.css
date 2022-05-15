@@ -55,19 +55,25 @@
         gap: 40px;
         background: #E9E9E9;
         border-top-left-radius: 10px;
-        border-top-right-radius: 10px; }
+        border-top-right-radius: 10px;
+        place-items: center; }
         .lottery-page__content__tab .nav-tabs .nav-item .nav-link {
           margin-bottom: 0;
           border: none;
           border-bottom: 4px solid transparent;
           padding: 0;
-          padding-bottom: 10px; }
+          padding-bottom: 10px;
+          min-height: 70px; }
           .lottery-page__content__tab .nav-tabs .nav-item .nav-link img {
-            max-height: 40px;
+            max-height: 41px;
             max-width: 105px; }
           .lottery-page__content__tab .nav-tabs .nav-item .nav-link:hover, .lottery-page__content__tab .nav-tabs .nav-item .nav-link.active {
             border-bottom-color: #4E7FFF;
             background: transparent; }
+          .lottery-page__content__tab .nav-tabs .nav-item .nav-link#log-3-tab img {
+            max-height: 45px; }
+          .lottery-page__content__tab .nav-tabs .nav-item .nav-link#log-4-tab img {
+            max-height: 51px; }
       .lottery-page__content__tab .tab-content {
         padding: 30px 15px; }
         .lottery-page__content__tab .tab-content .lottery-item__title {
