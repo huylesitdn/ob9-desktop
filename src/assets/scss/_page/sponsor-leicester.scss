@@ -275,3 +275,23 @@
     }
   }
 }
+
+
+html[lang="en"] {
+  .sponsor-leicester-item__title {
+    &[data-i18n="sponsors_page.lei.ss1.title"] {
+      font-size: 24px !important;
+    }
+
+    &[data-i18n="sponsors_page.lei.ss5.title"] {
+      font-size: 35px !important;
+    }
+  }
+  .infoTitle {
+    &[data-i18n="sponsors_page.lei.ss2.info_title"] {
+      font-size: 35px !important;
+      line-height: 40px !important;
+      width: 100% !important;
+    }
+  }
+}

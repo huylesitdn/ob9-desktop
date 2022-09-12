@@ -194,3 +194,14 @@
       background-image: url(../images/sponsors/leicester/nav-ball@2x.6380660305c8a0b2957da16f35904d0f.png);
       background-repeat: no-repeat;
       background-size: cover; }
+
+html[lang="en"] .sponsor-leicester-item__title[data-i18n="sponsors_page.lei.ss1.title"] {
+  font-size: 24px !important; }
+
+html[lang="en"] .sponsor-leicester-item__title[data-i18n="sponsors_page.lei.ss5.title"] {
+  font-size: 35px !important; }
+
+html[lang="en"] .infoTitle[data-i18n="sponsors_page.lei.ss2.info_title"] {
+  font-size: 35px !important;
+  line-height: 40px !important;
+  width: 100% !important; }
