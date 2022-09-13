@@ -4,7 +4,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding-top: 0; }
+  padding-top: 0;
+  font-weight: 300; }
   #sponsorsPage.sponsor-leicester .scroll-container > section {
     display: -webkit-box;
     display: -webkit-flex;
@@ -49,7 +50,6 @@
       #sponsorsPage.sponsor-leicester .scroll-container > section .sponsor-leicester-item__title {
         height: 55px;
         font-style: normal;
-        font-weight: 400;
         font-size: 42px;
         line-height: 51px;
         text-align: center;
@@ -71,7 +71,6 @@
           display: block;
           text-align: justify;
           font-style: normal;
-          font-weight: 400;
           font-size: 21.06px;
           line-height: 36px;
           color: #164194;
@@ -89,7 +88,6 @@
             width: 380px;
             margin-top: 29px;
             font-style: normal;
-            font-weight: 400;
             font-size: 48px;
             line-height: 60px;
             letter-spacing: 4px;
@@ -104,7 +102,6 @@
           position: absolute;
           bottom: 20px;
           font-style: normal;
-          font-weight: 400;
           font-size: 18px;
           line-height: 34px;
           text-align: justify;
@@ -114,7 +111,6 @@
             font-weight: 900; }
         #sponsorsPage.sponsor-leicester .scroll-container > section .sponsor-leicester-item__content.ss3 .description {
           font-style: normal;
-          font-weight: 400;
           font-size: 18px;
           line-height: 34px;
           text-align: justify;
@@ -161,14 +157,12 @@
               background: -webkit-linear-gradient(top, rgba(61, 98, 169, 0.0001) -37.81%, #183977 100%);
               background: linear-gradient(180deg, rgba(61, 98, 169, 0.0001) -37.81%, #183977 100%);
               padding: 10px 15px;
-              font-weight: 400;
               font-size: 16px;
               text-indent: 32px;
               color: #fff;
               line-height: 22px; }
           #sponsorsPage.sponsor-leicester .scroll-container > section .sponsor-leicester-item__content.ss5 .lastBottomTxt {
             font-style: normal;
-            font-weight: 400;
             font-size: 18px;
             line-height: 34px;
             text-align: justify;

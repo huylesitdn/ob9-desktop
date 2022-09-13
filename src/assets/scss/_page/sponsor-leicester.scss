@@ -6,6 +6,7 @@
     left: 0;
     right: 0;
     padding-top: 0;
+    font-weight: 300;
 
     .scroll-container {
       &>section {
@@ -56,7 +57,6 @@
           &__title {
             height: 55px;
             font-style: normal;
-            font-weight: 400;
             font-size: 42px;
             line-height: 51px;
             text-align: center;
@@ -87,7 +87,6 @@
               display: block;
               text-align: justify;
               font-style: normal;
-              font-weight: 400;
               font-size: 21.06px;
               line-height: 36px;
               color: #164194;
@@ -112,7 +111,6 @@
                   margin-top: 29px;
 
                   font-style: normal;
-                  font-weight: 400;
                   font-size: 48px;
                   line-height: 60px;
                   letter-spacing: 4px;
@@ -133,7 +131,6 @@
                 bottom: 20px;
 
                 font-style: normal;
-                font-weight: 400;
                 font-size: 18px;
                 line-height: 34px;
                 text-align: justify;
@@ -150,7 +147,6 @@
 
               .description {
                 font-style: normal;
-                font-weight: 400;
                 font-size: 18px;
                 line-height: 34px;
                 text-align: justify;
@@ -217,7 +213,6 @@
                   background: linear-gradient(180deg, rgba(61, 98, 169, .0001) -37.81%, #183977 100%);
 
                   padding: 10px 15px;
-                  font-weight: 400;
                   font-size: 16px;
                   text-indent: 32px;
                   color: #fff;
@@ -227,7 +222,6 @@
 
               .lastBottomTxt {
                 font-style: normal;
-                font-weight: 400;
                 font-size: 18px;
                 line-height: 34px;
                 text-align: justify;
