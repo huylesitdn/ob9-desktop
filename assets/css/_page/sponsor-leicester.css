@@ -134,7 +134,8 @@
               width: 100%;
               padding: 15px 30px;
               color: #164194;
-              text-align: justify; }
+              text-align: justify;
+              height: 250px; }
         #sponsorsPage.sponsor-leicester .scroll-container > section .sponsor-leicester-item__content.ss5 {
           padding: 70px;
           width: 100%;
@@ -212,4 +213,8 @@ html[lang="en"] .sponsor-leicester-item__title[data-i18n="sponsors_page.lei.ss5.
 html[lang="en"] .infoTitle[data-i18n="sponsors_page.lei.ss2.info_title"] {
   font-size: 35px !important;
   line-height: 40px !important;
-  width: 100% !important; }
+  width: 100% !important;
+  margin-top: 50px !important; }
+
+html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
+  bottom: -20px !important; }
