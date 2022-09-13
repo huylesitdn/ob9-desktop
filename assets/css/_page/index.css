@@ -5813,9 +5813,17 @@ html[lang="zh"] .account-layout__container__content__left .profile-navbar__navba
           width: 100%;
           margin: 0; }
           #sponsorsPage.sponsor-leicester .scroll-container > section .sponsor-leicester-item__content.ss4 .img-item {
-            text-align: center; }
-            #sponsorsPage.sponsor-leicester .scroll-container > section .sponsor-leicester-item__content.ss4 .img-item img {
-              max-width: 315px; }
+            text-align: center;
+            max-width: 320px;
+            position: relative; }
+            #sponsorsPage.sponsor-leicester .scroll-container > section .sponsor-leicester-item__content.ss4 .img-item .des {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              padding: 15px 30px;
+              color: #164194;
+              text-align: justify; }
         #sponsorsPage.sponsor-leicester .scroll-container > section .sponsor-leicester-item__content.ss5 {
           padding: 70px;
           width: 100%;
