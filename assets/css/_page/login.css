@@ -114,6 +114,10 @@
               box-shadow: none; }
             .login__container__content__form .input-group .form-control:-webkit-autofill, .login__container__content__form .input-group .form-control:-webkit-autofill:hover, .login__container__content__form .input-group .form-control:-webkit-autofill:focus, .login__container__content__form .input-group .form-control:-webkit-autofill:active {
               -webkit-box-shadow: 0 0 0 30px white inset !important; }
+          .login__container__content__form .input-group .btn {
+            border-radius: 20px !important;
+            height: calc(100% - 8px);
+            margin-right: 4px; }
         .login__container__content__form .remember-password {
           font-weight: 400;
           font-size: 12px;
