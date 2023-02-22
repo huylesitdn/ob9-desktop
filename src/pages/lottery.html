@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
-  @@include('../components/base/header.html', {title: 'Lottery'})
+  @@include('../components/base/header.html', {title: 'Lottery', metaContent: './meta/lottery.html'})
   <body>
     <!-- Content -->
     <section class="main lottery-page">
@@ -13,5 +13,6 @@
     @@include('../components/base/navbar-bottom.html', {active: 0})
 
     @@include('../components/base/footer.html')
+    @@include('../components/base/footer-info.html', { contentInfo: './footer-info/lottery.html'})
   </body>
 </html>

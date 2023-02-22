@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
-  @@include('../components/base/header.html', {title: 'E-Sports'})
+  @@include('../components/base/header.html', {title: 'E-Sports', metaContent: './meta/e-sports.html'})
   <body>
     <!-- Content -->
     <section class="main e-sports-page">
@@ -14,5 +14,7 @@
     @@include('../components/base/navbar-bottom.html', {active: 0})
 
     @@include('../components/base/footer.html')
+    @@include('../components/base/footer-info.html', { contentInfo: './footer-info/e-sports.html'})
+
   </body>
 </html>

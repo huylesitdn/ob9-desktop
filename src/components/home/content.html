@@ -20,7 +20,7 @@
 <div class="home-page__notification">
   <div class="container notification">
     <img src="assets/icons/notification.svg" />
-    <div class="text-animated">
+    <div role="button" class="text-animated" data-bs-toggle="modal" data-bs-target="#newsModal">
       <span class="text-overflow" data-i18n="index.notification_run"></span>
     </div>
   </div>
@@ -179,3 +179,8 @@
     </div>
   </div>
 </div>
+
+
+<!-- MODAL -->
+@@include('./news-modal.html')
+<!-- MODAL -->

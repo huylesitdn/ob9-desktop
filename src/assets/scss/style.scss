@@ -580,3 +580,83 @@ html[lang="zh"] {
     }
   }
 }
+
+
+
+#newsModal {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        background: linear-gradient(180deg, #8EA9FF 0%, #678BFF 32.29%, #557BF7 100%);
+        .btn-close {
+          opacity: 1;
+          background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+        }
+      }
+
+      .modal-body {
+        .table {
+          background: #fff;
+          thead {
+            tr {
+              th {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                color: #fff;
+                vertical-align: middle;
+                border: none;
+                height: 50px;
+                background: linear-gradient(180deg, #8EA9FF 0%, #678BFF 32.29%, #557BF7 100%);
+              }
+            }
+          }
+
+          tbody {
+            border-top: none !important;
+
+            tr {
+
+              td {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 14px;
+                color: #000000;
+                background-color: #fff;
+                height: 50px;
+                text-align: left;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-info {
+  background-color: #f8f9fa;
+  .collapse-link {
+    &[aria-expanded="false"] {
+      .hide {
+        display: none;
+      }
+      .show {
+        display: initial;
+      }
+    }
+    &[aria-expanded="true"] {
+      .show {
+        display: none;
+      }
+      .hide {
+        display: initial;
+      }
+    }
+  }
+  .collapse {
+    text-align: justify;
+  }
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
-  @@include('../components/base/header.html', {title: 'Fishing'})
+  @@include('../components/base/header.html', {title: 'Fishing', metaContent: './meta/fishing.html'})
   <body>
     
     <!-- Content -->
@@ -15,5 +15,7 @@
     @@include('../components/base/navbar-bottom.html', {active: 0})
     
     @@include('../components/base/footer.html')
+    @@include('../components/base/footer-info.html', { contentInfo: './footer-info/fishing.html'})
+
   </body>
 </html>
