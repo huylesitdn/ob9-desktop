@@ -1,9 +1,12 @@
 <div class="footer-info">
   <div class="container">
-    <div>
-      <a class="collapse-link py-3 text-dark d-block fw-bold text-decoration-underline" data-bs-toggle="collapse" href="#collapseFooterInfo" role="button" aria-expanded="false" aria-controls="collapseFooterInfo">
-        <span class="show">Show</span> <span class="hide">Hide</span> Info
+    <div class="collapse-header">
+      <a class="collapse-link" data-bs-toggle="collapse" href="#collapseFooterInfo" role="button" aria-expanded="false" aria-controls="collapseFooterInfo">
+        <span class="show">Read More</span> <span class="hide">Hide Info</span>
       </a>
+      <div class="collapse-title">
+        @@include('@@contentInfo')
+      </div>
     </div>
     <div class="collapse pb-3" id="collapseFooterInfo">
       @@include('@@contentInfo')

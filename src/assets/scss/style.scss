@@ -588,6 +588,7 @@ html[lang="zh"] {
     .modal-content {
       .modal-header {
         background: linear-gradient(180deg, #8EA9FF 0%, #678BFF 32.29%, #557BF7 100%);
+
         .btn-close {
           opacity: 1;
           background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
@@ -597,6 +598,7 @@ html[lang="zh"] {
       .modal-body {
         .table {
           background: #fff;
+
           thead {
             tr {
               th {
@@ -637,26 +639,66 @@ html[lang="zh"] {
 }
 
 .footer-info {
-  background-color: #f8f9fa;
+  background-color: rgb(243, 245, 246);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+
+  .collapse-header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .collapse-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+
   .collapse-link {
+    color: #000000;
+    text-decoration: underline;
+
     &[aria-expanded="false"] {
       .hide {
         display: none;
       }
+
       .show {
         display: initial;
       }
     }
+
     &[aria-expanded="true"] {
+      margin-bottom: 20px;
+
       .show {
         display: none;
       }
+
       .hide {
         display: initial;
       }
+
+      &~.collapse-title {
+        display: none;
+      }
     }
   }
+
+  .collapsing {
+    transition: none !important;
+  }
+
   .collapse {
-    text-align: justify;
+    color: #8697a2;
+    line-height: 21px;
+    font-size: 14px;
   }
 }
