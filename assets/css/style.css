@@ -429,10 +429,11 @@ html[lang="zh"] .register_link {
       vertical-align: middle; }
 
 .footer-info {
-  background-color: #f3f5f6;
+  background-color: #353F4B;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-align: justify; }
+  text-align: justify;
+  color: #ccc; }
   .footer-info .collapse-header {
     display: flex;
     flex-direction: column-reverse; }
@@ -444,10 +445,12 @@ html[lang="zh"] .register_link {
     /* number of lines to show */
     line-clamp: 3;
     -webkit-box-orient: vertical;
-    color: #000000;
     margin-bottom: 15px; }
+    .footer-info .collapse-title .title {
+      font-weight: bold; }
   .footer-info .collapse-link {
-    color: #000000;
+    color: #ccc;
+    font-weight: 500;
     text-decoration: underline; }
     .footer-info .collapse-link[aria-expanded="false"] .hide {
       display: none; }
@@ -464,8 +467,12 @@ html[lang="zh"] .register_link {
   .footer-info .collapsing {
     transition: none !important; }
   .footer-info .collapse {
-    color: #8697a2;
     line-height: 21px;
     font-size: 14px;
     text-align: left;
     column-count: 4; }
+    .footer-info .collapse .title {
+      font-weight: bold;
+      padding-top: 10px; }
+      .footer-info .collapse .title:first-child {
+        padding-top: 0; }
