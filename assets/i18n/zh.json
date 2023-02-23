@@ -1752,6 +1752,13 @@
   },
   "otp": "验证码",
   "otp_send_code": "获取验证码",
+  "news_popup": {
+    "Customer_Announcement": "客户通知",
+    "No": "序号",
+    "Date": "日期",
+    "Bulletin": "公告栏",
+    "": ""  
+  },
   "": "",
   "": "",
   "": ""

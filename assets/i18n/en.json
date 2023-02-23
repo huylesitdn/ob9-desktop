@@ -1753,6 +1753,13 @@
   },
   "otp": "OTP",
   "otp_send_code": "Send Code",
+  "news_popup": {
+    "Customer_Announcement": "Customer Announcement",
+    "No": "No",
+    "Date": "Date",
+    "Bulletin": "Bulletin",
+    "": ""  
+  },
   "": "",
   "": ""
 }
