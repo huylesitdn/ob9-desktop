@@ -466,4 +466,6 @@ html[lang="zh"] .register_link {
   .footer-info .collapse {
     color: #8697a2;
     line-height: 21px;
-    font-size: 14px; }
+    font-size: 14px;
+    text-align: left;
+    column-count: 4; }
