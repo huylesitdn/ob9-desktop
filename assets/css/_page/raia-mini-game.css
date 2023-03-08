@@ -229,7 +229,7 @@
 .raia-mini-game-page__container .play-now {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/world-cup/en/bg_loading_bonus.jpg);
+  background-image: url(../images/raia-mini-game/game-bg.png);
   background-position: center;
   position: relative;
   border: 3px solid #0e3a2e;
