@@ -368,10 +368,10 @@
       position: relative;
       border: 3px solid #0e3a2e;
       border-radius: 8px;
-      min-height: 500px;
+      min-height: 600px;
 
       &>div {
-        background-color: rgba(0, 0, 0, 0.7);
+        // background-color: rgba(0, 0, 0, 0.7);
         content: "";
         width: 100%;
         height: 100%;
