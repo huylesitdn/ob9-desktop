@@ -53,6 +53,16 @@
         line-height: 14px;
         text-align: center;
         color: #000000; }
+      .select-bank__item__label__status {
+        color: #fff;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 2px 5px;
+        border-radius: 4px; }
+        .select-bank__item__label__status.verifying {
+          background-color: #F4D48C; }
+        .select-bank__item__label__status.verified {
+          background-color: #597EF7; }
 
 .deposit-amount {
   margin-left: -8px;

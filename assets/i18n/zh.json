@@ -1843,6 +1843,23 @@
     "": "",
     "": "" 
   },
+  "Get_Code": "Get Code",
+  "OTP_verification": "OTP verification",
+  "withdrawal_verification_page": {
+    "WITHDRAWAL": "BANK STATEMENT VERIFICATION",
+    "title": "Bank account number and full name must be visible",
+    "info": "Please upload your <span>BANK STATEMENT</span> For verification to unlock<br/>withdrawal function",
+    "action": "Click here to upload now",
+    "Attachment": "Attachment",
+    "Upload": "Upload",
+    "attachment_help": "Please upload a PHOTO of your bank account with your full name displayed. It can be bank book, e-statement or bank statement",
+    "attachment_help1": "This verification will take around 5 to 30 minutes. Please contact our Lve Chat agent if your verification status is not updated after 30 minutes",
+    "": "",
+    "": "",
+    "": ""  
+  },
+  "Verifying": "Verifying",
+  "Verified": "Verified",
   "": "",
   "": "",
   "": ""

@@ -75,6 +75,22 @@
         text-align: center;
         color: #000000;
       }
+
+      &__status {
+        color: #fff;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 2px 5px;
+        border-radius: 4px;
+
+        &.verifying {
+          background-color: #F4D48C;
+        }
+
+        &.verified {
+          background-color: #597EF7;
+        }
+      }
     }
   }
 }

@@ -99,6 +99,9 @@ img {
   line-height: 20px;
   text-align: center; }
 
+.form-control {
+  border-radius: 10px; }
+
 .main {
   padding-top: 120px;
   padding-bottom: 80px;

@@ -46,6 +46,41 @@
       }
     }
 
+    &__withdrawal-verification {
+      &__info {
+        background-image: url(../images/SG-verification-page/Frame-and-girl.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 33px;
+        padding-left: 80px;
+
+        span {
+          color: #3678FE;
+          font-size: 35px;
+          line-height: 60px;
+          display: block;
+        }
+
+        .icon {
+          max-width: 300px;
+        }
+      }
+
+      .action {
+        padding-left: 80px;
+        max-width: 500px;
+        margin: auto;
+      }
+    }
 
     &__main-wallet {
       &__item {
@@ -228,6 +263,7 @@
   }
 }
 
+#addBankVerificationModal,
 #changePasswordModal,
 #verifyEmailModal,
 #manageBankAccountModal,
@@ -270,12 +306,16 @@
             line-height: 14px;
             color: #A5A9B3;
           }
+
+          &::-webkit-file-upload-button {
+            height: 50px;
+          }
         }
 
         .form-text {
-          font-weight: 400;
+          font-weight: 300;
           font-size: 14px;
-          line-height: 14px;
+          line-height: 18px;
           color: #A5A9B3;
         }
 

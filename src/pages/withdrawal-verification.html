@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Withdrawal Verification'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main account-layout withdrawal-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <div class="account-layout__container container">
+        <div class="row account-layout__container__content">
+          <div class="col-3 account-layout__container__content__left">
+            @@include('../components/base/profile-navbar.html', {active: 4, activeBalance: 2})
+          </div>
+          <div class="col-9 account-layout__container__content__right">
+
+            <div class="account-layout__container__content__right__content withdrawal-page__content">
+              
+              <div class="withdrawal-page__content__title">
+                <div>
+                  <span class="title" data-i18n="withdrawal_verification_page.WITHDRAWAL"></span>
+                  <span class="subtitle" data-i18n="withdrawal_verification_page.title"></span>
+                </div>
+              </div>
+
+
+              <div class="withdrawal-page__content__withdrawal-verification">
+                <div class="withdrawal-page__content__withdrawal-verification__info">
+                  <img class="icon" src="assets/images/SG-verification-page/Sheild.png" />
+                  <div data-i18n="withdrawal_verification_page.info"></div>
+                </div>
+                <div class="text-center pt-4 action">
+                  <button class="btn btn-primary btn-lg w-100 text-uppercase" data-bs-toggle="modal" data-bs-target="#addBankVerificationModal" data-i18n="withdrawal_verification_page.action"></button>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- MODAL -->
+      @@include('../components/wallet/withdrawal/add-bank-verification-modal.html')
+      
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>
