@@ -118,6 +118,24 @@ a {
   color: #597EF7;
   text-decoration: none; }
 
+.custom-file {
+  display: flex;
+  flex: 1; }
+  .custom-file .btn {
+    border-radius: 0;
+    border: none;
+    background-color: #ddd;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #000;
+    width: 150px;
+    display: flex;
+    place-content: center;
+    place-items: center; }
+  .custom-file .form-control {
+    background-color: transparent;
+    border-radius: 0; }
+
 .modal.modal-custom .modal-content {
   border-radius: 20px;
   border: none; }
@@ -4705,12 +4723,12 @@ html[lang="zh"] .account-layout__container__content__left .profile-navbar__navba
         #addBankModal .modal-content .add-bank-modal .row .input-group .form-control,
         #addBankExistingUserModal .modal-content .add-bank-modal .row .input-group .form-control {
           border: none; }
-        #addBankVerificationModal .modal-content .add-bank-modal .row .input-group .btn,
-        #changePasswordModal .modal-content .add-bank-modal .row .input-group .btn,
-        #verifyEmailModal .modal-content .add-bank-modal .row .input-group .btn,
-        #manageBankAccountModal .modal-content .add-bank-modal .row .input-group .btn,
-        #addBankModal .modal-content .add-bank-modal .row .input-group .btn,
-        #addBankExistingUserModal .modal-content .add-bank-modal .row .input-group .btn {
+        #addBankVerificationModal .modal-content .add-bank-modal .row .input-group .btn-primary,
+        #changePasswordModal .modal-content .add-bank-modal .row .input-group .btn-primary,
+        #verifyEmailModal .modal-content .add-bank-modal .row .input-group .btn-primary,
+        #manageBankAccountModal .modal-content .add-bank-modal .row .input-group .btn-primary,
+        #addBankModal .modal-content .add-bank-modal .row .input-group .btn-primary,
+        #addBankExistingUserModal .modal-content .add-bank-modal .row .input-group .btn-primary {
           min-height: 30px;
           height: 30px;
           margin-top: 10px;

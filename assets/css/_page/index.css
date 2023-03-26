@@ -4263,12 +4263,12 @@ html[lang="zh"] .account-layout__container__content__left .profile-navbar__navba
         #addBankModal .modal-content .add-bank-modal .row .input-group .form-control,
         #addBankExistingUserModal .modal-content .add-bank-modal .row .input-group .form-control {
           border: none; }
-        #addBankVerificationModal .modal-content .add-bank-modal .row .input-group .btn,
-        #changePasswordModal .modal-content .add-bank-modal .row .input-group .btn,
-        #verifyEmailModal .modal-content .add-bank-modal .row .input-group .btn,
-        #manageBankAccountModal .modal-content .add-bank-modal .row .input-group .btn,
-        #addBankModal .modal-content .add-bank-modal .row .input-group .btn,
-        #addBankExistingUserModal .modal-content .add-bank-modal .row .input-group .btn {
+        #addBankVerificationModal .modal-content .add-bank-modal .row .input-group .btn-primary,
+        #changePasswordModal .modal-content .add-bank-modal .row .input-group .btn-primary,
+        #verifyEmailModal .modal-content .add-bank-modal .row .input-group .btn-primary,
+        #manageBankAccountModal .modal-content .add-bank-modal .row .input-group .btn-primary,
+        #addBankModal .modal-content .add-bank-modal .row .input-group .btn-primary,
+        #addBankExistingUserModal .modal-content .add-bank-modal .row .input-group .btn-primary {
           min-height: 30px;
           height: 30px;
           margin-top: 10px;

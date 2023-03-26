@@ -1861,6 +1861,8 @@
   },
   "Verifying": "Verifying",
   "Verified": "Verified",
+  "choose_file": "Choose File",
+  "no_file_chosen": "No File Chosen",
   "": "",
   "": ""
 }
