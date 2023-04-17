@@ -1863,6 +1863,24 @@
   "Verified": "Verified",
   "choose_file": "Choose File",
   "no_file_chosen": "No File Chosen",
+  "live_match_page": {
+    "vs": "VS",
+    "AC_MILAN": "AC MILAN",
+    "LIVE_MATCH": "LIVE MATCH",
+    "ALL": "ALL",
+    "UEFA_CL": "UEFA CL",
+    "EPL": "EPL",
+    "Bundesliga": "Bundesliga",
+    "La_Liga": "La Liga",
+    "Ligue_1": "Ligue 1",
+    "International": "International",
+    "Watch_Live": "Watch Live",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": ""
+  },
   "": "",
   "": ""
 }
