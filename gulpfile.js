@@ -89,8 +89,8 @@ async function srcReload() {
 
 async function includeHTML(){
   return gulp.src([
-    './src/pages/*',
-    './src/pages/**/*',
+    './src/pages/*.html',
+    './src/pages/**/*.html',
     '!./src/components/**/*.html', // ignore
     ])
     .pipe(fileinclude({
