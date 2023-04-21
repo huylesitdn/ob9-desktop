@@ -1,18 +1,16 @@
 .nav-live-match {
-  background: transparent linear-gradient(0deg, #C4D1FA 0%, #F9FBFC 99%) 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  border-radius: 27px;
-  color: #5986F2;
-  font-size: 12px;
-  min-width: 105px;
-  min-height: 32px;
-  display: flex;
-  place-content: center;
-  place-items: center;
-  gap: 6px;
-  font-weight: 300; }
-  .nav-live-match img {
-    width: 18px; }
+  width: 105px;
+  height: 35px;
+  cursor: pointer;
+  position: relative; }
+  .nav-live-match::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999; }
   .nav-live-match:hover {
     opacity: 0.7; }
 
