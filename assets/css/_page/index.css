@@ -6785,10 +6785,12 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
       box-shadow: none !important; }
 
 .nav-live-match {
-  width: 105px;
-  height: 35px;
+  width: 125px;
+  height: 45px;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  margin-left: -20px;
+  background: transparent; }
   .nav-live-match::before {
     position: absolute;
     content: "";
