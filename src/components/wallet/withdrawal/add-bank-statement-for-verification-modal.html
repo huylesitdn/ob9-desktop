@@ -1,0 +1,57 @@
+
+<!-- Modal -->
+<div class="modal fade modal-custom" id="addBankStatementForVerificationModal" tabindex="-1" aria-labelledby="addBankExistingUserModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="selectPromotionModalLabel" data-i18n="UPLOAD_BANK_STATEMENT_FOR_VERIFICATION"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body add-bank-modal">
+        
+        <div class="row">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="Full_Name"></label>
+          <div class="col-9">
+            <input type="text" class="form-control" id="staticEmail" value="TAN MING ZHI" disabled />
+            <div id="emailHelp" class="form-text" data-i18n="wallet_page.add-bank-account.description"></div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="inputPassword" class="col-3 form-label" data-i18n="Bank"></label>
+          <div class="col-9">
+            <input type="text" class="form-control" id="staticEmail" data-i18n="Please_select_your_bank" data-i18n-attr="placeholder" value="RHB BANK" />
+          </div>
+        </div>
+        <div class="row">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="Bank_Account_Number"></label>
+          <div class="col-9">
+            <input type="text" class="form-control" id="staticEmail" data-i18n="wallet_page.add-bank-account.Please_enter_bank_account_number" data-i18n-attr="placeholder" value="123456789" />
+          </div>
+        </div>
+        <div class="row">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="withdrawal_verification_page.Attachment"></label>
+          <div class="col-9">
+            <div class="input-group">
+              <div class="custom-file">
+                <label class="btn btn-secondary" for="inputGroupFile03" data-i18n="choose_file"></label>
+                <input type="file" class="custom-file-input d-none" id="inputGroupFile03" />
+                <input type="text" class="form-control custom-file-input-label" disabled data-i18n="no_file_chosen" data-i18n-attr="placeholder" />
+              </div>
+              <button class="btn btn-primary" type="button" data-i18n="withdrawal_verification_page.Upload"></button>
+            </div>
+            <div class="form-text py-3" data-i18n="withdrawal_verification_page.attachment_help"></div>
+            <div class="form-text text-primary" data-i18n="withdrawal_verification_page.attachment_help1"></div>
+          </div>
+        </div>
+
+        <div class="__submit">
+          <!-- <button class="btn btn-primary" data-bs-dismiss="modal" data-i18n="SUBMIT"></button> -->
+          <a href="/withdrawal-verification-list.html" class="btn btn-primary" data-i18n="SUBMIT">SUBMIT</a>
+        </div>
+
+        <div class="__help" data-i18n="Need_assistance"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
