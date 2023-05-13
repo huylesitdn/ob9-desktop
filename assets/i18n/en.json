@@ -1884,7 +1884,9 @@
   },
   "Verify": "Verify",
   "UPLOAD_BANK_STATEMENT_FOR_VERIFICATION": "UPLOAD BANK STATEMENT FOR VERIFICATION",
-  "": "",
+  "OK": "OK",
+  "customer_annoucement_content": "We have special promotion on coming 50 May 2023 to celebrate 520 with you!! Contact CS for more info",
+  "customer_annoucement_header": " Important Notice",
   "": "",
   "": ""
 }

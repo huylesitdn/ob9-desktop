@@ -794,3 +794,9 @@ $('.custom-file .custom-file-input').on('change', function(e) {
 
 
 // end inbox follow
+
+const customerAnnoucementElm = $("#customerAnnoucement");
+if (customerAnnoucementElm.length > 0) {
+  var customerAnnoucement = new bootstrap.Modal(customerAnnoucementElm, {});
+  customerAnnoucement.show()
+}

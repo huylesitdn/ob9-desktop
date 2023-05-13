@@ -250,31 +250,40 @@
         text-align: center;
         color: #000000; }
 
+#customerAnnoucement .modal-dialog,
 #selectLanguage .modal-dialog {
   padding: 0 30px;
   margin: auto; }
+  #customerAnnoucement .modal-dialog .modal-content,
   #selectLanguage .modal-dialog .modal-content {
     border-radius: 20px;
     border: none;
     overflow: hidden; }
+    #customerAnnoucement .modal-dialog .modal-content .modal-header,
     #selectLanguage .modal-dialog .modal-content .modal-header {
       background: linear-gradient(90deg, #88A8F7 0%, #A49AF2 100%);
       padding: 15px; }
+      #customerAnnoucement .modal-dialog .modal-content .modal-header h5,
       #selectLanguage .modal-dialog .modal-content .modal-header h5 {
         font-weight: 600;
         font-size: 24px;
         line-height: 28px;
         text-align: center;
         color: #FFFFFF; }
+      #customerAnnoucement .modal-dialog .modal-content .modal-header .btn-close,
       #selectLanguage .modal-dialog .modal-content .modal-header .btn-close {
         background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat; }
+    #customerAnnoucement .modal-dialog .modal-content .modal-body,
     #selectLanguage .modal-dialog .modal-content .modal-body {
       padding-top: 30px;
       padding-bottom: 30px; }
+      #customerAnnoucement .modal-dialog .modal-content .modal-body img,
       #selectLanguage .modal-dialog .modal-content .modal-body img {
         max-width: 40px; }
+      #customerAnnoucement .modal-dialog .modal-content .modal-body .choose-language,
       #selectLanguage .modal-dialog .modal-content .modal-body .choose-language {
         word-break: keep-all; }
+      #customerAnnoucement .modal-dialog .modal-content .modal-body .title,
       #selectLanguage .modal-dialog .modal-content .modal-body .title {
         font-weight: 300;
         font-size: 12px;
@@ -282,6 +291,7 @@
         text-align: center;
         color: #000000;
         margin-top: 7px; }
+      #customerAnnoucement .modal-dialog .modal-content .modal-body .subtitle,
       #selectLanguage .modal-dialog .modal-content .modal-body .subtitle {
         display: flex;
         place-items: center;
