@@ -800,3 +800,9 @@ if (customerAnnoucementElm.length > 0) {
   var customerAnnoucement = new bootstrap.Modal(customerAnnoucementElm, {});
   customerAnnoucement.show()
 }
+
+const customerAnnoucementImageElm = $("#customerAnnoucementImage");
+if (customerAnnoucementImageElm.length > 0) {
+  var customerAnnoucementImage = new bootstrap.Modal(customerAnnoucementImageElm, {});
+  customerAnnoucementImage.show()
+}

@@ -352,6 +352,7 @@
   }
 }
 
+#customerAnnoucementImage,
 #customerAnnoucement,
 #selectLanguage {
   .modal-dialog {
@@ -390,6 +391,10 @@
 
         img {
           max-width: 40px;
+
+          &.image-content {
+            max-width: none !important;
+          }
         }
 
         .choose-language {
