@@ -1,0 +1,53 @@
+
+<!-- Modal -->
+<div class="modal fade modal-custom" id="addBankCryptoModal" tabindex="-1" aria-labelledby="addBankCryptoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="selectPromotionModalLabel" data-i18n="Add_Address"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body add-bank-modal mt-4">
+        
+        <div class="row mb-3">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="Full_Name"></label>
+          <div class="col-9">
+            <input type="text" class="form-control" id="staticEmail" value="USDT" disabled />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="Network"></label>
+          <div class="col-9">
+            <input type="text" class="form-control" id="staticEmail" value="TRC 20" disabled />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="Address"></label>
+          <div class="col-9">
+            <input type="text" class="form-control" id="staticEmail" data-i18n="Please_enter_Address" data-i18n-attr="placeholder" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="staticEmail" class="col-3 form-label" data-i18n="OTP"></label>
+          <div class="col-9">
+            <div class="input-group">
+              <input type="text" class="form-control" id="staticEmail" data-i18n="OTP" />
+              <button class="btn btn-primary" type="button" data-i18n="Send_OTP"></button>
+            </div>
+            <small id="withdrawal-amount-input-label" class="text-danger mt-1" data-i18n="OTP_SENT"></small>
+          </div>
+        </div>
+
+        <div class="__submit mt-5">
+          <!-- <button class="btn btn-primary" data-bs-dismiss="modal" data-i18n="SUBMIT"></button> -->
+          <div class="__submit">
+            <a href="/withdrawal-existing-user.html" class="btn btn-primary" role="button" data-i18n="SUBMIT"></a>
+          </div>
+        </div>
+
+        <div class="__help" data-i18n="Need_assistance"></div>
+
+      </div>
+    </div>
+  </div>
+</div>

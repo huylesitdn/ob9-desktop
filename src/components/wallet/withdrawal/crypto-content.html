@@ -1,0 +1,81 @@
+<div class="withdrawal-page__content__bank-account">
+  <div class="d-flex gap-2 mb-5">
+    <div>
+      <img src="assets/images/wallet/crypto-option/1.svg">
+    </div>
+    <div>
+      <div class="withdrawal-page__content__bank-account__label mb-1">USDT - TRC20</div>
+      <div data-i18n="Withdrawl_Crypto_description"></div>
+    </div>
+  </div>
+  <div class="withdrawal-page__content__bank-account__container row select-bank">
+    <div class="col-7 mb-3">
+      <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#addBankCryptoModal" class="withdrawal-page__content__bank-account__container__item flex-row">
+        <div class="withdrawal-page__content__bank-account__container__item__img add">
+          <img src="assets/icons/plus.svg" />
+        </div>
+        <div class="withdrawal-page__content__bank-account__container__item__text" data-i18n="add_wallet_address"></div>
+      </a>
+    </div>
+    <div class="col-7 mb-3 select-bank__item">
+      <label class="select-bank__item__label flex-row">
+        <div class="select-bank__item__label__img">
+          <img src="assets/icons/withdrawl-crypto.png" />
+        </div>
+        <div class="select-bank__item__label__title">
+          TUnqYGSKgVoAsexQxMcBgjal123AYlmjasldkj1
+        </div>
+        <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount"/>
+        <span class="checkmark"></span>
+      </label>
+    </div>
+    <div class="col-7 mb-3 select-bank__item">
+      <label class="select-bank__item__label flex-row">
+        <div class="select-bank__item__label__img">
+          <img src="assets/icons/withdrawl-crypto.png" />
+        </div>
+        <div class="select-bank__item__label__title">
+          TUnqYGSKgVoAsexQxMcBgjal123AYlmjasldkj1
+        </div>
+        <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount" checked="checked"/>
+        <span class="checkmark"></span>
+      </label>
+    </div>
+    <div class="col-7 mb-3 select-bank__item">
+      <label class="select-bank__item__label flex-row">
+        <div class="select-bank__item__label__img">
+          <img src="assets/icons/withdrawl-crypto.png" />
+        </div>
+        <div class="select-bank__item__label__title">
+          TUnqYGSKgVoAsexQxMcBgjal123AYlmjasldkj1
+        </div>
+        <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount"/>
+        <span class="checkmark"></span>
+      </label>
+    </div>
+  </div>
+</div>
+
+
+<div class="withdrawal-page__content__input row">
+  <div class="col-8 mb-3">
+    <div class="input-group">
+      <span class="input-group-text left">MYR &nbsp;</span>
+      <input type="number" class="form-control" id="withdrawal-input" data-i18n="wallet_page.withdrawal.Please_enter_withdrawal_amount" data-i18n-attr="placeholder"  />
+      <span class="input-group-text right withdrawal-max-value"><img src="assets/images/wallet/max.svg" /> <span data-i18n="wallet_page.withdrawal.Max">Max</span></span>
+    </div>
+    <div id="withdrawal-amount-input-label" class="text-danger mt-1" style="font-size: 11px; margin-left: 60px;"  data-i18n="Min_Max_Limit"></div>
+  </div>
+  <div class="col-8">
+    <div class="input-group">
+      <span class="input-group-text left">USDT</span>
+      <input type="number" class="form-control" id="withdrawal-input" data-i18n="wallet_page.withdrawal.Please_enter_withdrawal_amount" data-i18n-attr="placeholder"  />
+      <span class="input-group-text right withdrawal-max-value opacity-0"><img src="assets/images/wallet/max.svg" /> <span data-i18n="wallet_page.withdrawal.Max">Max</span></span>
+    </div>
+    <div id="withdrawal-amount-input-label" class="text-danger mt-1" style="font-size: 11px; margin-left: 60px;"  data-i18n="Min_Max_Limit"></div>
+  </div>
+</div>
+
+<div class="withdrawal-page__content__submit">
+  <button class="btn btn-primary withdrawal-submit" disabled data-bs-toggle="modal" data-bs-target="#withdrawalSuccessModal" data-i18n="SUBMIT"></button>
+</div>

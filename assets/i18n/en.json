@@ -1887,6 +1887,15 @@
   "OK": "OK",
   "customer_annoucement_content": "We have special promotion on coming 50 May 2023 to celebrate 520 with you!! Contact CS for more info",
   "customer_annoucement_header": " Important Notice",
+  "Withdrawl_Crypto_description": " Current exchange rate: 1USDT = MYR 4.65 &nbsp;&nbsp; Guaranteed Until: 16.55",
+  "add_wallet_address": "Add Wallet Address",
+  "Cryptocurrency": "Cryptocurrency",
+  "Address": "Address",
+  "OTP": "OTP",
+  "Send_OTP": "Send OTP",
+  "Add_Address": "Add Address",
+  "Please_enter_Address": "Please enter wallet address",
+  "OTP_SENT": "OTP sent. Please check your phone and key in the OTP.",
   "": "",
   "": ""
 }

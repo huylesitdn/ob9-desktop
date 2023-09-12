@@ -41,36 +41,56 @@
                 </div>
               </div>
 
+              <div>
+                <ul class="nav nav-pills my-4 gap-3" id="withdrawlTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-secondary btn-lg text-uppercase active" id="pills-bank-account-tab" data-bs-toggle="pill" data-bs-target="#pills-bank-account" type="button" role="tab" aria-controls="pills-bank-account" aria-selected="true" data-i18n="Bank_Account"></button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-secondary btn-lg text-uppercase" id="pills-crypto-tab" data-bs-toggle="pill" data-bs-target="#pills-crypto" type="button" role="tab" aria-controls="pills-crypto" aria-selected="false" data-i18n="Crypto"></button>
+                  </li>
+                </ul>
 
-              <div class="withdrawal-page__content__bank-account">
-                <div class="withdrawal-page__content__bank-account__label" data-i18n="Bank_Account"></div>
-                <div class="withdrawal-page__content__bank-account__container row">
-                  <div class="col-2">
-                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#addBankModal" class="withdrawal-page__content__bank-account__container__item">
-                      <div class="withdrawal-page__content__bank-account__container__item__img add">
-                        <img src="assets/icons/plus.svg" />
+                <div class="tab-content" id="withdrawlTabContent">
+                  <div class="tab-pane fade show active" id="pills-bank-account" role="tabpanel" aria-labelledby="pills-bank-account-tab">
+                    <!-- bank account content -->
+                    <div class="withdrawal-page__content__bank-account">
+                      <!-- <div class="withdrawal-page__content__bank-account__label" data-i18n="Bank_Account"></div> -->
+                      <div class="withdrawal-page__content__bank-account__container row">
+                        <div class="col-2">
+                          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#addBankModal" class="withdrawal-page__content__bank-account__container__item">
+                            <div class="withdrawal-page__content__bank-account__container__item__img add">
+                              <img src="assets/icons/plus.svg" />
+                            </div>
+                            <div class="withdrawal-page__content__bank-account__container__item__text" data-i18n="withdrawal_page.Add_Bank_Account"></div>
+                          </a>
+                        </div>
                       </div>
-                      <div class="withdrawal-page__content__bank-account__container__item__text" data-i18n="withdrawal_page.Add_Bank_Account"></div>
-                    </a>
+                    </div>
+      
+                    <div class="withdrawal-page__content__description" data-i18n="withdrawal_page.description"></div>
+      
+                    <div class="withdrawal-page__content__input row">
+                      <div class="col-8">
+                        <div class="input-group">
+                          <span class="input-group-text left">MYR</span>
+                          <input type="number" class="form-control" id="withdrawal-input" data-i18n="wallet_page.withdrawal.Please_enter_withdrawal_amount" data-i18n-attr="placeholder"  />
+                          <span class="input-group-text right withdrawal-max-value"><img src="assets/images/wallet/max.svg" /> <span data-i18n="wallet_page.withdrawal.Max">Max</span></span>
+                        </div>
+                        <div id="withdrawal-amount-input-label" class="text-danger mt-1" style="font-size: 11px; margin-left: 60px;"  data-i18n="Min_Max_Limit"></div>
+                      </div>
+                    </div>
+      
+                    <div class="withdrawal-page__content__submit">
+                      <button class="btn btn-primary withdrawal-submit" disabled data-bs-toggle="modal" data-bs-target="#withdrawalSuccessModal" data-i18n="SUBMIT"></button>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-crypto" role="tabpanel" aria-labelledby="pills-crypto-tab">
+                    <!-- crypto content -->
+                    @@include('../components/wallet/withdrawal/crypto-content.html')
+
                   </div>
                 </div>
-              </div>
-
-              <div class="withdrawal-page__content__description" data-i18n="withdrawal_page.description"></div>
-
-              <div class="withdrawal-page__content__input row">
-                <div class="col-8">
-                  <div class="input-group">
-                    <span class="input-group-text left">MYR</span>
-                    <input type="number" class="form-control" id="withdrawal-input" data-i18n="wallet_page.withdrawal.Please_enter_withdrawal_amount" data-i18n-attr="placeholder"  />
-                    <span class="input-group-text right withdrawal-max-value"><img src="assets/images/wallet/max.svg" /> <span data-i18n="wallet_page.withdrawal.Max">Max</span></span>
-                  </div>
-                  <div id="withdrawal-amount-input-label" class="text-danger mt-1" style="font-size: 11px; margin-left: 60px;"  data-i18n="Min_Max_Limit"></div>
-                </div>
-              </div>
-
-              <div class="withdrawal-page__content__submit">
-                <button class="btn btn-primary withdrawal-submit" disabled data-bs-toggle="modal" data-bs-target="#withdrawalSuccessModal" data-i18n="SUBMIT"></button>
               </div>
 
             </div>
@@ -83,6 +103,7 @@
 
       <!-- MODAL -->
       @@include('../components/wallet/withdrawal/add-bank-modal.html')
+      @@include('../components/wallet/withdrawal/add-bank-crypto-modal.html')
       @@include('../components/wallet/withdrawal-success-modal.html')
       
     </section>
