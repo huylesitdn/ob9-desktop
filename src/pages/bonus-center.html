@@ -4,7 +4,7 @@
   <body>
     
     <!-- Content -->
-    <section class="main account-layout bonus-center-page">
+    <section class="main account-layout deposit-page bonus-center-page ">
       @@include('../components/base/navbar.html', {active: 1})
 
       <div class="account-layout__container container">
@@ -20,104 +20,27 @@
                 <span class="title" data-i18n="BONUS_CENTER"></span>
               </div>
 
-              <div class="bonus-center-page__content__top row">
-                <div class="col-6">
-                  <div class="bonus-center-page__content__top__item">
-                    <div class="bonus-center-page__content__top__item__img">
-                      <img src="assets/icons/unclaim.svg" />
-                    </div>
-                    <div class="bonus-center-page__content__top__item__text">
-                      <div data-i18n="bonus_history_page.Unclaim"></div>
-                      <div class="bonus-center-page__content__top__item__text__currency">MYR 0.48</div>
-                    </div>
+              <div class="deposit-page__content__tab">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="cash-rebate-tab" data-bs-toggle="tab" data-bs-target="#cash-rebate" type="button" role="tab" aria-controls="cash-rebate" aria-selected="true">
+                      <span data-i18n="CASH_REBATE"></span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="vip-angpow-tab" data-bs-toggle="tab" data-bs-target="#vip-angpow" type="button" role="tab" aria-controls="vip-angpow" aria-selected="false">
+                      <span data-i18n="VIP_ANGPOW"></span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="cash-rebate" role="tabpanel" aria-labelledby="cash-rebate-tab">
+                    @@include('../components/wallet/bonus-center/cash-rebate.html')
+                  </div>
+                  <div class="tab-pane fade" id="vip-angpow" role="tabpanel" aria-labelledby="vip-angpow-tab">
+                    @@include('../components/wallet/bonus-center/vip-angpow.html')
                   </div>
                 </div>
-                <div class="col-6">
-                  <div class="bonus-center-page__content__top__item">
-                    <div class="bonus-center-page__content__top__item__img">
-                      <img src="assets/icons/total-claim.svg" />
-                    </div>
-                    <div class="bonus-center-page__content__top__item__text">
-                      <div data-i18n="bonus_history_page.Total_Claim"></div>
-                      <div class="bonus-center-page__content__top__item__text__currency">MYR 0.05</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="bonus-center-page__content__status row">
-                <div class="col-5 bonus-center-page__content__status__item">
-                  <label><span data-i18n="Status"></span>:</label>
-                  <select class="form-select">
-                    <option value="Unclaim" selected data-i18n="bonus_history_page.Unclaim"></option>
-                    <option value="Claimed" data-i18n="bonus_history_page.Claimed"></option>
-                  </select>
-                </div>
-                <div class="col-7 bonus-center-page__content__status__item">
-                  <label><span data-i18n="Custom_Period"></span></label>
-                  <div class="bonus-center-page__content__status__item__date-range input-group">
-                    <!-- <input type="text" class="form-control" name="datefilter" placeholder="" data-i18n="time_picker_default_value" data-i18n-attr="value" value="" /> -->
-                    <!-- <span class="input-group-text datefilter"><img src="assets/icons/date.png" /></span> -->
-                    <input type="text" class="form-control datefilterFrom" placeholder="" value="03-03-2022" />
-                    <span class="input-group-text" data-i18n="To"></span>
-                    <input type="text" class="form-control datefilterTo" placeholder="" value="03-03-2022" />
-                    <span class="input-group-text datefilterIcon"><img src="assets/icons/date.png" /></span>
-                  </div>
-                  <button class="btn btn-outline-primary" data-i18n="SEARCH"></button>
-                </div>
-              </div>
-
-              <div class="bonus-center-page__content__filter">
-                <label><span data-i18n="Date"></span>:</label>
-                <div class="btn-group">
-                  <button class="btn btn-outline-secondary" data-i18n="Today"></button>
-                  <button class="btn btn-outline-secondary" data-i18n="Yesterday"></button>
-                  <button class="btn btn-outline-secondary" data-i18n="Last_7_Days"></button>
-                  <button class="btn btn-outline-secondary" data-i18n="Last_30_Days"></button>
-                  <button class="btn btn-outline-secondary active" data-i18n="All"></button>
-                </div>
-              </div>
-
-
-              <div class="bonus-center-page__content__table">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col" data-i18n="my_wallet_page.no"></th>
-                      <th scope="col" data-i18n="my_wallet_page.Date"></th>
-                      <th scope="col" data-i18n="my_wallet_page.Transaction_ID"></th>
-                      <th scope="col" data-i18n="Bonus_Type"></th>
-                      <th scope="col" data-i18n="Bonus_Amount"></th>
-                      <th scope="col" data-i18n="my_wallet_page.Status"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>2022 - 03 - 24 13:57:09</td>
-                      <td>D1824823948</td>
-                      <td class="success" data-i18n="Cash_Rebate"></td>
-                      <td>MYR50.00</td>
-                      <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimSuccessModal" data-i18n="CLAIM_NOW"></button></td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>2022 - 03 - 24 13:57:09</td>
-                      <td>D1824823948</td>
-                      <td class="success" data-i18n="Cash_Rebate"></td>
-                      <td>MYR50.00</td>
-                      <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimSuccessModal" data-i18n="CLAIM_NOW"></button></td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>2022 - 03 - 24 13:57:09</td>
-                      <td>D1824823948</td>
-                      <td class="success" data-i18n="Cash_Rebate"></td>
-                      <td>MYR50.00</td>
-                      <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimSuccessModal" data-i18n="CLAIM_NOW"></button></td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
 
             </div>
