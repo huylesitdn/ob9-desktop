@@ -72,6 +72,19 @@
     border-radius: 20px; }
     .rewards-block__content__card__content .content {
       min-height: 400px; }
+    .rewards-block__content__card__content .current-point {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      text-shadow: 1px 1px 10px #ffd261;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold; }
     .rewards-block__content__card__content__title {
       font-size: 45px;
       color: #fff;

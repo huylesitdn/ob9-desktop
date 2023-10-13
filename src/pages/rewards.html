@@ -17,7 +17,15 @@
             <div class="rewards-block__content__card__content__title">
               <span data-i18n="rewards_page.my_point"></span>
             </div>
-            <div class="content py-4" data-i18n="rewards_page.my_point_content"></div>
+            <div class="content py-4 row justify-content-center align-items-center">
+              <div class="col-8">
+                <img src="assets/images/rewards/my-point-card.png" />
+              </div>
+              <div class="col-4 position-relative">
+                <img src="assets/images/rewards/my-point-current-point.png" />
+                <span class="current-point">9,000 PTS</span>
+              </div>
+            </div>
             <div class="text-center">
               <span class="bottom" data-i18n="rewards_page.my_point_bottom"></span>
             </div>
@@ -234,9 +242,9 @@
                       <img src="assets/images/rewards/item7.png" />
                     </div>
                     <div class="item__content__action">
-                      <a href="/rewards-detail.html" class="btn">
+                      <button class="btn" data-bs-toggle="modal" data-bs-target="#prizeSuccess">
                         <img data-i18n="rewards_page.btn_download_blue" data-i18n-attr="src" src="" />
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -250,9 +258,9 @@
                       <img src="assets/images/rewards/item8.png" />
                     </div>
                     <div class="item__content__action">
-                      <a href="/rewards-detail.html" class="btn">
+                      <button class="btn" data-bs-toggle="modal" data-bs-target="#prizeFail">
                         <img data-i18n="rewards_page.btn_download_yellow" data-i18n-attr="src" src="" />
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -275,6 +283,42 @@
       
     </section>
     <!-- @@include('../components/base/navbar-bottom.html', {active: 0}) -->
+
+
+    <!-- Modal -->
+    <div class="modal fade modal-custom" id="prizeSuccess" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close opacity-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h3 class="modal-title text-success" id="selectLanguageLabel" data-i18n="rewards_page.Congratulations"></h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-2">
+            <h4 class="fw-normal text-center" data-i18n="rewards_page.prize_success_des"></h4>
+            <div class="pt-3 text-center">
+              <button class="btn btn-lg btn-primary px-5" data-bs-dismiss="modal" data-i18n="OK"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-custom" id="prizeFail" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close opacity-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-2">
+            <h4 class="fw-normal text-center" data-i18n="rewards_page.prize_fail_des"></h4>
+            <div class="pt-3 text-center">
+              <button class="btn btn-lg btn-primary px-5" data-bs-dismiss="modal" data-i18n="OK"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   
     
     @@include('../components/base/footer.html')
