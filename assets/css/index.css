@@ -7899,5 +7899,7 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
           padding: 15px 0; }
           .rewards-block__content__card__content .items .item__content__action .btn {
             transition: 0.3s; }
+            .rewards-block__content__card__content .items .item__content__action .btn:focus, .rewards-block__content__card__content .items .item__content__action .btn:active {
+              box-shadow: none !important; }
             .rewards-block__content__card__content .items .item__content__action .btn:hover {
               opacity: 0.8 !important; }

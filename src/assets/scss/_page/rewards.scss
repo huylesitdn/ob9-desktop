@@ -309,6 +309,11 @@
               .btn {
                 transition: 0.3s;
 
+                &:focus,
+                &:active {
+                  box-shadow: none !important;
+                }
+
                 &:hover {
                   opacity: 0.8 !important;
                 }
