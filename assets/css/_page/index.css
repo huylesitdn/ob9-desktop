@@ -7223,7 +7223,9 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
   padding-bottom: 300px;
   background-size: 100%;
   background-repeat: repeat-y;
-  background-image: url(../images/rewards/bg.png); }
+  background-image: url(../images/rewards/bg.png);
+  font-size: 16px;
+  line-height: 20px; }
   .rewards-block__content {
     padding: 30px 0;
     position: relative; }
