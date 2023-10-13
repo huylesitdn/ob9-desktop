@@ -1915,6 +1915,9 @@
     "t_c": "t&c",
     "btn_download_blue": "assets/images/rewards/Button-Download-Blue-zh.png",
     "btn_download_yellow": "assets/images/rewards/Button-Download-Yellow-zh.png",
+    "Congratulations": "Congratulations!",
+    "prize_success_des": "We are thrilled to inform you that your prize has been successfully redeemed. Our team will be in contact with you shortly to provide further details and instructions regarding your prize.",
+    "prize_fail_des": "We regret to inform you that you currently do not have enough points to redeem this reward.",
     "": "",
     "": "",
     "": ""  
