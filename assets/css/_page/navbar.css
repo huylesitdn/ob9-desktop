@@ -48,10 +48,16 @@
         .my-navbar__main__container .navbar-nav.nav-right {
           gap: 5px; } }
       .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link {
-        padding-top: 15px; }
+        padding-top: 15px;
+        position: relative; }
         .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img {
           height: 20px;
           margin-bottom: 7px; }
+          .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img-label {
+            position: absolute;
+            max-width: 30px;
+            top: 10px;
+            right: -5px; }
           .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link-img.world-cup img {
             max-height: 45px;
             max-width: initial; }

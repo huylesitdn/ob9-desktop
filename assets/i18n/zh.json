@@ -1903,6 +1903,22 @@
   "VIP_ANGPOW": "每周红包",
   "AVAILABLE_CASH_REBATE": "现有返水",
   "AVAILABLE_WEEKLY_ANGPOW": "现有每周红包",
+  "Rewards": "Rewards",
+  "rewards_page": {
+    "top_banner": "<img src=\"assets/images/rewards/PC-CN.png\" />",
+    "top_banner_mobile": "<img src=\"assets/images/rewards/PC-CN.png\" />",
+    "my_point": "My point",
+    "my_point_content": "<img src=\"assets/images/rewards/my-point-content.png\" />",
+    "my_point_bottom": "the accumulated points come from increasing the deposit",
+    "reward_prize": "Reward Prize",
+    "btn_get": "assets/images/rewards/Button-GET-en.png",
+    "t_c": "t&c",
+    "btn_download_blue": "assets/images/rewards/Button-Download-Blue-zh.png",
+    "btn_download_yellow": "assets/images/rewards/Button-Download-Yellow-zh.png",
+    "": "",
+    "": "",
+    "": ""  
+  },
   "": "",
   "": "",
   "": ""

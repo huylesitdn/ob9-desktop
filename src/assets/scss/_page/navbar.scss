@@ -77,10 +77,18 @@
           .nav-item {
             .nav-link {
               padding-top: 15px;
+              position: relative;
 
               &-img {
                 height: 20px;
                 margin-bottom: 7px;
+
+                &-label {
+                  position: absolute;
+                  max-width: 30px;
+                  top: 10px;
+                  right: -5px;
+                }
 
                 &.world-cup {
                   img {
