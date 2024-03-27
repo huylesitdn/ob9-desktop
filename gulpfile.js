@@ -110,6 +110,7 @@ gulp.task('build', async function() {
 exports.default = async function() {
   // Init serve files from the build folder
   server.init({
+    open: false,
     server: {
       baseDir: paths.scripts.dest
     }

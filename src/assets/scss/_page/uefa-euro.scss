@@ -252,7 +252,7 @@
 
   .block-title {
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 900;
     color: #0c66d8;
     padding: 20px 0;
@@ -747,6 +747,92 @@
       &:active,
       &:focus {
         box-shadow: none !important;
+      }
+    }
+  }
+
+  .event-detail {
+    .modal-content {
+      background: transparent;
+      box-shadow: none;
+      border: none;
+
+      .modal-content-all {
+
+        .modal-header {
+          border-top: none;
+          border-bottom: none;
+          place-content: flex-end;
+          padding: 0;
+
+          .btn {
+            padding: 0;
+
+            img {
+              max-width: 50px;
+            }
+
+            &:active,
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+
+        .modal-body {
+          border: 3px solid #2c71a7;
+          border-bottom-width: 8px;
+          border-top-width: 1px;
+          border-radius: 20px;
+          background-color: #1e3970;
+          box-shadow: 1px -1px 100px 1px #152849 inset;
+          -webkit-box-shadow: 1px -1px 100px 1px #152849 inset;
+          -moz-box-shadow: 1px -1px 100px 1px #152849 inset;
+          padding: 30px;
+          color: #FFFFFF;
+          overflow: auto;
+          max-height: 90vh;
+          font-size: 14px;
+          line-height: 20px;
+
+          h4 {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+
+          h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+
+          table {
+            margin: 0 auto 30px;
+
+            thead {
+              tr {
+                th {
+                  background-color: #083763;
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid #07182a;
+                  border-collapse: collapse;
+                }
+              }
+            }
+
+            tbody {
+              tr {
+                td {
+                  background-color: #0d5394;
+                  padding: 8px;
+                  text-align: center;
+                  border: 1px solid #07182a;
+                  border-collapse: collapse;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
