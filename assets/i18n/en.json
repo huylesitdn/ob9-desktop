@@ -1194,30 +1194,30 @@
     "VIP": "VIP",
     "Malaysia": "Malaysia",
     "SPORTS_DROPROWN": {
-      "title1":"SABA SPORTS",
-      "description1":"Diversified match betting events",
-      "title2":"CMD368",
-      "description2":"The best brand in Asia",
-      "title3":"M8BET",
-      "description3":"Hottest sports action is here",
+      "title1": "SABA SPORTS",
+      "description1": "Diversified match betting events",
+      "title2": "CMD368",
+      "description2": "The best brand in Asia",
+      "title3": "M8BET",
+      "description3": "Hottest sports action is here",
       "SPORTS_EVENT_title": "SPORTS EVENT",
       "SPORTS_EVENT_desciption": "Highest Return ",
-      "":"",
-      "":"",
-      "":"",
-      "":""
+      "": "",
+      "": "",
+      "": "",
+      "": ""
     },
     "FIRSHING_DROPROWN": {
-      "title1":"FISHING GOD",
-      "description1":"Make every shot counts!<br/>Whole new fishing game experience here!",
-      "title2":"FISHING WAR",
-      "description2":"Make the best shot and<br/>conquer the ocean!",
-      "":""
+      "title1": "FISHING GOD",
+      "description1": "Make every shot counts!<br/>Whole new fishing game experience here!",
+      "title2": "FISHING WAR",
+      "description2": "Make the best shot and<br/>conquer the ocean!",
+      "": ""
     },
     "LOTTERY_DROPROWN": {
-      "title1":"LOTTERY GAME",
-      "description1":"We have all types of Lottery Games <br/>at your disposal",
-      "":""
+      "title1": "LOTTERY GAME",
+      "description1": "We have all types of Lottery Games <br/>at your disposal",
+      "": ""
     },
     "": ""
   },
@@ -1288,12 +1288,12 @@
       "title4": "Privacy",
       "description4": "Triple data encryption<br/>Keep your data safe",
       "": "",
-      "": ""  
+      "": ""
     },
     "Customer_Service": "Customer<br/>Service",
     "Help_Center": "Help<br/>Center",
     "Back_to_Top": "Back to<br/>Top",
-    "": ""  
+    "": ""
   },
   "sports_page": {
     "title1": "SABA<br/>SPORTS",
@@ -1366,7 +1366,7 @@
     "Tales_of_the_West": "Tales of the West",
     "Ice_Age": "Ice Age",
     "Super_Mario": "Super Mario",
-    "": ""  
+    "": ""
   },
   "e_sports_page": {
     "TF_GAMING": "TF GAMING",
@@ -1443,7 +1443,7 @@
     "Inbox": "Inbox",
     "": "",
     "": "",
-    "": ""  
+    "": ""
   },
   "vip_detail_page": {
     "Accumulated_Deposit": "Accumulated Deposit",
@@ -1749,7 +1749,7 @@
     "how_to_play_step3__description": "Score the goals to earn cash!",
     "event_icon": "<img src=\"assets/images/world-cup/en/ENG-GIF.gif\" />",
     "": "",
-    "": "" 
+    "": ""
   },
   "otp": "OTP",
   "otp_send_code": "Send Code",
@@ -1758,7 +1758,7 @@
     "No": "No",
     "Date": "Date",
     "Bulletin": "Bulletin",
-    "": ""  
+    "": ""
   },
   "raia_mini_game_page": {
     "header": "World Cup Penalty Shoot",
@@ -1842,7 +1842,7 @@
     "how_to_play_step3__description": "Reveal image to earn cash!",
     "event_icon": "<img src=\"assets/images/world-cup/en/ENG-GIF.gif\" />",
     "": "",
-    "": "" 
+    "": ""
   },
   "Get_Code": "Get Code",
   "OTP_verification": "OTP verification",
@@ -1857,7 +1857,7 @@
     "attachment_help1": "This verification will take around 5 to 30 minutes. Please contact our Lve Chat agent if your verification status is not updated after 30 minutes",
     "": "",
     "": "",
-    "": ""  
+    "": ""
   },
   "Verifying": "Verifying",
   "Verified": "Verified",
@@ -1926,7 +1926,31 @@
     "more_reward": "more reward",
     "my_point_current_point": "assets/images/rewards/my-point-current-point.png",
     "": "",
-    "": ""  
+    "": ""
+  },
+  "euro_page": {
+    "header": "",
+    "top_banner_tab1": "<img src=\"assets/images/euro/prediction-event/banner.png\" />",
+    "top_banner_tab2": "<img src=\"assets/images/euro/match-prediction/banner.png\" />",
+    "top_banner_tab3": "<img src=\"assets/images/euro/penalty/banner.png\" />",
+    "PERDICTION_EVENT": "PERDICTION EVENT",
+    "MATCH_PREDICTION": "MATCH PREDICTION",
+    "PENALTY_SHOOT": "PENALTY SHOOT",
+    "PROMOTION": "PROMOTION",
+    "PROMOTION1": "<img src=\"assets/images/euro/prediction-event/1.png\" />",
+    "PROMOTION2": "<img src=\"assets/images/euro/prediction-event/2.png\" />",
+    "PROMOTION3": "<img src=\"assets/images/euro/prediction-event/3.png\" />",
+    "PROMOTION4": "<img src=\"assets/images/euro/prediction-event/4.png\" />",
+    "PROMOTION5": "<img src=\"assets/images/euro/prediction-event/5.png\" />",
+    "match_title": "<img src=\"assets/images/euro/match-prediction/title.png\" />",
+    "submit_btn": "<img src=\"assets/images/euro/match-prediction/submit.png\" />",
+    "VS": "VS",
+    "match_flag": "<img src=\"assets/images/euro/match-prediction/Flag.png\" />",
+    "match_date": "<img src=\"assets/images/euro/match-prediction/date.png\" />",
+    "how_to_play": "<img src=\"assets/images/euro/penalty/HOW_TO_PLAY.png\" />",
+    "PENALTY_T_C": "PENALTY T&C",
+    "": "",
+    "": ""
   },
   "": "",
   "": ""
