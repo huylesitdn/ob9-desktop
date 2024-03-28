@@ -303,11 +303,14 @@
 
   &__container {
     &__tab {
-      width: 60%;
-      margin: auto;
-
       .tab-content {
         padding-top: 50px;
+
+        #tab1,
+        #tab3 {
+          width: 60%;
+          margin: auto;
+        }
       }
 
       .nav-tabs {
@@ -318,6 +321,8 @@
         border-radius: 20px;
         overflow: hidden;
         gap: 10px;
+        width: 60%;
+        margin: auto;
 
         .nav-item {
           padding: 5px;
