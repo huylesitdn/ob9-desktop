@@ -227,16 +227,14 @@
         .penalty-player {
           border: 4px solid #349dff;
           border-radius: 20px;
-          min-height: 500px;
+          min-height: 600px;
           margin-bottom: 30px;
           position: relative;
-
-
         }
 
         .penalty-how-to-play {
           text-align: center;
-          margin-bottom: 50px;
+          margin-bottom: 30px;
 
           img {
             max-height: 80px;
@@ -252,7 +250,7 @@
 
   .block-title {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
     color: #0c66d8;
     padding: 20px 0;
@@ -306,6 +304,9 @@
 
   &__container {
     &__tab {
+      width: 80%;
+      margin: auto;
+
       .tab-content {
         padding-top: 50px;
       }
@@ -317,10 +318,10 @@
         -moz-box-shadow: 0px 0px 5px 4px rgba(12, 102, 216, 0.2);
         border-radius: 20px;
         overflow: hidden;
-        gap: 5px;
+        gap: 10px;
 
         .nav-item {
-          padding: 7px;
+          padding: 5px;
           position: relative;
 
           .nav-link {
@@ -334,11 +335,11 @@
             // border-right: 1px solid #a7c5ff;
             border: none;
             text-shadow: none;
-            min-height: 50px;
+            min-height: 45px;
             border-radius: 0;
-            font-size: 20px;
+            font-size: 18px;
             height: 100%;
-            font-weight: 900;
+            font-weight: 700;
             border-radius: 20px;
 
             &.active {
@@ -352,7 +353,7 @@
           &:not(:last-child)::after {
             content: "";
             position: absolute;
-            right: 0;
+            right: -5px;
             height: 30%;
             width: 1px;
             background: #0c66d8;

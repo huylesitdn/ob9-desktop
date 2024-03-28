@@ -8073,19 +8073,19 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
         .uefa-euro-block .block-container.penalty-container .block-content .penalty-player {
           border: 4px solid #349dff;
           border-radius: 20px;
-          min-height: 500px;
+          min-height: 600px;
           margin-bottom: 30px;
           position: relative; }
         .uefa-euro-block .block-container.penalty-container .block-content .penalty-how-to-play {
           text-align: center;
-          margin-bottom: 50px; }
+          margin-bottom: 30px; }
           .uefa-euro-block .block-container.penalty-container .block-content .penalty-how-to-play img {
             max-height: 80px; }
   .uefa-euro-block .block-content-no-style {
     margin-bottom: 50px; }
   .uefa-euro-block .block-title {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
     color: #0c66d8;
     padding: 20px 0;
@@ -8127,52 +8127,54 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
 .uefa-euro-page__top-banner img {
   width: 100%; }
 
-.uefa-euro-page__container__tab .tab-content {
-  padding-top: 50px; }
-
-.uefa-euro-page__container__tab .nav-tabs {
-  border-bottom: none;
-  box-shadow: 0px 0px 5px 4px rgba(12, 102, 216, 0.2);
-  -webkit-box-shadow: 0px 0px 5px 4px rgba(12, 102, 216, 0.2);
-  -moz-box-shadow: 0px 0px 5px 4px rgba(12, 102, 216, 0.2);
-  border-radius: 20px;
-  overflow: hidden;
-  gap: 5px; }
-  .uefa-euro-page__container__tab .nav-tabs .nav-item {
-    padding: 7px;
-    position: relative; }
-    .uefa-euro-page__container__tab .nav-tabs .nav-item .nav-link {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      border: none;
-      text-shadow: none;
-      min-height: 50px;
-      border-radius: 0;
-      font-size: 20px;
-      height: 100%;
-      font-weight: 900;
-      border-radius: 20px; }
-      .uefa-euro-page__container__tab .nav-tabs .nav-item .nav-link.active {
-        color: #fff;
+.uefa-euro-page__container__tab {
+  width: 80%;
+  margin: auto; }
+  .uefa-euro-page__container__tab .tab-content {
+    padding-top: 50px; }
+  .uefa-euro-page__container__tab .nav-tabs {
+    border-bottom: none;
+    box-shadow: 0px 0px 5px 4px rgba(12, 102, 216, 0.2);
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(12, 102, 216, 0.2);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(12, 102, 216, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    gap: 10px; }
+    .uefa-euro-page__container__tab .nav-tabs .nav-item {
+      padding: 5px;
+      position: relative; }
+      .uefa-euro-page__container__tab .nav-tabs .nav-item .nav-link {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        border: none;
         text-shadow: none;
-        background: #0c66d8; }
-    .uefa-euro-page__container__tab .nav-tabs .nav-item:not(:last-child)::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      height: 30%;
-      width: 1px;
-      background: #0c66d8;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      box-shadow: 0px 0px 2px 1px rgba(12, 102, 216, 0.49);
-      -webkit-box-shadow: 0px 0px 2px 1px rgba(12, 102, 216, 0.49);
-      -moz-box-shadow: 0px 0px 2px 1px rgba(12, 102, 216, 0.49);
-      overflow: hidden;
-      opacity: 0.5; }
+        min-height: 45px;
+        border-radius: 0;
+        font-size: 18px;
+        height: 100%;
+        font-weight: 700;
+        border-radius: 20px; }
+        .uefa-euro-page__container__tab .nav-tabs .nav-item .nav-link.active {
+          color: #fff;
+          text-shadow: none;
+          background: #0c66d8; }
+      .uefa-euro-page__container__tab .nav-tabs .nav-item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: -5px;
+        height: 30%;
+        width: 1px;
+        background: #0c66d8;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        box-shadow: 0px 0px 2px 1px rgba(12, 102, 216, 0.49);
+        -webkit-box-shadow: 0px 0px 2px 1px rgba(12, 102, 216, 0.49);
+        -moz-box-shadow: 0px 0px 2px 1px rgba(12, 102, 216, 0.49);
+        overflow: hidden;
+        opacity: 0.5; }
 
 .uefa-euro-page__container__block_content {
   border-radius: 15px;
