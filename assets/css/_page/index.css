@@ -7622,16 +7622,16 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
     margin-bottom: 50px; }
   .uefa-euro-block .block-title {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 900;
     color: #0c66d8;
-    padding: 20px 0;
+    padding: 10px 0;
     line-height: 80px;
     position: relative; }
     .uefa-euro-block .block-title::before {
       content: "";
       position: absolute;
-      left: 30%;
+      left: 27%;
       height: 30px;
       width: 30px;
       background-size: cover;
@@ -7647,7 +7647,7 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
     .uefa-euro-block .block-title::after {
       content: "";
       position: absolute;
-      right: 30%;
+      right: 27%;
       height: 30px;
       width: 30px;
       background-size: cover;
@@ -7665,7 +7665,7 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
   width: 100%; }
 
 .uefa-euro-page__container__tab {
-  width: 70%;
+  width: 60%;
   margin: auto; }
   .uefa-euro-page__container__tab .tab-content {
     padding-top: 50px; }
