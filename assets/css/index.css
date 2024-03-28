@@ -7939,7 +7939,6 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
     padding: 10px;
     margin-bottom: 30px;
     height: 100%;
-    margin-bottom: 50px;
     display: flex;
     width: 100%;
     flex-direction: column; }
@@ -7948,7 +7947,7 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
     .uefa-euro-block .block-container .match-title {
       text-align: center; }
       .uefa-euro-block .block-container .match-title img {
-        max-height: 80px; }
+        max-height: 50px; }
     .uefa-euro-block .block-container.text h3 {
       color: #fcb33c;
       text-transform: uppercase;
@@ -7963,7 +7962,7 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
       background-color: transparent;
       border-radius: 30px;
       overflow: hidden;
-      min-height: 150px;
+      min-height: 100px;
       height: 100%; }
       .uefa-euro-block .block-container .block-content.blue-border {
         border: 2px solid #349dff; }
@@ -7972,15 +7971,15 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
         position: relative;
         margin-top: 20px; }
         .uefa-euro-block .block-container .block-content .match-date img {
-          max-height: 50px; }
+          max-height: 35px; }
       .uefa-euro-block .block-container .block-content .match-container {
-        padding: 50px;
+        padding: 30px 20px 20px;
         display: flex;
         place-content: center;
         place-items: center;
         gap: 30px; }
         .uefa-euro-block .block-container .block-content .match-container .match-item {
-          min-width: 250px;
+          min-width: 230px;
           border-radius: 30px;
           border: 3px solid #fff;
           padding: 15px;
@@ -7994,8 +7993,8 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
             background-repeat: repeat-y;
             background-image: url(../images/euro/match-prediction/match-bg.png);
             background-position: center;
-            margin-bottom: 25px;
-            min-height: 225px;
+            margin-bottom: 15px;
+            min-height: 220px;
             box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
             -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
             -moz-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
@@ -8006,8 +8005,8 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
             box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.2);
             -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.2);
             -moz-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.2);
-            min-height: 50px;
-            margin-bottom: 15px; }
+            min-height: 40px;
+            margin-bottom: 10px; }
           .uefa-euro-block .block-container .block-content .match-container .match-item::after {
             content: "";
             position: absolute;
@@ -8026,9 +8025,9 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
           color: #349dff; }
       .uefa-euro-block .block-container .block-content .match-submit {
         text-align: center;
-        margin-bottom: 50px; }
+        margin-bottom: 20px; }
         .uefa-euro-block .block-container .block-content .match-submit img {
-          max-height: 80px; }
+          max-height: 60px; }
       .uefa-euro-block .block-container .block-content.term-container {
         background-color: #f4f7ff;
         border: 3px solid #fff;
@@ -8073,16 +8072,16 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
         .uefa-euro-block .block-container.penalty-container .block-content .penalty-player {
           border: 4px solid #349dff;
           border-radius: 20px;
-          min-height: 600px;
-          margin-bottom: 30px;
+          min-height: 400px;
+          margin-bottom: 20px;
           position: relative; }
         .uefa-euro-block .block-container.penalty-container .block-content .penalty-how-to-play {
           text-align: center;
-          margin-bottom: 30px; }
+          margin-bottom: 20px; }
           .uefa-euro-block .block-container.penalty-container .block-content .penalty-how-to-play img {
-            max-height: 80px; }
+            max-height: 60px; }
   .uefa-euro-block .block-content-no-style {
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
   .uefa-euro-block .block-title {
     text-align: center;
     font-size: 40px;
@@ -8347,11 +8346,11 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
     top: 0; }
   .uefa-euro-page__container .play-now__ticker_remaining {
     position: absolute;
-    left: 30px;
-    top: 15px;
+    left: 10px;
+    top: 5px;
     background-image: url(../images/euro/penalty/ticket_remaining.png);
-    min-width: 320px;
-    min-height: 70px;
+    min-width: 260px;
+    min-height: 60px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -8359,11 +8358,11 @@ html[lang="en"] .sponsor-leicester-item__content.ss2 .infoDetails {
     place-items: center;
     place-content: space-around; }
     .uefa-euro-page__container .play-now__ticker_remaining .text {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 600;
       color: #fff; }
     .uefa-euro-page__container .play-now__ticker_remaining .number {
-      padding-right: 25px;
+      padding-right: 15px;
       font-size: 20px;
       font-weight: 800;
       color: #0c66d8; }
