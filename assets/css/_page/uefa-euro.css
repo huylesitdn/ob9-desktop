@@ -132,7 +132,24 @@
           border-bottom-right-radius: 30px;
           color: #0c66d8; }
         .uefa-euro-block .block-container .block-content.term-container .term-content {
-          min-height: 300px; }
+          min-height: 300px;
+          padding: 30px;
+          font-size: 14px;
+          line-height: 20px; }
+          .uefa-euro-block .block-container .block-content.term-container .term-content h4 {
+            font-size: 16px; }
+          .uefa-euro-block .block-container .block-content.term-container .term-content table {
+            margin: 0 auto 30px; }
+            .uefa-euro-block .block-container .block-content.term-container .term-content table tr th {
+              padding: 8px;
+              text-align: center;
+              border: 1px solid #07182a;
+              border-collapse: collapse; }
+            .uefa-euro-block .block-container .block-content.term-container .term-content table tbody tr td {
+              padding: 8px;
+              text-align: center;
+              border: 1px solid #07182a;
+              border-collapse: collapse; }
       .uefa-euro-block .block-container .block-content.prize-container {
         background-color: #f4f7ff;
         border: 3px solid #fff;
@@ -151,7 +168,12 @@
           border-bottom-right-radius: 30px;
           color: #0c66d8; }
         .uefa-euro-block .block-container .block-content.prize-container .prize-content {
-          min-height: 300px; }
+          min-height: 300px;
+          padding: 10px;
+          font-size: 14px;
+          line-height: 20px; }
+          .uefa-euro-block .block-container .block-content.prize-container .prize-content h4 {
+            font-size: 16px; }
     .uefa-euro-block .block-container.penalty-container {
       background-color: #d9eaff !important; }
       .uefa-euro-block .block-container.penalty-container .block-content {
