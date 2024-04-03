@@ -4,13 +4,65 @@
     <div class="match-date" data-i18n="euro_page.match_date"></div>
     <div class="match-container">
       <div class="match-item">
-        <div class="match-flag"></div>
-        <div class="match-name"></div>
+        <div class="match-flag">
+          @@include('./match-team.html', {match: 'match_1', name: 'albania'})
+          @@include('./match-team.html', {match: 'match_2', name: 'belgium'})
+          @@include('./match-team.html', {match: 'match_3', name: 'CROATIA'})
+          @@include('./match-team.html', {match: 'match_4', name: 'denmark'})
+          @@include('./match-team.html', {match: 'match_5', name: 'france'})
+          @@include('./match-team.html', {match: 'match_6', name: 'gernanny'})
+          @@include('./match-team.html', {match: 'match_7', name: 'italy'})
+          @@include('./match-team.html', {match: 'match_8', name: 'poland'})
+          @@include('./match-team.html', {match: 'match_9', name: 'romania'})
+          @@include('./match-team.html', {match: 'match_10', name: 'serbia'})
+          @@include('./match-team.html', {match: 'match_11', name: 'spain'})
+          @@include('./match-team.html', {match: 'match_12', name: 'turkey'})
+        </div>
+        <div class="match-name">
+          @@include('./match-name.html', {match: 'match_1', name: 'albania'})
+          @@include('./match-name.html', {match: 'match_2', name: 'belgium'})
+          @@include('./match-name.html', {match: 'match_3', name: 'CROATIA'})
+          @@include('./match-name.html', {match: 'match_4', name: 'denmark'})
+          @@include('./match-name.html', {match: 'match_5', name: 'france'})
+          @@include('./match-name.html', {match: 'match_6', name: 'gernanny'})
+          @@include('./match-name.html', {match: 'match_7', name: 'italy'})
+          @@include('./match-name.html', {match: 'match_8', name: 'poland'})
+          @@include('./match-name.html', {match: 'match_9', name: 'romania'})
+          @@include('./match-name.html', {match: 'match_10', name: 'serbia'})
+          @@include('./match-name.html', {match: 'match_11', name: 'spain'})
+          @@include('./match-name.html', {match: 'match_12', name: 'turkey'})
+        </div>
       </div>
       <div class="vs" data-i18n="euro_page.VS"></div>
       <div class="match-item">
-        <div class="match-flag"></div>
-        <div class="match-name"></div>
+        <div class="match-flag">
+          @@include('./match-team.html', {match: 'match_1', name: 'austria'})
+          @@include('./match-team.html', {match: 'match_2', name: 'clovenia'})
+          @@include('./match-team.html', {match: 'match_3', name: 'czech_republic'})
+          @@include('./match-team.html', {match: 'match_4', name: 'england'})
+          @@include('./match-team.html', {match: 'match_5', name: 'Georgia'})
+          @@include('./match-team.html', {match: 'match_6', name: 'hungary'})
+          @@include('./match-team.html', {match: 'match_7', name: 'netherlands'})
+          @@include('./match-team.html', {match: 'match_8', name: 'portugal'})
+          @@include('./match-team.html', {match: 'match_9', name: 'scotland'})
+          @@include('./match-team.html', {match: 'match_10', name: 'slovakia'})
+          @@include('./match-team.html', {match: 'match_11', name: 'switzerland'})
+          @@include('./match-team.html', {match: 'match_12', name: 'ukaine'})
+        </div>
+        <div class="match-name">
+          @@include('./match-name.html', {match: 'match_1', name: 'austria'})
+          @@include('./match-name.html', {match: 'match_2', name: 'clovenia'})
+          @@include('./match-name.html', {match: 'match_3', name: 'czech republic'})
+          @@include('./match-name.html', {match: 'match_4', name: 'england'})
+          @@include('./match-name.html', {match: 'match_5', name: 'Georgia'})
+          @@include('./match-name.html', {match: 'match_6', name: 'hungary'})
+          @@include('./match-name.html', {match: 'match_7', name: 'netherlands'})
+          @@include('./match-name.html', {match: 'match_8', name: 'portugal'})
+          @@include('./match-name.html', {match: 'match_9', name: 'scotland'})
+          @@include('./match-name.html', {match: 'match_10', name: 'slovakia'})
+          @@include('./match-name.html', {match: 'match_11', name: 'switzerland'})
+          @@include('./match-name.html', {match: 'match_12', name: 'ukaine'})
+        </div>
       </div>
     </div>
     <div class="match-submit" data-i18n="euro_page.submit_btn"></div>
@@ -19,7 +71,20 @@
 
 <div class="block-container">
   <div class="block-content">
-    <div data-i18n="euro_page.match_flag"></div>
+    <div class="match_flag">
+      @@include('./match-flag.html', {match: 'match_1', team1: 'albania', team2: 'austria'})
+      @@include('./match-flag.html', {match: 'match_2', team1: 'belgium', team2: 'clovenia'})
+      @@include('./match-flag.html', {match: 'match_3', team1: 'CROATIA', team2: 'czech_republic'})
+      @@include('./match-flag.html', {match: 'match_4', team1: 'denmark', team2: 'england'})
+      @@include('./match-flag.html', {match: 'match_5', team1: 'france', team2: 'Georgia'})
+      @@include('./match-flag.html', {match: 'match_6', team1: 'gernanny', team2: 'hungary'})
+      @@include('./match-flag.html', {match: 'match_7', team1: 'italy', team2: 'netherlands'})
+      @@include('./match-flag.html', {match: 'match_8', team1: 'poland', team2: 'portugal'})
+      @@include('./match-flag.html', {match: 'match_9', team1: 'romania', team2: 'scotland'})
+      @@include('./match-flag.html', {match: 'match_10', team1: 'serbia', team2: 'slovakia'})
+      @@include('./match-flag.html', {match: 'match_11', team1: 'spain', team2: 'switzerland'})
+      @@include('./match-flag.html', {match: 'match_12', team1: 'turkey', team2: 'ukaine'})
+    </div>
   </div>
 </div>
 
