@@ -701,7 +701,7 @@ function renderAfterHaveTranslator() {
   }
 
   changeFlagAndCountryName();
-  finalMatch();
+  euroFinalMatch();
 }
 
 function changeFlagAndCountryName() {
@@ -882,7 +882,7 @@ euroNavEl.on("shown.bs.tab", function (e) {
   }
 });
 
-function finalMatch() {
+function euroFinalMatch() {
   var MATCH_TEAM_COUNT = 0;
 
   $(".match_flag .match_flag_item").on("click", function () {
