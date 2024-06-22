@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Blog', metaContent: './meta/home.html'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main blog-page">
+      @@include('../components/base/navbar.html', {active: 1})
+
+      <!-- content -->
+      @@include('../components/blog/detail.html')
+      <!-- content -->
+
+    </section>
+    @@include('../components/base/navbar-bottom.html', {active: 0})
+    
+    @@include('../components/base/footer-info.html', { contentInfo: './footer-info/home.html'})
+    @@include('../components/base/footer.html')
+
+  </body>
+</html>
