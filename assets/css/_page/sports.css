@@ -105,21 +105,21 @@
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .left-img .bg {
   margin-top: 10%;
-  -webkit-animation: categoryLeftImgBg 0.5s;
-  animation: categoryLeftImgBg 0.5s;
+  -webkit-animation: sportsLeftImgBg 0.5s;
+  animation: sportsLeftImgBg 0.5s;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .left-img .team {
   margin-top: -50%;
-  -webkit-animation: categoryLeftImgTeam 0.5s;
-  animation: categoryLeftImgTeam 0.5s;
+  -webkit-animation: sportsLeftImgTeam 0.5s;
+  animation: sportsLeftImgTeam 0.5s;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .content {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-bottom: 300px;
-  -webkit-animation: categoryContent 1s;
-  animation: categoryContent 1s;
+  -webkit-animation: sportsContent 1s;
+  animation: sportsContent 1s;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .content .logo {
   max-width: 400px;
@@ -181,7 +181,7 @@
 .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content .playnow a:hover, .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__action a:hover {
   opacity: 0.8;
 }
-@-webkit-keyframes categoryLeftImgBg {
+@-webkit-keyframes sportsLeftImgBg {
   from {
     -webkit-transform: translate(0, -20%);
     opacity: 0;
@@ -191,7 +191,7 @@
     opacity: 1;
   }
 }
-@keyframes categoryLeftImgBg {
+@keyframes sportsLeftImgBg {
   from {
     transform: translate(0, -20%);
     opacity: 0;
@@ -201,7 +201,7 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes categoryLeftImgTeam {
+@-webkit-keyframes sportsLeftImgTeam {
   from {
     -webkit-transform: translate(0, 30%);
     opacity: 0;
@@ -211,7 +211,7 @@
     opacity: 1;
   }
 }
-@keyframes categoryLeftImgTeam {
+@keyframes sportsLeftImgTeam {
   from {
     transform: translate(0, 30%);
     opacity: 0;
@@ -221,7 +221,7 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes categoryContent {
+@-webkit-keyframes sportsContent {
   from {
     -webkit-transform: translate(50%, 0);
     opacity: 0;
@@ -231,7 +231,7 @@
     opacity: 1;
   }
 }
-@keyframes categoryContent {
+@keyframes sportsContent {
   from {
     transform: translate(50%, 0);
     opacity: 0;
