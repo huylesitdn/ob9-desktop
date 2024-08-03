@@ -201,6 +201,28 @@
       color: #597EF7;
     }
 
+    &__top-service {
+      color: #7981a4;
+      &__content {
+        &__item {
+          padding: 20px;
+          background-image: url(../images/HOMEPAGE/top-service-bg.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          min-height: 150px;
+          display: flex;
+          gap: 15px;
+          align-items: center;
+          justify-content: flex-start;
+
+          img {
+            max-width: 90px;
+          }
+        }
+      }
+    }
+
     &__why_choose_us {
       margin-bottom: 100px;
 
