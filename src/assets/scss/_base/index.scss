@@ -490,3 +490,21 @@ span {
     transform: rotate(360deg);
   }
 }
+
+@-webkit-keyframes zoomcarousel {
+  from {
+    -webkit-transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoomcarousel {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}

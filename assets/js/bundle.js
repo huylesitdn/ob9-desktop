@@ -918,3 +918,15 @@ function euroFinalMatch() {
     MATCH_TEAM_COUNT++;
   });
 }
+
+
+window.onscroll = changeNavbar;
+
+function changeNavbar() {
+    var myNavbarMain = $(".my-navbar__main");
+    if (window.pageYOffset > 70) {
+      myNavbarMain.addClass('scrolled')
+    } else {
+      myNavbarMain.removeClass('scrolled')
+    }
+}
