@@ -2210,6 +2210,11 @@ span.input-group-text[data-i18n=To] {
 .sports-page__container #carouselSports .carousel-indicators-container .playnow:hover {
   opacity: 0.8;
 }
+.sports-page__container #carouselSports .carousel-inner .carousel-item .left-img {
+  background-color: #f0f6ff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .sports-page__container #carouselSports .carousel-inner .carousel-item .left-img .bg {
   margin-top: 10%;
   -webkit-animation: sportsLeftImgBg 0.5s;
@@ -2224,9 +2229,12 @@ span.input-group-text[data-i18n=To] {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-bottom: 300px;
+  margin-bottom: 250px;
   -webkit-animation: sportsContent 1s;
   animation: sportsContent 1s;
+  background-color: #f0f6ff;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .content .logo {
   max-width: 400px;

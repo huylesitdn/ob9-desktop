@@ -135,24 +135,33 @@
       .carousel-inner {
         .carousel-item {
           .left-img {
+            background-color: #f0f6ff;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
             .bg {
               margin-top: 10%;
               -webkit-animation: sportsLeftImgBg 0.5s;
               animation: sportsLeftImgBg 0.5s;
             }
+
             .team {
               margin-top: -50%;
               -webkit-animation: sportsLeftImgTeam 0.5s;
               animation: sportsLeftImgTeam 0.5s;
             }
           }
+
           .content {
             display: flex;
             flex-direction: column;
             gap: 30px;
-            margin-bottom: 300px;
+            margin-bottom: 250px;
             -webkit-animation: sportsContent 1s;
             animation: sportsContent 1s;
+            background-color: #f0f6ff;
+            padding-top: 50px;
+            padding-bottom: 50px;
 
             .logo {
               max-width: 400px;
@@ -241,6 +250,7 @@
     -webkit-transform: translate(0, -20%);
     opacity: 0;
   }
+
   to {
     -webkit-transform: translate(0, 0);
     opacity: 1;
@@ -252,6 +262,7 @@
     transform: translate(0, -20%);
     opacity: 0;
   }
+
   to {
     transform: translate(0, 0);
     opacity: 1;
@@ -263,6 +274,7 @@
     -webkit-transform: translate(0, 30%);
     opacity: 0;
   }
+
   to {
     -webkit-transform: translate(0, 0);
     opacity: 1;
@@ -274,6 +286,7 @@
     transform: translate(0, 30%);
     opacity: 0;
   }
+
   to {
     transform: translate(0, 0);
     opacity: 1;
@@ -285,6 +298,7 @@
     -webkit-transform: translate(50%, 0);
     opacity: 0;
   }
+
   to {
     -webkit-transform: translate(0, 0);
     opacity: 1;
@@ -296,6 +310,7 @@
     transform: translate(50%, 0);
     opacity: 0;
   }
+
   to {
     transform: translate(0, 0);
     opacity: 1;
