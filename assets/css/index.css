@@ -3109,7 +3109,15 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   padding-bottom: 0;
   padding-top: 0;
   min-height: auto;
-  margin-top: 115px;
+  background-color: #f0f6ff;
+  margin-top: 35px;
+  min-height: 800px;
+}
+.e-sports-page__container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .e-sports-page__container #carouselESports .carousel-indicators-container {
   position: absolute;
@@ -3117,20 +3125,44 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  place-items: center;
+  place-content: flex-end;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .playnow {
+  margin-top: 50px;
+  background-image: url(../images/HOMEPAGE/exciting-game-bg-active.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 210px;
+  height: 70px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .playnow:hover {
+  opacity: 0.8;
 }
 .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators {
   margin: 0;
-  padding: 30px 15px;
+  flex-direction: column;
   right: 0;
-  left: auto;
-  top: 0;
-  bottom: auto;
-  width: 100%;
-  place-items: flex-start;
-  gap: 20px;
-  margin-top: 20px;
+  left: 0;
+  top: auto;
+  bottom: 0;
 }
-.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators button {
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button {
   width: auto;
   height: auto;
   text-indent: initial;
@@ -3139,28 +3171,86 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   display: flex;
   place-content: center;
   place-items: center;
-  min-width: 250px;
-  min-height: 90px;
-  background-image: url(../images/e-sports/tab-imdj-def.svg);
+  min-width: 95px;
+  min-height: 95px;
+  background-image: url(../images/PAGE/SPORTS/action.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background-color: transparent;
   border: none;
   opacity: 1;
-  font-weight: 700;
-  font-size: 22px;
+  font-family: "Aldo the Apache";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #597EF7;
+  transition: all 0.2s;
 }
-.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators button:hover {
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button img {
+  max-width: 80px;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button .img-active {
+  display: none;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button span {
+  transform: matrix(1, -0.08, 0.02, 1, 0, 0);
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button:hover {
   opacity: 0.8;
 }
-.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators button.active {
-  background-image: url(../images/e-sports/tab-obdj-active.svg);
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button:hover {
+  -webkit-animation: categoryBtn 0.3s;
+  animation: categoryBtn 0.3s;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button:hover, .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button.active {
+  background-image: url(../images/PAGE/SPORTS/action-active.png);
   color: #FFFFFF;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button:hover .img-active, .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button.active .img-active {
+  display: initial;
+}
+.e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button:hover .img-default, .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button.active .img-default {
+  display: none;
+}
+.e-sports-page__container #carouselESports .carousel-inner .left-img {
+  background-color: #f0f6ff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.e-sports-page__container #carouselESports .carousel-inner .left-img .team {
+  -webkit-animation: esportLeftImgTeam 0.5s;
+  animation: esportLeftImgTeam 0.5s;
+}
+.e-sports-page__container #carouselESports .carousel-inner .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 200px;
+  -webkit-animation: esportContent 1s;
+  animation: esportContent 1s;
+  background-color: #f0f6ff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.e-sports-page__container #carouselESports .carousel-inner .content .logo {
+  max-width: 400px;
+}
+.e-sports-page__container #carouselESports .carousel-inner .content .official {
+  max-width: 200px;
+}
+.e-sports-page__container #carouselESports .carousel-inner .content .icon {
+  max-width: 400px;
+}
+.e-sports-page__container #carouselESports .carousel-inner .content .text {
+  line-height: 24px;
+  font-size: 16px;
+  color: #7981a4;
+  font-weight: 400;
 }
 .e-sports-page__container #carouselESports .carousel-inner .e-sports-item {
   position: relative;
@@ -3225,6 +3315,42 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   max-width: 730px;
 }
 
+@-webkit-keyframes esportContent {
+  from {
+    -webkit-transform: translate(50%, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes esportContent {
+  from {
+    transform: translate(50%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes esportLeftImgTeam {
+  from {
+    -webkit-transform: scale(0.7);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes esportLeftImgTeam {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .sponsors-article {
   --top-padding: 115px;
   --section-min-height: 900px;

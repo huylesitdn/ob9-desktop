@@ -2084,7 +2084,15 @@
     "": "",
     "": ""  
   },
-  "": "",
+  "ESPORTPAGE": {
+    "OFFICIAL": "<img src=\"assets/images/PAGE/SPORTS/eng.png\" />",
+    "DESCRIPTION_1": "Thunderfire Esports is dedicated to providing the best esports betting experience with a professional technical team, exquisite betting interface, and comprehensive event coverage. Enjoy a wide range of betting options and watch live event broadcasts online while placing bets on your favorite teams.",
+    "DESCRIPTION_2": "Experience the richest variety of game types, the most comprehensive betting options, and the clearest esports videos. We present a visual feast of top-tier esports events for your viewing pleasure.",
+    "DESCRIPTION_3": "Introducing an innovative esports betting mode with real-time betting and unique free parlay options. Bets are confirmed instantly, and popular events are settled quickly. Exclusive in-play features enhance your excitement throughout the game. Enjoy an exceptional and thrilling experience where anything is possible!",
+    "DESCRIPTION_4": "IM Esports is an esports betting platform developed by a team of seasoned esports professionals. It offers top-notch technical support, an impressive visual interface, and efficient user experience. With IM Esports, you can easily get started, with everything clearly laid out for easy betting.",
+    "": "",
+    "": ""
+  },
   "": "",
   "": "",
   "": "",
