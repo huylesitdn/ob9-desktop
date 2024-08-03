@@ -417,3 +417,19 @@ span.input-group-text[data-i18n=To] {
     transform: scale(1);
   }
 }
+@-webkit-keyframes categoryBtn {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.05, 1.05);
+  }
+}
+@keyframes categoryBtn {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.05, 1.05);
+  }
+}
