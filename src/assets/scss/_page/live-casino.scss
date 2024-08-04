@@ -70,6 +70,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            background-color: #f0f6ff;
   
             button {
               width: auto;
@@ -272,7 +273,7 @@ html[lang="zh"] {
     opacity: 1;
   }
   to {
-    -webkit-transform: translate(30%, 0);
+    -webkit-transform: translate(20%, 0);
     opacity: 0;
   }
 }
@@ -283,7 +284,7 @@ html[lang="zh"] {
     opacity: 1;
   }
   to {
-    transform: translate(30%, 0);
+    transform: translate(20%, 0);
     opacity: 0;
   }
 }

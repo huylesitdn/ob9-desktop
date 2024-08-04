@@ -2064,13 +2064,6 @@ span.input-group-text[data-i18n=To] {
   background-repeat: no-repeat;
   background-position: center right;
   align-items: center;
-  background-color: #f0f6ff;
-  -webkit-animation: homeExitingGameContent 1s;
-  animation: homeExitingGameContent 1s;
-}
-.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content .banner {
-  -webkit-animation: homeLeftImgBanner 1.5s;
-  animation: homeLeftImgBanner 1.5s;
 }
 .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item {
   height: 80%;
@@ -2119,6 +2112,18 @@ span.input-group-text[data-i18n=To] {
 .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .button-group .btn:hover {
   opacity: 0.8;
 }
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item.active .content, .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .content, .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .content {
+  -webkit-animation: homeExitingGameContent 1s;
+  animation: homeExitingGameContent 1s;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item.active .content .banner, .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .content .banner, .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .content .banner {
+  -webkit-animation: homeLeftImgBanner 1.5s;
+  animation: homeLeftImgBanner 1.5s;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item.active.carousel-item-start .content, .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item.active.carousel-item-end .content {
+  -webkit-animation: homeExitingGameContentOut 1s;
+  animation: homeExitingGameContentOut 1s;
+}
 .home-page__content__fc {
   padding: 50px 0;
 }
@@ -2145,6 +2150,26 @@ span.input-group-text[data-i18n=To] {
   to {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+@-webkit-keyframes homeExitingGameContentOut {
+  from {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate(-50%, 0);
+    opacity: 0;
+  }
+}
+@keyframes homeExitingGameContentOut {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 0;
   }
 }
 @-webkit-keyframes homeLeftImgBanner {
@@ -2499,6 +2524,7 @@ span.input-group-text[data-i18n=To] {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  background-color: #f0f6ff;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators .action button {
   width: auto;
@@ -2632,7 +2658,7 @@ html[lang=zh] .live-casino-page .sports-item__content__title {
     opacity: 1;
   }
   to {
-    -webkit-transform: translate(30%, 0);
+    -webkit-transform: translate(20%, 0);
     opacity: 0;
   }
 }
@@ -2642,7 +2668,7 @@ html[lang=zh] .live-casino-page .sports-item__content__title {
     opacity: 1;
   }
   to {
-    transform: translate(30%, 0);
+    transform: translate(20%, 0);
     opacity: 0;
   }
 }
