@@ -110,22 +110,15 @@
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .left-img .bg {
   margin-top: 10%;
-  -webkit-animation: sportsLeftImgBg 0.5s;
-  animation: sportsLeftImgBg 0.5s;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .left-img .team {
   margin-top: -50%;
-  -webkit-animation: sportsLeftImgTeam 0.5s;
-  animation: sportsLeftImgTeam 0.5s;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .content {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-bottom: 250px;
-  -webkit-animation: sportsContent 1s;
-  animation: sportsContent 1s;
-  background-color: #f0f6ff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -141,57 +134,35 @@
   color: #7981a4;
   font-weight: 400;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item {
-  place-items: center;
-  padding: 0;
-  position: relative;
-  margin: 0 auto;
+.sports-page__container #carouselSports .carousel-inner .carousel-item.active .left-img .bg, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .left-img .bg, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .left-img .bg {
+  -webkit-animation: sportsLeftImgBg 1s;
+  animation: sportsLeftImgBg 1s;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__title {
-  font-family: "Aldo the Apache";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 120px;
-  line-height: 125px;
-  color: #597EF7;
-  margin-top: 30px;
-  word-break: keep-all;
-  margin-bottom: 5px;
+.sports-page__container #carouselSports .carousel-inner .carousel-item.active .left-img .team, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .left-img .team, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .left-img .team {
+  -webkit-animation: sportsLeftImgTeam 1s;
+  animation: sportsLeftImgTeam 1s;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__title[data-i18n="sports_page.title2"] {
-  font-size: 100px;
+.sports-page__container #carouselSports .carousel-inner .carousel-item.active .content, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .content, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .content {
+  -webkit-animation: sportsContent 1s;
+  animation: sportsContent 1s;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #3651A8;
+.sports-page__container #carouselSports .carousel-inner .carousel-item.active.carousel-item-start .left-img .bg, .sports-page__container #carouselSports .carousel-inner .carousel-item.active.carousel-item-end .left-img .bg {
+  -webkit-animation: sportsLeftImgBgOut 1s;
+  animation: sportsLeftImgBgOut 1s;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content .playnow, .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__action {
-  margin-top: 70px;
+.sports-page__container #carouselSports .carousel-inner .carousel-item.active.carousel-item-start .left-img .team, .sports-page__container #carouselSports .carousel-inner .carousel-item.active.carousel-item-end .left-img .team {
+  -webkit-animation: sportsLeftImgTeamOut 1s;
+  animation: sportsLeftImgTeamOut 1s;
+  opacity: 0;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content .playnow a, .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__action a {
-  background-image: url(../images/sports/play-now-btn.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 210px;
-  height: 70px;
-  display: flex;
-  place-content: center;
-  place-items: center;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
+.sports-page__container #carouselSports .carousel-inner .carousel-item.active.carousel-item-start .content, .sports-page__container #carouselSports .carousel-inner .carousel-item.active.carousel-item-end .content {
+  -webkit-animation: sportsContentOut 1s;
+  animation: sportsContentOut 1s;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content .playnow a:hover, .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__action a:hover {
-  opacity: 0.8;
-}
+
 @-webkit-keyframes sportsLeftImgBg {
   from {
-    -webkit-transform: translate(0, -20%);
+    -webkit-transform: translate(0, -30%);
     opacity: 0;
   }
   to {
@@ -201,12 +172,32 @@
 }
 @keyframes sportsLeftImgBg {
   from {
-    transform: translate(0, -20%);
+    transform: translate(0, -30%);
     opacity: 0;
   }
   to {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+@-webkit-keyframes sportsLeftImgBgOut {
+  from {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate(0, -30%);
+    opacity: 0;
+  }
+}
+@keyframes sportsLeftImgBgOut {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, -30%);
+    opacity: 0;
   }
 }
 @-webkit-keyframes sportsLeftImgTeam {
@@ -229,6 +220,26 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes sportsLeftImgTeamOut {
+  from {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate(0, 30%);
+    opacity: 0;
+  }
+}
+@keyframes sportsLeftImgTeamOut {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, 30%);
+    opacity: 0;
+  }
+}
 @-webkit-keyframes sportsContent {
   from {
     -webkit-transform: translate(50%, 0);
@@ -247,5 +258,21 @@
   to {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+@-webkit-keyframes sportsContentOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes sportsContentOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

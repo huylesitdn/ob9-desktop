@@ -1,3 +1,6 @@
+.home-page {
+  background-color: #f0f6ff;
+}
 .home-page.main {
   padding-top: 35px;
 }
@@ -10,9 +13,12 @@
 }
 .home-page .top-session .home-page__notification {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   left: 0;
   right: 0;
+}
+.home-page #carouselTop {
+  z-index: 0;
 }
 .home-page #carouselTop .carousel-indicators {
   place-items: center;
@@ -39,8 +45,8 @@
 .home-page #carouselTop .carousel-inner .carousel-item {
   height: 100%;
   text-align: center;
-  -webkit-animation: zoomcarousel 0.3s;
-  animation: zoomcarousel 0.3s;
+  -webkit-animation: zoomcarousel 0.5s;
+  animation: zoomcarousel 0.5s;
 }
 .home-page #carouselTop .carousel-inner .carousel-item img {
   width: 100%;
@@ -49,7 +55,7 @@
   object-fit: cover;
 }
 .home-page__notification {
-  z-index: 999;
+  z-index: 0;
 }
 .home-page__notification .container {
   display: flex;
@@ -122,10 +128,7 @@
   color: #FFFFFF;
 }
 .home-page__content {
-  background-image: url(../images/home/bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #f0f6ff;
 }
 .home-page__content .title {
   display: flex;
@@ -346,6 +349,13 @@
   background-repeat: no-repeat;
   background-position: center right;
   align-items: center;
+  background-color: #f0f6ff;
+  -webkit-animation: homeExitingGameContent 1s;
+  animation: homeExitingGameContent 1s;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content .banner {
+  -webkit-animation: homeLeftImgBanner 1.5s;
+  animation: homeLeftImgBanner 1.5s;
 }
 .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item {
   height: 80%;
@@ -400,4 +410,41 @@
 .home-page__content__fc .container .row {
   margin-left: -15px;
   margin-right: -15px;
+}
+
+@-webkit-keyframes homeExitingGameContent {
+  from {
+    -webkit-transform: translate(50%, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes homeExitingGameContent {
+  from {
+    transform: translate(50%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes homeLeftImgBanner {
+  from {
+    -webkit-transform: scale(0.8);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes homeLeftImgBanner {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
 }

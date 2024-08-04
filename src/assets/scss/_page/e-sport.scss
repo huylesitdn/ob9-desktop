@@ -59,7 +59,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-  
+
             button {
               width: auto;
               height: auto;
@@ -78,7 +78,7 @@
               background-color: transparent;
               border: none;
               opacity: 1;
-  
+
               font-family: 'Aldo the Apache';
               font-style: normal;
               font-weight: 400;
@@ -87,37 +87,37 @@
               text-align: center;
               color: #597EF7;
               transition: all 0.2s;
-  
+
               img {
                 max-width: 80px;
               }
-  
+
               .img-active {
                 display: none;
               }
-  
+
               span {
                 transform: matrix(1, -0.08, 0.02, 1, 0, 0);
               }
-  
+
               &:hover {
                 opacity: 0.8;
               }
-  
+
               &:hover {
                 -webkit-animation: categoryBtn 0.3s;
                 animation: categoryBtn 0.3s;
               }
-  
+
               &:hover,
               &.active {
                 background-image: url(../images/PAGE/SPORTS/action-active.png);
                 color: #FFFFFF;
-  
+
                 .img-active {
                   display: initial;
                 }
-  
+
                 .img-default {
                   display: none;
                 }
@@ -128,120 +128,83 @@
       }
 
       .carousel-inner {
-        .left-img {
-          background-color: #f0f6ff;
-          padding-top: 50px;
-          padding-bottom: 50px;
-          .team {
-            -webkit-animation: esportLeftImgTeam 0.5s;
-            animation: esportLeftImgTeam 0.5s;
-          }
-        }
-        .content {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-          gap: 30px;
-          margin-bottom: 200px;
-          -webkit-animation: esportContent 1s;
-          animation: esportContent 1s;
-          background-color: #f0f6ff;
-          padding-top: 50px;
-          padding-bottom: 50px;
+        .carousel-item {
+          .left-img {
+            background-color: #f0f6ff;
+            padding-top: 50px;
+            padding-bottom: 50px;
 
-          .logo {
-            max-width: 400px;
+            .team {
+              // -webkit-animation: esportLeftImgTeam 0.5s;
+              // animation: esportLeftImgTeam 0.5s;
+            }
           }
 
-          .official {
-            max-width: 200px;
-          }
-
-          .icon {
-            max-width: 400px;
-          }
-
-          .text {
-            line-height: 24px;
-            font-size: 16px;
-            color: #7981a4;
-            font-weight: 400;
-          }
-        }
-
-        .e-sports-item {
-          position: relative;
-
-          &__bg {
-            width: 100%;
-            height: 800px;
-            object-fit: cover;
-          }
-
-          &__container {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            text-align: center;
+          .content {
             display: flex;
-            // place-items: center;
-            place-content: flex-end;
             flex-direction: column;
-            padding: 30px 0;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 200px;
+            // -webkit-animation: esportContent 1s;
+            // animation: esportContent 1s;
+            // background-color: #f0f6ff;
+            padding-top: 50px;
+            padding-bottom: 50px;
 
-            &__logo {
-              margin-bottom: 30px;
+            .logo {
+              max-width: 400px;
+            }
 
-              img {
-                max-width: 500px;
+            .official {
+              max-width: 200px;
+            }
+
+            .icon {
+              max-width: 400px;
+            }
+
+            .text {
+              line-height: 24px;
+              font-size: 16px;
+              color: #7981a4;
+              font-weight: 400;
+            }
+          }
+
+          &.active,
+          &.carousel-item-next.carousel-item-start,
+          &.carousel-item-prev.carousel-item-end {
+
+            // show
+            .left-img {
+              .team {
+                -webkit-animation: esportLeftImgTeam 1s;
+                animation: esportLeftImgTeam 1s;
               }
             }
 
-            &__description {
-              font-weight: 600;
-              font-size: 18px;
-              line-height: 21px;
-              text-align: center;
-              color: #FFFFFF;
-              text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-              max-width: 800px;
-              margin: 0 auto;
+            .content {
+              -webkit-animation: esportContent 1s;
+              animation: esportContent 1s;
             }
+          }
 
-            &__play-now {
-              margin-top: -20px;
-              margin-bottom: -40px;
+          &.active.carousel-item-start,
+          &.active.carousel-item-end {
 
-              .btn {
-                width: 515px;
-                height: 215px;
-                background-image: url(../images/e-sports/play-now-bg.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-
-                font-family: 'Aldo the Apache';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 48px;
-                line-height: 42px;
-                text-align: center;
-                color: #FFFFFF;
-                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-                &:hover {
-                  opacity: 0.8;
-                }
+            // hide
+            .left-img {
+              .team {
+                -webkit-animation: esportLeftImgTeamOut 1s;
+                animation: esportLeftImgTeamOut 1s;
               }
             }
 
-            &__bottom-logo {
-              img {
-                max-width: 730px;
-              }
+            .content {
+              -webkit-animation: esportContentOut 1s;
+              animation: esportContentOut 1s;
             }
           }
         }
@@ -255,6 +218,7 @@
     -webkit-transform: translate(50%, 0);
     opacity: 0;
   }
+
   to {
     -webkit-transform: translate(0, 0);
     opacity: 1;
@@ -266,16 +230,38 @@
     transform: translate(50%, 0);
     opacity: 0;
   }
+
   to {
     transform: translate(0, 0);
     opacity: 1;
   }
 }
 
+@-webkit-keyframes esportContentOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes esportContentOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes esportLeftImgTeam {
   from {
-    -webkit-transform: scale(0.7);
+    -webkit-transform: scale(0.5);
   }
+
   to {
     -webkit-transform: scale(1);
   }
@@ -283,9 +269,30 @@
 
 @keyframes esportLeftImgTeam {
   from {
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
+
   to {
     transform: scale(1);
+  }
+}
+
+@-webkit-keyframes esportLeftImgTeamOut {
+  from {
+    -webkit-transform: scale(1);
+  }
+
+  to {
+    -webkit-transform: scale(0.5);
+  }
+}
+
+@keyframes esportLeftImgTeamOut {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.5);
   }
 }

@@ -108,104 +108,51 @@
 .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button:hover .img-default, .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button.active .img-default {
   display: none;
 }
-.e-sports-page__container #carouselESports .carousel-inner .left-img {
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img {
   background-color: #f0f6ff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.e-sports-page__container #carouselESports .carousel-inner .left-img .team {
-  -webkit-animation: esportLeftImgTeam 0.5s;
-  animation: esportLeftImgTeam 0.5s;
-}
-.e-sports-page__container #carouselESports .carousel-inner .content {
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 30px;
   margin-bottom: 200px;
-  -webkit-animation: esportContent 1s;
-  animation: esportContent 1s;
-  background-color: #f0f6ff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.e-sports-page__container #carouselESports .carousel-inner .content .logo {
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .logo {
   max-width: 400px;
 }
-.e-sports-page__container #carouselESports .carousel-inner .content .official {
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .official {
   max-width: 200px;
 }
-.e-sports-page__container #carouselESports .carousel-inner .content .icon {
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .icon {
   max-width: 400px;
 }
-.e-sports-page__container #carouselESports .carousel-inner .content .text {
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .text {
   line-height: 24px;
   font-size: 16px;
   color: #7981a4;
   font-weight: 400;
 }
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item {
-  position: relative;
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item.active .left-img .team, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .left-img .team, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .left-img .team {
+  -webkit-animation: esportLeftImgTeam 1s;
+  animation: esportLeftImgTeam 1s;
 }
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__bg {
-  width: 100%;
-  height: 800px;
-  object-fit: cover;
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item.active .content, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .content, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .content {
+  -webkit-animation: esportContent 1s;
+  animation: esportContent 1s;
 }
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  display: flex;
-  place-content: flex-end;
-  flex-direction: column;
-  padding: 30px 0;
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item.active.carousel-item-start .left-img .team, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.active.carousel-item-end .left-img .team {
+  -webkit-animation: esportLeftImgTeamOut 1s;
+  animation: esportLeftImgTeamOut 1s;
 }
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__logo {
-  margin-bottom: 30px;
-}
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__logo img {
-  max-width: 500px;
-}
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__description {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #FFFFFF;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-  max-width: 800px;
-  margin: 0 auto;
-}
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__play-now {
-  margin-top: -20px;
-  margin-bottom: -40px;
-}
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__play-now .btn {
-  width: 515px;
-  height: 215px;
-  background-image: url(../images/e-sports/play-now-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  font-family: "Aldo the Apache";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 42px;
-  text-align: center;
-  color: #FFFFFF;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__play-now .btn:hover {
-  opacity: 0.8;
-}
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__bottom-logo img {
-  max-width: 730px;
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item.active.carousel-item-start .content, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.active.carousel-item-end .content {
+  -webkit-animation: esportContentOut 1s;
+  animation: esportContentOut 1s;
 }
 
 @-webkit-keyframes esportContent {
@@ -228,9 +175,25 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes esportContentOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes esportContentOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @-webkit-keyframes esportLeftImgTeam {
   from {
-    -webkit-transform: scale(0.7);
+    -webkit-transform: scale(0.5);
   }
   to {
     -webkit-transform: scale(1);
@@ -238,9 +201,25 @@
 }
 @keyframes esportLeftImgTeam {
   from {
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
   to {
     transform: scale(1);
+  }
+}
+@-webkit-keyframes esportLeftImgTeamOut {
+  from {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.5);
+  }
+}
+@keyframes esportLeftImgTeamOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.5);
   }
 }

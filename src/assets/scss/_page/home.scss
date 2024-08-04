@@ -1,5 +1,7 @@
 .home-page {
 
+  background-color: #f0f6ff;
+
   &.main {
     padding-top: 35px;
   }
@@ -14,13 +16,14 @@
 
     .home-page__notification {
       position: absolute;
-      bottom: 30px;
+      bottom: 40px;
       left: 0;
       right: 0;
     }
   }
 
   #carouselTop {
+    z-index: 0;
     .carousel-indicators {
       place-items: center;
       bottom: 100px;
@@ -51,8 +54,8 @@
         height: 100%;
         text-align: center;
 
-        -webkit-animation: zoomcarousel 0.3s;
-        animation: zoomcarousel 0.3s;
+        -webkit-animation: zoomcarousel 0.5s;
+        animation: zoomcarousel 0.5s;
 
         img {
           width: 100%;
@@ -65,7 +68,7 @@
   }
 
   &__notification {
-    z-index: 999;
+    z-index: 0;
 
     .container {
       display: flex;
@@ -148,10 +151,11 @@
   }
 
   &__content {
-    background-image: url(../images/home/bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    // background-image: url(../images/home/bg.png);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+    background-color: #f0f6ff;
 
     .title {
       display: flex;
@@ -415,6 +419,14 @@
                 background-repeat: no-repeat;
                 background-position: center right;
                 align-items: center;
+                background-color: #f0f6ff;
+                -webkit-animation: homeExitingGameContent 1s;
+                animation: homeExitingGameContent 1s;
+
+                .banner {
+                  -webkit-animation: homeLeftImgBanner 1.5s;
+                  animation: homeLeftImgBanner 1.5s;
+                }
 
                 &-item {
                   height: 80%;
@@ -489,5 +501,46 @@
         }
       }
     }
+  }
+}
+
+
+@-webkit-keyframes homeExitingGameContent {
+  from {
+    -webkit-transform: translate(50%, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes homeExitingGameContent {
+  from {
+    transform: translate(50%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes homeLeftImgBanner {
+  from {
+    -webkit-transform: scale(0.8);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes homeLeftImgBanner {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
   }
 }

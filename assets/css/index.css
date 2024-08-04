@@ -1053,15 +1053,15 @@ span.input-group-text[data-i18n=To] {
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item.dropdown .dropdown-menu {
   display: block;
-  top: calc(-100vh - 100px);
+  top: calc(-200vh - 100px);
   position: absolute;
-  transition: all 0.5s;
-  z-index: -1;
+  transition: all 0.9s;
+  z-index: -999;
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item.dropdown:hover .dropdown-menu {
   margin-top: 0;
   top: 100%;
-  z-index: 1;
+  z-index: 0;
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu {
   left: 0;
@@ -1310,6 +1310,12 @@ span.input-group-text[data-i18n=To] {
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino .mymenu__container__item {
   place-content: center;
 }
+.my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino .mymenu__container__item > div > img {
+  max-height: 70px;
+}
+.my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino .mymenu__container__item img {
+  max-height: 200px;
+}
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino img {
   max-width: 280px;
   max-height: 250px;
@@ -1329,6 +1335,12 @@ span.input-group-text[data-i18n=To] {
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.slots .mymenu__container__item {
   padding-top: 0;
+}
+.my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.slots .mymenu__container__item > div > img {
+  max-height: 70px;
+}
+.my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.slots .mymenu__container__item img {
+  max-height: 155px;
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.slots img {
   max-width: 200px;
@@ -1701,6 +1713,9 @@ span.input-group-text[data-i18n=To] {
   max-height: 30px;
 }
 
+.home-page {
+  background-color: #f0f6ff;
+}
 .home-page.main {
   padding-top: 35px;
 }
@@ -1713,9 +1728,12 @@ span.input-group-text[data-i18n=To] {
 }
 .home-page .top-session .home-page__notification {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   left: 0;
   right: 0;
+}
+.home-page #carouselTop {
+  z-index: 0;
 }
 .home-page #carouselTop .carousel-indicators {
   place-items: center;
@@ -1742,8 +1760,8 @@ span.input-group-text[data-i18n=To] {
 .home-page #carouselTop .carousel-inner .carousel-item {
   height: 100%;
   text-align: center;
-  -webkit-animation: zoomcarousel 0.3s;
-  animation: zoomcarousel 0.3s;
+  -webkit-animation: zoomcarousel 0.5s;
+  animation: zoomcarousel 0.5s;
 }
 .home-page #carouselTop .carousel-inner .carousel-item img {
   width: 100%;
@@ -1752,7 +1770,7 @@ span.input-group-text[data-i18n=To] {
   object-fit: cover;
 }
 .home-page__notification {
-  z-index: 999;
+  z-index: 0;
 }
 .home-page__notification .container {
   display: flex;
@@ -1825,10 +1843,7 @@ span.input-group-text[data-i18n=To] {
   color: #FFFFFF;
 }
 .home-page__content {
-  background-image: url(../images/home/bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #f0f6ff;
 }
 .home-page__content .title {
   display: flex;
@@ -2049,6 +2064,13 @@ span.input-group-text[data-i18n=To] {
   background-repeat: no-repeat;
   background-position: center right;
   align-items: center;
+  background-color: #f0f6ff;
+  -webkit-animation: homeExitingGameContent 1s;
+  animation: homeExitingGameContent 1s;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content .banner {
+  -webkit-animation: homeLeftImgBanner 1.5s;
+  animation: homeLeftImgBanner 1.5s;
 }
 .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item {
   height: 80%;
@@ -2105,6 +2127,42 @@ span.input-group-text[data-i18n=To] {
   margin-right: -15px;
 }
 
+@-webkit-keyframes homeExitingGameContent {
+  from {
+    -webkit-transform: translate(50%, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes homeExitingGameContent {
+  from {
+    transform: translate(50%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes homeLeftImgBanner {
+  from {
+    -webkit-transform: scale(0.8);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes homeLeftImgBanner {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .sports-page {
   background-color: #f0f6ff;
   padding-bottom: 0;
@@ -2217,22 +2275,15 @@ span.input-group-text[data-i18n=To] {
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .left-img .bg {
   margin-top: 10%;
-  -webkit-animation: sportsLeftImgBg 0.5s;
-  animation: sportsLeftImgBg 0.5s;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .left-img .team {
   margin-top: -50%;
-  -webkit-animation: sportsLeftImgTeam 0.5s;
-  animation: sportsLeftImgTeam 0.5s;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .content {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-bottom: 250px;
-  -webkit-animation: sportsContent 1s;
-  animation: sportsContent 1s;
-  background-color: #f0f6ff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -2248,57 +2299,35 @@ span.input-group-text[data-i18n=To] {
   color: #7981a4;
   font-weight: 400;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item {
-  place-items: center;
-  padding: 0;
-  position: relative;
-  margin: 0 auto;
+.sports-page__container #carouselSports .carousel-inner .carousel-item.active .left-img .bg, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .left-img .bg, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .left-img .bg {
+  -webkit-animation: sportsLeftImgBg 1s;
+  animation: sportsLeftImgBg 1s;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__title {
-  font-family: "Aldo the Apache";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 120px;
-  line-height: 125px;
-  color: #597EF7;
-  margin-top: 30px;
-  word-break: keep-all;
-  margin-bottom: 5px;
+.sports-page__container #carouselSports .carousel-inner .carousel-item.active .left-img .team, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .left-img .team, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .left-img .team {
+  -webkit-animation: sportsLeftImgTeam 1s;
+  animation: sportsLeftImgTeam 1s;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__title[data-i18n="sports_page.title2"] {
-  font-size: 100px;
+.sports-page__container #carouselSports .carousel-inner .carousel-item.active .content, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .content, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .content {
+  -webkit-animation: sportsContent 1s;
+  animation: sportsContent 1s;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #3651A8;
+.sports-page__container #carouselSports .carousel-inner .carousel-item.active.carousel-item-start .left-img .bg, .sports-page__container #carouselSports .carousel-inner .carousel-item.active.carousel-item-end .left-img .bg {
+  -webkit-animation: sportsLeftImgBgOut 1s;
+  animation: sportsLeftImgBgOut 1s;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content .playnow, .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__action {
-  margin-top: 70px;
+.sports-page__container #carouselSports .carousel-inner .carousel-item.active.carousel-item-start .left-img .team, .sports-page__container #carouselSports .carousel-inner .carousel-item.active.carousel-item-end .left-img .team {
+  -webkit-animation: sportsLeftImgTeamOut 1s;
+  animation: sportsLeftImgTeamOut 1s;
+  opacity: 0;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content .playnow a, .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__action a {
-  background-image: url(../images/sports/play-now-btn.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 210px;
-  height: 70px;
-  display: flex;
-  place-content: center;
-  place-items: center;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
+.sports-page__container #carouselSports .carousel-inner .carousel-item.active.carousel-item-start .content, .sports-page__container #carouselSports .carousel-inner .carousel-item.active.carousel-item-end .content {
+  -webkit-animation: sportsContentOut 1s;
+  animation: sportsContentOut 1s;
 }
-.sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content .playnow a:hover, .sports-page__container #carouselSports .carousel-inner .carousel-item .sports-item__content__action a:hover {
-  opacity: 0.8;
-}
+
 @-webkit-keyframes sportsLeftImgBg {
   from {
-    -webkit-transform: translate(0, -20%);
+    -webkit-transform: translate(0, -30%);
     opacity: 0;
   }
   to {
@@ -2308,12 +2337,32 @@ span.input-group-text[data-i18n=To] {
 }
 @keyframes sportsLeftImgBg {
   from {
-    transform: translate(0, -20%);
+    transform: translate(0, -30%);
     opacity: 0;
   }
   to {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+@-webkit-keyframes sportsLeftImgBgOut {
+  from {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate(0, -30%);
+    opacity: 0;
+  }
+}
+@keyframes sportsLeftImgBgOut {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, -30%);
+    opacity: 0;
   }
 }
 @-webkit-keyframes sportsLeftImgTeam {
@@ -2336,6 +2385,26 @@ span.input-group-text[data-i18n=To] {
     opacity: 1;
   }
 }
+@-webkit-keyframes sportsLeftImgTeamOut {
+  from {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate(0, 30%);
+    opacity: 0;
+  }
+}
+@keyframes sportsLeftImgTeamOut {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, 30%);
+    opacity: 0;
+  }
+}
 @-webkit-keyframes sportsContent {
   from {
     -webkit-transform: translate(50%, 0);
@@ -2354,6 +2423,22 @@ span.input-group-text[data-i18n=To] {
   to {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+@-webkit-keyframes sportsContentOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes sportsContentOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 .live-casino-page {
@@ -2473,10 +2558,6 @@ span.input-group-text[data-i18n=To] {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .left-img .team {
-  -webkit-animation: casinoLeftImgTeam 0.5s;
-  animation: casinoLeftImgTeam 0.5s;
-}
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .content {
   display: flex;
   flex-direction: column;
@@ -2484,9 +2565,6 @@ span.input-group-text[data-i18n=To] {
   justify-content: center;
   gap: 30px;
   margin-bottom: 300px;
-  -webkit-animation: casinoContent 1s;
-  animation: casinoContent 1s;
-  background-color: #f0f6ff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -2505,107 +2583,21 @@ span.input-group-text[data-i18n=To] {
   color: #7981a4;
   font-weight: 400;
 }
-.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  display: flex;
-  place-items: center;
+.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item.active .left-img .team, .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .left-img .team, .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .left-img .team {
+  -webkit-animation: casinoLeftImgTeam 1.5s;
+  animation: casinoLeftImgTeam 1.5s;
 }
-.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item {
-  place-items: center;
-  padding: 0;
-  position: relative;
-  margin: 0 auto;
-  place-content: flex-start;
-  width: 100%;
+.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item.active .content, .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .content, .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .content {
+  -webkit-animation: casinoContent 1s;
+  animation: casinoContent 1s;
 }
-.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__title {
-  font-family: "Aldo the Apache";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 110px;
-  line-height: 125px;
-  color: #597EF7;
-  word-break: keep-all;
-  margin-top: 30px;
-  margin-bottom: 10px;
+.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item.active.carousel-item-start .left-img .team, .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item.active.carousel-item-end .left-img .team {
+  -webkit-animation: casinoLeftImgTeamOut 1s;
+  animation: casinoLeftImgTeamOut 1s;
 }
-@media only screen and (max-width: 1300px) {
-  .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__title {
-    font-size: 80px;
-    line-height: 90px;
-  }
-}
-.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #3651A8;
-}
-@media only screen and (max-width: 1300px) {
-  .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__description {
-    font-size: 16px;
-    line-height: 25px;
-  }
-}
-.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__action {
-  margin-top: 70px;
-}
-.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__action a {
-  background-image: url(../images/sports/play-now-btn.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 210px;
-  height: 70px;
-  display: flex;
-  place-content: center;
-  place-items: center;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-}
-.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__action a:hover {
-  opacity: 0.8;
-}
-@media only screen and (max-width: 1300px) {
-  .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-item-container .sports-item__content__action a {
-    width: 170px;
-    height: 60px;
-  }
-}
-.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img {
-  text-align: center;
-}
-.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
-  max-width: 750px;
-  margin-left: 10%;
-}
-.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img.PRAGMATIC_PLAY {
-  margin-left: 20%;
-}
-@media only screen and (max-width: 1500px) {
-  .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
-    margin-left: 0;
-    max-width: 650px;
-  }
-}
-@media only screen and (max-width: 1250px) {
-  .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
-    max-width: 550px;
-    margin-left: -5%;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .sports-img img {
-    max-width: 450px;
-    margin-left: -5%;
-  }
+.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item.active.carousel-item-start .content, .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item.active.carousel-item-end .content {
+  -webkit-animation: casinoContentOut 1s;
+  animation: casinoContentOut 1s;
 }
 
 html[lang=zh] .live-casino-page .carousel-inner .carousel-item:nth-child(3) .sports-img img {
@@ -2634,6 +2626,26 @@ html[lang=zh] .live-casino-page .sports-item__content__title {
     opacity: 1;
   }
 }
+@-webkit-keyframes casinoLeftImgTeamOut {
+  from {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate(30%, 0);
+    opacity: 0;
+  }
+}
+@keyframes casinoLeftImgTeamOut {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(30%, 0);
+    opacity: 0;
+  }
+}
 @-webkit-keyframes casinoContent {
   from {
     -webkit-transform: translate(50%, 0);
@@ -2652,6 +2664,22 @@ html[lang=zh] .live-casino-page .sports-item__content__title {
   to {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+@-webkit-keyframes casinoContentOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes casinoContentOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 .fishing-page {
@@ -3223,104 +3251,51 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
 .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button:hover .img-default, .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button.active .img-default {
   display: none;
 }
-.e-sports-page__container #carouselESports .carousel-inner .left-img {
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img {
   background-color: #f0f6ff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.e-sports-page__container #carouselESports .carousel-inner .left-img .team {
-  -webkit-animation: esportLeftImgTeam 0.5s;
-  animation: esportLeftImgTeam 0.5s;
-}
-.e-sports-page__container #carouselESports .carousel-inner .content {
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 30px;
   margin-bottom: 200px;
-  -webkit-animation: esportContent 1s;
-  animation: esportContent 1s;
-  background-color: #f0f6ff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.e-sports-page__container #carouselESports .carousel-inner .content .logo {
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .logo {
   max-width: 400px;
 }
-.e-sports-page__container #carouselESports .carousel-inner .content .official {
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .official {
   max-width: 200px;
 }
-.e-sports-page__container #carouselESports .carousel-inner .content .icon {
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .icon {
   max-width: 400px;
 }
-.e-sports-page__container #carouselESports .carousel-inner .content .text {
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .text {
   line-height: 24px;
   font-size: 16px;
   color: #7981a4;
   font-weight: 400;
 }
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item {
-  position: relative;
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item.active .left-img .team, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .left-img .team, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .left-img .team {
+  -webkit-animation: esportLeftImgTeam 1s;
+  animation: esportLeftImgTeam 1s;
 }
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__bg {
-  width: 100%;
-  height: 800px;
-  object-fit: cover;
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item.active .content, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .content, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .content {
+  -webkit-animation: esportContent 1s;
+  animation: esportContent 1s;
 }
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  display: flex;
-  place-content: flex-end;
-  flex-direction: column;
-  padding: 30px 0;
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item.active.carousel-item-start .left-img .team, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.active.carousel-item-end .left-img .team {
+  -webkit-animation: esportLeftImgTeamOut 1s;
+  animation: esportLeftImgTeamOut 1s;
 }
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__logo {
-  margin-bottom: 30px;
-}
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__logo img {
-  max-width: 500px;
-}
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__description {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #FFFFFF;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-  max-width: 800px;
-  margin: 0 auto;
-}
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__play-now {
-  margin-top: -20px;
-  margin-bottom: -40px;
-}
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__play-now .btn {
-  width: 515px;
-  height: 215px;
-  background-image: url(../images/e-sports/play-now-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  font-family: "Aldo the Apache";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 42px;
-  text-align: center;
-  color: #FFFFFF;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__play-now .btn:hover {
-  opacity: 0.8;
-}
-.e-sports-page__container #carouselESports .carousel-inner .e-sports-item__container__bottom-logo img {
-  max-width: 730px;
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item.active.carousel-item-start .content, .e-sports-page__container #carouselESports .carousel-inner .carousel-item.active.carousel-item-end .content {
+  -webkit-animation: esportContentOut 1s;
+  animation: esportContentOut 1s;
 }
 
 @-webkit-keyframes esportContent {
@@ -3343,9 +3318,25 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
     opacity: 1;
   }
 }
+@-webkit-keyframes esportContentOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes esportContentOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @-webkit-keyframes esportLeftImgTeam {
   from {
-    -webkit-transform: scale(0.7);
+    -webkit-transform: scale(0.5);
   }
   to {
     -webkit-transform: scale(1);
@@ -3353,10 +3344,26 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
 }
 @keyframes esportLeftImgTeam {
   from {
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
   to {
     transform: scale(1);
+  }
+}
+@-webkit-keyframes esportLeftImgTeamOut {
+  from {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.5);
+  }
+}
+@keyframes esportLeftImgTeamOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.5);
   }
 }
 .sponsors-article {

@@ -159,17 +159,17 @@
 
               .dropdown-menu {
                 display: block;
-                top: calc(-100vh - 100px);
+                top: calc(-200vh - 100px);
                 position: absolute;
-                transition: all 0.5s;
-                z-index: -1;
+                transition: all 0.9s;
+                z-index: -999;
               }
 
               &:hover .dropdown-menu {
                 // display: block;
                 margin-top: 0; // remove the gap so it doesn't close
                 top: 100%;
-                z-index: 1;
+                z-index: 0;
               }
             }
 
@@ -443,6 +443,14 @@
 
                   .mymenu__container__item {
                     place-content: center;
+
+                    &>div>img {
+                      max-height: 70px;
+                    }
+
+                    img {
+                      max-height: 200px;
+                    }
                   }
 
                   .second-col {
@@ -470,6 +478,14 @@
                   .mymenu__container__item {
                     padding-top: 0;
                     // place-content: center;
+
+                    &>div>img {
+                      max-height: 70px;
+                    }
+
+                    img {
+                      max-height: 155px;
+                    }
                   }
 
                   .second-col {

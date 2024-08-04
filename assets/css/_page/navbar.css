@@ -121,15 +121,15 @@
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item.dropdown .dropdown-menu {
   display: block;
-  top: calc(-100vh - 100px);
+  top: calc(-200vh - 100px);
   position: absolute;
-  transition: all 0.5s;
-  z-index: -1;
+  transition: all 0.9s;
+  z-index: -999;
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item.dropdown:hover .dropdown-menu {
   margin-top: 0;
   top: 100%;
-  z-index: 1;
+  z-index: 0;
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu {
   left: 0;
@@ -378,6 +378,12 @@
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino .mymenu__container__item {
   place-content: center;
 }
+.my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino .mymenu__container__item > div > img {
+  max-height: 70px;
+}
+.my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino .mymenu__container__item img {
+  max-height: 200px;
+}
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.live-casino img {
   max-width: 280px;
   max-height: 250px;
@@ -397,6 +403,12 @@
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.slots .mymenu__container__item {
   padding-top: 0;
+}
+.my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.slots .mymenu__container__item > div > img {
+  max-height: 70px;
+}
+.my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.slots .mymenu__container__item img {
+  max-height: 155px;
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.slots img {
   max-width: 200px;

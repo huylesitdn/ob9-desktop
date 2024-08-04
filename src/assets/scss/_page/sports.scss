@@ -141,14 +141,10 @@
 
             .bg {
               margin-top: 10%;
-              -webkit-animation: sportsLeftImgBg 0.5s;
-              animation: sportsLeftImgBg 0.5s;
             }
 
             .team {
               margin-top: -50%;
-              -webkit-animation: sportsLeftImgTeam 0.5s;
-              animation: sportsLeftImgTeam 0.5s;
             }
           }
 
@@ -157,9 +153,7 @@
             flex-direction: column;
             gap: 30px;
             margin-bottom: 250px;
-            -webkit-animation: sportsContent 1s;
-            animation: sportsContent 1s;
-            background-color: #f0f6ff;
+            // background-color: #f0f6ff;
             padding-top: 50px;
             padding-bottom: 50px;
 
@@ -179,66 +173,51 @@
             }
           }
 
-          .sports-item {
-            place-items: center;
-            padding: 0;
-            position: relative;
-            margin: 0 auto;
 
-            &__content {
-              &__title {
-                font-family: 'Aldo the Apache';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 120px;
-                line-height: 125px;
-                color: #597EF7;
-                margin-top: 30px;
-                word-break: keep-all;
-                margin-bottom: 5px;
-
-                &[data-i18n="sports_page.title2"] {
-                  font-size: 100px;
-                }
+          &.active,
+          &.carousel-item-next.carousel-item-start,
+          &.carousel-item-prev.carousel-item-end {
+            // show
+            .left-img {
+              .bg {
+                -webkit-animation: sportsLeftImgBg 1s;
+                animation: sportsLeftImgBg 1s;
               }
-
-              &__description {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 30px;
-                color: #3651A8;
+  
+              .team {
+                -webkit-animation: sportsLeftImgTeam 1s;
+                animation: sportsLeftImgTeam 1s;
               }
+            }
 
-              .playnow,
-              &__action {
-                margin-top: 70px;
-
-                a {
-                  background-image: url(../images/sports/play-now-btn.png);
-                  background-repeat: no-repeat;
-                  background-position: center;
-                  background-size: cover;
-                  width: 210px;
-                  height: 70px;
-                  display: flex;
-                  place-content: center;
-                  place-items: center;
-
-                  font-weight: 600;
-                  font-size: 24px;
-                  line-height: 20px;
-                  text-align: center;
-                  color: #FFFFFF;
-
-                  &:hover {
-                    opacity: 0.8;
-                  }
-                }
-              }
+            .content {
+              -webkit-animation: sportsContent 1s;
+              animation: sportsContent 1s;
             }
           }
 
-          .sports-img {}
+          &.active.carousel-item-start,
+          &.active.carousel-item-end {
+            // hide
+            .left-img {
+              .bg {
+                -webkit-animation: sportsLeftImgBgOut 1s;
+                animation: sportsLeftImgBgOut 1s;
+              }
+  
+              .team {
+                -webkit-animation: sportsLeftImgTeamOut 1s;
+                animation: sportsLeftImgTeamOut 1s;
+                opacity: 0;
+              }
+            }
+
+            .content {
+              -webkit-animation: sportsContentOut 1s;
+              animation: sportsContentOut 1s;
+            }
+          }
+
         }
       }
     }
@@ -247,7 +226,7 @@
 
 @-webkit-keyframes sportsLeftImgBg {
   from {
-    -webkit-transform: translate(0, -20%);
+    -webkit-transform: translate(0, -30%);
     opacity: 0;
   }
 
@@ -259,13 +238,37 @@
 
 @keyframes sportsLeftImgBg {
   from {
-    transform: translate(0, -20%);
+    transform: translate(0, -30%);
     opacity: 0;
   }
 
   to {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes sportsLeftImgBgOut {
+  from {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate(0, -30%);
+    opacity: 0;
+  }
+}
+
+@keyframes sportsLeftImgBgOut {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(0, -30%);
+    opacity: 0;
   }
 }
 
@@ -293,6 +296,30 @@
   }
 }
 
+@-webkit-keyframes sportsLeftImgTeamOut {
+  from {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate(0, 30%);
+    opacity: 0;
+  }
+}
+
+@keyframes sportsLeftImgTeamOut {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(0, 30%);
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes sportsContent {
   from {
     -webkit-transform: translate(50%, 0);
@@ -314,5 +341,25 @@
   to {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes sportsContentOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes sportsContentOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
