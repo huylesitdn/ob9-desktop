@@ -505,6 +505,19 @@ html[lang=zh] .register_link span {
     min-width: 50px !important;
   }
 }
+.confirm .modal-content {
+  padding: 0 !important;
+}
+.confirm .modal-content .modal-header {
+  background-color: #4E7FFF;
+  color: #fff;
+  justify-content: center;
+}
+.confirm .modal-content .modal-footer {
+  border-top: none;
+  justify-content: center;
+}
+
 #newsModal .modal-dialog .modal-content .modal-header {
   background: linear-gradient(180deg, #8EA9FF 0%, #678BFF 32.29%, #557BF7 100%);
 }

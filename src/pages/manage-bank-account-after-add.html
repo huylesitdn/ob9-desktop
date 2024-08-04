@@ -6,6 +6,7 @@
     <!-- Content -->
     <section class="main account-layout manage-bank-account-page">
       @@include('../components/base/navbar.html', {active: 1})
+      @@include('../components/modal/delete-bank-modal.html')
 
       <div class="account-layout__container container">
         <div class="row account-layout__container__content">
@@ -39,6 +40,9 @@
                       <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount" checked="checked"/>
                       <span class="checkmark"></span>
                     </label>
+                    <button data-bs-toggle="modal" data-bs-target="#deleteBankAccountModal" class="btn btn-delete">
+                      <img src="assets/images/LOGIN_EDI/deleteicon.png" />
+                    </button>
                   </div>
                   <div class="col-2 select-bank__item">
                     <label class="select-bank__item__label">
@@ -52,6 +56,9 @@
                       <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount" />
                       <span class="checkmark"></span>
                     </label>
+                    <button data-bs-toggle="modal" data-bs-target="#deleteBankAccountModal" class="btn btn-delete">
+                      <img src="assets/images/LOGIN_EDI/deleteicon.png" />
+                    </button>
                   </div>
                   <div class="col-2 select-bank__item">
                     <label class="select-bank__item__label">
@@ -65,6 +72,9 @@
                       <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount" />
                       <span class="checkmark"></span>
                     </label>
+                    <button data-bs-toggle="modal" data-bs-target="#deleteBankAccountModal" class="btn btn-delete">
+                      <img src="assets/images/LOGIN_EDI/deleteicon.png" />
+                    </button>
                   </div>
                   <div class="col-2 select-bank__item">
                     <label class="select-bank__item__label">
@@ -78,6 +88,9 @@
                       <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount" />
                       <span class="checkmark"></span>
                     </label>
+                    <button data-bs-toggle="modal" data-bs-target="#deleteBankAccountModal" class="btn btn-delete">
+                      <img src="assets/images/LOGIN_EDI/deleteicon.png" />
+                    </button>
                   </div>
                   <div class="col-2">
                     <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#manageBankAccountModal" class="withdrawal-page__content__bank-account__container__item">

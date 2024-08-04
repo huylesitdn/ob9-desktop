@@ -924,7 +924,7 @@ window.onscroll = changeNavbar;
 
 function changeNavbar() {
     var myNavbarMain = $(".my-navbar__main");
-    if (window.pageYOffset > 70) {
+    if (window.pageYOffset > 30) {
       myNavbarMain.addClass('scrolled')
     } else {
       myNavbarMain.removeClass('scrolled')

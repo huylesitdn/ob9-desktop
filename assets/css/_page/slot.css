@@ -143,12 +143,16 @@
   width: 20px;
 }
 .slot-page__content__tags {
-  padding: 30px 40px;
+  padding-bottom: 5px;
   display: flex;
   place-content: space-between;
   place-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 15px;
 }
 .slot-page__content__tags__item {
+  min-width: 122px;
   width: 122px;
   height: 42px;
   background-image: url(../images/slots/btn.png);

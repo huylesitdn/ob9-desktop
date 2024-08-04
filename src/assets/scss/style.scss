@@ -604,6 +604,22 @@ html[lang="zh"] {
 }
 
 
+.confirm {
+  .modal-content {
+    padding: 0 !important;
+
+    .modal-header {
+      background-color: #4E7FFF;
+      color: #fff;
+      justify-content: center;
+    }
+
+    .modal-footer {
+      border-top: none;
+      justify-content: center;
+    }
+  }
+}
 
 #newsModal {
   .modal-dialog {

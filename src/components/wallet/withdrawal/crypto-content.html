@@ -28,6 +28,9 @@
         <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount"/>
         <span class="checkmark"></span>
       </label>
+      <button data-bs-toggle="modal" data-bs-target="#deleteCryptoWalletAddressModal" class="btn btn-delete">
+        <img src="assets/images/LOGIN_EDI/delete2.png" />
+      </button>
     </div>
     <div class="col-7 mb-3 select-bank__item">
       <label class="select-bank__item__label flex-row">
@@ -40,6 +43,9 @@
         <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount" checked="checked"/>
         <span class="checkmark"></span>
       </label>
+      <button data-bs-toggle="modal" data-bs-target="#deleteCryptoWalletAddressModal" class="btn btn-delete">
+        <img src="assets/images/LOGIN_EDI/delete2.png" />
+      </button>
     </div>
     <div class="col-7 mb-3 select-bank__item">
       <label class="select-bank__item__label flex-row">
@@ -52,6 +58,9 @@
         <input class="select-bank__item__label__checkbox" type="radio" name="bankAccount"/>
         <span class="checkmark"></span>
       </label>
+      <button data-bs-toggle="modal" data-bs-target="#deleteCryptoWalletAddressModal" class="btn btn-delete">
+        <img src="assets/images/LOGIN_EDI/delete2.png" />
+      </button>
     </div>
   </div>
 </div>
@@ -79,3 +88,5 @@
 <div class="withdrawal-page__content__submit">
   <button class="btn btn-primary withdrawal-submit" disabled data-bs-toggle="modal" data-bs-target="#withdrawalSuccessModal" data-i18n="SUBMIT"></button>
 </div>
+
+@@include('../../modal/delete-crypto-wallet-address-modal.html')
