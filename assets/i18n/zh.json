@@ -2097,6 +2097,11 @@
     "": "",
     "": ""
   },
+  "Message": "Message",
+  "delete_bank_account_confirm_message": "Are you sure you want to delete this bank account?",
+  "yes": "Yes",
+  "delete_crypto_wallet_address_confirm_message": "Are you sure you want to delete this wallet address?",
+  "no_login_user_when_they_click_on_play_game": "Please login first to play game. if you don’t have account please click Join Now.",
   "": "",
   "": "",
   "": ""
