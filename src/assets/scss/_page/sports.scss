@@ -6,8 +6,8 @@
   background-color: #f0f6ff;
   padding-bottom: 0;
   padding-top: 0;
-  min-height: 800px;
-  margin-top: 35px;
+  min-height: 700px;
+  // margin-top: 35px;
 
 
   &__container {
@@ -15,10 +15,11 @@
     // background-repeat: no-repeat;
     // background-position: center;
     // background-size: cover;
-    min-height: 100vh;
+    // min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 200px 0;
 
     #carouselSports {
 
@@ -43,8 +44,8 @@
             display: flex;
             place-content: center;
             place-items: center;
-            min-width: 100px;
-            min-height: 100px;
+            min-width: 75px;
+            min-height: 75px;
             background-image: url(../images/PAGE/SPORTS/action.png);
             background-repeat: no-repeat;
             background-size: contain;
@@ -63,7 +64,7 @@
             transition: all 0.2s;
 
             img {
-              max-width: 80px;
+              max-width: 70px;
             }
 
             .img-active {
@@ -114,14 +115,14 @@
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
-          width: 210px;
-          height: 70px;
+          width: 150px;
+          height: 50px;
           display: flex;
           place-content: center;
           place-items: center;
 
-          font-weight: 600;
-          font-size: 24px;
+          font-weight: 400;
+          font-size: 18px;
           line-height: 20px;
           text-align: center;
           color: #FFFFFF;
@@ -136,15 +137,18 @@
         .carousel-item {
           .left-img {
             background-color: #f0f6ff;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding: 50px 0;
+            text-align: center;
 
             .bg {
-              margin-top: 10%;
+              // margin-top: 10%;
+              max-width: 400px;
+              margin-left: auto;
+              margin-right: auto;
             }
 
             .team {
-              margin-top: -50%;
+              margin-top: -35%;
             }
           }
 
@@ -152,9 +156,9 @@
             display: flex;
             flex-direction: column;
             gap: 30px;
-            margin-bottom: 250px;
+            margin-bottom: 190px;
             // background-color: #f0f6ff;
-            padding-top: 50px;
+            padding-top: 0;
             padding-bottom: 50px;
 
             .logo {
@@ -162,7 +166,7 @@
             }
 
             .official {
-              max-width: 200px;
+              max-width: 170px;
             }
 
             .text {
@@ -170,6 +174,10 @@
               font-size: 16px;
               color: #7981a4;
               font-weight: 400;
+            }
+
+            .icon {
+              max-width: 550px;
             }
           }
 

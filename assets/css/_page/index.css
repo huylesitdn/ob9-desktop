@@ -379,7 +379,7 @@
   }
 }
 .my-navbar__main {
-  top: 35px;
+  top: 0;
   min-height: 80px;
   padding: 0;
   min-width: var(--min-with);
@@ -396,7 +396,7 @@
   z-index: -1;
 }
 .my-navbar__main__container .navbar-brand img {
-  max-height: 55px;
+  max-height: 50px;
   z-index: -1;
 }
 @media only screen and (max-width: 1200px) {
@@ -422,6 +422,42 @@
   .my-navbar__main__container .navbar-nav.nav-right {
     gap: 1px;
   }
+}
+.my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .nav-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+.my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .nav-link .name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .nav-link .name .price {
+  font-weight: bold;
+  font-size: 18px;
+}
+.my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .nav-link img {
+  border-radius: 50%;
+  max-width: 50px;
+  margin-left: 6px;
+}
+.my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .dropdown-menu {
+  min-width: 300px;
+  right: 0;
+  left: auto;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 3px 15px 2px rgba(1, 1, 1, 0.1);
+  -webkit-box-shadow: 0px 3px 15px 2px rgba(1, 1, 1, 0.1);
+  -moz-box-shadow: 0px 3px 15px 2px rgba(1, 1, 1, 0.1);
+  padding: 20px;
+}
+.my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .dropdown-menu li .dropdown-item {
+  padding: 20px 20px;
+  transition: all 0.3s;
+  border-radius: 10px;
 }
 .my-navbar__main__container .navbar-nav.nav-right .nav-item .nav-link {
   padding-top: 15px;
@@ -500,7 +536,7 @@
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container {
   max-width: var(--max-with);
-  min-height: 430px;
+  min-height: 330px;
   margin: auto;
   padding: 0;
 }
@@ -531,7 +567,6 @@
   transition: all 0.5s;
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__img img {
-  max-width: 400px;
   max-height: 350px;
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container__item__text {
@@ -800,9 +835,6 @@
     max-width: 380px;
   }
 }
-.my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports {
-  min-height: 431px;
-}
 @media only screen and (max-width: 1200px) {
   .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports {
     min-height: 365px;
@@ -812,7 +844,6 @@
   place-content: center;
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.e-sports img {
-  max-width: 400px;
   max-height: 340px;
 }
 @media only screen and (max-width: 1500px) {
@@ -821,7 +852,6 @@
   }
 }
 .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.lottery {
-  min-height: 431px;
   place-content: center;
   margin: auto;
 }
@@ -852,9 +882,6 @@
   .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.lottery {
     min-height: 365px;
   }
-}
-.my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.lottery .mymenu__container__item__img img {
-  max-width: 490px;
 }
 @media only screen and (max-width: 1200px) {
   .my-navbar__main__container .navbar-nav.nav-left .nav-item .mymenu__container.lottery .mymenu__container__item__img img {
@@ -1142,7 +1169,7 @@
   background-color: #f0f6ff;
 }
 .home-page.main {
-  padding-top: 35px;
+  padding-top: 0;
 }
 .home-page .my-navbar__main {
   background-color: transparent;
@@ -1191,8 +1218,10 @@
 .home-page #carouselTop .carousel-inner .carousel-item img {
   width: 100%;
   height: 100%;
-  min-height: 80vh;
+  min-height: 700px;
+  max-width: 1920px;
   object-fit: cover;
+  margin: auto;
 }
 .home-page__notification {
   z-index: 0;
@@ -1617,14 +1646,13 @@
   background-color: #f0f6ff;
   padding-bottom: 0;
   padding-top: 0;
-  min-height: 800px;
-  margin-top: 35px;
+  min-height: 700px;
 }
 .sports-page__container {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 200px 0;
 }
 .sports-page__container #carouselSports .carousel-indicators {
   margin: 0;
@@ -1647,8 +1675,8 @@
   display: flex;
   place-content: center;
   place-items: center;
-  min-width: 100px;
-  min-height: 100px;
+  min-width: 75px;
+  min-height: 75px;
   background-image: url(../images/PAGE/SPORTS/action.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1666,7 +1694,7 @@
   transition: all 0.2s;
 }
 .sports-page__container #carouselSports .carousel-indicators .action button img {
-  max-width: 80px;
+  max-width: 70px;
 }
 .sports-page__container #carouselSports .carousel-indicators .action button .img-active {
   display: none;
@@ -1704,13 +1732,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 210px;
-  height: 70px;
+  width: 150px;
+  height: 50px;
   display: flex;
   place-content: center;
   place-items: center;
-  font-weight: 600;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
@@ -1720,34 +1748,39 @@
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .left-img {
   background-color: #f0f6ff;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0;
+  text-align: center;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .left-img .bg {
-  margin-top: 10%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .left-img .team {
-  margin-top: -50%;
+  margin-top: -35%;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .content {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-bottom: 250px;
-  padding-top: 50px;
+  margin-bottom: 190px;
+  padding-top: 0;
   padding-bottom: 50px;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .content .logo {
   max-width: 400px;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .content .official {
-  max-width: 200px;
+  max-width: 170px;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .content .text {
   line-height: 24px;
   font-size: 16px;
   color: #7981a4;
   font-weight: 400;
+}
+.sports-page__container #carouselSports .carousel-inner .carousel-item .content .icon {
+  max-width: 550px;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item.active .left-img .bg, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-next.carousel-item-start .left-img .bg, .sports-page__container #carouselSports .carousel-inner .carousel-item.carousel-item-prev.carousel-item-end .left-img .bg {
   -webkit-animation: sportsLeftImgBg 1s;
@@ -1895,17 +1928,13 @@
   padding-bottom: 0;
   padding-top: 0;
   background-color: #f0f6ff;
-  margin-top: 35px;
-  min-height: 800px;
+  min-height: 700px;
 }
 .live-casino-page__container {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.live-casino-page__container #carouselLiveCasino {
-  min-height: 800px;
+  padding: 200px 0;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-indicators-container {
   position: absolute;
@@ -1923,13 +1952,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 210px;
-  height: 70px;
+  width: 150px;
+  height: 50px;
   display: flex;
   place-content: center;
   place-items: center;
-  font-weight: 600;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
@@ -1943,7 +1972,7 @@
   right: 0;
   left: 0;
   top: auto;
-  bottom: 0;
+  bottom: 40px;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators .action {
   display: flex;
@@ -1960,8 +1989,8 @@
   display: flex;
   place-content: center;
   place-items: center;
-  min-width: 95px;
-  min-height: 95px;
+  min-width: 75px;
+  min-height: 75px;
   background-image: url(../images/PAGE/SPORTS/action.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1979,7 +2008,7 @@
   transition: all 0.2s;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators .action button img {
-  max-width: 80px;
+  max-width: 70px;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators .action button .img-active {
   display: none;
@@ -2008,6 +2037,22 @@
   background-color: #f0f6ff;
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
+}
+.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .left-img .bg {
+  position: absolute;
+  max-width: 70px;
+  max-height: 70px;
+  -webkit-animation: l3oCdoqhFLEpRFya3pzN8w__ 1s forwards, __6HxeipID46oR2suwcDIqeg__ 5s 1s infinite;
+  animation: l3oCdoqhFLEpRFya3pzN8w__ 1s forwards, __6HxeipID46oR2suwcDIqeg__ 5s 1s infinite;
+}
+.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .left-img .bg.bg1 {
+  left: 50px;
+  top: 25%;
+}
+.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .left-img .bg.bg2 {
+  right: 60px;
+  top: 40%;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .content {
   display: flex;
@@ -2015,7 +2060,7 @@
   align-items: flex-start;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 300px;
+  margin-bottom: 150px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -2023,10 +2068,10 @@
   max-width: 400px;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .content .official {
-  max-width: 200px;
+  max-width: 170px;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .content .icon {
-  max-width: 400px;
+  max-width: 350px;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .content .text {
   line-height: 24px;
@@ -2131,6 +2176,32 @@ html[lang=zh] .live-casino-page .sports-item__content__title {
   }
   to {
     opacity: 0;
+  }
+}
+@keyframes l3oCdoqhFLEpRFya3pzN8w__ {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-20deg);
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+}
+@keyframes __6HxeipID46oR2suwcDIqeg__ {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 .fishing-page {
@@ -2601,19 +2672,18 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   padding-top: 0;
   min-height: auto;
   background-color: #f0f6ff;
-  margin-top: 35px;
-  min-height: 800px;
+  min-height: 700px;
 }
 .e-sports-page__container {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 200px 0;
 }
 .e-sports-page__container #carouselESports .carousel-indicators-container {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 120px;
   left: 0;
   right: 0;
   display: flex;
@@ -2626,13 +2696,13 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 210px;
-  height: 70px;
+  width: 150px;
+  height: 50px;
   display: flex;
   place-content: center;
   place-items: center;
-  font-weight: 600;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
@@ -2662,8 +2732,8 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   display: flex;
   place-content: center;
   place-items: center;
-  min-width: 95px;
-  min-height: 95px;
+  min-width: 75px;
+  min-height: 75px;
   background-image: url(../images/PAGE/SPORTS/action.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -2681,7 +2751,7 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   transition: all 0.2s;
 }
 .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button img {
-  max-width: 80px;
+  max-width: 70px;
 }
 .e-sports-page__container #carouselESports .carousel-indicators-container .carousel-indicators .action button .img-active {
   display: none;
@@ -2710,6 +2780,48 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   background-color: #f0f6ff;
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg {
+  position: absolute;
+  max-width: 80px;
+  max-height: 80px;
+  -webkit-animation: l3oCdoqhFLEpRFya3pzN8w__ 1s forwards, __6HxeipID46oR2suwcDIqeg__ 5s 1s infinite;
+  animation: l3oCdoqhFLEpRFya3pzN8w__ 1s forwards, __6HxeipID46oR2suwcDIqeg__ 5s 1s infinite;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg1 {
+  left: 40px;
+  top: 35%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg2 {
+  right: 60px;
+  top: 30%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg3 {
+  left: 60px;
+  top: 20%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg4 {
+  right: 60px;
+  top: 25%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg5 {
+  left: 40px;
+  top: 30%;
+  max-width: 100px;
+  max-height: 100px;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg6 {
+  right: 60px;
+  top: 30%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg7 {
+  left: 40px;
+  top: 30%;
+}
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg.bg8 {
+  right: 60px;
+  top: 25%;
 }
 .e-sports-page__container #carouselESports .carousel-inner .carousel-item .content {
   display: flex;
@@ -2725,10 +2837,7 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   max-width: 400px;
 }
 .e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .official {
-  max-width: 200px;
-}
-.e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .icon {
-  max-width: 400px;
+  max-width: 170px;
 }
 .e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .text {
   line-height: 24px;
@@ -2819,6 +2928,32 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   }
   to {
     transform: scale(0.5);
+  }
+}
+@keyframes l3oCdoqhFLEpRFya3pzN8w__ {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-20deg);
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+}
+@keyframes __6HxeipID46oR2suwcDIqeg__ {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 .sponsors-article {

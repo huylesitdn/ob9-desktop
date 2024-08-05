@@ -6,8 +6,8 @@
   padding-bottom: 0;
   padding-top: 0;
   background-color: #f0f6ff;
-  margin-top: 35px;
-  min-height: 800px;
+  // margin-top: 35px;
+  min-height: 700px;
 
 
   &__container {
@@ -17,13 +17,14 @@
     // background-size: cover;
     // min-height: 100vh;
     // min-height: 800px;
-    min-height: 100vh;
+    // min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 200px 0;
 
     #carouselLiveCasino {
-      min-height: 800px;
+      // min-height: 800px;
 
       .carousel-indicators-container {
         position: absolute;
@@ -41,14 +42,14 @@
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
-          width: 210px;
-          height: 70px;
+          width: 150px;
+          height: 50px;
           display: flex;
           place-content: center;
           place-items: center;
 
-          font-weight: 600;
-          font-size: 24px;
+          font-weight: 400;
+          font-size: 18px;
           line-height: 20px;
           text-align: center;
           color: #FFFFFF;
@@ -64,14 +65,14 @@
           right: 0;
           left: 0;
           top: auto;
-          bottom: 0;
-  
+          bottom: 40px;
+
           .action {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             background-color: #f0f6ff;
-  
+
             button {
               width: auto;
               height: auto;
@@ -81,8 +82,8 @@
               display: flex;
               place-content: center;
               place-items: center;
-              min-width: 95px;
-              min-height: 95px;
+              min-width: 75px;
+              min-height: 75px;
               background-image: url(../images/PAGE/SPORTS/action.png);
               background-repeat: no-repeat;
               background-size: contain;
@@ -90,7 +91,7 @@
               background-color: transparent;
               border: none;
               opacity: 1;
-  
+
               font-family: 'Aldo the Apache';
               font-style: normal;
               font-weight: 400;
@@ -99,44 +100,44 @@
               text-align: center;
               color: #597EF7;
               transition: all 0.2s;
-  
+
               img {
-                max-width: 80px;
+                max-width: 70px;
               }
-  
+
               .img-active {
                 display: none;
               }
-  
+
               span {
                 transform: matrix(1, -0.08, 0.02, 1, 0, 0);
               }
-  
+
               &:hover {
                 opacity: 0.8;
               }
-  
+
               &:hover {
                 -webkit-animation: categoryBtn 0.3s;
                 animation: categoryBtn 0.3s;
               }
-  
+
               &:hover,
               &.active {
                 background-image: url(../images/PAGE/SPORTS/action-active.png);
                 color: #FFFFFF;
-  
+
                 .img-active {
                   display: initial;
                 }
-  
+
                 .img-default {
                   display: none;
                 }
               }
             }
           }
-  
+
         }
       }
 
@@ -146,17 +147,39 @@
             background-color: #f0f6ff;
             padding-top: 50px;
             padding-bottom: 50px;
+            position: relative;
+
             .team {
               // 
             }
+
+            .bg {
+              position: absolute;
+              max-width: 70px;
+              max-height: 70px;
+
+              -webkit-animation: l3oCdoqhFLEpRFya3pzN8w__ 1s forwards, __6HxeipID46oR2suwcDIqeg__ 5s 1s infinite;
+              animation: l3oCdoqhFLEpRFya3pzN8w__ 1s forwards, __6HxeipID46oR2suwcDIqeg__ 5s 1s infinite;
+
+              &.bg1 {
+                left: 50px;
+                top: 25%;
+              }
+
+              &.bg2 {
+                right: 60px;
+                top: 40%;
+              }
+            }
           }
+
           .content {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
             gap: 30px;
-            margin-bottom: 300px;
+            margin-bottom: 150px;
             // background-color: #f0f6ff;
             padding-top: 50px;
             padding-bottom: 50px;
@@ -166,11 +189,11 @@
             }
 
             .official {
-              max-width: 200px;
+              max-width: 170px;
             }
 
             .icon {
-              max-width: 400px;
+              max-width: 350px;
             }
 
             .text {
@@ -184,6 +207,7 @@
           &.active,
           &.carousel-item-next.carousel-item-start,
           &.carousel-item-prev.carousel-item-end {
+
             // show
             .left-img {
               .team {
@@ -200,6 +224,7 @@
 
           &.active.carousel-item-start,
           &.active.carousel-item-end {
+
             // hide
             .left-img {
               .team {
@@ -250,6 +275,7 @@ html[lang="zh"] {
     -webkit-transform: translate(-30%, 0);
     opacity: 0;
   }
+
   to {
     -webkit-transform: translate(0, 0);
     opacity: 1;
@@ -261,6 +287,7 @@ html[lang="zh"] {
     transform: translate(-30%, 0);
     opacity: 0;
   }
+
   to {
     transform: translate(0, 0);
     opacity: 1;
@@ -272,6 +299,7 @@ html[lang="zh"] {
     -webkit-transform: translate(0, 0);
     opacity: 1;
   }
+
   to {
     -webkit-transform: translate(20%, 0);
     opacity: 0;
@@ -283,6 +311,7 @@ html[lang="zh"] {
     transform: translate(0, 0);
     opacity: 1;
   }
+
   to {
     transform: translate(20%, 0);
     opacity: 0;
@@ -294,6 +323,7 @@ html[lang="zh"] {
     -webkit-transform: translate(50%, 0);
     opacity: 0;
   }
+
   to {
     -webkit-transform: translate(0, 0);
     opacity: 1;
@@ -305,6 +335,7 @@ html[lang="zh"] {
     transform: translate(50%, 0);
     opacity: 0;
   }
+
   to {
     transform: translate(0, 0);
     opacity: 1;
@@ -328,5 +359,36 @@ html[lang="zh"] {
 
   to {
     opacity: 0;
+  }
+}
+
+@keyframes l3oCdoqhFLEpRFya3pzN8w__ {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-20deg);
+    transform: rotateX(-20deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+}
+
+@keyframes __6HxeipID46oR2suwcDIqeg__ {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  50% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }

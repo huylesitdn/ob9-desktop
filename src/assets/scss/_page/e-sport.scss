@@ -3,21 +3,22 @@
   padding-top: 0;
   min-height: auto;
   background-color: #f0f6ff;
-  margin-top: 35px;
-  min-height: 800px;
+  // margin-top: 35px;
+  min-height: 700px;
 
 
   &__container {
-    min-height: 100vh;
+    // min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 200px 0;
 
     #carouselESports {
       .carousel-indicators-container {
         position: absolute;
         top: 0;
-        bottom: 0;
+        bottom: 120px;
         left: 0;
         right: 0;
         display: flex;
@@ -30,14 +31,14 @@
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
-          width: 210px;
-          height: 70px;
+          width: 150px;
+          height: 50px;
           display: flex;
           place-content: center;
           place-items: center;
 
-          font-weight: 600;
-          font-size: 24px;
+          font-weight: 400;
+          font-size: 18px;
           line-height: 20px;
           text-align: center;
           color: #FFFFFF;
@@ -69,8 +70,8 @@
               display: flex;
               place-content: center;
               place-items: center;
-              min-width: 95px;
-              min-height: 95px;
+              min-width: 75px;
+              min-height: 75px;
               background-image: url(../images/PAGE/SPORTS/action.png);
               background-repeat: no-repeat;
               background-size: contain;
@@ -89,7 +90,7 @@
               transition: all 0.2s;
 
               img {
-                max-width: 80px;
+                max-width: 70px;
               }
 
               .img-active {
@@ -133,6 +134,58 @@
             background-color: #f0f6ff;
             padding-top: 50px;
             padding-bottom: 50px;
+            position: relative;
+
+            .bg {
+              position: absolute;
+              max-width: 80px;
+              max-height: 80px;
+
+              -webkit-animation: l3oCdoqhFLEpRFya3pzN8w__ 1s forwards, __6HxeipID46oR2suwcDIqeg__ 5s 1s infinite;
+              animation: l3oCdoqhFLEpRFya3pzN8w__ 1s forwards, __6HxeipID46oR2suwcDIqeg__ 5s 1s infinite;
+
+              &.bg1 {
+                left: 40px;
+                top: 35%;
+              }
+
+              &.bg2 {
+                right: 60px;
+                top: 30%;
+              }
+
+              &.bg3 {
+                left: 60px;
+                top: 20%;
+              }
+
+              &.bg4 {
+                right: 60px;
+                top: 25%;
+              }
+
+              &.bg5 {
+                left: 40px;
+                top: 30%;
+                max-width: 100px;
+                max-height: 100px;
+              }
+
+              &.bg6 {
+                right: 60px;
+                top: 30%;
+              }
+
+              &.bg7 {
+                left: 40px;
+                top: 30%;
+              }
+
+              &.bg8 {
+                right: 60px;
+                top: 25%;
+              }
+            }
 
             .team {
               // -webkit-animation: esportLeftImgTeam 0.5s;
@@ -158,11 +211,11 @@
             }
 
             .official {
-              max-width: 200px;
+              max-width: 170px;
             }
 
             .icon {
-              max-width: 400px;
+              // max-width: 400px;
             }
 
             .text {
@@ -294,5 +347,37 @@
 
   to {
     transform: scale(0.5);
+  }
+}
+
+
+@keyframes l3oCdoqhFLEpRFya3pzN8w__ {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-20deg);
+    transform: rotateX(-20deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+}
+
+@keyframes __6HxeipID46oR2suwcDIqeg__ {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  50% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
