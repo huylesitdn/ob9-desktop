@@ -223,6 +223,8 @@
           gap: 15px;
           align-items: center;
           justify-content: flex-start;
+          filter: drop-shadow(0px 10px 20px rgba(205, 210, 221, 0.6));
+          border-radius: 24px;
 
           &__title {
             color: #000;
