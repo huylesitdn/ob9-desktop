@@ -224,8 +224,17 @@
           align-items: center;
           justify-content: flex-start;
 
+          &__title {
+            color: #000;
+            margin-bottom: 10px;
+          }
+
+          .flex-none {
+            flex: none;
+          }
+
           img {
-            max-width: 90px;
+            width: 90px;
           }
         }
       }

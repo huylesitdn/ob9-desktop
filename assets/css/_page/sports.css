@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 200px 0;
+  padding: 120px 0;
 }
 .sports-page__container #carouselSports .carousel-indicators {
   margin: 0;
@@ -134,6 +134,7 @@
   font-size: 16px;
   color: #7981a4;
   font-weight: 400;
+  word-break: keep-all;
 }
 .sports-page__container #carouselSports .carousel-inner .carousel-item .content .icon {
   max-width: 550px;

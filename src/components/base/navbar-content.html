@@ -1,282 +1,7 @@
 <nav class="my-navbar__main navbar fixed-top navbar-expand-lg">
   <div class="my-navbar__main__container container px-0">
-    <a class="navbar-brand" href="/">
-      <img src="assets/images/navbar-logo.png" />
-    </a>
-    <ul class="navbar-nav nav-left">
-      <li class="nav-item">
-        <a
-          class="nav-link @@if (context.active == 1) {active}"
-          href="/"
-          data-i18n="navbar.Home"
-        ></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link @@if (context.active == 2) {active}"
-          href="/sports.html"
-          data-i18n="navbar.SPORTS"
-        ></a>
-        <div class="dropdown-menu mymenu">
-          <div class="container">
-            <div class="row mymenu__container sports pt-2 justify-content-between align-items-center">
-              <!-- <div class="col mymenu__container__item"></div> -->
-              <div class="col-2 mymenu__container__item">
-                <div class="" data-i18n="NAVBAR_MENU.SPORTS_1"></div>
-                <div class="mymenu__container__item__img">
-                  <img src="assets/images/MENU_BAR/SPORTS/sabasports.png" />
-                </div>
-              </div>
-              <div class="col-2 mymenu__container__item">
-                <div class="" data-i18n="NAVBAR_MENU.SPORTS_2"></div>
-                <div class="mymenu__container__item__img">
-                  <img src="assets/images/MENU_BAR/SPORTS/cmd368.png" />
-                </div>
-              </div>
-              <div class="col-2 mymenu__container__item">
-                <div class="" data-i18n="NAVBAR_MENU.SPORTS_3"></div>
-                <div class="mymenu__container__item__img">
-                  <img src="assets/images/MENU_BAR/SPORTS/m8bet.png" />
-                </div>
-              </div>
-              <div class="col-2 mymenu__container__item">
-                <div class="" data-i18n="NAVBAR_MENU.SPORTS_4"></div>
-                <div class="mymenu__container__item__img">
-                  <img src="assets/images/MENU_BAR/SPORTS/98play.png" />
-                </div>
-              </div>
-              <!-- <div class="col mymenu__container__item"></div> -->
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link @@if (context.active == 3) {active}"
-          href="/live-casino.html"
-          data-i18n="navbar.LIVE_CASINO"
-        ></a>
-        <div class="dropdown-menu mymenu">
-          <div class="mymenu__container live-casino">
-            <div class="container">
-              <div class="row py-2 justify-content-between align-items-center">
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.LIVE_CASINO_1"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/LIVE_CASINO/evolution.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.LIVE_CASINO_2"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/LIVE_CASINO/ezugi.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.LIVE_CASINO_3"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/LIVE_CASINO/pp.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.LIVE_CASINO_4"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/LIVE_CASINO/playtech.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.LIVE_CASINO_5"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/LIVE_CASINO/sexy.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.LIVE_CASINO_6"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/LIVE_CASINO/dg.png" />
-                </div>
-              </div>
-              <div class="row py-2">
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.LIVE_CASINO_7"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/LIVE_CASINO/AG.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.LIVE_CASINO_8"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/LIVE_CASINO/SA.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.LIVE_CASINO_9"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/LIVE_CASINO/WINFINITY.png" />
-                </div>
-                <div class="col mymenu__container__item"></div>
-                <div class="col mymenu__container__item"></div>
-                <div class="col mymenu__container__item"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link @@if (context.active == 4) {active}"
-          href="/slots.html"
-          data-i18n="navbar.SLOTS"
-        ></a>
-        <div class="dropdown-menu mymenu">
-          <div class="mymenu__container slots justify-content-between align-items-center">
-            <div class="container">
-              <div class="row pt-4">
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_1"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/PP.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_2"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/PLAYTECH.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_3"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/SPADEGAMING.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_4"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/HABANERO.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_5"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/ONEGAME.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_6"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/CQ9.png" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_7"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/REDTIGER.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_8"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/MEGA888.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_9"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/QTECH.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_10"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/TOP_TREND.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_11"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/RELAXGAMING.png" />
-                </div>
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_12"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/BOOMING.png" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col mymenu__container__item">
-                  <div class="" data-i18n="NAVBAR_MENU.SLOTS_13"></div>
-                  <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/SLOTS/PEGASUS.png" />
-                </div>
-                <div class="col mymenu__container__item"></div>
-                <div class="col mymenu__container__item"></div>
-                <div class="col mymenu__container__item"></div>
-                <div class="col mymenu__container__item"></div>
-                <div class="col mymenu__container__item"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link @@if (context.active == 5) {active}"
-          href="/fishing.html"
-          data-i18n="navbar.FISHING"
-        ></a>
-        <div class="dropdown-menu mymenu">
-          <div class="container">
-            <div class="row mymenu__container container m-auto fishing justify-content-between align-items-center">
-              <div class="col-2 mymenu__container__item">
-                <div class="" data-i18n="NAVBAR_MENU.FISHING_1"></div>
-                <div class="mymenu__container__item__img">
-                  <img src="assets/images/MENU_BAR/FISHING/FISHING_GOD.png" />
-                </div>
-              </div>
-              <div class="col-2 mymenu__container__item">
-                <div class="" data-i18n="NAVBAR_MENU.FISHING_2"></div>
-                <div class="mymenu__container__item__img">
-                  <img src="assets/images/MENU_BAR/FISHING/FISHING_WAR.png" />
-                </div>
-              </div>
-              <div class="col-2 mymenu__container__item">
-                <div class="" data-i18n="NAVBAR_MENU.AECADE"></div>
-                <div class="mymenu__container__item__img">
-                  <img src="assets/images/MENU_BAR/AECADE/avaitrix.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link @@if (context.active == 6) {active}"
-          href="/e-sports.html"
-          data-i18n="navbar.E_SPORTS"
-        ></a>
-        <div class="dropdown-menu mymenu">
-          <div class="container">
-            <div class="row mymenu__container e-sports justify-content-between align-items-center">
-              <div class="col-2 mymenu__container__item">
-                <div class="" data-i18n="NAVBAR_MENU.esports_1"></div>
-                <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/esports/TF_GAMING.png" />
-              </div>
-              <div class="col-2 mymenu__container__item">
-                <div class="" data-i18n="NAVBAR_MENU.esports_2"></div>
-                <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/esports/SABA_SPORTS.png" />
-              </div>
-              <div class="col-2 mymenu__container__item">
-                <div class="" data-i18n="NAVBAR_MENU.esports_3"></div>
-                <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/esports/CMD_368.png" />
-              </div>
-              <div class="col-2 mymenu__container__item">
-                <div class="" data-i18n="NAVBAR_MENU.esports_4"></div>
-                <img class="mymenu__container__item__img" src="assets/images/MENU_BAR/esports/INPLAY.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link @@if (context.active == 7) {active}"
-          href="/lottery.html"
-          data-i18n="navbar.LOTTERY"
-        ></a>
-        <div class="dropdown-menu mymenu show">
-          <div class="container">
-            <div class="row mymenu__container container lottery justify-content-between align-items-center">
-              <div class="col-2 mymenu__container__item">
-                <div class="" data-i18n="NAVBAR_MENU.LOTTERY"></div>
-                <div class="mymenu__container__item__img">
-                  <img src="assets/images/MENU_BAR/LOTTERY/1.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="/live-match.html">
-          <div class="nav-link-img nav-live-match">
-            <iframe data-i18n="live_match_page.navbar_src" data-i18n-attr="src" width="100%"></iframe>
-          </div>
-        </a>
-      </li> -->
-    </ul>
+    @@include('./navbar-content-left.html', {active: '@@active', withoutLogin: false})
     <ul class="navbar-nav nav-right ms-auto">
-      <!-- <li class="nav-item">
-        <a class="nav-link active" href="/world-cup.html">
-          <div class="nav-link-img world-cup">
-            <img src="assets/images/world-cup/en/c4639855e84f992b7dbed318972b86fd.png" />
-          </div>
-        </a>
-      </li> -->
       <li class="nav-item">
         <a class="nav-link active" href="javascript:void(0)">
           <div class="nav-link-img">
@@ -314,15 +39,6 @@
           <div data-i18n="navbar.Promotion"></div>
         </a>
       </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="/rewards.html">
-          <img class="nav-link-img-label" src="assets/images/rewards/new.gif" />
-          <div class="nav-link-img">
-            <img src="assets/images/rewards/rewards-icon.png" />
-          </div>
-          <div data-i18n="Rewards"></div>
-        </a>
-      </li> -->
       <!-- <li class="nav-item">
         <a
           class="nav-link"
@@ -374,12 +90,65 @@
           </div>
         </a>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="img">
+                <img class="default" src="assets/images/menu/menu-1.png" />
+                <img class="active" src="assets/images/menu/menu-active-1.png" />
+              </div>
+              <div data-i18n="MENU.MENU1"></div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="img">
+                <img class="default" src="assets/images/menu/menu-2.png" />
+                <img class="active" src="assets/images/menu/menu-active-2.png" />
+              </div>
+              <div data-i18n="MENU.MENU2"></div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="img">
+                <img class="default" src="assets/images/menu/menu-3.png" />
+                <img class="active" src="assets/images/menu/menu-active-3.png" />
+              </div>
+              <div data-i18n="MENU.MENU3"></div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="img">
+                <img class="default" src="assets/images/menu/menu-4.png" />
+                <img class="active" src="assets/images/menu/menu-active-4.png" />
+              </div>
+              <div data-i18n="MENU.MENU4"></div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="img">
+                <img class="default" src="assets/images/menu/menu-5.png" />
+                <img class="active" src="assets/images/menu/menu-active-5.png" />
+              </div>
+              <div data-i18n="MENU.MENU5"></div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="img">
+                <img class="default" src="assets/images/menu/menu-6.png" />
+                <img class="active" src="assets/images/menu/menu-active-6.png" />
+              </div>
+              <div data-i18n="MENU.MENU6"></div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item button" href="#">
+              <div data-i18n="MENU.MENU7"></div>
+            </a>
+          </li>
         </ul>
       </li>
     </ul>

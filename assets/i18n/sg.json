@@ -42,7 +42,7 @@
     "sports_events": "体育赛事",
     "live_casino": "真人娱乐",
     "slot_machines": "老虎机",
-    "fishing_game": "捕鱼",
+    "fishing_game": "娱乐",
     "e_sports": "电子竞技",
     "lottery_game": "彩票投注",
     "highest_return": "最高返水"
@@ -1334,7 +1334,7 @@
     "description2": "新增神奇鱼种，多款武器出现！威力强大，多个猎物一网打尽！",
     "": ""
   },
-  "PLAY_NOW": "立即去玩",
+  "PLAY_NOW": "开始游戏",
   "Enter_game_name_to_search": "输入游戏名搜查",
   "slots_page": {
     "title": "<img src=\"assets/images/slots/title.png\" />",

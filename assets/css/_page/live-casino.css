@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 200px 0;
+  padding: 100px 0;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-indicators-container {
   position: absolute;
@@ -46,7 +46,7 @@
   right: 0;
   left: 0;
   top: auto;
-  bottom: 40px;
+  bottom: 90px;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators .action {
   display: flex;
@@ -107,6 +107,9 @@
 .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators .action button:hover .img-default, .live-casino-page__container #carouselLiveCasino .carousel-indicators-container .carousel-indicators .action button.active .img-default {
   display: none;
 }
+.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item > .row {
+  background-color: #f0f6ff;
+}
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .left-img {
   background-color: #f0f6ff;
   padding-top: 50px;
@@ -134,9 +137,11 @@
   align-items: flex-start;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 150px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 250px;
+  background-color: #f0f6ff;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .content .logo {
   max-width: 400px;

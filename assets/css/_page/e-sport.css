@@ -3,13 +3,12 @@
   padding-top: 0;
   min-height: auto;
   background-color: #f0f6ff;
-  min-height: 700px;
 }
 .e-sports-page__container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 200px 0;
+  padding: 50px 0;
 }
 .e-sports-page__container #carouselESports .carousel-indicators-container {
   position: absolute;
@@ -109,8 +108,8 @@
 }
 .e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img {
   background-color: #f0f6ff;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
   position: relative;
 }
 .e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .bg {

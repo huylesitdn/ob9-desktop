@@ -4,7 +4,7 @@
   min-height: auto;
   background-color: #f0f6ff;
   // margin-top: 35px;
-  min-height: 700px;
+  // min-height: 700px;
 
 
   &__container {
@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 200px 0;
+    padding: 50px 0;
 
     #carouselESports {
       .carousel-indicators-container {
@@ -132,8 +132,8 @@
         .carousel-item {
           .left-img {
             background-color: #f0f6ff;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 0;
+            padding-bottom: 0;
             position: relative;
 
             .bg {

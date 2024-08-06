@@ -190,8 +190,15 @@
   align-items: center;
   justify-content: flex-start;
 }
+.home-page__content__top-service__content__item__title {
+  color: #000;
+  margin-bottom: 10px;
+}
+.home-page__content__top-service__content__item .flex-none {
+  flex: none;
+}
 .home-page__content__top-service__content__item img {
-  max-width: 90px;
+  width: 90px;
 }
 .home-page__content__why_choose_us {
   margin-bottom: 100px;

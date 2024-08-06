@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 200px 0;
+    padding: 100px 0;
 
     #carouselLiveCasino {
       // min-height: 800px;
@@ -65,7 +65,7 @@
           right: 0;
           left: 0;
           top: auto;
-          bottom: 40px;
+          bottom: 90px;
 
           .action {
             display: flex;
@@ -143,6 +143,9 @@
 
       .carousel-inner {
         .carousel-item {
+          & > .row {
+            background-color: #f0f6ff;
+          }
           .left-img {
             background-color: #f0f6ff;
             padding-top: 50px;
@@ -179,10 +182,11 @@
             align-items: flex-start;
             justify-content: center;
             gap: 30px;
-            margin-bottom: 150px;
-            // background-color: #f0f6ff;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            margin-bottom: 250px;
+            background-color: #f0f6ff;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
 
             .logo {
               max-width: 400px;
