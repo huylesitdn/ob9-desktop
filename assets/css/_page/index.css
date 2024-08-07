@@ -413,7 +413,7 @@
 }
 .my-navbar__main__container .navbar-nav .nav-item .nav-link {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 12px;
   text-align: center;
   color: #515B7C;
@@ -517,6 +517,7 @@
   justify-content: flex-start;
   align-items: center;
   text-align: left;
+  padding-bottom: 16px;
 }
 .my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .nav-link .name {
   display: flex;
@@ -532,6 +533,11 @@
   max-width: 50px;
   margin-left: 6px;
 }
+.my-navbar__main__container .navbar-nav.nav-right .nav-item.profile:hover .dropdown-menu {
+  display: block !important;
+  margin-top: 0;
+  top: 80px;
+}
 .my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .dropdown-menu {
   min-width: 300px;
   right: 0;
@@ -542,6 +548,7 @@
   -webkit-box-shadow: 0px 3px 15px 2px rgba(1, 1, 1, 0.1);
   -moz-box-shadow: 0px 3px 15px 2px rgba(1, 1, 1, 0.1);
   padding: 20px;
+  display: none;
 }
 .my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .dropdown-menu li .dropdown-item {
   padding: 20px 20px;
@@ -552,10 +559,20 @@
   align-items: center;
   justify-content: flex-start;
   gap: 15px;
+  position: relative;
 }
 .my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .dropdown-menu li .dropdown-item.button {
   border: 1px solid #ddd;
-  padding-left: 60px;
+  justify-content: center;
+}
+.my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .dropdown-menu li .dropdown-item .count {
+  background-color: #4080FF;
+  color: #fff;
+  border-radius: 14px;
+  padding: 2px 7px;
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
 }
 .my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .dropdown-menu li .dropdown-item .img img {
   height: 25px;
@@ -1480,6 +1497,10 @@
 .home-page__content__top-service__content__item__title {
   color: #000;
   margin-bottom: 10px;
+  font-size: 16px;
+}
+.home-page__content__top-service__content__item__text {
+  line-height: 18px;
 }
 .home-page__content__top-service__content__item .flex-none {
   flex: none;
@@ -1659,6 +1680,81 @@
 }
 .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item img {
   max-width: 300px;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button {
+  width: auto;
+  height: auto;
+  text-indent: initial;
+  margin: 0;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/PAGE/SPORTS/action.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  opacity: 1;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button img {
+  width: 100%;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button .img-active {
+  display: none;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button:hover {
+  opacity: 0.8;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button:hover {
+  -webkit-animation: categoryBtn 0.3s;
+  animation: categoryBtn 0.3s;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button:hover, .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button.active {
+  background-image: url(../images/PAGE/SPORTS/action-active.png);
+  color: #FFFFFF;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button:hover .img-active, .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button.active .img-active {
+  display: initial;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button:hover .img-default, .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button.active .img-default {
+  display: none;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action.playnow button {
+  height: 40px;
+  width: 120px;
+  background-image: url(../images/HOMEPAGE/exciting-game-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  opacity: 1;
+  padding: 2px 10px;
+  color: #6c7ba8;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action.playnow button:hover {
+  background-image: url(../images/HOMEPAGE/exciting-game-bg-active.png);
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action.playnow button:hover span {
+  font-weight: 600;
+  text-align: center;
+  color: #FFFFFF;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action.playnow button:hover img.default {
+  display: none;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action.playnow button:hover img.focus {
+  display: block;
 }
 .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item > img {
   padding: 0 15px;
@@ -2170,6 +2266,10 @@
   padding-bottom: 50px;
   position: relative;
 }
+.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .left-img .team {
+  max-height: 750px;
+  object-fit: contain;
+}
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .left-img .bg {
   position: absolute;
   max-width: 70px;
@@ -2199,6 +2299,8 @@
 }
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .content .logo {
   max-width: 400px;
+  height: 120px;
+  object-fit: contain;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .content .official {
   max-width: 170px;
@@ -2815,7 +2917,7 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
 .e-sports-page__container #carouselESports .carousel-indicators-container {
   position: absolute;
   top: 0;
-  bottom: 120px;
+  bottom: 90px;
   left: 0;
   right: 0;
   display: flex;
@@ -2955,6 +3057,10 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
   right: 60px;
   top: 25%;
 }
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .team {
+  max-height: 800px;
+  object-fit: contain;
+}
 .e-sports-page__container #carouselESports .carousel-inner .carousel-item .content {
   display: flex;
   flex-direction: column;
@@ -2967,6 +3073,8 @@ html[lang=zh] .fishing-page .sports-item__content__title[data-i18n="fishing_page
 }
 .e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .logo {
   max-width: 400px;
+  height: 130px;
+  object-fit: contain;
 }
 .e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .official {
   max-width: 170px;

@@ -116,6 +116,10 @@
   padding-bottom: 50px;
   position: relative;
 }
+.live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .left-img .team {
+  max-height: 750px;
+  object-fit: contain;
+}
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .left-img .bg {
   position: absolute;
   max-width: 70px;
@@ -145,6 +149,8 @@
 }
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .content .logo {
   max-width: 400px;
+  height: 120px;
+  object-fit: contain;
 }
 .live-casino-page__container #carouselLiveCasino .carousel-inner .carousel-item .content .official {
   max-width: 170px;

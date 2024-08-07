@@ -195,6 +195,10 @@
 .home-page__content__top-service__content__item__title {
   color: #000;
   margin-bottom: 10px;
+  font-size: 16px;
+}
+.home-page__content__top-service__content__item__text {
+  line-height: 18px;
 }
 .home-page__content__top-service__content__item .flex-none {
   flex: none;
@@ -374,6 +378,81 @@
 }
 .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item img {
   max-width: 300px;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button {
+  width: auto;
+  height: auto;
+  text-indent: initial;
+  margin: 0;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/PAGE/SPORTS/action.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  opacity: 1;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button img {
+  width: 100%;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button .img-active {
+  display: none;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button:hover {
+  opacity: 0.8;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button:hover {
+  -webkit-animation: categoryBtn 0.3s;
+  animation: categoryBtn 0.3s;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button:hover, .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button.active {
+  background-image: url(../images/PAGE/SPORTS/action-active.png);
+  color: #FFFFFF;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button:hover .img-active, .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button.active .img-active {
+  display: initial;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button:hover .img-default, .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action button.active .img-default {
+  display: none;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action.playnow button {
+  height: 40px;
+  width: 120px;
+  background-image: url(../images/HOMEPAGE/exciting-game-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  opacity: 1;
+  padding: 2px 10px;
+  color: #6c7ba8;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action.playnow button:hover {
+  background-image: url(../images/HOMEPAGE/exciting-game-bg-active.png);
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action.playnow button:hover span {
+  font-weight: 600;
+  text-align: center;
+  color: #FFFFFF;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action.playnow button:hover img.default {
+  display: none;
+}
+.home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item .content-item .action.playnow button:hover img.focus {
+  display: block;
 }
 .home-page__content__exciting_game__content #carouselExcitingGame .carousel-inner .carousel-item > img {
   padding: 0 15px;

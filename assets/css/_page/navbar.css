@@ -58,7 +58,7 @@
 }
 .my-navbar__main__container .navbar-nav .nav-item .nav-link {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 12px;
   text-align: center;
   color: #515B7C;
@@ -162,6 +162,7 @@
   justify-content: flex-start;
   align-items: center;
   text-align: left;
+  padding-bottom: 16px;
 }
 .my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .nav-link .name {
   display: flex;
@@ -177,6 +178,11 @@
   max-width: 50px;
   margin-left: 6px;
 }
+.my-navbar__main__container .navbar-nav.nav-right .nav-item.profile:hover .dropdown-menu {
+  display: block !important;
+  margin-top: 0;
+  top: 80px;
+}
 .my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .dropdown-menu {
   min-width: 300px;
   right: 0;
@@ -187,6 +193,7 @@
   -webkit-box-shadow: 0px 3px 15px 2px rgba(1, 1, 1, 0.1);
   -moz-box-shadow: 0px 3px 15px 2px rgba(1, 1, 1, 0.1);
   padding: 20px;
+  display: none;
 }
 .my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .dropdown-menu li .dropdown-item {
   padding: 20px 20px;
@@ -197,10 +204,20 @@
   align-items: center;
   justify-content: flex-start;
   gap: 15px;
+  position: relative;
 }
 .my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .dropdown-menu li .dropdown-item.button {
   border: 1px solid #ddd;
-  padding-left: 60px;
+  justify-content: center;
+}
+.my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .dropdown-menu li .dropdown-item .count {
+  background-color: #4080FF;
+  color: #fff;
+  border-radius: 14px;
+  padding: 2px 7px;
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
 }
 .my-navbar__main__container .navbar-nav.nav-right .nav-item.profile .dropdown-menu li .dropdown-item .img img {
   height: 25px;

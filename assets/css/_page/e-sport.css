@@ -13,7 +13,7 @@
 .e-sports-page__container #carouselESports .carousel-indicators-container {
   position: absolute;
   top: 0;
-  bottom: 120px;
+  bottom: 90px;
   left: 0;
   right: 0;
   display: flex;
@@ -153,6 +153,10 @@
   right: 60px;
   top: 25%;
 }
+.e-sports-page__container #carouselESports .carousel-inner .carousel-item .left-img .team {
+  max-height: 800px;
+  object-fit: contain;
+}
 .e-sports-page__container #carouselESports .carousel-inner .carousel-item .content {
   display: flex;
   flex-direction: column;
@@ -165,6 +169,8 @@
 }
 .e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .logo {
   max-width: 400px;
+  height: 130px;
+  object-fit: contain;
 }
 .e-sports-page__container #carouselESports .carousel-inner .carousel-item .content .official {
   max-width: 170px;

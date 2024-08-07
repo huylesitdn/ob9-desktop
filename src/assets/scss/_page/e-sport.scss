@@ -18,7 +18,7 @@
       .carousel-indicators-container {
         position: absolute;
         top: 0;
-        bottom: 120px;
+        bottom: 90px;
         left: 0;
         right: 0;
         display: flex;
@@ -188,6 +188,8 @@
             }
 
             .team {
+              max-height: 800px;
+              object-fit: contain;
               // -webkit-animation: esportLeftImgTeam 0.5s;
               // animation: esportLeftImgTeam 0.5s;
             }
@@ -208,6 +210,8 @@
 
             .logo {
               max-width: 400px;
+              height: 130px;
+              object-fit: contain;
             }
 
             .official {
